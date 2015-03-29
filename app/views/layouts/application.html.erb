@@ -2,13 +2,28 @@
 <html>
 <head>
   <title>StockPicker</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <%= link_to("Stock Picker", root_path, class: "navbar-brand") %>
+      </div>
 
-<%= yield %>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to("Add Stock", new_stock_path) %></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <%= yield %>
+</main>
 
 </body>
 </html>
