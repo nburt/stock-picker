@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://finance.yahoo.com/d/quotes.csv?f=o0p0k0j0h0g0b3j1l1&s=IBM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Mar 2015 18:14:39 GMT
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private, no-cache, no-store
+      Content-Length:
+      - '43'
+      Content-Type:
+      - application/octet-stream
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      Via:
+      - http/1.1 r30.ycpi.dxs.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+    body:
+      encoding: UTF-8
+      string: |
+        N/A,N/A,N/A,N/A,N/A,N/A,N/A,158.54B,160.40
+    http_version: 
+  recorded_at: Sun, 29 Mar 2015 18:14:44 GMT
+recorded_with: VCR 2.9.3

@@ -32,4 +32,34 @@ describe Stock do
 
   end
 
+  describe 'fetch_and_save_current_price' do
+
+    it 'returns false if it has already been fetched within the last day' do
+      stock = create_stock
+      StockPrice.create!(stock_id: stock.id)
+
+      expect(stock.fetch_and_save_current_price).to eq(false)
+      expect(StockPrice.count).to eq(1)
+    end
+
+    it 'fetches the stocks quote and saves it if it does not have it' do
+      VCR.use_cassette('models/stock_price/fetch_and_save') do
+        stock = create_stock
+        stock.fetch_and_save_current_price
+
+        stock_price = stock.stock_prices.first
+        expect(stock_price.open).to eq('N/A')
+        expect(stock_price.previous_close).to eq('N/A')
+        expect(stock_price.year_high).to eq('N/A')
+        expect(stock_price.year_low).to eq('N/A')
+        expect(stock_price.days_high).to eq('N/A')
+        expect(stock_price.days_low).to eq('N/A')
+        expect(stock_price.bid_realtime).to eq('N/A')
+        expect(stock_price.market_cap).to eq('158.54B')
+        expect(stock_price.last_trade_price).to eq('160.40')
+      end
+    end
+
+  end
+
 end

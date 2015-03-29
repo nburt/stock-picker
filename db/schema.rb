@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150329153118) do
+ActiveRecord::Schema.define(version: 20150329172055) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "stock_prices", force: :cascade do |t|
+    t.integer  "stock_id"
+    t.string   "open"
+    t.string   "previous_close"
+    t.string   "year_high"
+    t.string   "year_low"
+    t.string   "days_high"
+    t.string   "days_low"
+    t.string   "bid_realtime"
+    t.string   "market_cap"
+    t.string   "last_trade_price"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "stocks", force: :cascade do |t|
     t.string   "name",          null: false

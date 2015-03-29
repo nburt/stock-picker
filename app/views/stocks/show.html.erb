@@ -1,1 +1,35 @@
-<h1><%= @stock.name %> (<%= @stock.ticker_symbol %>)</h1>
+<h1 class="text-center"><%= @stock.name %> (<%= @stock.ticker_symbol %>)</h1>
+
+<h3>Latest Prices</h3>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Open</th>
+    <th>Previous Close</th>
+    <th>Last Trade Price</th>
+    <th>Bid (realtime)</th>
+    <th>Market Capitalization</th>
+    <th>Days Low</th>
+    <th>Days High</th>
+    <th>Year Low</th>
+    <th>Year High</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @stock.stock_prices.last(5).each do |stock_price| %>
+    <tr>
+      <td><%= stock_price.created_at.strftime("%D (%A)") %></td>
+      <td><%= stock_price.open == "N/A" ? "N/A" : number_to_currency(stock_price.open) %></td>
+      <td><%= stock_price.previous_close == "N/A" ? "N/A" : number_to_currency(stock_price.previous_close) %></td>
+      <td><%= stock_price.last_trade_price == "N/A" ? "N/A" : number_to_currency(stock_price.last_trade_price) %></td>
+      <td><%= stock_price.bid_realtime == "N/A" ? "N/A" : number_to_currency(stock_price.bid_realtime) %></td>
+      <td><%= stock_price.market_cap == "N/A" ? "N/A" : number_to_currency(stock_price.market_cap) %></td>
+      <td><%= stock_price.days_low == "N/A" ? "N/A" : number_to_currency(stock_price.days_low) %></td>
+      <td><%= stock_price.days_high == "N/A" ? "N/A" : number_to_currency(stock_price.days_high) %></td>
+      <td><%= stock_price.year_low == "N/A" ? "N/A" : number_to_currency(stock_price.year_low) %></td>
+      <td><%= stock_price.year_high == "N/A" ? "N/A" : number_to_currency(stock_price.year_high) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

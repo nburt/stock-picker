@@ -23,8 +23,23 @@ feature 'creating and viewing stocks' do
 
   scenario 'viewing an individual stocks page' do
     stock = create_stock({name: 'American Express', ticker_symbol: 'AXP'})
+    stock_price = StockPrice.create!({
+      stock_id: stock.id,
+      open: "N/A",
+      previous_close: "N/A",
+      year_high: "N/A",
+      year_low: "N/A",
+      days_high: "N/A",
+      days_low: "N/A",
+      bid_realtime: "N/A",
+      market_cap: "158.54B",
+      last_trade_price: "160.40"
+    })
     visit(stock_path(stock))
     expect(page).to have_content('American Express (AXP)')
+    expect(page).to have_content(stock_price.open)
+    expect(page).to have_content(stock_price.market_cap)
+    expect(page).to have_content(stock_price.last_trade_price)
   end
 
 end

@@ -9,6 +9,7 @@ gem 'jquery-rails', '~> 4.0.3'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'typhoeus', '~> 0.7.1'
 
 group :development, :test do
   gem 'web-console', '~> 2.0'
@@ -19,5 +20,7 @@ end
 group :test do
   gem 'rspec-rails', '~> 3.2.1'
   gem 'capybara', '~> 2.4.4'
+  gem 'webmock', '~> 1.20.4'
+  gem 'vcr', '~> 2.9.3'
 end
 
