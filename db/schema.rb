@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150329172055) do
+ActiveRecord::Schema.define(version: 20150330022822) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
+    t.integer  "stock_id"
+    t.string   "title"
+    t.text     "description"
+    t.string   "link"
+    t.datetime "date"
+    t.json     "keywords"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.float    "positivity_score"
+  end
+
+  add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
 
   create_table "stock_prices", force: :cascade do |t|
     t.integer  "stock_id"
@@ -30,6 +44,8 @@ ActiveRecord::Schema.define(version: 20150329172055) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
+
+  add_index "stock_prices", ["stock_id"], name: "index_stock_prices_on_stock_id", using: :btree
 
   create_table "stocks", force: :cascade do |t|
     t.string   "name",          null: false

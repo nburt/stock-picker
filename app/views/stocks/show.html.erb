@@ -33,3 +33,23 @@
   <% end %>
   </tbody>
 </table>
+
+<h3>Latest Articles</h3>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Title</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @stock.articles.last(5).each do |article| %>
+    <tr>
+      <td><%= article.date.strftime("%D (%A)") %></td>
+      <td><%= article.title %></td>
+      <td><%= link_to(article.link, article.link, target: "_blank") %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

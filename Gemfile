@@ -10,11 +10,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'typhoeus', '~> 0.7.1'
+gem 'oj', '~> 2.12.1'
 
 group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring', '~> 1.3.3'
   gem 'pry', '~> 0.10.1'
+  gem 'dotenv-rails', '~> 2.0.0'
 end
 
 group :test do

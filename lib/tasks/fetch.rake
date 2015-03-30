@@ -7,4 +7,12 @@ namespace :fetch do
     end
   end
 
+  desc "Fetch Articles"
+  task articles: :environment do
+    stocks = Stock.all
+    stocks.each do |stock|
+      stock.fetch_and_save_new_articles
+    end
+  end
+
 end

@@ -35,11 +35,15 @@ feature 'creating and viewing stocks' do
       market_cap: "158.54B",
       last_trade_price: "160.40"
     })
+    article = create_article({stock_id: stock.id})
+
     visit(stock_path(stock))
+
     expect(page).to have_content('American Express (AXP)')
     expect(page).to have_content(stock_price.open)
     expect(page).to have_content(stock_price.market_cap)
     expect(page).to have_content(stock_price.last_trade_price)
+    expect(page).to have_content(article.title)
   end
 
 end

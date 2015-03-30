@@ -15,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 29 Mar 2015 18:14:39 GMT
+      - Sun, 29 Mar 2015 23:04:16 GMT
       P3p:
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
         TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
@@ -31,7 +31,7 @@ http_interactions:
       Connection:
       - keep-alive
       Via:
-      - http/1.1 r30.ycpi.dxs.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 r42.ycpi.dxs.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
     body:
@@ -39,5 +39,5 @@ http_interactions:
       string: |
         N/A,N/A,N/A,N/A,N/A,N/A,N/A,158.54B,160.40
     http_version: 
-  recorded_at: Sun, 29 Mar 2015 18:14:44 GMT
+  recorded_at: Sun, 29 Mar 2015 23:04:25 GMT
 recorded_with: VCR 2.9.3
