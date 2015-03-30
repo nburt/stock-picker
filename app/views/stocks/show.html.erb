@@ -1,5 +1,10 @@
 <h1 class="text-center"><%= @stock.name %> (<%= @stock.ticker_symbol %>)</h1>
 
+<h3>Positivity Score</h3>
+<p>
+  <%= @stock.all_time_positivity_score %>%
+<p>
+
 <h3>Latest Prices</h3>
 <table class="table">
   <thead>
@@ -39,6 +44,7 @@
   <thead>
   <tr>
     <th>Date</th>
+    <th>Positivity Score</th>
     <th>Title</th>
     <th>Link</th>
   </tr>
@@ -47,8 +53,9 @@
   <% @stock.articles.last(5).each do |article| %>
     <tr>
       <td><%= article.date.strftime("%D (%A)") %></td>
+      <td><%= article.positivity_score ? article.positivity_score : 0 %>%</td>
       <td><%= article.title %></td>
-      <td><%= link_to(article.link, article.link, target: "_blank") %></td>
+      <td><%= link_to("View Article", article.link, target: "_blank") %></td>
     </tr>
   <% end %>
   </tbody>

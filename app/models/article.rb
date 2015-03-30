@@ -5,7 +5,7 @@ class Article < ActiveRecord::Base
 
   def analyze!
     return false if keywords.present? && keywords.size > 0 || positivity_score.to_f > 0
-    analyzer = Analyzer::Article.new(self)
+    analyzer = Analyzer::ArticleAnalyzer.new(self)
     analysis = analyzer.analyze!
     update_attributes(keywords: analysis.keywords, positivity_score: analysis.positivity_score)
   end

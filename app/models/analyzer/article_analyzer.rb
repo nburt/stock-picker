@@ -1,4 +1,4 @@
-class Analyzer::Article
+class Analyzer::ArticleAnalyzer
 
   def initialize(article)
     @article = article

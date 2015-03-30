@@ -46,4 +46,14 @@ feature 'creating and viewing stocks' do
     expect(page).to have_content(article.title)
   end
 
+  scenario 'a user can view the average positivity score for a company' do
+    stock = create_stock({name: 'American Express', ticker_symbol: 'AXP'})
+    create_article(stock_id: stock.id, positivity_score: 50.0)
+
+    visit(stock_path(stock))
+
+    expect(page).to have_content("Positivity Score")
+    expect(page).to have_content("50.0")
+  end
+
 end

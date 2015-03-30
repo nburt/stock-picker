@@ -36,4 +36,10 @@ class Stock < ActiveRecord::Base
     end
   end
 
+  def all_time_positivity_score
+    scores = articles.where("positivity_score IS NOT NULL").pluck(:positivity_score)
+    return unless scores.any?
+    (scores.sum.to_f / scores.size.to_f).round
+  end
+
 end

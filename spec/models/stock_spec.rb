@@ -90,4 +90,46 @@ describe Stock do
 
   end
 
+  describe 'all_time_positivity_score' do
+
+    it 'returns the all time positivity score' do
+      stock = create_stock
+      create_article(stock_id: stock.id, positivity_score: 50)
+
+      expect(stock.all_time_positivity_score).to eq(50)
+    end
+
+    it 'returns the average off all positivity scores when there are more than 1' do
+      stock = create_stock
+      create_article(stock_id: stock.id, positivity_score: 60)
+      create_article(stock_id: stock.id, positivity_score: 50)
+
+      expect(stock.all_time_positivity_score).to eq(55)
+    end
+
+    it 'returns a rounded score if it is not an integer' do
+      stock = create_stock
+      create_article(stock_id: stock.id, positivity_score: 55)
+      create_article(stock_id: stock.id, positivity_score: 50)
+
+      expect(stock.all_time_positivity_score).to eq(53)
+    end
+
+    it 'ignores positivity scores of nil' do
+      stock = create_stock
+      create_article(stock_id: stock.id, positivity_score: 55)
+      create_article(stock_id: stock.id)
+
+      expect(stock.all_time_positivity_score).to eq(55)
+    end
+
+    it 'returns nil if there are no positivity scores' do
+      stock = create_stock
+      create_article(stock_id: stock.id)
+
+      expect(stock.all_time_positivity_score).to eq(nil)
+    end
+
+  end
+
 end
