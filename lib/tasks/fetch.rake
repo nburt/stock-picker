@@ -1,6 +1,7 @@
 namespace :fetch do
   desc "Fetch Stock Prices"
   task stock_prices: :environment do
+    return false if ["Saturday", "Sunday"].include?(DateTime.now.strftime("%A"))
     stocks = Stock.all
     count = stocks.size
     stocks.each_with_index do |stock, index|
