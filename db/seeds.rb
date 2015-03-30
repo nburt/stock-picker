@@ -23,7 +23,18 @@ stocks = [
     name: "Pfizer",
     ticker_symbol: "PFE"
   },
-
+  {
+    name: "Hewlett-Packard Company",
+    ticker_symbol: "HPQ"
+  },
+  {
+    name: "Lexmark International Inc",
+    ticker_symbol: "LXK"
+  },
+  {
+    name: "Dell Inc.",
+    ticker_symbol: "DELL"
+  }
 ]
 
 stocks.each do |stock|
