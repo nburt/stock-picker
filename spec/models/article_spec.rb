@@ -54,4 +54,15 @@ describe Article do
 
   end
 
+  describe 'scored' do
+
+    it 'returns articles with a positivity score' do
+      article = create_article(stock_id: 1, keywords: ['keyword'], positivity_score: 50)
+      create_article(stock_id: 2, keywords: ['keyword'])
+
+      expect(Article.scored).to eq([article])
+    end
+
+  end
+
 end

@@ -56,4 +56,22 @@ describe Analyzer::Keyword do
     end
   end
 
+  it 'handles errors gracefully' do
+    VCR.use_cassette('/models/analyzer/keyword/error') do
+      attributes = {
+        stock_id: 1,
+        title: "AMERIPRISE FINANCIAL INC Financials",
+        description: "",
+        link: "link.com",
+        date: "Wed, 25 Feb 2015 07:39:40 UTC +00:00",
+      }
+
+      article = create_article(attributes)
+      analyzer = Analyzer::Keyword.new(article)
+      keywords = analyzer.analyze!
+
+      expect(keywords.size).to eq(0)
+    end
+  end
+
 end

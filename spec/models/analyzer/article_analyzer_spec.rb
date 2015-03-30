@@ -43,4 +43,23 @@ describe Analyzer::ArticleAnalyzer do
     end
   end
 
+  it 'handles when keywords return an empty array' do
+    VCR.use_cassette('/models/analyzer/article/error') do
+      attributes = {
+        stock_id: 1,
+        title: "AMERIPRISE FINANCIAL INC Financials",
+        description: "",
+        link: "link.com",
+        date: "Wed, 25 Feb 2015 07:39:40 UTC +00:00",
+      }
+
+      article = create_article(attributes)
+      analyzer = Analyzer::ArticleAnalyzer.new(article)
+      analysis = analyzer.analyze!
+
+      expect(analysis.keywords.size).to eq(0)
+      expect(analysis.positivity_score).to eq(nil)
+    end
+  end
+
 end

@@ -39,6 +39,7 @@ class Analyzer::Keyword < Analyzer
 
   def format_response(body, type)
     parsed_body = Oj.load(body)
+    return [] unless parsed_body[type]
     parsed_body[type].map do |result|
       sentiment_hash = {
         score: result["sentiment"]["score"].to_f,

@@ -50,7 +50,7 @@
   </tr>
   </thead>
   <tbody>
-  <% @stock.articles.last(5).each do |article| %>
+  <% @stock.articles.scored.last(5).each do |article| %>
     <tr>
       <td><%= article.date.strftime("%D (%A)") %></td>
       <td><%= article.positivity_score ? article.positivity_score : 0 %>%</td>

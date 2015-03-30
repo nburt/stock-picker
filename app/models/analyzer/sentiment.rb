@@ -10,7 +10,7 @@ class Analyzer::Sentiment < Analyzer
       description_sentiment_score = parse_score(description_response.body)
     end
 
-    average_sentiment(title_sentiment_score, description_sentiment_score)
+    average_sentiment(title_sentiment_score, description_sentiment_score) if title_sentiment_score
   end
 
   private
@@ -28,7 +28,9 @@ class Analyzer::Sentiment < Analyzer
   end
 
   def parse_score(body)
-    Oj.load(body)["docSentiment"]["score"].to_f
+    parsed_body = Oj.load(body)
+    return nil unless parsed_body["docSentiment"]
+    parsed_body["docSentiment"]["score"].to_f
   end
 
   def average_sentiment(title_score, description_score)
