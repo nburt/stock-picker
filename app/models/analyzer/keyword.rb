@@ -47,9 +47,10 @@ class Analyzer::Keyword < Analyzer
     parsed_body = Oj.load(body)
     return [] unless parsed_body[type]
     parsed_body[type].map do |result|
+      sentiment = result.fetch("sentiment", {})
       sentiment_hash = {
-        score: result["sentiment"]["score"].to_f,
-        type: result["sentiment"]["type"]
+        score: sentiment["score"].to_f,
+        type: sentiment["type"]
       }
       {
         text: result["text"],
