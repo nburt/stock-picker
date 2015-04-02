@@ -18,10 +18,24 @@ class StocksController < ApplicationController
     @stock = Stock.find(params[:id])
   end
 
+  def edit
+    @stock = Stock.find(params[:id])
+  end
+
+  def update
+    @stock = Stock.find(params[:id])
+
+    if @stock.update_attributes(strong_params)
+      redirect_to(stock_path(@stock))
+    else
+      render :edit
+    end
+  end
+
   private
 
   def strong_params
-    params.require(:stock).permit(:name, :ticker_symbol)
+    params.require(:stock).permit(:name, :ticker_symbol, :twitter_handle)
   end
 
 end

@@ -3,8 +3,9 @@
 <table class="table table-hover">
   <thead>
   <tr>
-    <th width="50%">Company Name</th>
-    <th width="50%">Ticker Symbol</th>
+    <th width="33%">Company Name</th>
+    <th width="33%">Ticker Symbol</th>
+    <th width="33%">Twitter Handle</th>
   </tr>
   </thead>
   <tbody>
@@ -12,6 +13,7 @@
     <tr onclick="document.location = '<%= stock_path(stock) %>'">
       <td><%= stock.name %></td>
       <td><%= stock.ticker_symbol %></td>
+      <td><%= stock.twitter_handle %></td>
     </tr>
   <% end %>
   </tbody>

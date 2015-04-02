@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'typhoeus', '~> 0.7.1'
 gem 'oj', '~> 2.12.1'
+gem 'twitter', '~> 5.14.0'
 
 group :development, :test do
   gem 'web-console', '~> 2.0'

@@ -39,6 +39,30 @@
   </tbody>
 </table>
 
+<h3>Latest Tweets about <%= @stock.twitter_handle %></h3>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Positivity Score</th>
+    <th>Text</th>
+    <th>Keywords</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @stock.tweets.scored.last(5).each do |tweet| %>
+    <tr>
+      <td><%= format_date(tweet.data["created_at"]) %></td>
+      <td><%= tweet.positivity_score %></td>
+      <td><%= tweet.data["text"] %></td>
+      <td><%= tweet.keywords.present? ? tweet.keywords.first(5).map { |k| k["text"] }.join(", ") : "" %></td>
+      <td><%= link_to("View Tweet", tweet_url(tweet.data) )%></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <h3>Latest Articles</h3>
 <table class="table">
   <thead>
@@ -53,7 +77,7 @@
   <tbody>
   <% @stock.articles.scored.last(5).each do |article| %>
     <tr>
-      <td><%= article.date.strftime("%D (%A)") %></td>
+      <td><%= format_date(article.date) %></td>
       <td><%= article.positivity_score ? article.positivity_score : 0 %>%</td>
       <td><%= article.title %></td>
       <td><%= article.keywords.present? ? article.keywords.first(5).map { |k| k["text"] }.join(", ") : "" %></td>

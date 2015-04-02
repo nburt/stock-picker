@@ -4,7 +4,7 @@ describe ArticleFetcher do
 
   it 'fetches a list of articles about a stock and returns them as an array' do
     VCR.use_cassette('/models/article_fetcher/fetch') do
-      results = ArticleFetcher.fetch!('IBM')
+      results = ArticleFetcher.fetch('IBM')
 
       expect(results.size).to eq(20)
 

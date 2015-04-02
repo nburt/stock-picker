@@ -1,6 +1,7 @@
 class Analyzer::Keyword < Analyzer
 
   def analyze!
+    return [] unless @text.present?
     keyword_analysis = analyze_keywords
     entity_analysis = analyze_entities
     merged_keywords = keyword_analysis.concat(entity_analysis)
@@ -10,26 +11,31 @@ class Analyzer::Keyword < Analyzer
   private
 
   def analyze_keywords
-    title_response = keywords_request(@article.title).body
-    description_response = []
+    response = Typhoeus::Request.new(
+      keyword_request_url,
+      method: :post,
+      body: {
+        apikey: @api_key,
+        text: @text,
+        outputMode: "json"
+      }
+    ).run
 
-    if @article.description.present?
-      description_response = format_response(keywords_request(@article.description).body, "keywords")
-    end
-
-    format_response(title_response, "keywords").concat(description_response)
+    format_response(response.body, "keywords")
   end
 
   def analyze_entities
-    title_response = entities_request(@article.title).body
+    response = Typhoeus::Request.new(
+      entity_request_url,
+      method: :post,
+      body: {
+        apikey: @api_key,
+        text: @text,
+        outputMode: "json"
+      }
+    ).run
 
-    description_response = []
-
-    if @article.description.present?
-      description_response = format_response(entities_request(@article.description).body, "entities")
-    end
-
-    format_response(title_response, "entities").concat(description_response)
+    format_response(response.body, "entities")
   end
 
   def dedup_and_sort(articles)
@@ -51,30 +57,6 @@ class Analyzer::Keyword < Analyzer
         sentiment: sentiment_hash
       }
     end
-  end
-
-  def keywords_request(text)
-    Typhoeus::Request.new(
-      keyword_request_url,
-      method: :post,
-      body: {
-        apikey: @api_key,
-        text: text,
-        outputMode: "json"
-      }
-    ).run
-  end
-
-  def entities_request(text)
-    Typhoeus::Request.new(
-      entity_request_url,
-      method: :post,
-      body: {
-        apikey: @api_key,
-        text: text,
-        outputMode: "json"
-      }
-    ).run
   end
 
   def keyword_request_url

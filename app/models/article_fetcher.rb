@@ -1,6 +1,6 @@
 class ArticleFetcher
 
-  def self.fetch!(ticker_symbol)
+  def self.fetch(ticker_symbol)
     url = create_url(ticker_symbol)
     response = Typhoeus::Request.get(url, {followlocation: true})
 

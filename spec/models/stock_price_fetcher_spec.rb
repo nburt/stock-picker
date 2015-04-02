@@ -4,7 +4,7 @@ describe StockPriceFetcher do
 
   it 'fetches the latest price information for a stock' do
     VCR.use_cassette('models/stock_price_fetcher/price_information') do
-      results = StockPriceFetcher.fetch!('IBM')
+      results = StockPriceFetcher.fetch('IBM')
       expect(results.open).to eq('N/A')
       expect(results.previous_close).to eq('N/A')
       expect(results.year_high).to eq('N/A')

@@ -1,14 +1,16 @@
 require 'rails_helper'
 
-feature 'creating and viewing stocks' do
+feature 'CRUDing stocks' do
 
   scenario 'a user can create a stock' do
     visit(root_path)
     click_link('Add Stock')
     fill_in('stock[name]', with: 'IBM')
     fill_in('stock[ticker_symbol]', with: 'IBM')
+    fill_in('stock[twitter_handle]', with: '@IBM')
     click_button('Create Stock')
     expect(page).to have_content('IBM')
+    expect(page).to have_content('@IBM')
   end
 
   scenario 'a user can view the names of stocks on the page' do
@@ -25,15 +27,15 @@ feature 'creating and viewing stocks' do
     stock = create_stock({name: 'American Express', ticker_symbol: 'AXP'})
     stock_price = StockPrice.create!({
       stock_id: stock.id,
-      open: "N/A",
-      previous_close: "N/A",
-      year_high: "N/A",
-      year_low: "N/A",
-      days_high: "N/A",
-      days_low: "N/A",
-      bid_realtime: "N/A",
-      market_cap: "158.54B",
-      last_trade_price: "160.40"
+      open: 'N/A',
+      previous_close: 'N/A',
+      year_high: 'N/A',
+      year_low: 'N/A',
+      days_high: 'N/A',
+      days_low: 'N/A',
+      bid_realtime: 'N/A',
+      market_cap: '158.54B',
+      last_trade_price: '160.40'
     })
     article = create_article({stock_id: stock.id})
 
@@ -52,8 +54,20 @@ feature 'creating and viewing stocks' do
 
     visit(stock_path(stock))
 
-    expect(page).to have_content("Positivity Score")
-    expect(page).to have_content("50.0")
+    expect(page).to have_content('Positivity Score')
+    expect(page).to have_content('50.0')
+  end
+
+  scenario 'a user can edit a stock' do
+    stock = create_stock({name: 'American Express', ticker_symbol: 'AXP'})
+
+    visit(stock_path(stock))
+    click_link('Edit Stock')
+
+    fill_in('stock[twitter_handle]', with: '@AmericanExpress')
+    click_button('Update Stock')
+
+    expect(page).to have_content('@AmericanExpress')
   end
 
 end

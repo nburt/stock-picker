@@ -1,6 +1,7 @@
 class Stock < ActiveRecord::Base
   has_many :stock_prices
   has_many :articles
+  has_many :tweets
 
   validates_presence_of :name, :ticker_symbol
   validates_uniqueness_of :name, :ticker_symbol
@@ -10,7 +11,7 @@ class Stock < ActiveRecord::Base
       stock_prices.last.created_at.strftime('%D') == DateTime.now.new_offset(0).strftime('%D')
     return false if already_fetched
 
-    quote = StockPriceFetcher.fetch!(ticker_symbol)
+    quote = StockPriceFetcher.fetch(ticker_symbol)
 
     attributes = {
       stock_id: id, open: quote.open, previous_close: quote.previous_close,
@@ -22,24 +23,38 @@ class Stock < ActiveRecord::Base
   end
 
   def fetch_and_save_new_articles
-    articles = ArticleFetcher.fetch!(ticker_symbol)
+    articles = ArticleFetcher.fetch(ticker_symbol)
     articles.each do |article|
       attributes = {
         stock_id: id, title: article.title, date: article.date, link: article.link,
         description: article.description
       }
 
-      article = Article.find_by(attributes)
-      next if article
+      existing_article = Article.find_by(attributes)
+      next if existing_article
 
       Article.create!(attributes)
     end
   end
 
+  def fetch_and_save_new_tweets
+    searcher = TweetSearcher.new(twitter_handle)
+    tweets = searcher.search
+
+    tweets.each do |tweet|
+      existing_tweet = Tweet.where("data->>'id_str' = ?", tweet[:id_str])
+      next if existing_tweet.any?
+
+      Tweet.create!(data: tweet, stock_id: id)
+    end
+  end
+
   def all_time_positivity_score
-    scores = articles.where("positivity_score IS NOT NULL").pluck(:positivity_score)
-    return unless scores.any?
-    (scores.sum.to_f / scores.size.to_f).round
+    article_scores = articles.where("positivity_score IS NOT NULL").pluck(:positivity_score)
+    tweet_scores = tweets.where("positivity_score IS NOT NULL").pluck(:positivity_score)
+    return unless article_scores.any? || tweet_scores.any?
+    all_scores = article_scores.concat(tweet_scores)
+    (all_scores.sum.to_f / all_scores.size.to_f).round
   end
 
 end

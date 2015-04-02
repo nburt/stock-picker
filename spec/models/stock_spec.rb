@@ -90,6 +90,34 @@ describe Stock do
 
   end
 
+  describe 'fetch_and_save_new_tweets' do
+
+    it 'fetches tweets and saves them' do
+      VCR.use_cassette('models/stock/fetch_and_save_new_tweets') do
+        stock = create_stock
+        stock.fetch_and_save_new_tweets
+
+        expect(stock.tweets.count).to eq(100)
+        tweet = Tweet.last
+        expect(tweet.data['metadata']['result_type']).to eq('recent')
+      end
+    end
+
+    it 'does not resave the same tweet' do
+      VCR.use_cassette('models/stock/fetch_and_save_new_repeat') do
+        stock = create_stock
+        stock.fetch_and_save_new_tweets
+
+        expect(stock.tweets.count).to eq(100)
+
+        stock.fetch_and_save_new_tweets
+
+        expect(stock.tweets.count).to eq(100)
+      end
+    end
+
+  end
+
   describe 'all_time_positivity_score' do
 
     it 'returns the all time positivity score' do
@@ -128,6 +156,13 @@ describe Stock do
       create_article(stock_id: stock.id)
 
       expect(stock.all_time_positivity_score).to eq(nil)
+    end
+
+    it 'averages tweet scores along with article scores' do
+      stock = create_stock
+      create_article(stock_id: stock.id, positivity_score: 55)
+      create_tweet(stock_id: stock.id, positivity_score: 65)
+      expect(stock.all_time_positivity_score).to eq(60)
     end
 
   end

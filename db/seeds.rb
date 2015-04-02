@@ -30,10 +30,6 @@ stocks = [
   {
     name: "Lexmark International Inc",
     ticker_symbol: "LXK"
-  },
-  {
-    name: "Dell Inc.",
-    ticker_symbol: "DELL"
   }
 ]
 

@@ -1,7 +1,7 @@
 class Analyzer
 
-  def initialize(article)
-    @article = article
+  def initialize(text)
+    @text = text
     @api_key = ENV['ALCHEMY_API_KEY']
   end
 

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Analyzer::ArticleAnalyzer do
+describe ArticleAnalyzer do
 
   it 'returns a list of keywords and a positivity score for an article' do
     VCR.use_cassette('/models/analyzer/article/title_description') do
@@ -15,10 +15,10 @@ describe Analyzer::ArticleAnalyzer do
       }
 
       article = create_article(attributes)
-      analyzer = Analyzer::ArticleAnalyzer.new(article)
+      analyzer = ArticleAnalyzer.new(article)
       analysis = analyzer.analyze!
 
-      expect(analysis.keywords.size).to eq(41)
+      expect(analysis.keywords.size).to eq(43)
       expect(analysis.positivity_score > 0).to eq(true)
     end
   end
@@ -35,7 +35,7 @@ describe Analyzer::ArticleAnalyzer do
       }
 
       article = create_article(attributes)
-      analyzer = Analyzer::ArticleAnalyzer.new(article)
+      analyzer = ArticleAnalyzer.new(article)
       analysis = analyzer.analyze!
 
       expect(analysis.keywords.size).to eq(4)
@@ -54,7 +54,7 @@ describe Analyzer::ArticleAnalyzer do
       }
 
       article = create_article(attributes)
-      analyzer = Analyzer::ArticleAnalyzer.new(article)
+      analyzer = ArticleAnalyzer.new(article)
       analysis = analyzer.analyze!
 
       expect(analysis.keywords.size).to eq(0)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330022822) do
+ActiveRecord::Schema.define(version: 20150401010447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,10 +48,22 @@ ActiveRecord::Schema.define(version: 20150330022822) do
   add_index "stock_prices", ["stock_id"], name: "index_stock_prices_on_stock_id", using: :btree
 
   create_table "stocks", force: :cascade do |t|
-    t.string   "name",          null: false
-    t.string   "ticker_symbol", null: false
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "name",           null: false
+    t.string   "ticker_symbol",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "twitter_handle"
   end
+
+  create_table "tweets", force: :cascade do |t|
+    t.integer  "stock_id"
+    t.json     "data"
+    t.json     "keywords"
+    t.float    "positivity_score"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "tweets", ["stock_id"], name: "index_tweets_on_stock_id", using: :btree
 
 end
