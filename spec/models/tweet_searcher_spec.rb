@@ -4,7 +4,7 @@ describe TweetSearcher do
 
   it 'searches twitter for mentions of a stocks twitter handle' do
     VCR.use_cassette('/models/tweet_searcher/success') do
-      searcher = TweetSearcher.new('@IBM')
+      searcher = TweetSearcher.new('$IBM')
       results = searcher.search
 
       expect(results.size).to eq(100)

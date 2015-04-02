@@ -1,7 +1,7 @@
 class TweetSearcher
 
-  def initialize(twitter_handle)
-    @search_term = format_handle(twitter_handle)
+  def initialize(search_term)
+    @search_term = search_term
     @client = create_client
   end
 
@@ -14,10 +14,6 @@ class TweetSearcher
 
   def parse_response(response)
     response.attrs[:statuses]
-  end
-
-  def format_handle(handle)
-    handle.gsub("@", "$")
   end
 
   def create_client

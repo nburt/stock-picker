@@ -31,6 +31,17 @@ describe Analyzer::Keyword do
     end
   end
 
+  it 'handles weird text' do
+    VCR.use_cassette('/modes/analyzer/keyword/text_2') do
+      text = 'Dow #Stocks Trend $CVX $PFE $KO $UNH $XOM $AAPL $IBM $JPM $MCD $NKE $CAT $VZ $CSCO $TRV $MMM $MSFT $GS $DIS  @ … …… http://t.co/DDu364Hu4w'
+
+      analyzer = Analyzer::Keyword.new(text)
+      keywords = analyzer.analyze!
+
+      expect(keywords).to eq([])
+    end
+  end
+
   it 'returns an nil unless text is present' do
     text = ''
 

@@ -38,7 +38,7 @@ class Stock < ActiveRecord::Base
   end
 
   def fetch_and_save_new_tweets
-    searcher = TweetSearcher.new(twitter_handle)
+    searcher = TweetSearcher.new("$#{ticker_symbol}")
     tweets = searcher.search
 
     tweets.each do |tweet|
