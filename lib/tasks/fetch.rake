@@ -10,13 +10,14 @@ namespace :fetch do
     end
   end
 
-  desc "Fetch Articles"
-  task articles: :environment do
+  desc "Fetch Articles and Tweets"
+  task articles_tweets: :environment do
     stocks = Stock.all
     count = stocks.size
     stocks.each_with_index do |stock, index|
       p "#{index + 1} out of #{count}"
       stock.fetch_and_save_new_articles
+      stock.fetch_and_save_new_tweets
     end
   end
 
