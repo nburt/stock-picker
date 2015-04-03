@@ -24,13 +24,22 @@ describe Tweet do
 
   describe 'scored' do
 
-    it 'returns articles with a positivity score' do
+    it 'returns tweets with a positivity score' do
       tweet = create_tweet(keywords: ['keyword'], positivity_score: 50)
       create_tweet(stock_id: 2)
 
       expect(Tweet.scored).to eq([tweet])
     end
 
+  end
+
+  describe 'unscored' do
+    it 'returns tweets without a positivity score' do
+      tweet = create_tweet
+      create_tweet(stock_id: 2, keywords: ['keyword'], positivity_score: 50)
+
+      expect(Tweet.unscored).to eq([tweet])
+    end
   end
 
 end

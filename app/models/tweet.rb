@@ -2,6 +2,7 @@ class Tweet < ActiveRecord::Base
   belongs_to :stock
 
   scope :scored, -> { where("positivity_score IS NOT NULL") }
+  scope :unscored, -> { where("positivity_score IS NULL") }
 
   def analyze!
     return false if keywords.present? && keywords.size > 0 || positivity_score.to_f > 0

@@ -65,4 +65,15 @@ describe Article do
 
   end
 
+  describe 'unscored' do
+
+    it 'returns articles with a positivity score' do
+      article = create_article(stock_id: 1)
+      create_article(stock_id: 2, positivity_score: 50, keywords: ['keyword'])
+
+      expect(Article.unscored).to eq([article])
+    end
+
+  end
+
 end
