@@ -4,7 +4,7 @@ describe Tweet do
 
   describe 'analyze!' do
 
-    it 'analyzes a tweets text and stores the keywords and positivity score' do
+    it 'analyzes a tweets text and stores the keywords, sentiment, and positivity score' do
       VCR.use_cassette('/models/tweet/analyze') do
         tweet = create_tweet
 
@@ -12,6 +12,7 @@ describe Tweet do
 
         expect(tweet.positivity_score > 0).to eq(true)
         expect(tweet.keywords.any?).to eq(true)
+        expect(tweet.sentiment).to_not be_nil
       end
     end
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150401010447) do
+ActiveRecord::Schema.define(version: 20150404000834) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150401010447) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.float    "positivity_score"
+    t.json     "sentiment"
   end
 
   add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
@@ -62,6 +63,7 @@ ActiveRecord::Schema.define(version: 20150401010447) do
     t.float    "positivity_score"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.json     "sentiment"
   end
 
   add_index "tweets", ["stock_id"], name: "index_tweets_on_stock_id", using: :btree

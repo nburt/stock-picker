@@ -8,6 +8,9 @@ class Tweet < ActiveRecord::Base
     return false if keywords.present? && keywords.size > 0 || positivity_score.to_f > 0
     analyzer = TweetAnalyzer.new(self)
     analysis = analyzer.analyze!
-    update_attributes(keywords: analysis.keywords, positivity_score: analysis.positivity_score)
+    update_attributes(
+      keywords: analysis.keywords, positivity_score: analysis.positivity_score,
+      sentiment: analysis.sentiment
+    )
   end
 end

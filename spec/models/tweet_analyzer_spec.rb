@@ -11,6 +11,7 @@ describe TweetAnalyzer do
 
       expect(analysis.keywords.size).to eq(3)
       expect(analysis.positivity_score > 0).to eq(true)
+      expect(analysis.sentiment).to eq({score: 0.501643, type: 'positive'})
     end
   end
 
@@ -24,6 +25,7 @@ describe TweetAnalyzer do
 
       expect(analysis.keywords).to eq([])
       expect(analysis.positivity_score).to eq(nil)
+      expect(analysis.sentiment).to eq(nil)
     end
   end
 

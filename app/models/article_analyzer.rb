@@ -16,8 +16,8 @@ class ArticleAnalyzer
       positivity_score = PositivityScorer.score!(keywords, sentiment)
     end
 
-    struct = Struct.new(:keywords, :positivity_score)
-    struct.new(keywords, positivity_score)
+    struct = Struct.new(:keywords, :positivity_score, :sentiment)
+    struct.new(keywords, positivity_score, sentiment)
   end
 
   private

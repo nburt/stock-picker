@@ -27,11 +27,10 @@ describe ArticleAnalyzer do
     VCR.use_cassette('/models/analyzer/article/title') do
       attributes = {
         stock_id: 1,
-        title: "Strong dollar hurts HP's earnings forecast, shares plummet",
-        description: "",
-        link:
-          "http://us.rd.yahoo.com/finance/news/rss/story/*http://sg.finance.yahoo.com/news/strong-dollar-hurts-hps-earnings-073940904.html",
-        date: "Wed, 25 Feb 2015 07:39:40 UTC +00:00",
+        title: 'Strong dollar hurts HP\'s earnings forecast, shares plummet',
+        description: '',
+        link: 'link.com',
+        date: 'Wed, 25 Feb 2015 07:39:40 UTC +00:00',
       }
 
       article = create_article(attributes)
@@ -40,6 +39,7 @@ describe ArticleAnalyzer do
 
       expect(analysis.keywords.size).to eq(4)
       expect(analysis.positivity_score > 0).to eq(true)
+      expect(analysis.sentiment).to eq({score: -0.826981, type: 'negative'})
     end
   end
 
@@ -47,10 +47,10 @@ describe ArticleAnalyzer do
     VCR.use_cassette('/models/analyzer/article/error') do
       attributes = {
         stock_id: 1,
-        title: "AMERIPRISE FINANCIAL INC Financials",
-        description: "",
-        link: "link.com",
-        date: "Wed, 25 Feb 2015 07:39:40 UTC +00:00",
+        title: 'AMERIPRISE FINANCIAL INC Financials',
+        description: '',
+        link: 'link.com',
+        date: 'Wed, 25 Feb 2015 07:39:40 UTC +00:00',
       }
 
       article = create_article(attributes)
@@ -59,6 +59,7 @@ describe ArticleAnalyzer do
 
       expect(analysis.keywords.size).to eq(0)
       expect(analysis.positivity_score).to eq(nil)
+      expect(analysis.sentiment).to eq(nil)
     end
   end
 
