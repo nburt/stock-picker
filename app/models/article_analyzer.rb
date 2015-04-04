@@ -51,11 +51,13 @@ class ArticleAnalyzer
   def average_sentiment_score(title_score, description_score)
     return nil unless title_score || description_score
 
-    if description_score
+    if title_score && description_score
       average_score = (title_score + description_score) / 2.0
     else
       average_score = title_score
     end
+
+    return nil unless average_score
 
     if average_score > 0
       type = "positive"
