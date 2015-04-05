@@ -20,4 +20,12 @@ class ArticleResponse
     @article[:link]
   end
 
+  def data
+    @article[:data]
+  end
+
+  def source
+    @article[:source]
+  end
+
 end

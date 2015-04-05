@@ -2,61 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=ac117d389aba155a240958f2873b1f0c:18:67023197&begin_date=20150404&q=IBM
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Mashery-Responder:
-      - prod-j-worker-atl-04.mashery.com
-      Server:
-      - nginx/1.4.1
-      Date:
-      - Sun, 05 Apr 2015 19:49:35 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '2704'
-      Vary:
-      - Accept-Encoding
-      X-Powered-By:
-      - PHP/5.3.27
-      X-Cached:
-      - MISS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Credentials:
-      - 'true'
-    body:
-      encoding: UTF-8
-      string: '{"response":{"meta":{"hits":1,"time":21,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/02\/business\/klaus-tschira-business-software-trailblazer-dies-at-74.html","snippet":"He
-        and three colleagues formed a company that developed an off-the-shelf software
-        package to integrate all of a company&#8217;s business operations.","lead_paragraph":"He
-        and three colleagues formed a company that developed an off-the-shelf software
-        package to integrate all of a company&#8217;s business operations.","abstract":null,"print_page":"8","blog":[],"source":"The
-        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Klaus
-        Tschira, Business Software Trailblazer, Dies at 74 ","print_headline":"Klaus
-        Tschira, 74, Business Software Pioneer"},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"International
-        Business Machines Corporation"},{"rank":"2","is_major":"N","name":"persons","value":"Jolly,
-        David"},{"rank":"3","is_major":"N","name":"subject","value":"Software"},{"rank":"4","is_major":"N","name":"subject","value":"Deaths
-        (Obituaries)"},{"rank":"5","is_major":"N","name":"subject","value":"Enterprise
-        Computing"},{"rank":"6","is_major":"N","name":"subject","value":"High Net
-        Worth Individuals"},{"rank":"7","is_major":"N","name":"organizations","value":"SAP
-        AG"},{"rank":"8","is_major":"N","name":"glocations","value":"Germany"}],"pub_date":"2015-04-04T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
-        Day","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"David","rank":1,"lastname":"JOLLY"}],"original":"By
-        DAVID JOLLY"},"type_of_material":"Obituary","_id":"551c5d8d798810581d63eb3a","word_count":"527"}]},"status":"OK","copyright":"Copyright
-        (c) 2013 The New York Times Company.  All Rights Reserved."}'
-    http_version: 
-  recorded_at: Sat, 04 Apr 2015 19:57:00 GMT
-- request:
-    method: get
     uri: http://finance.yahoo.com/rss/headline?s=IBM
     body:
       encoding: US-ASCII
@@ -70,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Apr 2015 20:17:57 GMT
+      - Sun, 05 Apr 2015 20:26:24 GMT
       Cache-Control:
       - max-age=300,stale-while-revalidate=60,stale-if-error=3600,public
       Content-Type:
@@ -80,8 +25,8 @@ http_interactions:
       Age:
       - '0'
       Via:
-      - http/1.1 media-border17.global.media.bf1.yahoo.com (ApacheTrafficServer [cMsSfW]),
-        http/1.1 r40.ycpi.dxs.yahoo.net (ApacheTrafficServer [cSsSfU])
+      - http/1.1 media-border31.global.media.bf1.yahoo.com (ApacheTrafficServer [cSsSfU]),
+        http/1.1 r37.ycpi.dxs.yahoo.net (ApacheTrafficServer [cSsSfU])
       Server:
       - ATS
       Transfer-Encoding:
@@ -383,6 +328,61 @@ http_interactions:
         ZmluYW5jZS8zODc3ODAwMjYzPC9ndWlkPjxwdWJEYXRlPlRodSwgMDIgQXBy
         IDIwMTUgMTk6NDE6MDYgR01UPC9wdWJEYXRlPjwvaXRlbT48L2NoYW5uZWw+
         PC9yc3M+
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 19:57:00 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=ac117d389aba155a240958f2873b1f0c:18:67023197&begin_date=20150404&q=IBM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-01.mashery.com
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Sun, 05 Apr 2015 19:49:35 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2704'
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.27
+      X-Cached:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"meta":{"hits":1,"time":21,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/02\/business\/klaus-tschira-business-software-trailblazer-dies-at-74.html","snippet":"He
+        and three colleagues formed a company that developed an off-the-shelf software
+        package to integrate all of a company&#8217;s business operations.","lead_paragraph":"He
+        and three colleagues formed a company that developed an off-the-shelf software
+        package to integrate all of a company&#8217;s business operations.","abstract":null,"print_page":"8","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/02\/business\/02tschira-obit\/02tschira-obit-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Klaus
+        Tschira, Business Software Trailblazer, Dies at 74 ","print_headline":"Klaus
+        Tschira, 74, Business Software Pioneer"},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"2","is_major":"N","name":"persons","value":"Jolly,
+        David"},{"rank":"3","is_major":"N","name":"subject","value":"Software"},{"rank":"4","is_major":"N","name":"subject","value":"Deaths
+        (Obituaries)"},{"rank":"5","is_major":"N","name":"subject","value":"Enterprise
+        Computing"},{"rank":"6","is_major":"N","name":"subject","value":"High Net
+        Worth Individuals"},{"rank":"7","is_major":"N","name":"organizations","value":"SAP
+        AG"},{"rank":"8","is_major":"N","name":"glocations","value":"Germany"}],"pub_date":"2015-04-04T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"David","rank":1,"lastname":"JOLLY"}],"original":"By
+        DAVID JOLLY"},"type_of_material":"Obituary","_id":"551c5d8d798810581d63eb3a","word_count":"527"}]},"status":"OK","copyright":"Copyright
+        (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
   recorded_at: Sat, 04 Apr 2015 19:57:00 GMT
 recorded_with: VCR 2.9.3

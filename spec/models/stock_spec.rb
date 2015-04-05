@@ -63,15 +63,19 @@ describe Stock do
   end
 
   describe 'fetch_and_save_new_articles' do
+    include ActiveSupport::Testing::TimeHelpers
 
     it 'fetches the articles and saves them' do
       VCR.use_cassette('models/stock/article_fetch_and_save') do
-        stock = create_stock
-        stock.fetch_and_save_new_articles
+        date = DateTime.parse('Sat, 04 Apr 2015 19:57:00 UTC +00:00 ')
+        travel_to(date) do
+          stock = create_stock
+          stock.fetch_and_save_new_articles
 
-        expect(Article.count).to eq(20)
-        article = Article.last
-        expect(article.title).to eq('U.S. questions China at WTO on banking technology restrictions')
+          expect(Article.count).to eq(21)
+          article = Article.last
+          expect(article.title).to eq('Klaus Tschira, Business Software Trailblazer, Dies at 74 ')
+        end
       end
     end
 

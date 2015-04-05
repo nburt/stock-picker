@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150404000834) do
+ActiveRecord::Schema.define(version: 20150405201418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20150404000834) do
     t.datetime "updated_at",       null: false
     t.float    "positivity_score"
     t.json     "sentiment"
+    t.json     "data"
+    t.string   "source"
   end
 
   add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
