@@ -13,7 +13,7 @@ end
 def create_article(attributes = {})
   default_attributes = {
     title: 'Article', description: 'description', date: 'Sat, 28 Mar 2015 21:02:00 GMT',
-    link: 'link.com'
+    link: 'http://us.rd.yahoo.com/finance/news/rss/story/*http://sg.finance.yahoo.com/news/strong-dollar-hurts-hps-earnings-073940904.html'
   }
   article = new_article(default_attributes.merge(attributes))
   article.save
@@ -23,7 +23,7 @@ end
 def new_article(attributes = {})
   default_attributes = {
     title: 'Article', description: 'description', date: 'Sat, 28 Mar 2015 21:02:00 GMT',
-    link: 'link.com'
+    link: 'http://us.rd.yahoo.com/finance/news/rss/story/*http://sg.finance.yahoo.com/news/strong-dollar-hurts-hps-earnings-073940904.html'
   }
   Article.new(default_attributes.merge(attributes))
 end

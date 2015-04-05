@@ -23,12 +23,12 @@ class TweetAnalyzer
   private
 
   def analyze_keywords(text)
-    keyword_analyzer = Analyzer::Keyword.new(text)
+    keyword_analyzer = Analyzer::Keyword::TextKeyword.new(text)
     keyword_analyzer.analyze!
   end
 
   def analyze_sentiment(text)
-    sentiment_analyzer = Analyzer::Sentiment.new(text)
+    sentiment_analyzer = Analyzer::Sentiment::TextSentiment.new(text)
     sentiment_analyzer.analyze!
   end
 

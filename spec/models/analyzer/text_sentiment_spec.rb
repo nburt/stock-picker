@@ -1,12 +1,12 @@
 require 'rails_helper'
 
-describe Analyzer::Sentiment do
+describe Analyzer::Sentiment::TextSentiment do
 
   it 'runs sentiment analysis on text' do
     VCR.use_cassette('/models/analyzer/sentiment/sentiment') do
       text = "Strong dollar hurts HP's earnings forecast, shares plummet"
 
-      analyzer = Analyzer::Sentiment.new(text)
+      analyzer = Analyzer::Sentiment::TextSentiment.new(text)
       sentiment = analyzer.analyze!
 
       expected = {
@@ -21,7 +21,7 @@ describe Analyzer::Sentiment do
   it 'returns nil unless text is present' do
     text = ''
 
-    analyzer = Analyzer::Sentiment.new(text)
+    analyzer = Analyzer::Sentiment::TextSentiment.new(text)
     sentiment = analyzer.analyze!
 
     expect(sentiment).to eq(nil)
@@ -31,7 +31,7 @@ describe Analyzer::Sentiment do
     VCR.use_cassette('/models/analyzer/sentiment/error') do
       text = 'AMERIPRISE FINANCIAL INC Financials'
 
-      analyzer = Analyzer::Sentiment.new(text)
+      analyzer = Analyzer::Sentiment::TextSentiment.new(text)
       sentiment = analyzer.analyze!
 
       expect(sentiment).to eq(nil)

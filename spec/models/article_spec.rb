@@ -44,7 +44,7 @@ describe Article do
 
         expect(article.positivity_score > 0).to eq(true)
         expect(article.keywords.size > 0).to eq(true)
-        expect(article.sentiment).to eq({"score" => 0.0, "type" => "neutral"})
+        expect(article.sentiment).to eq({'score' => -0.08095166666666666, 'type' => 'negative'})
       end
     end
 
