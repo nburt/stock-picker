@@ -1,0 +1,10 @@
+// Main less file for your application.
+// Use `@import` to use other less files
+// relative to 'app/css' or 'vendor/css'.
+
+@import 'bootstrap_theme';
+@import 'bootstrap_overrides';
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

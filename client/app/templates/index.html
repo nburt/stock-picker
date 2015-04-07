@@ -1,0 +1,18 @@
+<h1>Stocks</h1>
+
+<table class="table table-hover" ng-init="init()">
+  <thead>
+  <tr>
+    <th width="33%">Company Name</th>
+    <th width="33%">Ticker Symbol</th>
+    <th width="33%">Twitter Handle</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="stock in stocks" ng-click="show(stock.id)">
+    <td>{{stock.name}}</td>
+    <td>{{stock.ticker_symbol}}</td>
+    <td>{{stock.twitter_handle}}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,83 @@
+<div ng-init="fetchStock()">
+  <h1 class="text-center">{{stock.name}} ({{stock.ticker_symbol}})</h1>
+
+  <h3>Positivity Score</h3>
+
+  <p ng-show="stock.all_time_positivity_score">
+    {{stock.all_time_positivity_score}}%
+
+  <p>
+
+  <div ng-controller="StockPricesController" ng-init="fetchStockPrices()">
+    <h3>Latest Prices</h3>
+    <table class="table">
+      <thead>
+      <tr>
+        <th width="33%">Date</th>
+        <th width="33%">Last Trade Price</th>
+        <th width="33%">Market Capitalization</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="stockPrice in stockPrices">
+        <td>{{stockPrice.created_at | date:'M/d/yy (EEEE)'}}</td>
+        <td>{{stockPrice.last_trade_price | currency}}</td>
+        <td>{{stockPrice.market_cap}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div ng-controller="TweetsController" ng-init="fetchTweets()">
+    <h3>Latest Tweets about {{stock.twitter_handle}}</h3>
+    <table class="table">
+      <thead>
+      <tr>
+        <th width="15%">Date</th>
+        <th width="5%">Positivity Score</th>
+        <th width="52%">Tweet</th>
+        <th width="20%">Keywords</th>
+        <th width="8%">Link</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="tweet in tweets">
+        <td>{{newDate(tweet.data.created_at) | date:'M/d/yy (EEEE)'}}</td>
+        <td>{{tweet.positivity_score}}</td>
+        <td>{{tweet.data.text}}</td>
+        <td>{{formatKeywords(tweet.keywords)}}</td>
+        <td>
+          <a target="_blank"
+             ng-href="https://twitter.com/{{tweet.data.user.screen_name}}/status/{{tweet.data.id_str}}">
+            View Tweet
+          </a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div ng-controller="ArticlesController" ng-init="fetchArticles()">
+    <h3>Latest Articles</h3>
+    <table class="table" ng-init="fetchArticles()">
+      <thead>
+      <tr>
+        <th width="15%">Date</th>
+        <th width="5%">Positivity Score</th>
+        <th width="52%">Title</th>
+        <th width="20%">Keywords</th>
+        <th width="8%">Link</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="article in articles">
+        <td>{{article.date | date:'M/d/yy (EEEE)'}}</td>
+        <td>{{article.positivity_score}}</td>
+        <td>{{article.title}}</td>
+        <td>{{formatKeywords(article.keywords)}}
+        <td><a ng-href="{{article.link}}" target="_blank">View Article</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
