@@ -31,8 +31,13 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # Default value for default_env is {}
 set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
+set :bundle_env_variables, { 'NOKOGIRI_USE_SYSTEM_LIBRARIES' => 1 }
+
 # Default value for keep_releases is 5
 set :keep_releases, 5
+
+set :project_root, "server"
+set :git_strategy, RemoteCacheWithProjectRootStrategy
 
 namespace :deploy do
 
@@ -56,3 +61,4 @@ namespace :deploy do
   end
 
 end
+
