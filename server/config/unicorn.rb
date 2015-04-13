@@ -4,7 +4,8 @@ working_directory "#{app_path}/current"
 pid               "/home/unicorn/pids/unicorn.pid"
 
 # listen
-listen "/tmp/unicorn-www.example.com.socket", :backlog => 64
+listen "/tmp/unicorn.stock_picker.sock", :backlog => 2048
+listen 8080, :tcp_nopush => true
 
 # logging
 stderr_path "/home/unicorn/log/unicorn.stderr.log"
