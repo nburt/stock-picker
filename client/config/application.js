@@ -23,6 +23,13 @@ module.exports = function (lineman) {
           "<%= files.ngtemplates.dest %>"
         ]
       }
+    },
+    uglify: {
+      options: {
+        beautify: {
+          ascii_only: true
+        }
+      }
     }
   };
 };
