@@ -26,8 +26,17 @@ namespace :fetch do
     count = stocks.size
     stocks.each_with_index do |stock, index|
       p "#{index + 1} out of #{count}"
-      next unless stock.twitter_handle
       stock.fetch_and_save_new_tweets
+    end
+  end
+
+  desc "Fetch Tweets 2"
+  task tweets_2: :environment do
+    stocks = Stock.all
+    count = stocks.size
+    stocks.each_with_index do |stock, index|
+      p "#{index + 1} out of #{count}"
+      stock.fetch_and_save_new_tweets(stock.twitter_handle)
     end
   end
 end

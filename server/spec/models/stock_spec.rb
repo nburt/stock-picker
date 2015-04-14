@@ -99,7 +99,7 @@ describe Stock do
 
   describe 'fetch_and_save_new_tweets' do
 
-    it 'fetches tweets and saves them' do
+    it 'defaults to fetching tweets by searching for $ + the ticker symbol' do
       VCR.use_cassette('models/stock/fetch_and_save_new_tweets') do
         stock = create_stock
         stock.fetch_and_save_new_tweets
@@ -107,6 +107,19 @@ describe Stock do
         expect(stock.tweets.count).to eq(100)
         tweet = Tweet.last
         expect(tweet.data['metadata']['result_type']).to eq('recent')
+        expect(tweet.data['id_str']).to eq('582989806432485376')
+      end
+    end
+
+    it 'accepts different arguments for different searches' do
+      VCR.use_cassette('models/stock/fetch_and_save_new_tweets_search_2') do
+        stock = create_stock
+        stock.fetch_and_save_new_tweets('@IBM')
+
+        expect(stock.tweets.count).to eq(100)
+        tweet = Tweet.last
+        expect(tweet.data['metadata']['result_type']).to eq('recent')
+        expect(tweet.data['id_str']).to eq('587968888991776768')
       end
     end
 
