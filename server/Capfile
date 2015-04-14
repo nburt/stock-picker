@@ -24,6 +24,7 @@ require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 require 'capistrano3/unicorn'
 require 'capistrano/git'
+require 'whenever/capistrano'
 require './lib/capistrano/remote_cache_with_project_root_strategy'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined

@@ -39,6 +39,8 @@ set :keep_releases, 5
 set :project_root, "server"
 set :git_strategy, RemoteCacheWithProjectRootStrategy
 
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+
 namespace :deploy do
 
   desc 'Restart application'

@@ -14,6 +14,7 @@ gem 'oj', '~> 2.12.1'
 gem 'twitter', '~> 5.14.0'
 gem 'unicorn', '~> 4.8.3'
 gem 'dotenv-rails', '~> 2.0.0'
+gem 'whenever', '~> 0.9.4'
 
 group :development do
   gem 'capistrano', '~> 3.4.0'
