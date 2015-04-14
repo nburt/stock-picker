@@ -53,6 +53,11 @@ describe Article do
       expect(article.analyze!).to eq(false)
     end
 
+    it 'does not run an analysis if the articles keywords have been set to an empty array' do
+      article = create_article(keywords: [], positivity_score: nil)
+      expect(article.analyze!).to eq(false)
+    end
+
   end
 
   describe 'scored' do
@@ -74,6 +79,13 @@ describe Article do
 
       expect(Article.unscored).to eq([article])
     end
+
+    it 'does not return articles whose keywords are an empty array' do
+      create_article(keywords: [])
+
+      expect(Article.unscored).to eq([])
+    end
+
 
   end
 

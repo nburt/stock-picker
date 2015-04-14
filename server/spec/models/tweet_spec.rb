@@ -16,8 +16,13 @@ describe Tweet do
       end
     end
 
-    it 'does not run an analysis if the article already has keywords or a positivity score' do
+    it 'does not run an analysis if the tweet already has keywords or a positivity score' do
       tweet = create_tweet(keywords: ['keyword'], positivity_score: 50)
+      expect(tweet.analyze!).to eq(false)
+    end
+
+    it 'does not run an analysis if the tweets keywords have been set to an empty array' do
+      tweet = create_tweet(keywords: [], positivity_score: nil)
       expect(tweet.analyze!).to eq(false)
     end
 
@@ -36,11 +41,18 @@ describe Tweet do
 
   describe 'unscored' do
     it 'returns tweets without a positivity score' do
-      tweet = create_tweet
+      tweet = create_tweet(keywords: ['keyword'])
       create_tweet(stock_id: 2, keywords: ['keyword'], positivity_score: 50)
 
       expect(Tweet.unscored).to eq([tweet])
     end
+
+    it 'does not return tweets whose keywords are an empty array' do
+      create_tweet(keywords: [])
+
+      expect(Tweet.unscored).to eq([])
+    end
+
   end
 
 end

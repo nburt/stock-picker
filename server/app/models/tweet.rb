@@ -2,10 +2,10 @@ class Tweet < ActiveRecord::Base
   belongs_to :stock
 
   scope :scored, -> { where("positivity_score IS NOT NULL") }
-  scope :unscored, -> { where("positivity_score IS NULL") }
+  scope :unscored, -> { where("positivity_score IS NULL AND keywords::text != '[]'::text") }
 
   def analyze!
-    return false if keywords.present? && keywords.size > 0 || positivity_score.to_f > 0
+    return false if keywords.present? && keywords.size > 0 || keywords == [] || positivity_score.to_f > 0
     analyzer = TweetAnalyzer.new(self)
     analysis = analyzer.analyze!
     update_attributes(
