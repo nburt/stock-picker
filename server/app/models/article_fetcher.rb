@@ -11,7 +11,7 @@ class ArticleFetcher
   def self.fetchers
     [
       ArticleFetcher::YahooFinance, ArticleFetcher::NewYorkTimes,
-      ArticleFetcher::TheGuardian, ArticleFetcher::UsaToday
+      ArticleFetcher::TheGuardian, ArticleFetcher::UsaToday, ArticleFetcher::SeekingAlpha
     ]
   end
 

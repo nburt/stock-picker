@@ -9,8 +9,8 @@ describe ArticleFetcher do
       travel_to(date) do
         results = ArticleFetcher.fetch_all('IBM')
 
-        expect(results.size).to eq(32)
-        expect(results.last.title).to eq('Are the terrorists of al-Shabaab about to tear Kenya in two?')
+        expect(results.size).to eq(62)
+        expect(results.last.title).to eq('IBM to invest $3B in Internet of Things unit')
       end
     end
   end

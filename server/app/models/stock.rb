@@ -26,7 +26,7 @@ class Stock < ActiveRecord::Base
     articles = ArticleFetcher.fetch_all(ticker_symbol)
     articles.each do |article|
       find_by_attributes = {
-        stock_id: id, title: article.title, date: article.date, link: article.link,
+        stock_id: id, title: article.title, date: DateTime.parse(article.date), link: article.link,
         description: article.description, source: article.source
       }
 
