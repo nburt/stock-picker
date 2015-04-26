@@ -10,6 +10,12 @@ Rails.application.routes.draw do
           get :articles
         end
       end
+
+      resources :analytics, only: [] do
+        collection do
+          get :tweets_added
+        end
+      end
     end
   end
 end

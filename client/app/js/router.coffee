@@ -9,4 +9,8 @@ angular.module('app').config ($routeProvider, $locationProvider) ->
     templateUrl: 'show.html'
     controller: 'StocksShowController'
 
+  $routeProvider.when '/analytics',
+    templateUrl: 'analytics.html'
+    controller: 'AnalyticsController'
+
   $routeProvider.otherwise redirectTo: '/'
