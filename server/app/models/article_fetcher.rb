@@ -9,7 +9,10 @@ class ArticleFetcher
   private
 
   def self.fetchers
-    [ArticleFetcher::YahooFinance, ArticleFetcher::NewYorkTimes, ArticleFetcher::TheGuardian]
+    [
+      ArticleFetcher::YahooFinance, ArticleFetcher::NewYorkTimes,
+      ArticleFetcher::TheGuardian, ArticleFetcher::UsaToday
+    ]
   end
 
 end
