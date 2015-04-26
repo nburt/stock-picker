@@ -74,7 +74,7 @@ describe Article do
   describe 'unscored' do
 
     it 'returns articles with a positivity score' do
-      article = create_article(stock_id: 1)
+      article = create_article(stock_id: 1, keywords: nil)
       create_article(stock_id: 2, positivity_score: 50, keywords: ['keyword'])
 
       expect(Article.unscored).to eq([article])
@@ -86,6 +86,11 @@ describe Article do
       expect(Article.unscored).to eq([])
     end
 
+    it 'returns tweets whose keywords are nil' do
+      article = create_article(keywords: nil)
+
+      expect(Article.unscored).to eq([article])
+    end
 
   end
 

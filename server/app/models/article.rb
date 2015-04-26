@@ -4,7 +4,7 @@ class Article < ActiveRecord::Base
   validates_presence_of :stock_id, :title, :date, :link
 
   scope :scored, -> { where("positivity_score IS NOT NULL") }
-  scope :unscored, -> { where("positivity_score IS NULL AND keywords::text != '[]'::text") }
+  scope :unscored, -> { where("positivity_score IS NULL AND keywords::text IS NULL") }
 
   def analyze!
     return false if keywords.present? && keywords.size > 0 || keywords == [] || positivity_score.to_f > 0

@@ -41,7 +41,7 @@ describe Tweet do
 
   describe 'unscored' do
     it 'returns tweets without a positivity score' do
-      tweet = create_tweet(keywords: ['keyword'])
+      tweet = create_tweet(keywords: nil)
       create_tweet(stock_id: 2, keywords: ['keyword'], positivity_score: 50)
 
       expect(Tweet.unscored).to eq([tweet])
@@ -51,6 +51,12 @@ describe Tweet do
       create_tweet(keywords: [])
 
       expect(Tweet.unscored).to eq([])
+    end
+
+    it 'returns tweets whose keywords are nil' do
+      tweet = create_tweet(keywords: nil)
+
+      expect(Tweet.unscored).to eq([tweet])
     end
 
   end
