@@ -30,4 +30,6 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  get '*_', to: 'client#index'
 end
