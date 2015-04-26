@@ -30,4 +30,36 @@
     </tr>
     </tbody>
   </table>
+
+  <h3>Articles Added</h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>
+        {{articles.added.period_1.start_date | date:'M/d/yy'}} -
+        {{articles.added.period_1.end_date | date:'M/d/yy'}}
+      </th>
+      <th>
+        {{articles.added.period_2.start_date | date:'M/d/yy'}} -
+        {{articles.added.period_2.end_date | date:'M/d/yy'}}
+      </th>
+      <th>
+        {{articles.added.period_3.start_date | date:'M/d/yy'}} -
+        {{articles.added.period_3.end_date | date:'M/d/yy'}}
+      </th>
+      <th>
+        {{articles.added.period_4.start_date | date:'M/d/yy'}} -
+        {{articles.added.period_4.end_date | date:'M/d/yy'}}
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{articles.added.period_1.articles_added | number}}</td>
+      <td>{{articles.added.period_2.articles_added | number}}</td>
+      <td>{{articles.added.period_3.articles_added | number}}</td>
+      <td>{{articles.added.period_4.articles_added | number}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>

@@ -11,9 +11,17 @@ Rails.application.routes.draw do
         end
       end
 
-      resources :analytics, only: [] do
-        collection do
-          get :tweets_added
+      namespace :analytics do
+        resources :tweets, only: [] do
+          collection do
+            get :added
+          end
+        end
+
+        resources :articles, only: [] do
+          collection do
+            get :added
+          end
         end
       end
     end
