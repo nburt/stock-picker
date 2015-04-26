@@ -1,3 +1,6 @@
+class Analyzer::ApiLimitReached < StandardError
+end
+
 class Analyzer::Keyword::TextKeyword < Analyzer::Keyword
 
   def analyze!
@@ -21,6 +24,10 @@ class Analyzer::Keyword::TextKeyword < Analyzer::Keyword
       }
     ).run
 
+    if Oj.load(response.body)["statusInfo"] == "daily-transaction-limit-exceeded"
+      raise Analyzer::ApiLimitReached
+    end
+
     format_response(response.body, "keywords")
   end
 
@@ -34,6 +41,10 @@ class Analyzer::Keyword::TextKeyword < Analyzer::Keyword
         outputMode: "json"
       }
     ).run
+
+    if Oj.load(response.body)["statusInfo"] == "daily-transaction-limit-exceeded"
+      raise Analyzer::ApiLimitReached
+    end
 
     format_response(response.body, "entities")
   end

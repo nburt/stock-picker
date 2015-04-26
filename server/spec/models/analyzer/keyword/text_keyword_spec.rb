@@ -51,6 +51,16 @@ describe Analyzer::Keyword::TextKeyword do
     expect(keywords).to eq([])
   end
 
+  it 'raises an exception when the api key is out of requests' do
+    VCR.use_cassette('/models/analyzer/keyword/api_limit_reached') do
+      text = 'text'
+
+      expect {
+        Analyzer::Keyword::TextKeyword.new(text).analyze!
+      }.to raise_exception(Analyzer::ApiLimitReached)
+    end
+  end
+
   it 'handles errors gracefully' do
     VCR.use_cassette('/models/analyzer/keyword/error') do
       # AlchemyAPI returns an error saying this isn't English, cause why not?

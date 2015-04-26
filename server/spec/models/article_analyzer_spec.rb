@@ -63,7 +63,7 @@ describe ArticleAnalyzer do
     end
   end
 
-  it 'returns nil when sentiment returns nil for the title score' do
+  it 'returns still scores the description if the title returns nil for keywords' do
     VCR.use_cassette('/models/analyzer/article/description') do
       attributes = {
         stock_id: 1,
@@ -78,9 +78,9 @@ describe ArticleAnalyzer do
       analyzer = ArticleAnalyzer.new(article)
       analysis = analyzer.analyze!
 
-      expect(analysis.keywords.size).to eq(0)
-      expect(analysis.positivity_score).to eq(nil)
-      expect(analysis.sentiment).to eq(nil)
+      expect(analysis.keywords.size).to eq(39)
+      expect(analysis.positivity_score).to eq(34.56)
+      expect(analysis.sentiment).to eq({score: -0.436971, type: 'negative'})
     end
   end
 

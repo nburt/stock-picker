@@ -38,4 +38,14 @@ describe Analyzer::Sentiment::TextSentiment do
     end
   end
 
+  it 'raises an exception if the api limit is reached' do
+    VCR.use_cassette('/models/analyzer/sentiment/api_limit_reached') do
+      text = 'text'
+
+      expect {
+        Analyzer::Sentiment::TextSentiment.new(text).analyze!
+      }.to raise_exception(Analyzer::ApiLimitReached)
+    end
+  end
+
 end
