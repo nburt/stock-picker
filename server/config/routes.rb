@@ -15,12 +15,16 @@ Rails.application.routes.draw do
         resources :tweets, only: [] do
           collection do
             get :added
+            get :total
+            get :total_scored
           end
         end
 
         resources :articles, only: [] do
           collection do
             get :added
+            get :total
+            get :total_scored
           end
         end
       end

@@ -4,4 +4,12 @@ class Analytics::Tweets
     Tweet.where("created_at >= ? AND created_at <= ?", start_date, end_date).count
   end
 
+  def self.total(date)
+    Tweet.where("created_at <= ?", date).count
+  end
+
+  def self.total_scored(date)
+    Tweet.scored.where("created_at <= ?", date).count
+  end
+
 end
