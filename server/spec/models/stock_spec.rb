@@ -72,9 +72,9 @@ describe Stock do
           stock = create_stock
           stock.fetch_and_save_new_articles
 
-          expect(Article.count).to eq(62)
+          expect(Article.count).to eq(92)
           article = Article.last
-          expect(article.title).to eq('IBM to invest $3B in Internet of Things unit')
+          expect(article.title).to eq('Stocks Turn Mixed After Moving Higher At The Open - U.S. Commentary')
           expect(article.section).to eq(nil)
         end
       end
@@ -87,11 +87,11 @@ describe Stock do
           stock = create_stock
           stock.fetch_and_save_new_articles
 
-          expect(Article.count).to eq(62)
+          expect(Article.count).to eq(92)
 
           stock.fetch_and_save_new_articles
 
-          expect(Article.count).to eq(62)
+          expect(Article.count).to eq(92)
         end
       end
     end
