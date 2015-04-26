@@ -3,18 +3,30 @@
   <table class="table">
     <thead>
       <tr>
-        <th>{{tweets.added.period_1.start_date | date:'M/d/yy'}} - {{tweets.added.period_1.end_date | date:'M/d/yy'}}</th>
-        <th>{{tweets.added.period_2.start_date | date:'M/d/yy'}} - {{tweets.added.period_2.end_date | date:'M/d/yy'}}</th>
-        <th>{{tweets.added.period_3.start_date | date:'M/d/yy'}} - {{tweets.added.period_3.end_date | date:'M/d/yy'}}</th>
-        <th>{{tweets.added.period_4.start_date | date:'M/d/yy'}} - {{tweets.added.period_4.end_date | date:'M/d/yy'}}</th>
+        <th>
+          {{tweets.added.period_1.start_date | date:'M/d/yy'}} -
+          {{tweets.added.period_1.end_date | date:'M/d/yy'}}
+        </th>
+        <th>
+          {{tweets.added.period_2.start_date | date:'M/d/yy'}} -
+          {{tweets.added.period_2.end_date | date:'M/d/yy'}}
+        </th>
+        <th>
+          {{tweets.added.period_3.start_date | date:'M/d/yy'}} -
+          {{tweets.added.period_3.end_date | date:'M/d/yy'}}
+        </th>
+        <th>
+          {{tweets.added.period_4.start_date | date:'M/d/yy'}} -
+          {{tweets.added.period_4.end_date | date:'M/d/yy'}}
+        </th>
       </tr>
     </thead>
     <tbody>
     <tr>
-      <td>{{tweets.added.period_1.tweets_added}}</td>
-      <td>{{tweets.added.period_2.tweets_added}}</td>
-      <td>{{tweets.added.period_3.tweets_added}}</td>
-      <td>{{tweets.added.period_4.tweets_added}}</td>
+      <td>{{tweets.added.period_1.tweets_added | number}}</td>
+      <td>{{tweets.added.period_2.tweets_added | number}}</td>
+      <td>{{tweets.added.period_3.tweets_added | number}}</td>
+      <td>{{tweets.added.period_4.tweets_added | number}}</td>
     </tr>
     </tbody>
   </table>
