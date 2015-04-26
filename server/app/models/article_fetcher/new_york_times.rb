@@ -26,7 +26,8 @@ class ArticleFetcher::NewYorkTimes < ArticleFetcher
         date: article["pub_date"],
         link: article["web_url"],
         data: article,
-        source: "New York Times"
+        source: "New York Times",
+        section: [article["section_name"], article["subsection_name"]].compact
       }
 
       ArticleResponse.new(hash)

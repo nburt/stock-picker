@@ -1,6 +1,6 @@
 class ArticleFetcher
 
-  def self.fetch(ticker_symbol)
+  def self.fetch_all(ticker_symbol)
     fetchers.map do |fetcher|
       fetcher.fetch(ticker_symbol)
     end.flatten
@@ -9,7 +9,7 @@ class ArticleFetcher
   private
 
   def self.fetchers
-    [ArticleFetcher::YahooFinance, ArticleFetcher::NewYorkTimes]
+    [ArticleFetcher::YahooFinance, ArticleFetcher::NewYorkTimes, ArticleFetcher::TheGuardian]
   end
 
 end

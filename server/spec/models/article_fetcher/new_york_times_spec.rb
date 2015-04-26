@@ -22,6 +22,7 @@ describe ArticleFetcher::NewYorkTimes do
         expect(result.date).to eq('2015-04-04T00:00:00Z')
         expect(result.data['web_url']).to eq(link)
         expect(result.source).to eq('New York Times')
+        expect(result.section).to eq(['Business Day'])
       end
     end
   end

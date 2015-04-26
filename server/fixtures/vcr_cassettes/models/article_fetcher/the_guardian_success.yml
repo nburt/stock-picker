@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://content.guardianapis.com/search?api-key=u24598bmezctra9ztaugqb6r&from-date=2015-04-03&q=IBM&to-date=2015-04-04
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=20
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 26 Apr 2015 04:33:20 GMT
+      Server:
+      - spray-can/1.3.3
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-26.mashery.com
+      Content-Length:
+      - '1061'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6eyJzdGF0dXMiOiJvayIsInVzZXJUaWVyIjoiZGV2ZWxv
+        cGVyIiwidG90YWwiOjIsInN0YXJ0SW5kZXgiOjEsInBhZ2VTaXplIjoxMCwi
+        Y3VycmVudFBhZ2UiOjEsInBhZ2VzIjoxLCJvcmRlckJ5IjoicmVsZXZhbmNl
+        IiwicmVzdWx0cyI6W3sic2VjdGlvbklkIjoidGVjaG5vbG9neSIsIndlYlRp
+        dGxlIjoiVGltIENvb2sncyBhY3RpdmlzbSBpcyBjaGFuZ2luZyBBcHBsZSDi
+        gJMgYnV0IGhpcyBmdXR1cmUgbWF5IGRlcGVuZCBvbiBhIHdhdGNoIiwid2Vi
+        UHVibGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxMjowMDowNFoiLCJpZCI6
+        InRlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2stYWN0aXZpc20tc3Rl
+        dmUtam9icy1hcHBsZS13YXRjaCIsIndlYlVybCI6Imh0dHA6Ly93d3cudGhl
+        Z3VhcmRpYW4uY29tL3RlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2st
+        YWN0aXZpc20tc3RldmUtam9icy1hcHBsZS13YXRjaCIsImFwaVVybCI6Imh0
+        dHA6Ly9jb250ZW50Lmd1YXJkaWFuYXBpcy5jb20vdGVjaG5vbG9neS8yMDE1
+        L2Fwci8wNC90aW0tY29vay1hY3RpdmlzbS1zdGV2ZS1qb2JzLWFwcGxlLXdh
+        dGNoIiwic2VjdGlvbk5hbWUiOiJUZWNobm9sb2d5In0seyJzZWN0aW9uSWQi
+        OiJ3b3JsZCIsIndlYlRpdGxlIjoiQXJlIHRoZSB0ZXJyb3Jpc3RzIG9mIGFs
+        LVNoYWJhYWIgYWJvdXQgdG8gdGVhciBLZW55YSBpbiB0d28/Iiwid2ViUHVi
+        bGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxNjoxNjoxMloiLCJpZCI6Indv
+        cmxkLzIwMTUvYXByLzA0L2tlbnlhLXVuaXZlcnNpdHktbWFzc2FjcmUtc2hh
+        YmFhYi1kaXZpc2lvbnMiLCJ3ZWJVcmwiOiJodHRwOi8vd3d3LnRoZWd1YXJk
+        aWFuLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55YS11bml2ZXJzaXR5LW1h
+        c3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwiYXBpVXJsIjoiaHR0cDovL2Nv
+        bnRlbnQuZ3VhcmRpYW5hcGlzLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55
+        YS11bml2ZXJzaXR5LW1hc3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwic2Vj
+        dGlvbk5hbWUiOiJXb3JsZCBuZXdzIn1dfX0=
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 19:57:00 GMT
+recorded_with: VCR 2.9.3

@@ -28,4 +28,8 @@ class ArticleResponse
     @article[:source]
   end
 
+  def section
+    @article[:section]
+  end
+
 end

@@ -23,7 +23,7 @@ class Stock < ActiveRecord::Base
   end
 
   def fetch_and_save_new_articles
-    articles = ArticleFetcher.fetch(ticker_symbol)
+    articles = ArticleFetcher.fetch_all(ticker_symbol)
     articles.each do |article|
       find_by_attributes = {
         stock_id: id, title: article.title, date: article.date, link: article.link,
@@ -33,7 +33,7 @@ class Stock < ActiveRecord::Base
       existing_article = Article.find_by(find_by_attributes)
       next if existing_article
 
-      attributes = find_by_attributes.merge({data: article.data})
+      attributes = find_by_attributes.merge({data: article.data, section: article.section})
       Article.create!(attributes)
     end
   end

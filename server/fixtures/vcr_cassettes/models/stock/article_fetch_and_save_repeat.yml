@@ -2,46 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=ac117d389aba155a240958f2873b1f0c:18:67023197&begin_date=20150405&q=IBM
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Mashery-Responder:
-      - prod-j-worker-atl-03.mashery.com
-      Server:
-      - nginx/1.4.1
-      Date:
-      - Sun, 05 Apr 2015 19:48:32 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '160'
-      Vary:
-      - Accept-Encoding
-      X-Powered-By:
-      - PHP/5.3.27
-      X-Cached:
-      - MISS
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Credentials:
-      - 'true'
-    body:
-      encoding: UTF-8
-      string: '{"response":{"meta":{"hits":0,"time":22,"offset":0},"docs":[]},"status":"OK","copyright":"Copyright
-        (c) 2013 The New York Times Company.  All Rights Reserved."}'
-    http_version: 
-  recorded_at: Sun, 05 Apr 2015 20:20:34 GMT
-- request:
-    method: get
     uri: http://finance.yahoo.com/rss/headline?s=IBM
     body:
       encoding: US-ASCII
@@ -55,7 +15,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Apr 2015 20:20:20 GMT
+      - Sun, 26 Apr 2015 04:45:01 GMT
       Cache-Control:
       - max-age=300,stale-while-revalidate=60,stale-if-error=3600,public
       Content-Type:
@@ -63,14 +23,14 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Ssl
       Age:
-      - '9'
+      - '0'
       Via:
-      - http/1.1 media-border148.global.media.bf1.yahoo.com (ApacheTrafficServer [cMsSfW]),
-        http/1.1 r48.ycpi.dxs.yahoo.net (ApacheTrafficServer [cHs f ])
+      - http/1.1 media-border193.global.media.bf1.yahoo.com (ApacheTrafficServer [cSsSfU]),
+        http/1.1 r34.ycpi.ne1.yahoo.net (ApacheTrafficServer [cSsSfU])
       Server:
       - ATS
-      Content-Length:
-      - '13101'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -83,293 +43,225 @@ http_interactions:
         PGxpbms+aHR0cDovL2ZpbmFuY2UueWFob28uY29tL3EvaD9zPWlibTwvbGlu
         az48ZGVzY3JpcHRpb24+TGF0ZXN0IEZpbmFuY2lhbCBOZXdzIGZvciBJbnRl
         cm5hdGlvbmFsIEJ1c2luZXNzIE1hY2hpbmVzPC9kZXNjcmlwdGlvbj48bGFu
-        Z3VhZ2U+ZW4tVVM8L2xhbmd1YWdlPjxsYXN0QnVpbGREYXRlPlN1biwgMDUg
-        QXByIDIwMTUgMTM6MDU6MzcgR01UPC9sYXN0QnVpbGREYXRlPjxpbWFnZT48
+        Z3VhZ2U+ZW4tVVM8L2xhbmd1YWdlPjxsYXN0QnVpbGREYXRlPlN1biwgMjYg
+        QXByIDIwMTUgMDQ6MTY6MDAgR01UPC9sYXN0QnVpbGREYXRlPjxpbWFnZT48
         dXJsPmh0dHA6Ly9sLnlpbWcuY29tL2EvaS9icmFuZC9wdXJwbGVsb2dvL3Vo
         L3VzL2Zpbi5naWY8L3VybD48dGl0bGU+WWFob28hIEZpbmFuY2U6IElCTSBO
         ZXdzPC90aXRsZT48bGluaz5odHRwOi8vZmluYW5jZS55YWhvby5jb20vcS9o
         P3M9aWJtPC9saW5rPjx3aWR0aD4xNDQ8L3dpZHRoPjxoZWlnaHQ+NDU8L2hl
-        aWdodD48L2ltYWdlPjxpdGVtPjx0aXRsZT5EbyBJQk3igJlzIEZpbmFuY2lh
-        bHMgU3VwcG9ydCBJdHMgQnV5YmFja3MgYW5kIERpdmlkZW5kIFBvbGljeT88
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mv
-        aWJtLWZpbmFuY2lhbHMtc3VwcG9ydC1idXliYWNrcy1kaXZpZGVuZC0xMzA1
-        Mzc0MDkuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48
-        Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvNDA5OTU1
-        MDQyNzwvZ3VpZD48cHViRGF0ZT5TdW4sIDA1IEFwciAyMDE1IDEzOjA1OjM3
-        IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPklCTSBDb250aW51
-        ZXMgdG8gTHVyZSBJdHMgSW52ZXN0b3JzIHdpdGggU2hhcmUgQnV5YmFja3M8
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mv
-        aWJtLWNvbnRpbnVlcy1sdXJlLWludmVzdG9ycy1zaGFyZS0xMjA1MzA2Mjku
-        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBp
-        c1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzU5OTQ5NjAzPC9n
-        dWlkPjxwdWJEYXRlPlN1biwgMDUgQXByIDIwMTUgMTI6MDU6MzAgR01UPC9w
-        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+SUJNIFNIQVJFSE9MREVSIEFM
-        RVJUIEJZIEZPUk1FUiBMT1VJU0lBTkEgQVRUT1JORVkgR0VORVJBTDogS2Fo
-        biBTd2ljayAmYW1wOyBGb3RpLCBMTEMgUmVtaW5kcyBJbnZlc3RvcnMgd2l0
-        aCBMb3NzZXMgaW4gRXhjZXNzIG9mICQxMDAsMDAwIG9mIExlYWQgUGxhaW50
-        aWZmIERlYWRsaW5lIGluIENsYXNzIEFjdGlvbiBMYXdzdWl0IEFnYWluc3Qg
-        SW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBDb3Jwb3JhdGlvbjwv
-        dGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25l
-        d3MvcnNzL3N0b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9p
-        Ym0tc2hhcmVob2xkZXItYWxlcnQtZm9ybWVyLWxvdWlzaWFuYS0wMjAwMDA5
-        NzAuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W0J1c2luZXNzIFdpcmVdIC0g
-        S2FobiBTd2ljayAmYW1wOyBGb3RpLCBMTEMgYW5kIEtTRiBwYXJ0bmVyLCB0
-        aGUgZm9ybWVyIEF0dG9ybmV5IEdlbmVyYWwgb2YgTG91aXNpYW5hLCBDaGFy
-        bGVzIEMuIEZvdGksIEpyLiwgcmVtaW5kIGludmVzdG9ycyB0aGF0IHRoZXkg
-        aGF2ZSB1bnRpbCBNYXkgMSwgMjAxNSB0byBmaWxlIGxlYWQgcGxhaW50aWZm
-        IGFwcGxpY2F0aW9ucyBpbiBhIHNlY3VyaXRpZXMgY2xhc3MgYWN0aW9uIGxh
-        d3N1aXQgYWdhaW5zdCBJbnRlcm5hdGlvbmFsIEJ1c2luZXNzIE1hY2hpbmVz
-        IENvcnBvcmF0aW9uIGlmIHRoZXkgcHVyY2hhc2VkIHRoZSBDb21wYW554oCZ
-        cyBzZWN1cml0aWVzIGJldHdlZW4gdGhlIGV4cGFuZGVkIHBlcmlvZCBvZiBK
-        YW51YXJ5IDIyLCAyMDE0IGFuZCBPY3RvYmVyIDE3LCAyMDE0LCBpbmNsdXNp
-        dmUgLi4uPC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2Ui
-        PnlhaG9vX2ZpbmFuY2UvMzc4NzQ4NzIwMDwvZ3VpZD48cHViRGF0ZT5TYXQs
-        IDA0IEFwciAyMDE1IDAyOjAwOjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0
-        ZW0+PHRpdGxlPkNoYXJ0IG9mIHRoZSBkYXk6IDM1IHllYXJzIG9mIElCTSwg
-        TWljcm9zb2Z0IGFuZCBBcHBsZTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
-        LnlhaG9vLmNvbS9maW5hbmNlL2V4dGVybmFsL2hmdG4vcnNzL1NJRz0xMmww
-        aG8yY2EvKmh0dHA6Ly9mb3J0dW5lLmNvbS8yMDE1LzA0LzAzL2NoYXJ0LW9m
-        LXRoZS1kYXktMzUteWVhcnMtb2YtaWJtLW1pY3Jvc29mdC1hbmQtYXBwbGUv
-        P3hpZD15YWhvb19mb3J0dW5lPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2Ny
-        aXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5j
-        ZS82NjU5NjQwNzk8L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAx
-        OToxODoyMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5XaHkg
-        SUJN4oCZcyBJbml0aWF0aXZlcyBHaXZlIEludmVzdG9ycyBIb3BlPC90aXRs
-        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9y
-        c3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdzL3doeS1p
-        Ym0taW5pdGlhdGl2ZXMtaW52ZXN0b3JzLWhvcGUtMTkwNjEwNjg4Lmh0bWw8
-        L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJt
-        YUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzExMzA4NDk2NzI8L2d1aWQ+
-        PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAxOTowNjoxMCBHTVQ8L3B1YkRh
-        dGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5OZXcgWW9ya+KAmXMgU2FpbHRocnUg
-        ZmluZHMgbmV3IENFTyBOZWlsIEx1c3RpZyBjbG9zZSB0byBob21lPC90aXRs
-        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJu
-        YWwvY2JzbS9yc3MvU0lHPTExaWl1bWtldC8qaHR0cDovL3d3dy5tYXJrZXR3
-        YXRjaC5jb20vTmV3cy9TdG9yeS9TdG9yeS5hc3B4P2d1aWQ9OENFRUQ2OTgt
-        REEyNy0xMUU0LUE5QkYtOUU4RjU1NTUyNTk3JmFtcDtzaXRlaWQ9eWhvb2Yy
-        PC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVy
-        bWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8yNjUzNzUwMzgzPC9ndWlk
-        PjxwdWJEYXRlPkZyaSwgMDMgQXByIDIwMTUgMTc6Mzc6NDggR01UPC9wdWJE
-        YXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2hhdCBBcmUgU29tZSBvZiB0aGUg
-        SXNzdWVzIElCTSBOZWVkcyB0byBBZGRyZXNzPzwvdGl0bGU+PGxpbms+aHR0
-        cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0b3J5Lypo
-        dHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9pc3N1ZXMtaWJtLW5lZWRz
-        LWFkZHJlc3MtMTcwNTI1MTQwLmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPjwv
-        ZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19m
-        aW5hbmNlLzE1MDM1MjQwNTg8L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIg
-        MjAxNSAxNzowNToyNSBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRs
-        ZT5Ib3cgV2VyZSBJQk3igJlzIEZpbmFuY2lhbHMgaW4gRmlzY2FsIFllYXIg
-        MjAxND88L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmlu
-        YW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29t
-        L25ld3Mvd2VyZS1pYm0tZmluYW5jaWFscy1maXNjYWwtMjAxNC0xNTA1MzU3
-        ODQuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3Vp
-        ZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzQyMzM1MDYy
-        MzwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFwciAyMDE1IDE1OjA1OjM1IEdN
-        VDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2ZTogSUJN
-        IGhpcmUgYWR2aXNlcnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGludmVzdG9y
-        cyAtIHNvdXJjZXM8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5j
-        b20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL3NnLmZpbmFuY2Uu
-        eWFob28uY29tL25ld3MvZXhjbHVzaXZlLWlibS1oaXJlLWFkdmlzZXJzLWRl
-        YWwtMDIzOTM1NzY5Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPltSZXV0ZXJz
-        XSAtIE5FVyBZT1JLL0JPU1RPTiAoUmV1dGVycykgLSBTb21lIHRvcCBzaGFy
-        ZWhvbGRlcnMgb2YgSUJNLCBkaXNhcHBvaW50ZWQgYnkgMTEgc3RyYWlnaHQg
-        cXVhcnRlcnMgb2YgZmFsbGluZyByZXZlbnVlcywgYXJlIHNlZWtpbmcgaGVs
-        cCBmcm9tIGFjdGl2aXN0IGludmVzdG9ycyB0byBzaGFrZSB1cCB0aGUgY29t
-        cGFueSwgYnV0IGhhdmUgYmVlbiB0dXJuZWQgZG93biBieSBib3RoIEJpbGwg
-        QWNrbWFuJmFwb3M7cyBQZXJzaGluZyBTcXVhcmUgYW5kIEplZmZyZXkgVWJi
-        ZW4mYXBvcztzIFZhbHVlQWN0LCBhY2NvcmRpbmcgdG8gcGVvcGxlIHdpdGgg
-        a25vd2xlZGdlIG9mIHRoZSBtYXR0ZXIuIEludGVybmF0aW9uYWwgQnVzaW5l
-        c3MgTWFjaGluZXMgQ29ycCAoSUJNLk4pIGlzIGNvbmNlcm5lZCBhYm91dCBh
-        IHBvc3NpYmxlIGF0dGFjayBieSBwcm9taW5lbnQgYWN0aXZpc3QgaGVkZ2Ug
-        ZnVuZHMsIGFuZCBpcyB3b3JraW5nIHdpdGggdHdvIGludmVzdG1lbnQgYmFu
-        a3MgdG8gZm9ybXVsYXRlIGEgZGVmZW5zZSBwbGFuLCBhY2NvcmRpbmcgdG8g
-        dGhlIHBlb3BsZSwgd2hvIGRlY2xpbmVkIHRvIGJlIGlkZW50aWZpZWQuIFRo
-        ZSBzdG9yaWVkIEFtZXJpY2FuIHRlY2hub2xvZ3kgZ2lhbnQsIHdvcnRoICQx
-        NTcgYmlsbGlvbiB0b2RheSwgaGFzIHN0cnVnZ2xlZCB0byB0cmFuc2Zvcm0g
-        aXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhhcmR3YXJlIG1ha2VyIGludG8g
-        YSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQgc2VydmljZXMgY29tcGFueS4g
-        V2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sgb3ZlciBhcyBjaGllZiBleGVj
-        dXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIsIFdhbGwgU3RyZWV0IHdhcyBo
-        b3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFibGUgdG8ga2lja3N0YXJ0IGdy
-        b3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+
-        eWFob29fZmluYW5jZS8xOTk5ODE0NzY4PC9ndWlkPjxwdWJEYXRlPkZyaSwg
-        MDMgQXByIDIwMTUgMDg6MDk6MDkgR01UPC9wdWJEYXRlPjwvaXRlbT48aXRl
-        bT48dGl0bGU+RXhjbHVzaXZlOiBJQk0gaGlyZSBhZHZpc2VycyB0byBkZWFs
-        IHdpdGggcmVzdGxlc3MgaW52ZXN0b3JzIC0gc291cmNlczwvdGl0bGU+PGxp
-        bms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0
-        b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9leGNsdXNpdmUt
-        aWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0wMjM5MzUyNzAuaHRtbDwvbGluaz48
-        ZGVzY3JpcHRpb24+W1JldXRlcnNdIC0gTkVXIFlPUksvQk9TVE9OIChSZXV0
-        ZXJzKSAtIFNvbWUgdG9wIHNoYXJlaG9sZGVycyBvZiBJQk0sIGRpc2FwcG9p
-        bnRlZCBieSAxMSBzdHJhaWdodCBxdWFydGVycyBvZiBmYWxsaW5nIHJldmVu
-        dWVzLCBhcmUgc2Vla2luZyBoZWxwIGZyb20gYWN0aXZpc3QgaW52ZXN0b3Jz
-        IHRvIHNoYWtlIHVwIHRoZSBjb21wYW55LCBidXQgaGF2ZSBiZWVuIHR1cm5l
-        ZCBkb3duIGJ5IGJvdGggQmlsbCBBY2ttYW4mYXBvcztzIFBlcnNoaW5nIFNx
-        dWFyZSBhbmQgSmVmZnJleSBVYmJlbiZhcG9zO3MgVmFsdWVBY3QsIGFjY29y
-        ZGluZyB0byBwZW9wbGUgd2l0aCBrbm93bGVkZ2Ugb2YgdGhlIG1hdHRlci4g
-        SW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBDb3JwIChJQk0uTikg
-        aXMgY29uY2VybmVkIGFib3V0IGEgcG9zc2libGUgYXR0YWNrIGJ5IHByb21p
-        bmVudCBhY3RpdmlzdCBoZWRnZSBmdW5kcywgYW5kIGlzIHdvcmtpbmcgd2l0
-        aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0byBmb3JtdWxhdGUgYSBkZWZlbnNl
-        IHBsYW4sIGFjY29yZGluZyB0byB0aGUgcGVvcGxlLCB3aG8gZGVjbGluZWQg
-        dG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0b3JpZWQgQW1lcmljYW4gdGVjaG5v
-        bG9neSBnaWFudCwgd29ydGggJDE1NyBiaWxsaW9uIHRvZGF5LCBoYXMgc3Ry
-        dWdnbGVkIHRvIHRyYW5zZm9ybSBpdHNlbGYgZnJvbSBhIGxvdy1tYXJnaW4g
-        aGFyZHdhcmUgbWFrZXIgaW50byBhIGNsb3VkLWJhc2VkIHNvZnR3YXJlIGFu
-        ZCBzZXJ2aWNlcyBjb21wYW55LiBXaGVuIFZpcmdpbmlhIFJvbWV0dHkgdG9v
-        ayBvdmVyIGFzIGNoaWVmIGV4ZWN1dGl2ZSBhdCB0aGUgc3RhcnQgb2YgMjAx
-        MiwgV2FsbCBTdHJlZXQgd2FzIGhvcGVmdWwgdGhhdCBzaGUgd291bGQgYmUg
-        YWJsZSB0byBraWNrc3RhcnQgZ3Jvd3RoLjwvZGVzY3JpcHRpb24+PGd1aWQg
-        aXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzMxMTA3MDIxNDc8
-        L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAwODowOTowOSBHTVQ8
-        L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNpdmU6IElCTSBo
-        aXJlIGFkdmlzZXJzIHRvIGRlYWwgd2l0aCByZXN0bGVzcyBpbnZlc3RvcnMt
-        c291cmNlczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
-        aW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vaW4uZmluYW5jZS55YWhv
-        by5jb20vbmV3cy9leGNsdXNpdmUtaWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0w
-        MzQxMjUzMTMuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlv
-        bj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTE5
-        OTY4NTY2NzwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFwciAyMDE1IDAzOjQx
-        OjI1IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2
-        ZTogSUJNIGhpcmUgYWR2aXNlcnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGlu
-        dmVzdG9ycy1zb3VyY2VzPC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFo
-        b28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9zZy5maW5h
-        bmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1pYm0taGlyZS1hZHZpc2Vy
-        cy1kZWFsLTAzNDEyNTgzOC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj5bUmV1
-        dGVyc10gLSBORVcgWU9SSy9CT1NUT04gKFJldXRlcnMpIC0gU29tZSB0b3Ag
-        c2hhcmVob2xkZXJzIG9mIElCTSwgZGlzYXBwb2ludGVkIGJ5IDExIHN0cmFp
-        Z2h0IHF1YXJ0ZXJzIG9mIGZhbGxpbmcgcmV2ZW51ZXMsIGFyZSBzZWVraW5n
-        IGhlbHAgZnJvbSBhY3RpdmlzdCBpbnZlc3RvcnMgdG8gc2hha2UgdXAgdGhl
-        IGNvbXBhbnksIGJ1dCBoYXZlIGJlZW4gdHVybmVkIGRvd24gYnkgYm90aCBC
-        aWxsIEFja21hbiZhcG9zO3MgUGVyc2hpbmcgU3F1YXJlIGFuZCBKZWZmcmV5
-        IFViYmVuJmFwb3M7cyBWYWx1ZUFjdCwgYWNjb3JkaW5nIHRvIHBlb3BsZSB3
-        aXRoIGtub3dsZWRnZSBvZiB0aGUgbWF0dGVyLiBJbnRlcm5hdGlvbmFsIEJ1
-        c2luZXNzIE1hY2hpbmVzIENvcnAgaXMgY29uY2VybmVkIGFib3V0IGEgcG9z
-        c2libGUgYXR0YWNrIGJ5IHByb21pbmVudCBhY3RpdmlzdCBoZWRnZSBmdW5k
-        cywgYW5kIGlzIHdvcmtpbmcgd2l0aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0
-        byBmb3JtdWxhdGUgYSBkZWZlbnNlIHBsYW4sIGFjY29yZGluZyB0byB0aGUg
-        cGVvcGxlLCB3aG8gZGVjbGluZWQgdG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0
-        b3JpZWQgQW1lcmljYW4gdGVjaG5vbG9neSBnaWFudCwgd29ydGggJDE1NyBi
-        aWxsaW9uIHRvZGF5LCBoYXMgc3RydWdnbGVkIHRvIHRyYW5zZm9ybSBpdHNl
-        bGYgZnJvbSBhIGxvdy1tYXJnaW4gaGFyZHdhcmUgbWFrZXIgaW50byBhIGNs
-        b3VkLWJhc2VkIHNvZnR3YXJlIGFuZCBzZXJ2aWNlcyBjb21wYW55LiBXaGVu
-        IFZpcmdpbmlhIFJvbWV0dHkgdG9vayBvdmVyIGFzIGNoaWVmIGV4ZWN1dGl2
-        ZSBhdCB0aGUgc3RhcnQgb2YgMjAxMiwgV2FsbCBTdHJlZXQgd2FzIGhvcGVm
-        dWwgdGhhdCBzaGUgd291bGQgYmUgYWJsZSB0byBraWNrc3RhcnQgZ3Jvd3Ro
-        LjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhv
-        b19maW5hbmNlLzc5MjI2MDI1NjwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFw
-        ciAyMDE1IDAzOjQxOjI1IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRp
-        dGxlPkV4Y2x1c2l2ZSAtIElCTSBoaXJlIGFkdmlzZXJzIHRvIGRlYWwgd2l0
-        aCByZXN0bGVzcyBpbnZlc3RvcnM6IHNvdXJjZXM8L3RpdGxlPjxsaW5rPmh0
-        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
-        aHR0cDovL3NnLmZpbmFuY2UueWFob28uY29tL25ld3MvZXhjbHVzaXZlLWli
-        bS1oaXJlLWFkdmlzZXJzLWRlYWwtMDEwMzU1MTAxLmh0bWw8L2xpbms+PGRl
-        c2NyaXB0aW9uPltSZXV0ZXJzXSAtIE5FVyBZT1JLL0JPU1RPTiAoUmV1dGVy
-        cykgLSBTb21lIHRvcCBzaGFyZWhvbGRlcnMgb2YgSUJNLCBkaXNhcHBvaW50
-        ZWQgYnkgMTEgc3RyYWlnaHQgcXVhcnRlcnMgb2YgZmFsbGluZyByZXZlbnVl
-        cywgYXJlIHNlZWtpbmcgaGVscCBmcm9tIGFjdGl2aXN0IGludmVzdG9ycyB0
-        byBzaGFrZSB1cCB0aGUgY29tcGFueSwgYnV0IGhhdmUgYmVlbiB0dXJuZWQg
-        ZG93biBieSBib3RoIEJpbGwgQWNrbWFuJmFwb3M7cyBQZXJzaGluZyBTcXVh
-        cmUgYW5kIEplZmZyZXkgVWJiZW4mYXBvcztzIFZhbHVlQWN0LCBhY2NvcmRp
-        bmcgdG8gcGVvcGxlIHdpdGgga25vd2xlZGdlIG9mIHRoZSBtYXR0ZXIuIElu
-        dGVybmF0aW9uYWwgQnVzaW5lc3MgTWFjaGluZXMgQ29ycCAoSUJNLk4pIGlz
-        IGNvbmNlcm5lZCBhYm91dCBhIHBvc3NpYmxlIGF0dGFjayBieSBwcm9taW5l
-        bnQgYWN0aXZpc3QgaGVkZ2UgZnVuZHMsIGFuZCBpcyB3b3JraW5nIHdpdGgg
-        dHdvIGludmVzdG1lbnQgYmFua3MgdG8gZm9ybXVsYXRlIGEgZGVmZW5zZSBw
-        bGFuLCBhY2NvcmRpbmcgdG8gdGhlIHBlb3BsZSwgd2hvIGRlY2xpbmVkIHRv
-        IGJlIGlkZW50aWZpZWQuIFRoZSBzdG9yaWVkIEFtZXJpY2FuIHRlY2hub2xv
-        Z3kgZ2lhbnQsIHdvcnRoICQxNTcgYmlsbGlvbiB0b2RheSwgaGFzIHN0cnVn
-        Z2xlZCB0byB0cmFuc2Zvcm0gaXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhh
-        cmR3YXJlIG1ha2VyIGludG8gYSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQg
-        c2VydmljZXMgY29tcGFueS4gV2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sg
-        b3ZlciBhcyBjaGllZiBleGVjdXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIs
-        IFdhbGwgU3RyZWV0IHdhcyBob3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFi
-        bGUgdG8ga2lja3N0YXJ0IGdyb3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlz
-        UGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8xODg5Njk3NDQyPC9n
-        dWlkPjxwdWJEYXRlPkZyaSwgMDMgQXByIDIwMTUgMDI6Mzg6NTUgR01UPC9w
-        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2h5IElCTeKAmXMgQ2FzaCBG
-        bG93cyBhbmQgRWFybmluZ3MgQXJlIENvbmNlcm5pbmcgSW52ZXN0b3JzPC90
-        aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3
-        cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdzL3do
-        eS1pYm0tY2FzaC1mbG93cy1lYXJuaW5ncy0xNDU1MjYxMzUuaHRtbDwvbGlu
-        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
-        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTI0NDM2MzY0PC9ndWlkPjxwdWJE
-        YXRlPkZyaSwgMDMgQXByIDIwMTUgMDE6MDU6NDcgR01UPC9wdWJEYXRlPjwv
-        aXRlbT48aXRlbT48dGl0bGU+V2h5IElCTSBFbnRlcmVkIGludG8gYSBEYXRh
-        IEFuYWx5dGljcyBQYXJ0bmVyc2hpcCB3aXRoIFR3aXR0ZXI8L3RpdGxlPjxs
-        aW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9z
-        dG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mvd2h5LWlibS1l
-        bnRlcmVkLWRhdGEtYW5hbHl0aWNzLTIzMDYwMTI0OS5odG1sPC9saW5rPjxk
-        ZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJm
-        YWxzZSI+eWFob29fZmluYW5jZS8zNjM5OTcyMjUzPC9ndWlkPjxwdWJEYXRl
-        PlRodSwgMDIgQXByIDIwMTUgMjM6MDY6MDEgR01UPC9wdWJEYXRlPjwvaXRl
-        bT48aXRlbT48dGl0bGU+SUJNIHVuY292ZXJzIG5ldywgc29waGlzdGljYXRl
-        ZCBiYW5rIHRyYW5zZmVyIGN5YmVyIHNjYW08L3RpdGxlPjxsaW5rPmh0dHA6
-        Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0
-        cDovL3NnLmZpbmFuY2UueWFob28uY29tL25ld3MvaWJtLXVuY292ZXJzLXNv
-        cGhpc3RpY2F0ZWQtYmFuay10cmFuc2Zlci0xOTA1MDgwMzguaHRtbDwvbGlu
-        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
-        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTk1NDUyODYyMTwvZ3VpZD48cHVi
-        RGF0ZT5UaHUsIDAyIEFwciAyMDE1IDE5OjUxOjU0IEdNVDwvcHViRGF0ZT48
-        L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2ZSAtIElCTSBoaXJlIGFkdmlz
-        ZXJzIHRvIGRlYWwgd2l0aCByZXN0bGVzcyBpbnZlc3RvcnMtc291cmNlczwv
-        dGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25l
-        d3MvcnNzL3N0b3J5LypodHRwOi8vc2cuZmluYW5jZS55YWhvby5jb20vbmV3
-        cy9leGNsdXNpdmUtaWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0xOTQ0MTg4MDcu
-        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W1JldXRlcnNdIC0gTkVXIFlPUksv
-        Qk9TVE9OIChSZXV0ZXJzKSAtIFNvbWUgdG9wIHNoYXJlaG9sZGVycyBvZiBJ
-        Qk0sIGRpc2FwcG9pbnRlZCBieSAxMSBzdHJhaWdodCBxdWFydGVycyBvZiBm
-        YWxsaW5nIHJldmVudWVzLCBhcmUgc2Vla2luZyBoZWxwIGZyb20gYWN0aXZp
-        c3QgaW52ZXN0b3JzIHRvIHNoYWtlIHVwIHRoZSBjb21wYW55LCBidXQgaGF2
-        ZSBiZWVuIHR1cm5lZCBkb3duIGJ5IGJvdGggQmlsbCBBY2ttYW4mYXBvcztz
-        IFBlcnNoaW5nIFNxdWFyZSBhbmQgSmVmZnJleSBVYmJlbiZhcG9zO3MgVmFs
-        dWVBY3QsIGFjY29yZGluZyB0byBwZW9wbGUgd2l0aCBrbm93bGVkZ2Ugb2Yg
-        dGhlIG1hdHRlci4gSW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBD
-        b3JwIChJQk0uTikgaXMgY29uY2VybmVkIGFib3V0IGEgcG9zc2libGUgYXR0
-        YWNrIGJ5IHByb21pbmVudCBhY3RpdmlzdCBoZWRnZSBmdW5kcywgYW5kIGlz
-        IHdvcmtpbmcgd2l0aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0byBmb3JtdWxh
-        dGUgYSBkZWZlbmNlIHBsYW4sIGFjY29yZGluZyB0byB0aGUgcGVvcGxlLCB3
-        aG8gZGVjbGluZWQgdG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0b3JpZWQgQW1l
-        cmljYW4gdGVjaG5vbG9neSBnaWFudCwgd29ydGggJDE1NyBiaWxsaW9uICgx
-        MDUuOCBiaWxsaW9uIHBvdW5kcyl0b2RheSwgaGFzIHN0cnVnZ2xlZCB0byB0
-        cmFuc2Zvcm0gaXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhhcmR3YXJlIG1h
-        a2VyIGludG8gYSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQgc2VydmljZXMg
-        Y29tcGFueS4gV2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sgb3ZlciBhcyBj
-        aGllZiBleGVjdXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIsIFdhbGwgU3Ry
-        ZWV0IHdhcyBob3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFibGUgdG8ga2lj
-        a3N0YXJ0IGdyb3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5r
-        PSJmYWxzZSI+eWFob29fZmluYW5jZS8yNjI5NDU1MDE4PC9ndWlkPjxwdWJE
-        YXRlPlRodSwgMDIgQXByIDIwMTUgMTk6NDQ6MTggR01UPC9wdWJEYXRlPjwv
-        aXRlbT48aXRlbT48dGl0bGU+RXhjbHVzaXZlOiBJQk0gaGlyZWQgYWR2aXNl
-        cnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGludmVzdG9ycyAtIHNvdXJjZXM8
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL3NnLmZpbmFuY2UueWFob28uY29tL25l
-        d3MvZXhjbHVzaXZlLWlibS1oaXJlZC1hZHZpc2Vycy1kZWFsLTE5NDMwNDcx
-        NS5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlk
-        IGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8zMzk3Nzk3MTA8
-        L2d1aWQ+PHB1YkRhdGU+VGh1LCAwMiBBcHIgMjAxNSAxOTo0MzowNCBHTVQ8
-        L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNpdmU6IElCTSBo
-        aXJlZCBhZHZpc2VycyB0byBkZWFsIHdpdGggcmVzdGxlc3MgaW52ZXN0b3Jz
-        IC0gc291cmNlczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNv
-        bS9maW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vZmluYW5jZS55YWhv
-        by5jb20vbmV3cy9leGNsdXNpdmUtaWJtLWhpcmVkLWFkdmlzZXJzLWRlYWwt
-        MTk0MzA0MzM0Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRp
-        b24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzIx
-        NjY5Mzc2ODk8L2d1aWQ+PHB1YkRhdGU+VGh1LCAwMiBBcHIgMjAxNSAxOTo0
-        MzowNCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNp
-        dmUgLSBJQk0gaGlyZSBhZHZpc2VycyB0byBkZWFsIHdpdGggcmVzdGxlc3Mg
-        aW52ZXN0b3JzOiBzb3VyY2VzPC90aXRsZT48bGluaz5odHRwOi8vdXMucmQu
-        eWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9pbi5m
-        aW5hbmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1pYm0taGlyZS1hZHZp
-        c2Vycy1kZWFsLTE5NDEwNjI0NS5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48
+        aWdodD48L2ltYWdlPjxpdGVtPjx0aXRsZT5Ib3cgT25lIFdvbWFuIElzIFdv
+        cmtpbmcgVG8gVHJhbnNmb3JtIFRoZSBIZWFsdGhjYXJlIFN5c3RlbSBGcm9t
+        IFdpdGhpbjwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
+        aW5hbmNlL2V4dGVybmFsL2ZvcmJlcy9yc3MvU0lHPTEzc2JmNXFpYS8qaHR0
+        cDovL3d3dy5mb3JiZXMuY29tL3NpdGVzL2dyZWdzYXRlbGwvMjAxNS8wNC8y
+        Ni9ob3ctb25lLXdvbWFuLWlzLXdvcmtpbmctdG8tdHJhbnNmb3JtLXRoZS1o
+        ZWFsdGhjYXJlLXN5c3RlbS1mcm9tLXdpdGhpbi8/dXRtX2NhbXBhaWduPXlh
+        aG9vdGl4JmFtcDtwYXJ0bmVyPXlhaG9vdGl4PC9saW5rPjxkZXNjcmlwdGlv
+        bj5bYXQgRm9yYmVzXSAtIFJldm9sdXRpb25pemluZyBoZWFsdGhjYXJlIHdp
+        bGwgdGFrZSBtb3JlIHRoYW4gZmFuY3kgdGVjaG5vbG9neSwgZGF0YSBhbmQg
+        YW5hbHl0aWNzLiBXZSBuZWVkIHRvIGJ1aWxkIGEgbW92ZW1lbnQuPC9kZXNj
+        cmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFu
+        Y2UvMTQ1ODM2NTA0OTwvZ3VpZD48cHViRGF0ZT5TdW4sIDI2IEFwciAyMDE1
+        IDA0OjE2OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPlRl
+        Y2hzIHN1cmdlIG9uIGVhcm5pbmdzLCBib29zdHMgTmFzZGFxLCBTJmFtcDtQ
+        IDUwMCB0byByZWNvcmQgY2xvc2U8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5y
+        ZC55YWhvby5jb20vZmluYW5jZS9leHRlcm5hbC9jbmJjL3Jzcy9TSUc9MTEy
+        Nmg0bTQzLypodHRwOi8vd3d3LmNuYmMuY29tL2lkLzEwMjYxNzcwOT9fX3Nv
+        dXJjZT15YWhvbyU3Y2ZpbmFuY2UlN2NoZWFkbGluZSU3Y2hlYWRsaW5lJTdj
+        c3RvcnkmYW1wO3Bhcj15YWhvbyZhbXA7ZG9jPTEwMjYxNzcwOTwvbGluaz48
+        ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0i
+        ZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMjg5OTEzODg0NDwvZ3VpZD48cHViRGF0
+        ZT5GcmksIDI0IEFwciAyMDE1IDIwOjAwOjAwIEdNVDwvcHViRGF0ZT48L2l0
+        ZW0+PGl0ZW0+PHRpdGxlPiZhcG9zO0RpZmZlcmVudCZhcG9zOyBOYXNkYXEg
+        Ym9vc3RlZCBieSBlYXJuaW5nczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
+        LnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vZmlu
+        YW5jZS55YWhvby5jb20vdmlkZW8vZGlmZmVyZW50LW5hc2RhcS1ib29zdGVk
+        LWVhcm5pbmdzLTE5MzUwMDM1MC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48
         L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29f
-        ZmluYW5jZS8zODc3ODAwMjYzPC9ndWlkPjxwdWJEYXRlPlRodSwgMDIgQXBy
-        IDIwMTUgMTk6NDE6MDYgR01UPC9wdWJEYXRlPjwvaXRlbT48L2NoYW5uZWw+
-        PC9yc3M+
+        ZmluYW5jZS81MTc2NDQ0NjwvZ3VpZD48cHViRGF0ZT5GcmksIDI0IEFwciAy
+        MDE1IDE5OjM1OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxl
+        PkhhbGZ0aW1lJmFwb3M7cyBob3R0ZXN0IHRyYWRlcyB0b2RheTogV1lOTiwg
+        VFNDTywgSUJNLCAmYW1wOyBBTVpOPC90aXRsZT48bGluaz5odHRwOi8vdXMu
+        cmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9m
+        aW5hbmNlLnlhaG9vLmNvbS92aWRlby9oYWxmdGltZXMtaG90dGVzdC10cmFk
+        ZXMtdG9kYXktd3lubi0xNjU5MDAyOTguaHRtbDwvbGluaz48ZGVzY3JpcHRp
+        b24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlh
+        aG9vX2ZpbmFuY2UvMTI4MTMzNjc5MzwvZ3VpZD48cHViRGF0ZT5GcmksIDI0
+        IEFwciAyMDE1IDE2OjU5OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+
+        PHRpdGxlPlRvcCB0cmFkZXMgb2YgdGhlIHdlZWs6IFNCVVggJmFtcDsgSUJN
+        PC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2Uv
+        bmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRl
+        by90b3AtdHJhZGVzLXdlZWstc2J1eC1pYm0tMTY0NTAwNjI3Lmh0bWw8L2xp
+        bms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxp
+        bms9ImZhbHNlIj55YWhvb19maW5hbmNlLzkxMTgxMjM5MDwvZ3VpZD48cHVi
+        RGF0ZT5GcmksIDI0IEFwciAyMDE1IDE2OjQ1OjAwIEdNVDwvcHViRGF0ZT48
+        L2l0ZW0+PGl0ZW0+PHRpdGxlPklCTSBFeHRlbmRzIEFwcGxpY2F0aW9uIElu
+        ZnJhc3RydWN0dXJlIGFuZCBNaWRkbGV3YXJlIExlYWRlcnNoaXAgd2l0aCAy
+        OS4xIFBlcmNlbnQgTWFya2V0IFNoYXJlPC90aXRsZT48bGluaz5odHRwOi8v
+        dXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJuYWwvbm9vZGxzYXVuei9y
+        c3MvU0lHPTEyNWJsc29xcy8qaHR0cDovL3d3dy5ub29kbHMuY29tL3ZpZXcv
+        Rjg0QUY1RjcxRjVBMjY2ODJEQ0ZBNzU4Q0UyQkM0QTU4NTZCRUY5NzwvbGlu
+        az48ZGVzY3JpcHRpb24+W2F0IG5vb2Rsc10gLSBBUk1PTkssIE4uWS4sIC0g
+        MjQgQXByIDIwMTU6IElCTSZhcG9zO3MgKE5ZU0U6IElCTSkgc2hhcmUgb2Yg
+        YXBwbGljYXRpb24gaW5mcmFzdHJ1Y3R1cmUgYW5kIG1pZGRsZXdhcmUgbWFy
+        a2V0IHNoYXJlIGlzIDI5LjEgcGVyY2VudCwgZXh0ZW5kaW5nIHRoZSBjb21w
+        YW55JmFwb3M7cyBsZWFkZXJzaGlwIHBvc2l0aW9uIGZvciB0aGUgMTR0aCB5
+        ZWFyIGluIGEgcm93IGFuZCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVy
+        bWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8xNTg4Njg1NDc2PC9ndWlk
+        PjxwdWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMTI6NDY6NTkgR01UPC9wdWJE
+        YXRlPjwvaXRlbT48aXRlbT48dGl0bGU+SUJNIEV4dGVuZHMgQXBwbGljYXRp
+        b24gSW5mcmFzdHJ1Y3R1cmUgYW5kIE1pZGRsZXdhcmUgTGVhZGVyc2hpcCB3
+        aXRoIDI5LjEgUGVyY2VudCBNYXJrZXQgU2hhcmU8L3RpdGxlPjxsaW5rPmh0
+        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
+        aHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3MvaWJtLWV4dGVuZHMtYXBw
+        bGljYXRpb24taW5mcmFzdHJ1Y3R1cmUtbWlkZGxld2FyZS0xMjMwMDA2MzQu
+        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W1BSIE5ld3N3aXJlXSAtIEFSTU9O
+        SywgTi5ZLiwgQXByaWwgMjQsIDIwMTUgL1BSTmV3c3dpcmUvIC0tIElCTSZh
+        cG9zO3MgKE5ZU0U6IElCTSApIHNoYXJlIG9mIGFwcGxpY2F0aW9uIGluZnJh
+        c3RydWN0dXJlIGFuZCBtaWRkbGV3YXJlIG1hcmtldCBzaGFyZSBpcyAyOS4x
+        IHBlcmNlbnQsIGV4dGVuZGluZyB0aGUgY29tcGFueSZhcG9zO3MgbGVhZGVy
+        c2hpcCBwb3NpdGlvbiBmb3IgdGhlIDE0IHRoIC4uLjwvZGVzY3JpcHRpb24+
+        PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzI4MjAx
+        MDAxMjg8L2d1aWQ+PHB1YkRhdGU+RnJpLCAyNCBBcHIgMjAxNSAxMjozMDow
+        MCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5UaGUgTW9ybmlu
+        ZyBEb3dubG9hZDogTWljcm9zb2Z0JmFwb3M7cyBDbG91ZCBTYWxlcyBTaG93
+        IFN0cm9uZyBHcm93dGg8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhv
+        by5jb20vZmluYW5jZS9leHRlcm5hbC93c2ovcnNzL1NJRz0xMzVjb2YxOHIv
+        Kmh0dHA6Ly9ibG9ncy53c2ouY29tL2Npby8yMDE1LzA0LzI0L3RoZS1tb3Ju
+        aW5nLWRvd25sb2FkLW1pY3Jvc29mdHMtY2xvdWQtc2FsZXMtc2hvdy1zdHJv
+        bmctZ3Jvd3RoLz9tb2Q9eWFob29faHM8L2xpbms+PGRlc2NyaXB0aW9uPlth
+        dCBUaGUgV2FsbCBTdHJlZXQgSm91cm5hbF0gLSBUaGUgZ2FpbnMgYmVzdGVk
+        IHRob3NlIG9mIEFtYXpvbiwgd2hpY2ggcmVwb3J0ZWQgcmVzdWx0cyBmb3Ig
+        aXRzIEFtYXpvbiBXZWIgU2VydmljZXMgY2xvdWQgYnVzaW5lc3MgZm9yIHRo
+        ZSBmaXJzdCB0aW1lLiBUaGUgYmF0dGxlIGJldHdlZW4gTWljcm9zb2Z0JmFw
+        b3M7cyBoeWJyaWQgYXBwcm9hY2ggdG8gdGhlIGNsb3VkIGFuZCBBbWF6b24m
+        YXBvcztzIHB1YmxpYyBjbG91ZCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlz
+        UGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8zODY3NzQ0ODYzPC9n
+        dWlkPjxwdWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMTI6MTU6MDggR01UPC9w
+        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2hhdCZhcG9zO3MgYmVoaW5k
+        IE1pY3Jvc29mdCZhcG9zO3MgYmlnIGJlYXQ/PC90aXRsZT48bGluaz5odHRw
+        Oi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0
+        dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRlby93aGF0cy1iZWhpbmQtbWlj
+        cm9zb2Z0cy1iaWctYmVhdC0xMTA0MDAwMTQuaHRtbDwvbGluaz48ZGVzY3Jp
+        cHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2Ui
+        PnlhaG9vX2ZpbmFuY2UvMjQ1MDkyNjI0MjwvZ3VpZD48cHViRGF0ZT5Gcmks
+        IDI0IEFwciAyMDE1IDExOjA0OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0
+        ZW0+PHRpdGxlPkFtYXpvbiZhcG9zO3MgY2xvdWQgZnV0dXJlPC90aXRsZT48
+        bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mv
+        c3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRlby9hbWF6b25z
+        LWNsb3VkLWZ1dHVyZS0xMDEzMDAxNjUuaHRtbDwvbGluaz48ZGVzY3JpcHRp
+        b24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlh
+        aG9vX2ZpbmFuY2UvNDIxNzAxNDI3NzwvZ3VpZD48cHViRGF0ZT5GcmksIDI0
+        IEFwciAyMDE1IDEwOjEzOjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+
+        PHRpdGxlPkRFQURMSU5FIEFMRVJUOiBCcm93ZXIgUGl2ZW4gRW5jb3VyYWdl
+        cyBJbnZlc3RvcnMgV2hvIEhhdmUgTG9zc2VzIGluIEV4Y2VzcyBvZiAkMTAw
+        LDAwMCBGcm9tIEludmVzdG1lbnQgaW4gSW50ZXJuYXRpb25hbCBCdXNpbmVz
+        cyBNYWNoaW5lcyBDb3Jwb3JhdGlvbiB0byBDb250YWN0IEJyb3dlciBQaXZl
+        biBCZWZvcmUgdGhlIExlYWQgUGxhaW50aWZmIERlYWRsaW5lIEluIENsYXNz
+        IEFjdGlvbiBMYXdzdWl0IOKAkyBJQk08L3RpdGxlPjxsaW5rPmh0dHA6Ly91
+        cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDov
+        L2ZpbmFuY2UueWFob28uY29tL25ld3MvZGVhZGxpbmUtYWxlcnQtYnJvd2Vy
+        LXBpdmVuLWVuY291cmFnZXMtMDExMDAwMTc1Lmh0bWw8L2xpbms+PGRlc2Ny
+        aXB0aW9uPltHbG9iZU5ld3N3aXJlXSAtIFNURVZFTlNPTiwgTWQuLCBBcHIu
+        IDIzLCAyMDE1LS0gVGhlIHNlY3VyaXRpZXMgbGl0aWdhdGlvbiBsYXcgZmly
+        bSBvZiBCcm93ZXIgUGl2ZW4sIEEgUHJvZmVzc2lvbmFsIENvcnBvcmF0aW9u
+        LCBhbm5vdW5jZXMgdGhhdCBhIGNsYXNzIGFjdGlvbiBsYXdzdWl0IGhhcyBi
+        ZWVuIGNvbW1lbmNlZCBpbiB0aGUgVW5pdGVkIFN0YXRlcyBEaXN0cmljdCBD
+        b3VydCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxz
+        ZSI+eWFob29fZmluYW5jZS80MzE1MTY0MDM8L2d1aWQ+PHB1YkRhdGU+RnJp
+        LCAyNCBBcHIgMjAxNSAwMToxMDowMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxp
+        dGVtPjx0aXRsZT5FeGNsdXNpdmU6IEJpdGNvaW4gZXhjaGFuZ2UgaXRCaXQg
+        c2Vla3MgTmV3IFlvcmsgYmFua2luZyBsaWNlbmNlPC90aXRsZT48bGluaz5o
+        dHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3Rvcnkv
+        Kmh0dHA6Ly9zZy5maW5hbmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1i
+        aXRjb2luLWV4Y2hhbmdlLWl0Yml0LXNlZWtzLTAwMDU1OTU1NS5odG1sPC9s
+        aW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFM
+        aW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8yMzI3ODU2Mjc1PC9ndWlkPjxw
+        dWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMDA6MDU6NTkgR01UPC9wdWJEYXRl
+        PjwvaXRlbT48aXRlbT48dGl0bGU+Q29ycmVjdGVkIC0gRXhjbHVzaXZlOiBC
+        aXRjb2luIGV4Y2hhbmdlIGl0Qml0IHNlZWtzIE5ldyBZb3JrIGJhbmtpbmcg
+        bGljZW5jZTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
+        aW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vc2cuZmluYW5jZS55YWhv
+        by5jb20vbmV3cy9leGNsdXNpdmUtYml0Y29pbi1leGNoYW5nZS1pdGJpdC1z
+        ZWVrcy0yMTEwMTQ3NjguaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNj
+        cmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFu
+        Y2UvMjU0NzQ0MDgyMTwvZ3VpZD48cHViRGF0ZT5UaHUsIDIzIEFwciAyMDE1
+        IDIzOjIwOjI4IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkFt
+        YXpvbiB0b3BzIGZvcmVjYXN0cyB3aXRoIDE1JSBzYWxlcyByaXNlPC90aXRs
+        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJu
+        YWwvZnQvcnNzL1NJRz0xMjlxY21vc3MvKmh0dHA6Ly93d3cuZnQuY29tL2Nt
+        cy9zL2M3NmU3MDkyLWU5ZTctMTFlNC1hZTFjLTAwMTQ0ZmVhYjdkZSxzMDE9
+        MS5odG1sP2Z0Y2FtcD10cmFmZmljL3BhcnRuZXIvZmVlZF9oZWFkbGluZS91
+        c195YWhvby9hdWRkZXY8L2xpbms+PGRlc2NyaXB0aW9uPlthdCBGaW5hbmNp
+        YWwgVGltZXNdIC0gQW1hem9uIGhhcyBkaXNjbG9zZWQgdGhhdCBpdHMgZmFz
+        dC1ncm93aW5nIHRlY2hub2xvZ3kgc3Vic2lkaWFyeSwgQW1hem9uIFdlYiBT
+        ZXJ2aWNlcywgaXMgYWxzbyBvbmUgb2YgaXRzIG1vc3QgcHJvZml0YWJsZSBi
+        dXNpbmVzc2VzLCBhIHJldmVsYXRpb24gdGhhdCB3aWxsIGluY3JlYXNlIGNv
+        bXBldGl0aW9uIGFtb25nIHRlY2ggY29tcGFuaWVzIHNwYXJyaW5nIC4uLjwv
+        ZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19m
+        aW5hbmNlLzM4NTEzMDQ5NTQ8L2d1aWQ+PHB1YkRhdGU+VGh1LCAyMyBBcHIg
+        MjAxNSAyMjowODozMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRs
+        ZT5BbWF6b24ganVzdCByZXZlYWxlZCBpdCBoYXMgYSBwcm9maXRhYmxlLCAk
+        NiBiaWxsaW9uIGJlYXN0IG9mIGEgYnVzaW5lc3M8L3RpdGxlPjxsaW5rPmh0
+        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
+        aHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mvb2ZmaWNpYWwtYW1hem9u
+        LXN0cm9uZ2VzdC1jbG91ZC1idXNpbmVzcy0yMDQ3MTg2OTQuaHRtbDwvbGlu
+        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
+        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzQ1ODc0NjQ0MTwvZ3VpZD48cHVi
+        RGF0ZT5UaHUsIDIzIEFwciAyMDE1IDIwOjQ4OjAwIEdNVDwvcHViRGF0ZT48
+        L2l0ZW0+PGl0ZW0+PHRpdGxlPlRoZSA0IFN0b2NrcyBUaGF0IEJvb3N0ZWQg
+        dGhlIERvdyBvbiBUaHVyc2RheTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
+        LnlhaG9vLmNvbS9maW5hbmNlL2V4dGVybmFsL3gyNDd3YWxsc3QvcnNzL1NJ
+        Rz0xMnFkNzJqZG0vKmh0dHA6Ly8yNDd3YWxsc3QuY29tL2ludmVzdGluZy8y
+        MDE1LzA0LzIzL3RoZS00LXN0b2Nrcy10aGF0LWJvb3N0ZWQtdGhlLWRvdy1v
+        bi10aHVyc2RheS88L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+
+        PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzI0MTcz
+        ODA5MzI8L2d1aWQ+PHB1YkRhdGU+VGh1LCAyMyBBcHIgMjAxNSAyMDowMTo0
+        OCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FTUMgRWFybmlu
+        Z3MgQW5hbHlzaXM6IEJ5IHRoZSBOdW1iZXJzPC90aXRsZT48bGluaz5odHRw
+        Oi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJuYWwveGNhcGl0YWxj
+        dWJlL3Jzcy9TSUc9MTIycDJtYmZhLypodHRwOi8vd3d3LmNhcGl0YWxjdWJl
+        LmNvbS9ibG9nL2luZGV4LnBocC9lbWMtZWFybmluZ3MtYW5hbHlzaXMvPC9s
+        aW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFM
+        aW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS84NjAzNTA3MDk8L2d1aWQ+PHB1
+        YkRhdGU+VGh1LCAyMyBBcHIgMjAxNSAxOToyNjozMiBHTVQ8L3B1YkRhdGU+
+        PC9pdGVtPjxpdGVtPjx0aXRsZT5JbnZlc3RvcnMgU3VkZGVubHkgQ2FuJmFw
+        b3M7dCBPd24gRW5vdWdoIE9mIElCTTogQSBUZWNobmljYWwgQnJlYWtkb3du
+        PC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2Uv
+        bmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdz
+        L2ludmVzdG9ycy1zdWRkZW5seS1jYW50LW93bi1lbm91Z2gtMTczOTIxNjY4
+        Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPltCZW56aW5nYV0gLSBKb2VsIEVs
+        Y29uaW4gaXMgdGhlIGNvLWhvc3Qgb2YgQmVuemluZ2EmYXBvcztzICNQcmVN
+        YXJrZXQgUHJlcCAsIGEgZGFpbHkgdHJhZGluZyBpZGVhIHJhZGlvIHNob3cu
+        IEludGVybmF0aW9uYWwgQnVzaW5lc3MgTWFjaGluZXMgQ29ycC4gKE5ZU0U6
+        IElCTSApIHNoYXJlcyB3ZXJlIHRyYWRpbmcgc2hhcnBseSBoaWdoZXIgYnkg
+        JDYuMjIgKDQgcGVyY2VudCkgYXQgLi4uPC9kZXNjcmlwdGlvbj48Z3VpZCBp
+        c1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMjU4NTE2NDQyMTwv
+        Z3VpZD48cHViRGF0ZT5UaHUsIDIzIEFwciAyMDE1IDE3OjM5OjIxIEdNVDwv
+        cHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkthbHRiYXVtIFNheXMgQnV5
+        YmFja3MgQXJlIEJlaGluZCBFUFMgR3Jvd3RoIEF0IElCTTwvdGl0bGU+PGxp
+        bms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0
+        b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9rYWx0YmF1bS1z
+        YXlzLWJ1eWJhY2tzLWJlaGluZC1lcHMtMTYxNTIxMTM0Lmh0bWw8L2xpbms+
+        PGRlc2NyaXB0aW9uPltCZW56aW5nYV0gLSBHYXJ5IEthbHRiYXVtIHdhcyBy
+        ZWNlbnRseSBhIGd1ZXN0IG9uICNQcmVNYXJrZXQgUHJlcCwgYSBkYWlseSB0
+        cmFkaW5nIGlkZWEgcmFkaW8gc2hvdyBob3N0ZWQgYnkgSm9lbCBFbGNvbmlu
+        IGFuZCBEZW5uaXMgRGljay4gVHVuZSBpbiB0byB0aGUgZGFpbHkgYnJvYWRj
+        YXN0IGxpdmUgTW9uZGF5LUZyaWRheSBhdCA4IGEubS4gRVQgaGVyZS4gSW50
+        ZXJuYXRpb25hbCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5r
+        PSJmYWxzZSI+eWFob29fZmluYW5jZS8zNDExMTUzMjMyPC9ndWlkPjxwdWJE
+        YXRlPlRodSwgMjMgQXByIDIwMTUgMTY6MTU6MjEgR01UPC9wdWJEYXRlPjwv
+        aXRlbT48aXRlbT48dGl0bGU+V2hhdCBKUCBNb3JnYW4gVGhpbmtzIE9mIEFw
+        cGxlLCBIZXdsZXR0LVBhY2thcmQgQW5kIE1pY3Jvc29mdCZhcG9zO3MgUEMv
+        VGFibGV0IEJ1c2luZXNzZXM8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55
+        YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFu
+        Y2UueWFob28uY29tL25ld3MvanAtbW9yZ2FuLXRoaW5rcy1hcHBsZS1oZXds
+        ZXR0LTEyMzY0ODE2OC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2Ny
+        aXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5j
+        ZS8xMTA1NjU3Mjg0PC9ndWlkPjxwdWJEYXRlPlRodSwgMjMgQXByIDIwMTUg
+        MTI6MzY6NDggR01UPC9wdWJEYXRlPjwvaXRlbT48L2NoYW5uZWw+PC9yc3M+
     http_version: 
-  recorded_at: Sun, 05 Apr 2015 20:20:35 GMT
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
 - request:
     method: get
     uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=ac117d389aba155a240958f2873b1f0c:18:67023197&begin_date=20150405&q=IBM
@@ -389,11 +281,11 @@ http_interactions:
       Server:
       - nginx/1.4.1
       Date:
-      - Sun, 05 Apr 2015 19:48:32 GMT
+      - Sun, 26 Apr 2015 04:42:58 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '160'
+      - '18744'
       Vary:
       - Accept-Encoding
       X-Powered-By:
@@ -406,10 +298,192 @@ http_interactions:
       - 'true'
     body:
       encoding: UTF-8
-      string: '{"response":{"meta":{"hits":0,"time":22,"offset":0},"docs":[]},"status":"OK","copyright":"Copyright
+      string: '{"response":{"meta":{"hits":47,"time":16,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/20\/business\/ibm-project-in-china-raises-us-concerns.html","snippet":"IBM\u2019s
+        partnership with Teamsun, a Beijing company, to provide key technologies is
+        similar to ones it has made elsewhere, but it has collided with political
+        and trade issues.","lead_paragraph":"IBM\u2019s partnership with Teamsun,
+        a Beijing company, to provide key technologies is similar to ones it has made
+        elsewhere, but it has collided with political and trade issues.","abstract":"IBM''s
+        partnership with Chinese technology company Teamsun is running afoul of political
+        and trade issues; partnership, granted permission under US export laws, is
+        intended to help China develop full supply chain of computers that will eventually
+        free its dependence on American products; IBM has clashed with Obama administration''s
+        push to get China to drop measures requiring American companies to hand over
+        technology in exchange for market access.","print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        Venture With China Stirs Concerns","print_headline":"IBM Venture With Chinese
+        Stirs Concern"},"keywords":[{"rank":"1","is_major":"Y","name":"glocations","value":"China"},{"rank":"2","is_major":"Y","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"3","is_major":"Y","name":"organizations","value":"Beijing
+        Teamsun Technology Co Ltd"},{"rank":"4","is_major":"Y","name":"subject","value":"Computers
+        and the Internet"},{"rank":"5","is_major":"N","name":"subject","value":"International
+        Trade and World Market"},{"rank":"6","is_major":"N","name":"persons","value":"Shen
+        Changxiang"},{"rank":"7","is_major":"N","name":"subject","value":"Computer
+        Security"},{"rank":"8","is_major":"N","name":"glocations","value":"United
+        States"}],"pub_date":"2015-04-20T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":"International Business","byline":{"contributor":"Jane
+        Perlez contributed reporting from Beijing.","person":[{"organization":"","role":"reported","firstname":"Paul","rank":1,"lastname":"MOZUR"}],"original":"By
+        PAUL MOZUR"},"type_of_material":"News","_id":"5533fc6438f0d80d714d597c","word_count":"1477"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/26\/your-money\/now-its-apples-world-once-it-was-ibms.html","snippet":"Like
+        IBM in the 1980s, the stock market giant has room to grow, but there are early
+        signs of the end of its dominance.","lead_paragraph":"Like IBM in the 1980s,
+        the stock market giant has room to grow, but there are early signs of the
+        end of its dominance.","abstract":null,"print_page":"4","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Apple Won\u2019t Always
+        Rule. Just Look at IBM.","content_kicker":"Strategies","kicker":"Strategies","print_headline":"Apple
+        Won\u2019t Always Rule. Just Look at IBM."},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"Apple
+        Inc"},{"rank":"2","is_major":"N","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"3","is_major":"N","name":"subject","value":"Stocks
+        and Bonds"},{"rank":"4","is_major":"N","name":"subject","value":"Standard
+        & Poor''s 500-Stock Index"},{"rank":"5","is_major":"N","name":"subject","value":"Company
+        Reports"},{"rank":"6","is_major":"N","name":"subject","value":"Computers and
+        the Internet"},{"rank":"7","is_major":"N","name":"subject","value":"Mutual
+        Funds"}],"pub_date":"2015-04-26T00:00:00Z","document_type":"article","news_desk":"SundayBusiness","section_name":"Your
+        Money","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Jeff","rank":1,"lastname":"SOMMER"}],"original":"By
+        JEFF SOMMER"},"type_of_material":"News","_id":"553c059438f0d83acc4546ac","word_count":"1234"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/07\/business\/dealbook\/call-for-activism-at-ibm-is-likely-to-go-unheard.html","snippet":"Investors
+        have reason to be dissatisfied. The trouble is that IBM has already exhausted
+        the typical activist playbook.","lead_paragraph":"Investors have reason to
+        be dissatisfied. The trouble is that IBM has already exhausted the typical
+        activist playbook.","abstract":null,"print_page":"","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Call for Activism at IBM
+        Is Likely to Go Unheard","content_kicker":"Breakingviews","kicker":"Breakingviews"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Shareholder
+        Rights and Activism"},{"rank":"2","is_major":"N","name":"subject","value":"Computers
+        and the Internet"},{"rank":"3","is_major":"N","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"4","is_major":"N","name":"subject","value":"Boards
+        of Directors"}],"pub_date":"2015-04-07T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":"DealBook","byline":{"person":[{"organization":"","role":"reported","firstname":"Robert","rank":1,"lastname":"CYRAN"}],"original":"By
+        ROBERT CYRAN"},"type_of_material":"News","_id":"5522dea238f0d85babd5a9bc","word_count":"321"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/21\/daily-report-ibm-profit-slips-as-company-enters-transition-year\/","snippet":"Revenue
+        fell 12 percent, to $19.6 billion in the latest quarter. The company says
+        it will pursues new sources of growth, as some of its traditional hardware,
+        software and services businesses erode.","lead_paragraph":null,"abstract":"Revenue
+        fell 12 percent, to $19.6 billion in the latest quarter. The company says
+        it will pursues new sources of growth, as some of its traditional hardware,
+        software and services businesses erode.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Daily
+        Report: IBM Profit Slips as Company Enters Transition Year","kicker":"Bits"},"keywords":[{"rank":"1","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"1","name":"subject","value":"Company
+        Reports"},{"rank":"2","name":"subject","value":"Computers and the Internet"}],"pub_date":"2015-04-21T06:43:52Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[],"original":"By
+        THE NEW YORK TIMES","organization":"The New York Times"},"type_of_material":"Blog","_id":"55362a4538f0d821accecf85","word_count":"107"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/13\/ibm-creates-watson-health-to-analyze-medical-data\/","snippet":"The
+        business unit will partner with companies including Apple, Medtronic and Johnson
+        & Johnson, offering IBM\u2019s Watson technology as a cloud-based tool at
+        many levels of the health care industry.","lead_paragraph":null,"abstract":"The
+        business unit will partner with companies including Apple, Medtronic and Johnson
+        & Johnson, offering IBM\u2019s Watson technology as a cloud-based tool at
+        many levels of the health care industry.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        Creates Watson Health to Analyze Medical Data","kicker":"Bits"},"keywords":[{"rank":"1","name":"organizations","value":"Apple
+        Inc"},{"rank":"2","name":"organizations","value":"Cleveland Clinic"},{"rank":"3","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"4","name":"organizations","value":"Johnson
+        & Johnson"},{"rank":"5","name":"organizations","value":"Medtronic Inc"},{"rank":"1","name":"subject","value":"Artificial
+        Intelligence"},{"rank":"2","name":"subject","value":"Electronic Health Records"},{"rank":"3","name":"subject","value":"Mergers,
+        Acquisitions and Divestitures"},{"rank":"4","name":"subject","value":"Supercomputers"}],"pub_date":"2015-04-13T18:00:31Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Steve","rank":1,"lastname":"LOHR"}],"original":"By
+        STEVE LOHR"},"type_of_material":"Blog","_id":"552c3e6338f0d8273c42858e","word_count":"850"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/21\/technology\/ibm-first-quarter-earnings-top-wall-st-expectations.html","snippet":"In
+        what the company has said will be a transition year, its revenue fell 12 percent,
+        to $19.6 billion, but operating profits rose.","lead_paragraph":"In what the
+        company has said will be a transition year, its revenue fell 12 percent, to
+        $19.6 billion, but operating profits rose.","abstract":"IBM reports net income
+        of $2.4 billion, decline of 5 percent, and $2.9 billion in operating profits,
+        4 percent increase; revenue for quarter is reported at $19.6 billion, fall
+        of 12 percent.","print_page":"3","blog":[],"source":"The New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-articleLarge.jpg","height":308,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-articleLarge.jpg","xlargeheight":"308"},"type":"image"},{"width":75,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        First-Quarter Earnings Top Wall St. Expectations","print_headline":"IBM Operating
+        Profits Rise, but Strong Dollar Takes Toll"},"keywords":[{"rank":"1","is_major":"Y","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"2","is_major":"N","name":"subject","value":"Company
+        Reports"},{"rank":"3","is_major":"N","name":"subject","value":"Enterprise
+        Computing"}],"pub_date":"2015-04-21T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Steve","rank":1,"lastname":"LOHR"}],"original":"By
+        STEVE LOHR"},"type_of_material":"News","_id":"553572ad38f0d821accecdda","word_count":"728"},{"web_url":"http:\/\/www.nytimes.com\/video\/multimedia\/100000003639547\/ibm-revenue-falls-for-12th-quarter.html","snippet":"Shares
+        of IBM fell after hours after a revenue miss, and a warning about currency
+        headwinds. Stocks rose in Monday''s regular trading session. Bobbi Rebell
+        reports.","lead_paragraph":"Shares of IBM fell after hours after a revenue
+        miss, and a warning about currency headwinds. Stocks rose in Monday''s regular
+        trading session. Bobbi Rebell reports.","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[{"width":190,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-articleLarge.jpg","height":338,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-articleLarge.jpg","xlargeheight":"338"},"type":"image"},{"width":75,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        revenue falls for 12th quarter","sub":"IBM revenue falls for 12th quarter"},"keywords":[],"pub_date":"2015-04-20T18:29:15Z","document_type":"multimedia","news_desk":"Multimedia\/Photos","section_name":"Multimedia\/Photos","subsection_name":null,"byline":{"person":[],"original":"Reuters","organization":"Reuters"},"type_of_material":"Video","_id":"55357de538f0d821accece02","word_count":"26"},{"web_url":"http:\/\/www.nytimes.com\/reuters\/2015\/04\/22\/business\/22reuters-peugeot-ibm.html","snippet":"PSA
+        Peugeot Citroen and IBM are working together to hook cars up to the Internet,
+        going beyond mapping and infotainment to link vehicles up to shops, service
+        networks and urban transport grids, the companies said on Wednesday.","lead_paragraph":"PSA
+        Peugeot Citroen and IBM are working together to hook cars up to the Internet,
+        going beyond mapping and infotainment to link vehicles up to shops, service
+        networks and urban transport grids, the companies said on Wednesday. ","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[],"headline":{"main":"Peugeot,
+        IBM Working to Connect Cars to Shops and Servicing","print_headline":"Peugeot,
+        IBM Working to Connect Cars to Shops and Servicing"},"keywords":[],"pub_date":"2015-04-22T08:14:44Z","document_type":"article","news_desk":"None","section_name":"Business
+        Day","subsection_name":null,"byline":{"person":[],"original":"By REUTERS","organization":"REUTERS"},"type_of_material":"News","_id":"5537916638f0d84082034dd3","word_count":"355"},{"web_url":"http:\/\/www.nytimes.com\/reuters\/2015\/04\/20\/business\/20reuters-ibm-results.html","snippet":"International
+        Business Machines Corp reported a 12 percent fall in first-quarter revenue
+        as the technology company continues to shed unprofitable businesses to focus
+        on cloud-computing initiatives.","lead_paragraph":"International Business
+        Machines Corp reported a 12 percent fall in first-quarter revenue as the technology
+        company continues to shed unprofitable businesses to focus on cloud-computing
+        initiatives.","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[],"headline":{"main":"IBM
+        Sales Fall for 12th Quarter, Currency Weighs","print_headline":"IBM Sales
+        Fall for 12th Quarter, Currency Weighs"},"keywords":[],"pub_date":"2015-04-20T16:12:18Z","document_type":"article","news_desk":"None","section_name":"Business
+        Day","subsection_name":null,"byline":{"person":[],"original":"By REUTERS","organization":"REUTERS"},"type_of_material":"News","_id":"55355e2338f0d821accecd94","word_count":"392"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/20\/daily-report-ibm-venture-with-china-stirs-concerns\/","snippet":"IBM\u2019s
+        partnership with Teamsun, a Beijing company, to provide key technologies is
+        similar to ones it has made elsewhere, but it has collided with political
+        and trade issues.","lead_paragraph":null,"abstract":"IBM\u2019s partnership
+        with Teamsun, a Beijing company, to provide key technologies is similar to
+        ones it has made elsewhere, but it has collided with political and trade issues.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Daily
+        Report: IBM Venture With China Stirs Concerns","kicker":"Bits"},"keywords":[{"rank":"1","name":"glocations","value":"China"},{"rank":"1","name":"subject","value":"Cyberwarfare
+        and Defense"},{"rank":"2","name":"subject","value":"Privacy"}],"pub_date":"2015-04-20T08:20:54Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[],"original":"By
+        THE NEW YORK TIMES","organization":"The New York Times"},"type_of_material":"Blog","_id":"5534ef8138f0d80d714d5baf","word_count":"174"}]},"status":"OK","copyright":"Copyright
         (c) 2013 The New York Times Company.  All Rights Reserved."}'
     http_version: 
-  recorded_at: Sun, 05 Apr 2015 20:20:35 GMT
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
+- request:
+    method: get
+    uri: http://content.guardianapis.com/search?api-key=u24598bmezctra9ztaugqb6r&from-date=2015-04-04&q=IBM&to-date=2015-04-05
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=20
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 26 Apr 2015 04:45:02 GMT
+      Server:
+      - spray-can/1.3.3
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-24.mashery.com
+      Content-Length:
+      - '1061'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6eyJzdGF0dXMiOiJvayIsInVzZXJUaWVyIjoiZGV2ZWxv
+        cGVyIiwidG90YWwiOjIsInN0YXJ0SW5kZXgiOjEsInBhZ2VTaXplIjoxMCwi
+        Y3VycmVudFBhZ2UiOjEsInBhZ2VzIjoxLCJvcmRlckJ5IjoicmVsZXZhbmNl
+        IiwicmVzdWx0cyI6W3sic2VjdGlvbklkIjoidGVjaG5vbG9neSIsIndlYlRp
+        dGxlIjoiVGltIENvb2sncyBhY3RpdmlzbSBpcyBjaGFuZ2luZyBBcHBsZSDi
+        gJMgYnV0IGhpcyBmdXR1cmUgbWF5IGRlcGVuZCBvbiBhIHdhdGNoIiwid2Vi
+        UHVibGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxMjowMDowNFoiLCJpZCI6
+        InRlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2stYWN0aXZpc20tc3Rl
+        dmUtam9icy1hcHBsZS13YXRjaCIsIndlYlVybCI6Imh0dHA6Ly93d3cudGhl
+        Z3VhcmRpYW4uY29tL3RlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2st
+        YWN0aXZpc20tc3RldmUtam9icy1hcHBsZS13YXRjaCIsImFwaVVybCI6Imh0
+        dHA6Ly9jb250ZW50Lmd1YXJkaWFuYXBpcy5jb20vdGVjaG5vbG9neS8yMDE1
+        L2Fwci8wNC90aW0tY29vay1hY3RpdmlzbS1zdGV2ZS1qb2JzLWFwcGxlLXdh
+        dGNoIiwic2VjdGlvbk5hbWUiOiJUZWNobm9sb2d5In0seyJzZWN0aW9uSWQi
+        OiJ3b3JsZCIsIndlYlRpdGxlIjoiQXJlIHRoZSB0ZXJyb3Jpc3RzIG9mIGFs
+        LVNoYWJhYWIgYWJvdXQgdG8gdGVhciBLZW55YSBpbiB0d28/Iiwid2ViUHVi
+        bGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxNjoxNjoxMloiLCJpZCI6Indv
+        cmxkLzIwMTUvYXByLzA0L2tlbnlhLXVuaXZlcnNpdHktbWFzc2FjcmUtc2hh
+        YmFhYi1kaXZpc2lvbnMiLCJ3ZWJVcmwiOiJodHRwOi8vd3d3LnRoZWd1YXJk
+        aWFuLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55YS11bml2ZXJzaXR5LW1h
+        c3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwiYXBpVXJsIjoiaHR0cDovL2Nv
+        bnRlbnQuZ3VhcmRpYW5hcGlzLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55
+        YS11bml2ZXJzaXR5LW1hc3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwic2Vj
+        dGlvbk5hbWUiOiJXb3JsZCBuZXdzIn1dfX0=
+    http_version: 
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
 - request:
     method: get
     uri: http://finance.yahoo.com/rss/headline?s=IBM
@@ -425,7 +499,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 05 Apr 2015 20:20:20 GMT
+      - Sun, 26 Apr 2015 04:45:01 GMT
       Cache-Control:
       - max-age=300,stale-while-revalidate=60,stale-if-error=3600,public
       Content-Type:
@@ -433,14 +507,14 @@ http_interactions:
       Vary:
       - Accept-Encoding,X-Ssl
       Age:
-      - '10'
+      - '1'
       Via:
-      - http/1.1 media-border148.global.media.bf1.yahoo.com (ApacheTrafficServer [cMsSfW]),
-        http/1.1 r48.ycpi.dxs.yahoo.net (ApacheTrafficServer [cHs f ])
+      - http/1.1 media-border193.global.media.bf1.yahoo.com (ApacheTrafficServer [cSsSfU]),
+        http/1.1 r34.ycpi.ne1.yahoo.net (ApacheTrafficServer [cHs f ])
       Server:
       - ATS
       Content-Length:
-      - '13101'
+      - '10080'
       Connection:
       - keep-alive
     body:
@@ -453,291 +527,445 @@ http_interactions:
         PGxpbms+aHR0cDovL2ZpbmFuY2UueWFob28uY29tL3EvaD9zPWlibTwvbGlu
         az48ZGVzY3JpcHRpb24+TGF0ZXN0IEZpbmFuY2lhbCBOZXdzIGZvciBJbnRl
         cm5hdGlvbmFsIEJ1c2luZXNzIE1hY2hpbmVzPC9kZXNjcmlwdGlvbj48bGFu
-        Z3VhZ2U+ZW4tVVM8L2xhbmd1YWdlPjxsYXN0QnVpbGREYXRlPlN1biwgMDUg
-        QXByIDIwMTUgMTM6MDU6MzcgR01UPC9sYXN0QnVpbGREYXRlPjxpbWFnZT48
+        Z3VhZ2U+ZW4tVVM8L2xhbmd1YWdlPjxsYXN0QnVpbGREYXRlPlN1biwgMjYg
+        QXByIDIwMTUgMDQ6MTY6MDAgR01UPC9sYXN0QnVpbGREYXRlPjxpbWFnZT48
         dXJsPmh0dHA6Ly9sLnlpbWcuY29tL2EvaS9icmFuZC9wdXJwbGVsb2dvL3Vo
         L3VzL2Zpbi5naWY8L3VybD48dGl0bGU+WWFob28hIEZpbmFuY2U6IElCTSBO
         ZXdzPC90aXRsZT48bGluaz5odHRwOi8vZmluYW5jZS55YWhvby5jb20vcS9o
         P3M9aWJtPC9saW5rPjx3aWR0aD4xNDQ8L3dpZHRoPjxoZWlnaHQ+NDU8L2hl
-        aWdodD48L2ltYWdlPjxpdGVtPjx0aXRsZT5EbyBJQk3igJlzIEZpbmFuY2lh
-        bHMgU3VwcG9ydCBJdHMgQnV5YmFja3MgYW5kIERpdmlkZW5kIFBvbGljeT88
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mv
-        aWJtLWZpbmFuY2lhbHMtc3VwcG9ydC1idXliYWNrcy1kaXZpZGVuZC0xMzA1
-        Mzc0MDkuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48
-        Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvNDA5OTU1
-        MDQyNzwvZ3VpZD48cHViRGF0ZT5TdW4sIDA1IEFwciAyMDE1IDEzOjA1OjM3
-        IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPklCTSBDb250aW51
-        ZXMgdG8gTHVyZSBJdHMgSW52ZXN0b3JzIHdpdGggU2hhcmUgQnV5YmFja3M8
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mv
-        aWJtLWNvbnRpbnVlcy1sdXJlLWludmVzdG9ycy1zaGFyZS0xMjA1MzA2Mjku
-        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBp
-        c1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzU5OTQ5NjAzPC9n
-        dWlkPjxwdWJEYXRlPlN1biwgMDUgQXByIDIwMTUgMTI6MDU6MzAgR01UPC9w
-        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+SUJNIFNIQVJFSE9MREVSIEFM
-        RVJUIEJZIEZPUk1FUiBMT1VJU0lBTkEgQVRUT1JORVkgR0VORVJBTDogS2Fo
-        biBTd2ljayAmYW1wOyBGb3RpLCBMTEMgUmVtaW5kcyBJbnZlc3RvcnMgd2l0
-        aCBMb3NzZXMgaW4gRXhjZXNzIG9mICQxMDAsMDAwIG9mIExlYWQgUGxhaW50
-        aWZmIERlYWRsaW5lIGluIENsYXNzIEFjdGlvbiBMYXdzdWl0IEFnYWluc3Qg
-        SW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBDb3Jwb3JhdGlvbjwv
-        dGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25l
-        d3MvcnNzL3N0b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9p
-        Ym0tc2hhcmVob2xkZXItYWxlcnQtZm9ybWVyLWxvdWlzaWFuYS0wMjAwMDA5
-        NzAuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W0J1c2luZXNzIFdpcmVdIC0g
-        S2FobiBTd2ljayAmYW1wOyBGb3RpLCBMTEMgYW5kIEtTRiBwYXJ0bmVyLCB0
-        aGUgZm9ybWVyIEF0dG9ybmV5IEdlbmVyYWwgb2YgTG91aXNpYW5hLCBDaGFy
-        bGVzIEMuIEZvdGksIEpyLiwgcmVtaW5kIGludmVzdG9ycyB0aGF0IHRoZXkg
-        aGF2ZSB1bnRpbCBNYXkgMSwgMjAxNSB0byBmaWxlIGxlYWQgcGxhaW50aWZm
-        IGFwcGxpY2F0aW9ucyBpbiBhIHNlY3VyaXRpZXMgY2xhc3MgYWN0aW9uIGxh
-        d3N1aXQgYWdhaW5zdCBJbnRlcm5hdGlvbmFsIEJ1c2luZXNzIE1hY2hpbmVz
-        IENvcnBvcmF0aW9uIGlmIHRoZXkgcHVyY2hhc2VkIHRoZSBDb21wYW554oCZ
-        cyBzZWN1cml0aWVzIGJldHdlZW4gdGhlIGV4cGFuZGVkIHBlcmlvZCBvZiBK
-        YW51YXJ5IDIyLCAyMDE0IGFuZCBPY3RvYmVyIDE3LCAyMDE0LCBpbmNsdXNp
-        dmUgLi4uPC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2Ui
-        PnlhaG9vX2ZpbmFuY2UvMzc4NzQ4NzIwMDwvZ3VpZD48cHViRGF0ZT5TYXQs
-        IDA0IEFwciAyMDE1IDAyOjAwOjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0
-        ZW0+PHRpdGxlPkNoYXJ0IG9mIHRoZSBkYXk6IDM1IHllYXJzIG9mIElCTSwg
-        TWljcm9zb2Z0IGFuZCBBcHBsZTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
-        LnlhaG9vLmNvbS9maW5hbmNlL2V4dGVybmFsL2hmdG4vcnNzL1NJRz0xMmww
-        aG8yY2EvKmh0dHA6Ly9mb3J0dW5lLmNvbS8yMDE1LzA0LzAzL2NoYXJ0LW9m
-        LXRoZS1kYXktMzUteWVhcnMtb2YtaWJtLW1pY3Jvc29mdC1hbmQtYXBwbGUv
-        P3hpZD15YWhvb19mb3J0dW5lPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2Ny
-        aXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5j
-        ZS82NjU5NjQwNzk8L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAx
-        OToxODoyMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5XaHkg
-        SUJN4oCZcyBJbml0aWF0aXZlcyBHaXZlIEludmVzdG9ycyBIb3BlPC90aXRs
-        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9y
-        c3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdzL3doeS1p
-        Ym0taW5pdGlhdGl2ZXMtaW52ZXN0b3JzLWhvcGUtMTkwNjEwNjg4Lmh0bWw8
-        L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJt
-        YUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzExMzA4NDk2NzI8L2d1aWQ+
-        PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAxOTowNjoxMCBHTVQ8L3B1YkRh
-        dGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5OZXcgWW9ya+KAmXMgU2FpbHRocnUg
-        ZmluZHMgbmV3IENFTyBOZWlsIEx1c3RpZyBjbG9zZSB0byBob21lPC90aXRs
-        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJu
-        YWwvY2JzbS9yc3MvU0lHPTExaWl1bWtldC8qaHR0cDovL3d3dy5tYXJrZXR3
-        YXRjaC5jb20vTmV3cy9TdG9yeS9TdG9yeS5hc3B4P2d1aWQ9OENFRUQ2OTgt
-        REEyNy0xMUU0LUE5QkYtOUU4RjU1NTUyNTk3JmFtcDtzaXRlaWQ9eWhvb2Yy
-        PC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVy
-        bWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8yNjUzNzUwMzgzPC9ndWlk
-        PjxwdWJEYXRlPkZyaSwgMDMgQXByIDIwMTUgMTc6Mzc6NDggR01UPC9wdWJE
-        YXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2hhdCBBcmUgU29tZSBvZiB0aGUg
-        SXNzdWVzIElCTSBOZWVkcyB0byBBZGRyZXNzPzwvdGl0bGU+PGxpbms+aHR0
-        cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0b3J5Lypo
-        dHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9pc3N1ZXMtaWJtLW5lZWRz
-        LWFkZHJlc3MtMTcwNTI1MTQwLmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPjwv
-        ZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19m
-        aW5hbmNlLzE1MDM1MjQwNTg8L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIg
-        MjAxNSAxNzowNToyNSBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRs
-        ZT5Ib3cgV2VyZSBJQk3igJlzIEZpbmFuY2lhbHMgaW4gRmlzY2FsIFllYXIg
-        MjAxND88L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmlu
-        YW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29t
-        L25ld3Mvd2VyZS1pYm0tZmluYW5jaWFscy1maXNjYWwtMjAxNC0xNTA1MzU3
-        ODQuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3Vp
-        ZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzQyMzM1MDYy
-        MzwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFwciAyMDE1IDE1OjA1OjM1IEdN
-        VDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2ZTogSUJN
-        IGhpcmUgYWR2aXNlcnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGludmVzdG9y
-        cyAtIHNvdXJjZXM8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5j
-        b20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL3NnLmZpbmFuY2Uu
-        eWFob28uY29tL25ld3MvZXhjbHVzaXZlLWlibS1oaXJlLWFkdmlzZXJzLWRl
-        YWwtMDIzOTM1NzY5Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPltSZXV0ZXJz
-        XSAtIE5FVyBZT1JLL0JPU1RPTiAoUmV1dGVycykgLSBTb21lIHRvcCBzaGFy
-        ZWhvbGRlcnMgb2YgSUJNLCBkaXNhcHBvaW50ZWQgYnkgMTEgc3RyYWlnaHQg
-        cXVhcnRlcnMgb2YgZmFsbGluZyByZXZlbnVlcywgYXJlIHNlZWtpbmcgaGVs
-        cCBmcm9tIGFjdGl2aXN0IGludmVzdG9ycyB0byBzaGFrZSB1cCB0aGUgY29t
-        cGFueSwgYnV0IGhhdmUgYmVlbiB0dXJuZWQgZG93biBieSBib3RoIEJpbGwg
-        QWNrbWFuJmFwb3M7cyBQZXJzaGluZyBTcXVhcmUgYW5kIEplZmZyZXkgVWJi
-        ZW4mYXBvcztzIFZhbHVlQWN0LCBhY2NvcmRpbmcgdG8gcGVvcGxlIHdpdGgg
-        a25vd2xlZGdlIG9mIHRoZSBtYXR0ZXIuIEludGVybmF0aW9uYWwgQnVzaW5l
-        c3MgTWFjaGluZXMgQ29ycCAoSUJNLk4pIGlzIGNvbmNlcm5lZCBhYm91dCBh
-        IHBvc3NpYmxlIGF0dGFjayBieSBwcm9taW5lbnQgYWN0aXZpc3QgaGVkZ2Ug
-        ZnVuZHMsIGFuZCBpcyB3b3JraW5nIHdpdGggdHdvIGludmVzdG1lbnQgYmFu
-        a3MgdG8gZm9ybXVsYXRlIGEgZGVmZW5zZSBwbGFuLCBhY2NvcmRpbmcgdG8g
-        dGhlIHBlb3BsZSwgd2hvIGRlY2xpbmVkIHRvIGJlIGlkZW50aWZpZWQuIFRo
-        ZSBzdG9yaWVkIEFtZXJpY2FuIHRlY2hub2xvZ3kgZ2lhbnQsIHdvcnRoICQx
-        NTcgYmlsbGlvbiB0b2RheSwgaGFzIHN0cnVnZ2xlZCB0byB0cmFuc2Zvcm0g
-        aXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhhcmR3YXJlIG1ha2VyIGludG8g
-        YSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQgc2VydmljZXMgY29tcGFueS4g
-        V2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sgb3ZlciBhcyBjaGllZiBleGVj
-        dXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIsIFdhbGwgU3RyZWV0IHdhcyBo
-        b3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFibGUgdG8ga2lja3N0YXJ0IGdy
-        b3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+
-        eWFob29fZmluYW5jZS8xOTk5ODE0NzY4PC9ndWlkPjxwdWJEYXRlPkZyaSwg
-        MDMgQXByIDIwMTUgMDg6MDk6MDkgR01UPC9wdWJEYXRlPjwvaXRlbT48aXRl
-        bT48dGl0bGU+RXhjbHVzaXZlOiBJQk0gaGlyZSBhZHZpc2VycyB0byBkZWFs
-        IHdpdGggcmVzdGxlc3MgaW52ZXN0b3JzIC0gc291cmNlczwvdGl0bGU+PGxp
-        bms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0
-        b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9leGNsdXNpdmUt
-        aWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0wMjM5MzUyNzAuaHRtbDwvbGluaz48
-        ZGVzY3JpcHRpb24+W1JldXRlcnNdIC0gTkVXIFlPUksvQk9TVE9OIChSZXV0
-        ZXJzKSAtIFNvbWUgdG9wIHNoYXJlaG9sZGVycyBvZiBJQk0sIGRpc2FwcG9p
-        bnRlZCBieSAxMSBzdHJhaWdodCBxdWFydGVycyBvZiBmYWxsaW5nIHJldmVu
-        dWVzLCBhcmUgc2Vla2luZyBoZWxwIGZyb20gYWN0aXZpc3QgaW52ZXN0b3Jz
-        IHRvIHNoYWtlIHVwIHRoZSBjb21wYW55LCBidXQgaGF2ZSBiZWVuIHR1cm5l
-        ZCBkb3duIGJ5IGJvdGggQmlsbCBBY2ttYW4mYXBvcztzIFBlcnNoaW5nIFNx
-        dWFyZSBhbmQgSmVmZnJleSBVYmJlbiZhcG9zO3MgVmFsdWVBY3QsIGFjY29y
-        ZGluZyB0byBwZW9wbGUgd2l0aCBrbm93bGVkZ2Ugb2YgdGhlIG1hdHRlci4g
-        SW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBDb3JwIChJQk0uTikg
-        aXMgY29uY2VybmVkIGFib3V0IGEgcG9zc2libGUgYXR0YWNrIGJ5IHByb21p
-        bmVudCBhY3RpdmlzdCBoZWRnZSBmdW5kcywgYW5kIGlzIHdvcmtpbmcgd2l0
-        aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0byBmb3JtdWxhdGUgYSBkZWZlbnNl
-        IHBsYW4sIGFjY29yZGluZyB0byB0aGUgcGVvcGxlLCB3aG8gZGVjbGluZWQg
-        dG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0b3JpZWQgQW1lcmljYW4gdGVjaG5v
-        bG9neSBnaWFudCwgd29ydGggJDE1NyBiaWxsaW9uIHRvZGF5LCBoYXMgc3Ry
-        dWdnbGVkIHRvIHRyYW5zZm9ybSBpdHNlbGYgZnJvbSBhIGxvdy1tYXJnaW4g
-        aGFyZHdhcmUgbWFrZXIgaW50byBhIGNsb3VkLWJhc2VkIHNvZnR3YXJlIGFu
-        ZCBzZXJ2aWNlcyBjb21wYW55LiBXaGVuIFZpcmdpbmlhIFJvbWV0dHkgdG9v
-        ayBvdmVyIGFzIGNoaWVmIGV4ZWN1dGl2ZSBhdCB0aGUgc3RhcnQgb2YgMjAx
-        MiwgV2FsbCBTdHJlZXQgd2FzIGhvcGVmdWwgdGhhdCBzaGUgd291bGQgYmUg
-        YWJsZSB0byBraWNrc3RhcnQgZ3Jvd3RoLjwvZGVzY3JpcHRpb24+PGd1aWQg
-        aXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzMxMTA3MDIxNDc8
-        L2d1aWQ+PHB1YkRhdGU+RnJpLCAwMyBBcHIgMjAxNSAwODowOTowOSBHTVQ8
-        L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNpdmU6IElCTSBo
-        aXJlIGFkdmlzZXJzIHRvIGRlYWwgd2l0aCByZXN0bGVzcyBpbnZlc3RvcnMt
-        c291cmNlczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
-        aW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vaW4uZmluYW5jZS55YWhv
-        by5jb20vbmV3cy9leGNsdXNpdmUtaWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0w
-        MzQxMjUzMTMuaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlv
-        bj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTE5
-        OTY4NTY2NzwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFwciAyMDE1IDAzOjQx
-        OjI1IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2
-        ZTogSUJNIGhpcmUgYWR2aXNlcnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGlu
-        dmVzdG9ycy1zb3VyY2VzPC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFo
-        b28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9zZy5maW5h
-        bmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1pYm0taGlyZS1hZHZpc2Vy
-        cy1kZWFsLTAzNDEyNTgzOC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj5bUmV1
-        dGVyc10gLSBORVcgWU9SSy9CT1NUT04gKFJldXRlcnMpIC0gU29tZSB0b3Ag
-        c2hhcmVob2xkZXJzIG9mIElCTSwgZGlzYXBwb2ludGVkIGJ5IDExIHN0cmFp
-        Z2h0IHF1YXJ0ZXJzIG9mIGZhbGxpbmcgcmV2ZW51ZXMsIGFyZSBzZWVraW5n
-        IGhlbHAgZnJvbSBhY3RpdmlzdCBpbnZlc3RvcnMgdG8gc2hha2UgdXAgdGhl
-        IGNvbXBhbnksIGJ1dCBoYXZlIGJlZW4gdHVybmVkIGRvd24gYnkgYm90aCBC
-        aWxsIEFja21hbiZhcG9zO3MgUGVyc2hpbmcgU3F1YXJlIGFuZCBKZWZmcmV5
-        IFViYmVuJmFwb3M7cyBWYWx1ZUFjdCwgYWNjb3JkaW5nIHRvIHBlb3BsZSB3
-        aXRoIGtub3dsZWRnZSBvZiB0aGUgbWF0dGVyLiBJbnRlcm5hdGlvbmFsIEJ1
-        c2luZXNzIE1hY2hpbmVzIENvcnAgaXMgY29uY2VybmVkIGFib3V0IGEgcG9z
-        c2libGUgYXR0YWNrIGJ5IHByb21pbmVudCBhY3RpdmlzdCBoZWRnZSBmdW5k
-        cywgYW5kIGlzIHdvcmtpbmcgd2l0aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0
-        byBmb3JtdWxhdGUgYSBkZWZlbnNlIHBsYW4sIGFjY29yZGluZyB0byB0aGUg
-        cGVvcGxlLCB3aG8gZGVjbGluZWQgdG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0
-        b3JpZWQgQW1lcmljYW4gdGVjaG5vbG9neSBnaWFudCwgd29ydGggJDE1NyBi
-        aWxsaW9uIHRvZGF5LCBoYXMgc3RydWdnbGVkIHRvIHRyYW5zZm9ybSBpdHNl
-        bGYgZnJvbSBhIGxvdy1tYXJnaW4gaGFyZHdhcmUgbWFrZXIgaW50byBhIGNs
-        b3VkLWJhc2VkIHNvZnR3YXJlIGFuZCBzZXJ2aWNlcyBjb21wYW55LiBXaGVu
-        IFZpcmdpbmlhIFJvbWV0dHkgdG9vayBvdmVyIGFzIGNoaWVmIGV4ZWN1dGl2
-        ZSBhdCB0aGUgc3RhcnQgb2YgMjAxMiwgV2FsbCBTdHJlZXQgd2FzIGhvcGVm
-        dWwgdGhhdCBzaGUgd291bGQgYmUgYWJsZSB0byBraWNrc3RhcnQgZ3Jvd3Ro
-        LjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhv
-        b19maW5hbmNlLzc5MjI2MDI1NjwvZ3VpZD48cHViRGF0ZT5GcmksIDAzIEFw
-        ciAyMDE1IDAzOjQxOjI1IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRp
-        dGxlPkV4Y2x1c2l2ZSAtIElCTSBoaXJlIGFkdmlzZXJzIHRvIGRlYWwgd2l0
-        aCByZXN0bGVzcyBpbnZlc3RvcnM6IHNvdXJjZXM8L3RpdGxlPjxsaW5rPmh0
-        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
-        aHR0cDovL3NnLmZpbmFuY2UueWFob28uY29tL25ld3MvZXhjbHVzaXZlLWli
-        bS1oaXJlLWFkdmlzZXJzLWRlYWwtMDEwMzU1MTAxLmh0bWw8L2xpbms+PGRl
-        c2NyaXB0aW9uPltSZXV0ZXJzXSAtIE5FVyBZT1JLL0JPU1RPTiAoUmV1dGVy
-        cykgLSBTb21lIHRvcCBzaGFyZWhvbGRlcnMgb2YgSUJNLCBkaXNhcHBvaW50
-        ZWQgYnkgMTEgc3RyYWlnaHQgcXVhcnRlcnMgb2YgZmFsbGluZyByZXZlbnVl
-        cywgYXJlIHNlZWtpbmcgaGVscCBmcm9tIGFjdGl2aXN0IGludmVzdG9ycyB0
-        byBzaGFrZSB1cCB0aGUgY29tcGFueSwgYnV0IGhhdmUgYmVlbiB0dXJuZWQg
-        ZG93biBieSBib3RoIEJpbGwgQWNrbWFuJmFwb3M7cyBQZXJzaGluZyBTcXVh
-        cmUgYW5kIEplZmZyZXkgVWJiZW4mYXBvcztzIFZhbHVlQWN0LCBhY2NvcmRp
-        bmcgdG8gcGVvcGxlIHdpdGgga25vd2xlZGdlIG9mIHRoZSBtYXR0ZXIuIElu
-        dGVybmF0aW9uYWwgQnVzaW5lc3MgTWFjaGluZXMgQ29ycCAoSUJNLk4pIGlz
-        IGNvbmNlcm5lZCBhYm91dCBhIHBvc3NpYmxlIGF0dGFjayBieSBwcm9taW5l
-        bnQgYWN0aXZpc3QgaGVkZ2UgZnVuZHMsIGFuZCBpcyB3b3JraW5nIHdpdGgg
-        dHdvIGludmVzdG1lbnQgYmFua3MgdG8gZm9ybXVsYXRlIGEgZGVmZW5zZSBw
-        bGFuLCBhY2NvcmRpbmcgdG8gdGhlIHBlb3BsZSwgd2hvIGRlY2xpbmVkIHRv
-        IGJlIGlkZW50aWZpZWQuIFRoZSBzdG9yaWVkIEFtZXJpY2FuIHRlY2hub2xv
-        Z3kgZ2lhbnQsIHdvcnRoICQxNTcgYmlsbGlvbiB0b2RheSwgaGFzIHN0cnVn
-        Z2xlZCB0byB0cmFuc2Zvcm0gaXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhh
-        cmR3YXJlIG1ha2VyIGludG8gYSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQg
-        c2VydmljZXMgY29tcGFueS4gV2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sg
-        b3ZlciBhcyBjaGllZiBleGVjdXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIs
-        IFdhbGwgU3RyZWV0IHdhcyBob3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFi
-        bGUgdG8ga2lja3N0YXJ0IGdyb3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlz
-        UGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8xODg5Njk3NDQyPC9n
-        dWlkPjxwdWJEYXRlPkZyaSwgMDMgQXByIDIwMTUgMDI6Mzg6NTUgR01UPC9w
-        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2h5IElCTeKAmXMgQ2FzaCBG
-        bG93cyBhbmQgRWFybmluZ3MgQXJlIENvbmNlcm5pbmcgSW52ZXN0b3JzPC90
-        aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3
-        cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdzL3do
-        eS1pYm0tY2FzaC1mbG93cy1lYXJuaW5ncy0xNDU1MjYxMzUuaHRtbDwvbGlu
-        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
-        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTI0NDM2MzY0PC9ndWlkPjxwdWJE
-        YXRlPkZyaSwgMDMgQXByIDIwMTUgMDE6MDU6NDcgR01UPC9wdWJEYXRlPjwv
-        aXRlbT48aXRlbT48dGl0bGU+V2h5IElCTSBFbnRlcmVkIGludG8gYSBEYXRh
-        IEFuYWx5dGljcyBQYXJ0bmVyc2hpcCB3aXRoIFR3aXR0ZXI8L3RpdGxlPjxs
-        aW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9z
-        dG9yeS8qaHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mvd2h5LWlibS1l
-        bnRlcmVkLWRhdGEtYW5hbHl0aWNzLTIzMDYwMTI0OS5odG1sPC9saW5rPjxk
-        ZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJm
-        YWxzZSI+eWFob29fZmluYW5jZS8zNjM5OTcyMjUzPC9ndWlkPjxwdWJEYXRl
-        PlRodSwgMDIgQXByIDIwMTUgMjM6MDY6MDEgR01UPC9wdWJEYXRlPjwvaXRl
-        bT48aXRlbT48dGl0bGU+SUJNIHVuY292ZXJzIG5ldywgc29waGlzdGljYXRl
-        ZCBiYW5rIHRyYW5zZmVyIGN5YmVyIHNjYW08L3RpdGxlPjxsaW5rPmh0dHA6
-        Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0
-        cDovL3NnLmZpbmFuY2UueWFob28uY29tL25ld3MvaWJtLXVuY292ZXJzLXNv
-        cGhpc3RpY2F0ZWQtYmFuay10cmFuc2Zlci0xOTA1MDgwMzguaHRtbDwvbGlu
-        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
-        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMTk1NDUyODYyMTwvZ3VpZD48cHVi
-        RGF0ZT5UaHUsIDAyIEFwciAyMDE1IDE5OjUxOjU0IEdNVDwvcHViRGF0ZT48
-        L2l0ZW0+PGl0ZW0+PHRpdGxlPkV4Y2x1c2l2ZSAtIElCTSBoaXJlIGFkdmlz
-        ZXJzIHRvIGRlYWwgd2l0aCByZXN0bGVzcyBpbnZlc3RvcnMtc291cmNlczwv
-        dGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25l
-        d3MvcnNzL3N0b3J5LypodHRwOi8vc2cuZmluYW5jZS55YWhvby5jb20vbmV3
-        cy9leGNsdXNpdmUtaWJtLWhpcmUtYWR2aXNlcnMtZGVhbC0xOTQ0MTg4MDcu
-        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W1JldXRlcnNdIC0gTkVXIFlPUksv
-        Qk9TVE9OIChSZXV0ZXJzKSAtIFNvbWUgdG9wIHNoYXJlaG9sZGVycyBvZiBJ
-        Qk0sIGRpc2FwcG9pbnRlZCBieSAxMSBzdHJhaWdodCBxdWFydGVycyBvZiBm
-        YWxsaW5nIHJldmVudWVzLCBhcmUgc2Vla2luZyBoZWxwIGZyb20gYWN0aXZp
-        c3QgaW52ZXN0b3JzIHRvIHNoYWtlIHVwIHRoZSBjb21wYW55LCBidXQgaGF2
-        ZSBiZWVuIHR1cm5lZCBkb3duIGJ5IGJvdGggQmlsbCBBY2ttYW4mYXBvcztz
-        IFBlcnNoaW5nIFNxdWFyZSBhbmQgSmVmZnJleSBVYmJlbiZhcG9zO3MgVmFs
-        dWVBY3QsIGFjY29yZGluZyB0byBwZW9wbGUgd2l0aCBrbm93bGVkZ2Ugb2Yg
-        dGhlIG1hdHRlci4gSW50ZXJuYXRpb25hbCBCdXNpbmVzcyBNYWNoaW5lcyBD
-        b3JwIChJQk0uTikgaXMgY29uY2VybmVkIGFib3V0IGEgcG9zc2libGUgYXR0
-        YWNrIGJ5IHByb21pbmVudCBhY3RpdmlzdCBoZWRnZSBmdW5kcywgYW5kIGlz
-        IHdvcmtpbmcgd2l0aCB0d28gaW52ZXN0bWVudCBiYW5rcyB0byBmb3JtdWxh
-        dGUgYSBkZWZlbmNlIHBsYW4sIGFjY29yZGluZyB0byB0aGUgcGVvcGxlLCB3
-        aG8gZGVjbGluZWQgdG8gYmUgaWRlbnRpZmllZC4gVGhlIHN0b3JpZWQgQW1l
-        cmljYW4gdGVjaG5vbG9neSBnaWFudCwgd29ydGggJDE1NyBiaWxsaW9uICgx
-        MDUuOCBiaWxsaW9uIHBvdW5kcyl0b2RheSwgaGFzIHN0cnVnZ2xlZCB0byB0
-        cmFuc2Zvcm0gaXRzZWxmIGZyb20gYSBsb3ctbWFyZ2luIGhhcmR3YXJlIG1h
-        a2VyIGludG8gYSBjbG91ZC1iYXNlZCBzb2Z0d2FyZSBhbmQgc2VydmljZXMg
-        Y29tcGFueS4gV2hlbiBWaXJnaW5pYSBSb21ldHR5IHRvb2sgb3ZlciBhcyBj
-        aGllZiBleGVjdXRpdmUgYXQgdGhlIHN0YXJ0IG9mIDIwMTIsIFdhbGwgU3Ry
-        ZWV0IHdhcyBob3BlZnVsIHRoYXQgc2hlIHdvdWxkIGJlIGFibGUgdG8ga2lj
-        a3N0YXJ0IGdyb3d0aC48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5r
-        PSJmYWxzZSI+eWFob29fZmluYW5jZS8yNjI5NDU1MDE4PC9ndWlkPjxwdWJE
-        YXRlPlRodSwgMDIgQXByIDIwMTUgMTk6NDQ6MTggR01UPC9wdWJEYXRlPjwv
-        aXRlbT48aXRlbT48dGl0bGU+RXhjbHVzaXZlOiBJQk0gaGlyZWQgYWR2aXNl
-        cnMgdG8gZGVhbCB3aXRoIHJlc3RsZXNzIGludmVzdG9ycyAtIHNvdXJjZXM8
-        L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9u
-        ZXdzL3Jzcy9zdG9yeS8qaHR0cDovL3NnLmZpbmFuY2UueWFob28uY29tL25l
-        d3MvZXhjbHVzaXZlLWlibS1oaXJlZC1hZHZpc2Vycy1kZWFsLTE5NDMwNDcx
-        NS5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlk
-        IGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8zMzk3Nzk3MTA8
-        L2d1aWQ+PHB1YkRhdGU+VGh1LCAwMiBBcHIgMjAxNSAxOTo0MzowNCBHTVQ8
-        L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNpdmU6IElCTSBo
-        aXJlZCBhZHZpc2VycyB0byBkZWFsIHdpdGggcmVzdGxlc3MgaW52ZXN0b3Jz
-        IC0gc291cmNlczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNv
-        bS9maW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vZmluYW5jZS55YWhv
-        by5jb20vbmV3cy9leGNsdXNpdmUtaWJtLWhpcmVkLWFkdmlzZXJzLWRlYWwt
-        MTk0MzA0MzM0Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRp
-        b24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzIx
-        NjY5Mzc2ODk8L2d1aWQ+PHB1YkRhdGU+VGh1LCAwMiBBcHIgMjAxNSAxOTo0
-        MzowNCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FeGNsdXNp
-        dmUgLSBJQk0gaGlyZSBhZHZpc2VycyB0byBkZWFsIHdpdGggcmVzdGxlc3Mg
-        aW52ZXN0b3JzOiBzb3VyY2VzPC90aXRsZT48bGluaz5odHRwOi8vdXMucmQu
-        eWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9pbi5m
-        aW5hbmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1pYm0taGlyZS1hZHZp
-        c2Vycy1kZWFsLTE5NDEwNjI0NS5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48
+        aWdodD48L2ltYWdlPjxpdGVtPjx0aXRsZT5Ib3cgT25lIFdvbWFuIElzIFdv
+        cmtpbmcgVG8gVHJhbnNmb3JtIFRoZSBIZWFsdGhjYXJlIFN5c3RlbSBGcm9t
+        IFdpdGhpbjwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
+        aW5hbmNlL2V4dGVybmFsL2ZvcmJlcy9yc3MvU0lHPTEzc2JmNXFpYS8qaHR0
+        cDovL3d3dy5mb3JiZXMuY29tL3NpdGVzL2dyZWdzYXRlbGwvMjAxNS8wNC8y
+        Ni9ob3ctb25lLXdvbWFuLWlzLXdvcmtpbmctdG8tdHJhbnNmb3JtLXRoZS1o
+        ZWFsdGhjYXJlLXN5c3RlbS1mcm9tLXdpdGhpbi8/dXRtX2NhbXBhaWduPXlh
+        aG9vdGl4JmFtcDtwYXJ0bmVyPXlhaG9vdGl4PC9saW5rPjxkZXNjcmlwdGlv
+        bj5bYXQgRm9yYmVzXSAtIFJldm9sdXRpb25pemluZyBoZWFsdGhjYXJlIHdp
+        bGwgdGFrZSBtb3JlIHRoYW4gZmFuY3kgdGVjaG5vbG9neSwgZGF0YSBhbmQg
+        YW5hbHl0aWNzLiBXZSBuZWVkIHRvIGJ1aWxkIGEgbW92ZW1lbnQuPC9kZXNj
+        cmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFu
+        Y2UvMTQ1ODM2NTA0OTwvZ3VpZD48cHViRGF0ZT5TdW4sIDI2IEFwciAyMDE1
+        IDA0OjE2OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPlRl
+        Y2hzIHN1cmdlIG9uIGVhcm5pbmdzLCBib29zdHMgTmFzZGFxLCBTJmFtcDtQ
+        IDUwMCB0byByZWNvcmQgY2xvc2U8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5y
+        ZC55YWhvby5jb20vZmluYW5jZS9leHRlcm5hbC9jbmJjL3Jzcy9TSUc9MTEy
+        Nmg0bTQzLypodHRwOi8vd3d3LmNuYmMuY29tL2lkLzEwMjYxNzcwOT9fX3Nv
+        dXJjZT15YWhvbyU3Y2ZpbmFuY2UlN2NoZWFkbGluZSU3Y2hlYWRsaW5lJTdj
+        c3RvcnkmYW1wO3Bhcj15YWhvbyZhbXA7ZG9jPTEwMjYxNzcwOTwvbGluaz48
+        ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0i
+        ZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMjg5OTEzODg0NDwvZ3VpZD48cHViRGF0
+        ZT5GcmksIDI0IEFwciAyMDE1IDIwOjAwOjAwIEdNVDwvcHViRGF0ZT48L2l0
+        ZW0+PGl0ZW0+PHRpdGxlPiZhcG9zO0RpZmZlcmVudCZhcG9zOyBOYXNkYXEg
+        Ym9vc3RlZCBieSBlYXJuaW5nczwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
+        LnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vZmlu
+        YW5jZS55YWhvby5jb20vdmlkZW8vZGlmZmVyZW50LW5hc2RhcS1ib29zdGVk
+        LWVhcm5pbmdzLTE5MzUwMDM1MC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48
         L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29f
-        ZmluYW5jZS8zODc3ODAwMjYzPC9ndWlkPjxwdWJEYXRlPlRodSwgMDIgQXBy
-        IDIwMTUgMTk6NDE6MDYgR01UPC9wdWJEYXRlPjwvaXRlbT48L2NoYW5uZWw+
-        PC9yc3M+
+        ZmluYW5jZS81MTc2NDQ0NjwvZ3VpZD48cHViRGF0ZT5GcmksIDI0IEFwciAy
+        MDE1IDE5OjM1OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxl
+        PkhhbGZ0aW1lJmFwb3M7cyBob3R0ZXN0IHRyYWRlcyB0b2RheTogV1lOTiwg
+        VFNDTywgSUJNLCAmYW1wOyBBTVpOPC90aXRsZT48bGluaz5odHRwOi8vdXMu
+        cmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9m
+        aW5hbmNlLnlhaG9vLmNvbS92aWRlby9oYWxmdGltZXMtaG90dGVzdC10cmFk
+        ZXMtdG9kYXktd3lubi0xNjU5MDAyOTguaHRtbDwvbGluaz48ZGVzY3JpcHRp
+        b24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlh
+        aG9vX2ZpbmFuY2UvMTI4MTMzNjc5MzwvZ3VpZD48cHViRGF0ZT5GcmksIDI0
+        IEFwciAyMDE1IDE2OjU5OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+
+        PHRpdGxlPlRvcCB0cmFkZXMgb2YgdGhlIHdlZWs6IFNCVVggJmFtcDsgSUJN
+        PC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2Uv
+        bmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRl
+        by90b3AtdHJhZGVzLXdlZWstc2J1eC1pYm0tMTY0NTAwNjI3Lmh0bWw8L2xp
+        bms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxp
+        bms9ImZhbHNlIj55YWhvb19maW5hbmNlLzkxMTgxMjM5MDwvZ3VpZD48cHVi
+        RGF0ZT5GcmksIDI0IEFwciAyMDE1IDE2OjQ1OjAwIEdNVDwvcHViRGF0ZT48
+        L2l0ZW0+PGl0ZW0+PHRpdGxlPklCTSBFeHRlbmRzIEFwcGxpY2F0aW9uIElu
+        ZnJhc3RydWN0dXJlIGFuZCBNaWRkbGV3YXJlIExlYWRlcnNoaXAgd2l0aCAy
+        OS4xIFBlcmNlbnQgTWFya2V0IFNoYXJlPC90aXRsZT48bGluaz5odHRwOi8v
+        dXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJuYWwvbm9vZGxzYXVuei9y
+        c3MvU0lHPTEyNWJsc29xcy8qaHR0cDovL3d3dy5ub29kbHMuY29tL3ZpZXcv
+        Rjg0QUY1RjcxRjVBMjY2ODJEQ0ZBNzU4Q0UyQkM0QTU4NTZCRUY5NzwvbGlu
+        az48ZGVzY3JpcHRpb24+W2F0IG5vb2Rsc10gLSBBUk1PTkssIE4uWS4sIC0g
+        MjQgQXByIDIwMTU6IElCTSZhcG9zO3MgKE5ZU0U6IElCTSkgc2hhcmUgb2Yg
+        YXBwbGljYXRpb24gaW5mcmFzdHJ1Y3R1cmUgYW5kIG1pZGRsZXdhcmUgbWFy
+        a2V0IHNoYXJlIGlzIDI5LjEgcGVyY2VudCwgZXh0ZW5kaW5nIHRoZSBjb21w
+        YW55JmFwb3M7cyBsZWFkZXJzaGlwIHBvc2l0aW9uIGZvciB0aGUgMTR0aCB5
+        ZWFyIGluIGEgcm93IGFuZCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVy
+        bWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8xNTg4Njg1NDc2PC9ndWlk
+        PjxwdWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMTI6NDY6NTkgR01UPC9wdWJE
+        YXRlPjwvaXRlbT48aXRlbT48dGl0bGU+SUJNIEV4dGVuZHMgQXBwbGljYXRp
+        b24gSW5mcmFzdHJ1Y3R1cmUgYW5kIE1pZGRsZXdhcmUgTGVhZGVyc2hpcCB3
+        aXRoIDI5LjEgUGVyY2VudCBNYXJrZXQgU2hhcmU8L3RpdGxlPjxsaW5rPmh0
+        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
+        aHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3MvaWJtLWV4dGVuZHMtYXBw
+        bGljYXRpb24taW5mcmFzdHJ1Y3R1cmUtbWlkZGxld2FyZS0xMjMwMDA2MzQu
+        aHRtbDwvbGluaz48ZGVzY3JpcHRpb24+W1BSIE5ld3N3aXJlXSAtIEFSTU9O
+        SywgTi5ZLiwgQXByaWwgMjQsIDIwMTUgL1BSTmV3c3dpcmUvIC0tIElCTSZh
+        cG9zO3MgKE5ZU0U6IElCTSApIHNoYXJlIG9mIGFwcGxpY2F0aW9uIGluZnJh
+        c3RydWN0dXJlIGFuZCBtaWRkbGV3YXJlIG1hcmtldCBzaGFyZSBpcyAyOS4x
+        IHBlcmNlbnQsIGV4dGVuZGluZyB0aGUgY29tcGFueSZhcG9zO3MgbGVhZGVy
+        c2hpcCBwb3NpdGlvbiBmb3IgdGhlIDE0IHRoIC4uLjwvZGVzY3JpcHRpb24+
+        PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzI4MjAx
+        MDAxMjg8L2d1aWQ+PHB1YkRhdGU+RnJpLCAyNCBBcHIgMjAxNSAxMjozMDow
+        MCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5UaGUgTW9ybmlu
+        ZyBEb3dubG9hZDogTWljcm9zb2Z0JmFwb3M7cyBDbG91ZCBTYWxlcyBTaG93
+        IFN0cm9uZyBHcm93dGg8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55YWhv
+        by5jb20vZmluYW5jZS9leHRlcm5hbC93c2ovcnNzL1NJRz0xMzVjb2YxOHIv
+        Kmh0dHA6Ly9ibG9ncy53c2ouY29tL2Npby8yMDE1LzA0LzI0L3RoZS1tb3Ju
+        aW5nLWRvd25sb2FkLW1pY3Jvc29mdHMtY2xvdWQtc2FsZXMtc2hvdy1zdHJv
+        bmctZ3Jvd3RoLz9tb2Q9eWFob29faHM8L2xpbms+PGRlc2NyaXB0aW9uPlth
+        dCBUaGUgV2FsbCBTdHJlZXQgSm91cm5hbF0gLSBUaGUgZ2FpbnMgYmVzdGVk
+        IHRob3NlIG9mIEFtYXpvbiwgd2hpY2ggcmVwb3J0ZWQgcmVzdWx0cyBmb3Ig
+        aXRzIEFtYXpvbiBXZWIgU2VydmljZXMgY2xvdWQgYnVzaW5lc3MgZm9yIHRo
+        ZSBmaXJzdCB0aW1lLiBUaGUgYmF0dGxlIGJldHdlZW4gTWljcm9zb2Z0JmFw
+        b3M7cyBoeWJyaWQgYXBwcm9hY2ggdG8gdGhlIGNsb3VkIGFuZCBBbWF6b24m
+        YXBvcztzIHB1YmxpYyBjbG91ZCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlz
+        UGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8zODY3NzQ0ODYzPC9n
+        dWlkPjxwdWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMTI6MTU6MDggR01UPC9w
+        dWJEYXRlPjwvaXRlbT48aXRlbT48dGl0bGU+V2hhdCZhcG9zO3MgYmVoaW5k
+        IE1pY3Jvc29mdCZhcG9zO3MgYmlnIGJlYXQ/PC90aXRsZT48bGluaz5odHRw
+        Oi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3RvcnkvKmh0
+        dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRlby93aGF0cy1iZWhpbmQtbWlj
+        cm9zb2Z0cy1iaWctYmVhdC0xMTA0MDAwMTQuaHRtbDwvbGluaz48ZGVzY3Jp
+        cHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2Ui
+        PnlhaG9vX2ZpbmFuY2UvMjQ1MDkyNjI0MjwvZ3VpZD48cHViRGF0ZT5Gcmks
+        IDI0IEFwciAyMDE1IDExOjA0OjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0
+        ZW0+PHRpdGxlPkFtYXpvbiZhcG9zO3MgY2xvdWQgZnV0dXJlPC90aXRsZT48
+        bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mv
+        c3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS92aWRlby9hbWF6b25z
+        LWNsb3VkLWZ1dHVyZS0xMDEzMDAxNjUuaHRtbDwvbGluaz48ZGVzY3JpcHRp
+        b24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlh
+        aG9vX2ZpbmFuY2UvNDIxNzAxNDI3NzwvZ3VpZD48cHViRGF0ZT5GcmksIDI0
+        IEFwciAyMDE1IDEwOjEzOjAwIEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+
+        PHRpdGxlPkRFQURMSU5FIEFMRVJUOiBCcm93ZXIgUGl2ZW4gRW5jb3VyYWdl
+        cyBJbnZlc3RvcnMgV2hvIEhhdmUgTG9zc2VzIGluIEV4Y2VzcyBvZiAkMTAw
+        LDAwMCBGcm9tIEludmVzdG1lbnQgaW4gSW50ZXJuYXRpb25hbCBCdXNpbmVz
+        cyBNYWNoaW5lcyBDb3Jwb3JhdGlvbiB0byBDb250YWN0IEJyb3dlciBQaXZl
+        biBCZWZvcmUgdGhlIExlYWQgUGxhaW50aWZmIERlYWRsaW5lIEluIENsYXNz
+        IEFjdGlvbiBMYXdzdWl0IOKAkyBJQk08L3RpdGxlPjxsaW5rPmh0dHA6Ly91
+        cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDov
+        L2ZpbmFuY2UueWFob28uY29tL25ld3MvZGVhZGxpbmUtYWxlcnQtYnJvd2Vy
+        LXBpdmVuLWVuY291cmFnZXMtMDExMDAwMTc1Lmh0bWw8L2xpbms+PGRlc2Ny
+        aXB0aW9uPltHbG9iZU5ld3N3aXJlXSAtIFNURVZFTlNPTiwgTWQuLCBBcHIu
+        IDIzLCAyMDE1LS0gVGhlIHNlY3VyaXRpZXMgbGl0aWdhdGlvbiBsYXcgZmly
+        bSBvZiBCcm93ZXIgUGl2ZW4sIEEgUHJvZmVzc2lvbmFsIENvcnBvcmF0aW9u
+        LCBhbm5vdW5jZXMgdGhhdCBhIGNsYXNzIGFjdGlvbiBsYXdzdWl0IGhhcyBi
+        ZWVuIGNvbW1lbmNlZCBpbiB0aGUgVW5pdGVkIFN0YXRlcyBEaXN0cmljdCBD
+        b3VydCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxz
+        ZSI+eWFob29fZmluYW5jZS80MzE1MTY0MDM8L2d1aWQ+PHB1YkRhdGU+RnJp
+        LCAyNCBBcHIgMjAxNSAwMToxMDowMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxp
+        dGVtPjx0aXRsZT5FeGNsdXNpdmU6IEJpdGNvaW4gZXhjaGFuZ2UgaXRCaXQg
+        c2Vla3MgTmV3IFlvcmsgYmFua2luZyBsaWNlbmNlPC90aXRsZT48bGluaz5o
+        dHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvbmV3cy9yc3Mvc3Rvcnkv
+        Kmh0dHA6Ly9zZy5maW5hbmNlLnlhaG9vLmNvbS9uZXdzL2V4Y2x1c2l2ZS1i
+        aXRjb2luLWV4Y2hhbmdlLWl0Yml0LXNlZWtzLTAwMDU1OTU1NS5odG1sPC9s
+        aW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFM
+        aW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS8yMzI3ODU2Mjc1PC9ndWlkPjxw
+        dWJEYXRlPkZyaSwgMjQgQXByIDIwMTUgMDA6MDU6NTkgR01UPC9wdWJEYXRl
+        PjwvaXRlbT48aXRlbT48dGl0bGU+Q29ycmVjdGVkIC0gRXhjbHVzaXZlOiBC
+        aXRjb2luIGV4Y2hhbmdlIGl0Qml0IHNlZWtzIE5ldyBZb3JrIGJhbmtpbmcg
+        bGljZW5jZTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9m
+        aW5hbmNlL25ld3MvcnNzL3N0b3J5LypodHRwOi8vc2cuZmluYW5jZS55YWhv
+        by5jb20vbmV3cy9leGNsdXNpdmUtYml0Y29pbi1leGNoYW5nZS1pdGJpdC1z
+        ZWVrcy0yMTEwMTQ3NjguaHRtbDwvbGluaz48ZGVzY3JpcHRpb24+PC9kZXNj
+        cmlwdGlvbj48Z3VpZCBpc1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFu
+        Y2UvMjU0NzQ0MDgyMTwvZ3VpZD48cHViRGF0ZT5UaHUsIDIzIEFwciAyMDE1
+        IDIzOjIwOjI4IEdNVDwvcHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkFt
+        YXpvbiB0b3BzIGZvcmVjYXN0cyB3aXRoIDE1JSBzYWxlcyByaXNlPC90aXRs
+        ZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJu
+        YWwvZnQvcnNzL1NJRz0xMjlxY21vc3MvKmh0dHA6Ly93d3cuZnQuY29tL2Nt
+        cy9zL2M3NmU3MDkyLWU5ZTctMTFlNC1hZTFjLTAwMTQ0ZmVhYjdkZSxzMDE9
+        MS5odG1sP2Z0Y2FtcD10cmFmZmljL3BhcnRuZXIvZmVlZF9oZWFkbGluZS91
+        c195YWhvby9hdWRkZXY8L2xpbms+PGRlc2NyaXB0aW9uPlthdCBGaW5hbmNp
+        YWwgVGltZXNdIC0gQW1hem9uIGhhcyBkaXNjbG9zZWQgdGhhdCBpdHMgZmFz
+        dC1ncm93aW5nIHRlY2hub2xvZ3kgc3Vic2lkaWFyeSwgQW1hem9uIFdlYiBT
+        ZXJ2aWNlcywgaXMgYWxzbyBvbmUgb2YgaXRzIG1vc3QgcHJvZml0YWJsZSBi
+        dXNpbmVzc2VzLCBhIHJldmVsYXRpb24gdGhhdCB3aWxsIGluY3JlYXNlIGNv
+        bXBldGl0aW9uIGFtb25nIHRlY2ggY29tcGFuaWVzIHNwYXJyaW5nIC4uLjwv
+        ZGVzY3JpcHRpb24+PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19m
+        aW5hbmNlLzM4NTEzMDQ5NTQ8L2d1aWQ+PHB1YkRhdGU+VGh1LCAyMyBBcHIg
+        MjAxNSAyMjowODozMCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRs
+        ZT5BbWF6b24ganVzdCByZXZlYWxlZCBpdCBoYXMgYSBwcm9maXRhYmxlLCAk
+        NiBiaWxsaW9uIGJlYXN0IG9mIGEgYnVzaW5lc3M8L3RpdGxlPjxsaW5rPmh0
+        dHA6Ly91cy5yZC55YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8q
+        aHR0cDovL2ZpbmFuY2UueWFob28uY29tL25ld3Mvb2ZmaWNpYWwtYW1hem9u
+        LXN0cm9uZ2VzdC1jbG91ZC1idXNpbmVzcy0yMDQ3MTg2OTQuaHRtbDwvbGlu
+        az48ZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbj48Z3VpZCBpc1Blcm1hTGlu
+        az0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMzQ1ODc0NjQ0MTwvZ3VpZD48cHVi
+        RGF0ZT5UaHUsIDIzIEFwciAyMDE1IDIwOjQ4OjAwIEdNVDwvcHViRGF0ZT48
+        L2l0ZW0+PGl0ZW0+PHRpdGxlPlRoZSA0IFN0b2NrcyBUaGF0IEJvb3N0ZWQg
+        dGhlIERvdyBvbiBUaHVyc2RheTwvdGl0bGU+PGxpbms+aHR0cDovL3VzLnJk
+        LnlhaG9vLmNvbS9maW5hbmNlL2V4dGVybmFsL3gyNDd3YWxsc3QvcnNzL1NJ
+        Rz0xMnFkNzJqZG0vKmh0dHA6Ly8yNDd3YWxsc3QuY29tL2ludmVzdGluZy8y
+        MDE1LzA0LzIzL3RoZS00LXN0b2Nrcy10aGF0LWJvb3N0ZWQtdGhlLWRvdy1v
+        bi10aHVyc2RheS88L2xpbms+PGRlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb24+
+        PGd1aWQgaXNQZXJtYUxpbms9ImZhbHNlIj55YWhvb19maW5hbmNlLzI0MTcz
+        ODA5MzI8L2d1aWQ+PHB1YkRhdGU+VGh1LCAyMyBBcHIgMjAxNSAyMDowMTo0
+        OCBHTVQ8L3B1YkRhdGU+PC9pdGVtPjxpdGVtPjx0aXRsZT5FTUMgRWFybmlu
+        Z3MgQW5hbHlzaXM6IEJ5IHRoZSBOdW1iZXJzPC90aXRsZT48bGluaz5odHRw
+        Oi8vdXMucmQueWFob28uY29tL2ZpbmFuY2UvZXh0ZXJuYWwveGNhcGl0YWxj
+        dWJlL3Jzcy9TSUc9MTIycDJtYmZhLypodHRwOi8vd3d3LmNhcGl0YWxjdWJl
+        LmNvbS9ibG9nL2luZGV4LnBocC9lbWMtZWFybmluZ3MtYW5hbHlzaXMvPC9s
+        aW5rPjxkZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFM
+        aW5rPSJmYWxzZSI+eWFob29fZmluYW5jZS84NjAzNTA3MDk8L2d1aWQ+PHB1
+        YkRhdGU+VGh1LCAyMyBBcHIgMjAxNSAxOToyNjozMiBHTVQ8L3B1YkRhdGU+
+        PC9pdGVtPjxpdGVtPjx0aXRsZT5JbnZlc3RvcnMgU3VkZGVubHkgQ2FuJmFw
+        b3M7dCBPd24gRW5vdWdoIE9mIElCTTogQSBUZWNobmljYWwgQnJlYWtkb3du
+        PC90aXRsZT48bGluaz5odHRwOi8vdXMucmQueWFob28uY29tL2ZpbmFuY2Uv
+        bmV3cy9yc3Mvc3RvcnkvKmh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS9uZXdz
+        L2ludmVzdG9ycy1zdWRkZW5seS1jYW50LW93bi1lbm91Z2gtMTczOTIxNjY4
+        Lmh0bWw8L2xpbms+PGRlc2NyaXB0aW9uPltCZW56aW5nYV0gLSBKb2VsIEVs
+        Y29uaW4gaXMgdGhlIGNvLWhvc3Qgb2YgQmVuemluZ2EmYXBvcztzICNQcmVN
+        YXJrZXQgUHJlcCAsIGEgZGFpbHkgdHJhZGluZyBpZGVhIHJhZGlvIHNob3cu
+        IEludGVybmF0aW9uYWwgQnVzaW5lc3MgTWFjaGluZXMgQ29ycC4gKE5ZU0U6
+        IElCTSApIHNoYXJlcyB3ZXJlIHRyYWRpbmcgc2hhcnBseSBoaWdoZXIgYnkg
+        JDYuMjIgKDQgcGVyY2VudCkgYXQgLi4uPC9kZXNjcmlwdGlvbj48Z3VpZCBp
+        c1Blcm1hTGluaz0iZmFsc2UiPnlhaG9vX2ZpbmFuY2UvMjU4NTE2NDQyMTwv
+        Z3VpZD48cHViRGF0ZT5UaHUsIDIzIEFwciAyMDE1IDE3OjM5OjIxIEdNVDwv
+        cHViRGF0ZT48L2l0ZW0+PGl0ZW0+PHRpdGxlPkthbHRiYXVtIFNheXMgQnV5
+        YmFja3MgQXJlIEJlaGluZCBFUFMgR3Jvd3RoIEF0IElCTTwvdGl0bGU+PGxp
+        bms+aHR0cDovL3VzLnJkLnlhaG9vLmNvbS9maW5hbmNlL25ld3MvcnNzL3N0
+        b3J5LypodHRwOi8vZmluYW5jZS55YWhvby5jb20vbmV3cy9rYWx0YmF1bS1z
+        YXlzLWJ1eWJhY2tzLWJlaGluZC1lcHMtMTYxNTIxMTM0Lmh0bWw8L2xpbms+
+        PGRlc2NyaXB0aW9uPltCZW56aW5nYV0gLSBHYXJ5IEthbHRiYXVtIHdhcyBy
+        ZWNlbnRseSBhIGd1ZXN0IG9uICNQcmVNYXJrZXQgUHJlcCwgYSBkYWlseSB0
+        cmFkaW5nIGlkZWEgcmFkaW8gc2hvdyBob3N0ZWQgYnkgSm9lbCBFbGNvbmlu
+        IGFuZCBEZW5uaXMgRGljay4gVHVuZSBpbiB0byB0aGUgZGFpbHkgYnJvYWRj
+        YXN0IGxpdmUgTW9uZGF5LUZyaWRheSBhdCA4IGEubS4gRVQgaGVyZS4gSW50
+        ZXJuYXRpb25hbCAuLi48L2Rlc2NyaXB0aW9uPjxndWlkIGlzUGVybWFMaW5r
+        PSJmYWxzZSI+eWFob29fZmluYW5jZS8zNDExMTUzMjMyPC9ndWlkPjxwdWJE
+        YXRlPlRodSwgMjMgQXByIDIwMTUgMTY6MTU6MjEgR01UPC9wdWJEYXRlPjwv
+        aXRlbT48aXRlbT48dGl0bGU+V2hhdCBKUCBNb3JnYW4gVGhpbmtzIE9mIEFw
+        cGxlLCBIZXdsZXR0LVBhY2thcmQgQW5kIE1pY3Jvc29mdCZhcG9zO3MgUEMv
+        VGFibGV0IEJ1c2luZXNzZXM8L3RpdGxlPjxsaW5rPmh0dHA6Ly91cy5yZC55
+        YWhvby5jb20vZmluYW5jZS9uZXdzL3Jzcy9zdG9yeS8qaHR0cDovL2ZpbmFu
+        Y2UueWFob28uY29tL25ld3MvanAtbW9yZ2FuLXRoaW5rcy1hcHBsZS1oZXds
+        ZXR0LTEyMzY0ODE2OC5odG1sPC9saW5rPjxkZXNjcmlwdGlvbj48L2Rlc2Ny
+        aXB0aW9uPjxndWlkIGlzUGVybWFMaW5rPSJmYWxzZSI+eWFob29fZmluYW5j
+        ZS8xMTA1NjU3Mjg0PC9ndWlkPjxwdWJEYXRlPlRodSwgMjMgQXByIDIwMTUg
+        MTI6MzY6NDggR01UPC9wdWJEYXRlPjwvaXRlbT48L2NoYW5uZWw+PC9yc3M+
     http_version: 
-  recorded_at: Sun, 05 Apr 2015 20:20:35 GMT
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
+- request:
+    method: get
+    uri: http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=ac117d389aba155a240958f2873b1f0c:18:67023197&begin_date=20150405&q=IBM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-03.mashery.com
+      Server:
+      - nginx/1.4.1
+      Date:
+      - Sun, 26 Apr 2015 04:42:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '18744'
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.27
+      X-Cached:
+      - MISS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"meta":{"hits":47,"time":16,"offset":0},"docs":[{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/20\/business\/ibm-project-in-china-raises-us-concerns.html","snippet":"IBM\u2019s
+        partnership with Teamsun, a Beijing company, to provide key technologies is
+        similar to ones it has made elsewhere, but it has collided with political
+        and trade issues.","lead_paragraph":"IBM\u2019s partnership with Teamsun,
+        a Beijing company, to provide key technologies is similar to ones it has made
+        elsewhere, but it has collided with political and trade issues.","abstract":"IBM''s
+        partnership with Chinese technology company Teamsun is running afoul of political
+        and trade issues; partnership, granted permission under US export laws, is
+        intended to help China develop full supply chain of computers that will eventually
+        free its dependence on American products; IBM has clashed with Obama administration''s
+        push to get China to drop measures requiring American companies to hand over
+        technology in exchange for market access.","print_page":"1","blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/20\/business\/20IBM-web\/20IBM-web-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        Venture With China Stirs Concerns","print_headline":"IBM Venture With Chinese
+        Stirs Concern"},"keywords":[{"rank":"1","is_major":"Y","name":"glocations","value":"China"},{"rank":"2","is_major":"Y","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"3","is_major":"Y","name":"organizations","value":"Beijing
+        Teamsun Technology Co Ltd"},{"rank":"4","is_major":"Y","name":"subject","value":"Computers
+        and the Internet"},{"rank":"5","is_major":"N","name":"subject","value":"International
+        Trade and World Market"},{"rank":"6","is_major":"N","name":"persons","value":"Shen
+        Changxiang"},{"rank":"7","is_major":"N","name":"subject","value":"Computer
+        Security"},{"rank":"8","is_major":"N","name":"glocations","value":"United
+        States"}],"pub_date":"2015-04-20T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":"International Business","byline":{"contributor":"Jane
+        Perlez contributed reporting from Beijing.","person":[{"organization":"","role":"reported","firstname":"Paul","rank":1,"lastname":"MOZUR"}],"original":"By
+        PAUL MOZUR"},"type_of_material":"News","_id":"5533fc6438f0d80d714d597c","word_count":"1477"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/26\/your-money\/now-its-apples-world-once-it-was-ibms.html","snippet":"Like
+        IBM in the 1980s, the stock market giant has room to grow, but there are early
+        signs of the end of its dominance.","lead_paragraph":"Like IBM in the 1980s,
+        the stock market giant has room to grow, but there are early signs of the
+        end of its dominance.","abstract":null,"print_page":"4","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Apple Won\u2019t Always
+        Rule. Just Look at IBM.","content_kicker":"Strategies","kicker":"Strategies","print_headline":"Apple
+        Won\u2019t Always Rule. Just Look at IBM."},"keywords":[{"rank":"1","is_major":"N","name":"organizations","value":"Apple
+        Inc"},{"rank":"2","is_major":"N","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"3","is_major":"N","name":"subject","value":"Stocks
+        and Bonds"},{"rank":"4","is_major":"N","name":"subject","value":"Standard
+        & Poor''s 500-Stock Index"},{"rank":"5","is_major":"N","name":"subject","value":"Company
+        Reports"},{"rank":"6","is_major":"N","name":"subject","value":"Computers and
+        the Internet"},{"rank":"7","is_major":"N","name":"subject","value":"Mutual
+        Funds"}],"pub_date":"2015-04-26T00:00:00Z","document_type":"article","news_desk":"SundayBusiness","section_name":"Your
+        Money","subsection_name":null,"byline":{"contributor":"","person":[{"organization":"","role":"reported","firstname":"Jeff","rank":1,"lastname":"SOMMER"}],"original":"By
+        JEFF SOMMER"},"type_of_material":"News","_id":"553c059438f0d83acc4546ac","word_count":"1234"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/07\/business\/dealbook\/call-for-activism-at-ibm-is-likely-to-go-unheard.html","snippet":"Investors
+        have reason to be dissatisfied. The trouble is that IBM has already exhausted
+        the typical activist playbook.","lead_paragraph":"Investors have reason to
+        be dissatisfied. The trouble is that IBM has already exhausted the typical
+        activist playbook.","abstract":null,"print_page":"","blog":[],"source":"The
+        New York Times","multimedia":[],"headline":{"main":"Call for Activism at IBM
+        Is Likely to Go Unheard","content_kicker":"Breakingviews","kicker":"Breakingviews"},"keywords":[{"rank":"1","is_major":"N","name":"subject","value":"Shareholder
+        Rights and Activism"},{"rank":"2","is_major":"N","name":"subject","value":"Computers
+        and the Internet"},{"rank":"3","is_major":"N","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"4","is_major":"N","name":"subject","value":"Boards
+        of Directors"}],"pub_date":"2015-04-07T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Business
+        Day","subsection_name":"DealBook","byline":{"person":[{"organization":"","role":"reported","firstname":"Robert","rank":1,"lastname":"CYRAN"}],"original":"By
+        ROBERT CYRAN"},"type_of_material":"News","_id":"5522dea238f0d85babd5a9bc","word_count":"321"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/21\/daily-report-ibm-profit-slips-as-company-enters-transition-year\/","snippet":"Revenue
+        fell 12 percent, to $19.6 billion in the latest quarter. The company says
+        it will pursues new sources of growth, as some of its traditional hardware,
+        software and services businesses erode.","lead_paragraph":null,"abstract":"Revenue
+        fell 12 percent, to $19.6 billion in the latest quarter. The company says
+        it will pursues new sources of growth, as some of its traditional hardware,
+        software and services businesses erode.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Daily
+        Report: IBM Profit Slips as Company Enters Transition Year","kicker":"Bits"},"keywords":[{"rank":"1","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"1","name":"subject","value":"Company
+        Reports"},{"rank":"2","name":"subject","value":"Computers and the Internet"}],"pub_date":"2015-04-21T06:43:52Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[],"original":"By
+        THE NEW YORK TIMES","organization":"The New York Times"},"type_of_material":"Blog","_id":"55362a4538f0d821accecf85","word_count":"107"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/13\/ibm-creates-watson-health-to-analyze-medical-data\/","snippet":"The
+        business unit will partner with companies including Apple, Medtronic and Johnson
+        & Johnson, offering IBM\u2019s Watson technology as a cloud-based tool at
+        many levels of the health care industry.","lead_paragraph":null,"abstract":"The
+        business unit will partner with companies including Apple, Medtronic and Johnson
+        & Johnson, offering IBM\u2019s Watson technology as a cloud-based tool at
+        many levels of the health care industry.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/13\/technology\/13bits-kelly\/13bits-kelly-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        Creates Watson Health to Analyze Medical Data","kicker":"Bits"},"keywords":[{"rank":"1","name":"organizations","value":"Apple
+        Inc"},{"rank":"2","name":"organizations","value":"Cleveland Clinic"},{"rank":"3","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"4","name":"organizations","value":"Johnson
+        & Johnson"},{"rank":"5","name":"organizations","value":"Medtronic Inc"},{"rank":"1","name":"subject","value":"Artificial
+        Intelligence"},{"rank":"2","name":"subject","value":"Electronic Health Records"},{"rank":"3","name":"subject","value":"Mergers,
+        Acquisitions and Divestitures"},{"rank":"4","name":"subject","value":"Supercomputers"}],"pub_date":"2015-04-13T18:00:31Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Steve","rank":1,"lastname":"LOHR"}],"original":"By
+        STEVE LOHR"},"type_of_material":"Blog","_id":"552c3e6338f0d8273c42858e","word_count":"850"},{"web_url":"http:\/\/www.nytimes.com\/2015\/04\/21\/technology\/ibm-first-quarter-earnings-top-wall-st-expectations.html","snippet":"In
+        what the company has said will be a transition year, its revenue fell 12 percent,
+        to $19.6 billion, but operating profits rose.","lead_paragraph":"In what the
+        company has said will be a transition year, its revenue fell 12 percent, to
+        $19.6 billion, but operating profits rose.","abstract":"IBM reports net income
+        of $2.4 billion, decline of 5 percent, and $2.9 billion in operating profits,
+        4 percent increase; revenue for quarter is reported at $19.6 billion, fall
+        of 12 percent.","print_page":"3","blog":[],"source":"The New York Times","multimedia":[{"width":190,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-articleLarge.jpg","height":308,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-articleLarge.jpg","xlargeheight":"308"},"type":"image"},{"width":75,"url":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/21\/technology\/21ibm-pic\/21ibm-pic-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        First-Quarter Earnings Top Wall St. Expectations","print_headline":"IBM Operating
+        Profits Rise, but Strong Dollar Takes Toll"},"keywords":[{"rank":"1","is_major":"Y","name":"organizations","value":"International
+        Business Machines Corporation"},{"rank":"2","is_major":"N","name":"subject","value":"Company
+        Reports"},{"rank":"3","is_major":"N","name":"subject","value":"Enterprise
+        Computing"}],"pub_date":"2015-04-21T00:00:00Z","document_type":"article","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[{"organization":"","role":"reported","firstname":"Steve","rank":1,"lastname":"LOHR"}],"original":"By
+        STEVE LOHR"},"type_of_material":"News","_id":"553572ad38f0d821accecdda","word_count":"728"},{"web_url":"http:\/\/www.nytimes.com\/video\/multimedia\/100000003639547\/ibm-revenue-falls-for-12th-quarter.html","snippet":"Shares
+        of IBM fell after hours after a revenue miss, and a warning about currency
+        headwinds. Stocks rose in Monday''s regular trading session. Bobbi Rebell
+        reports.","lead_paragraph":"Shares of IBM fell after hours after a revenue
+        miss, and a warning about currency headwinds. Stocks rose in Monday''s regular
+        trading session. Bobbi Rebell reports.","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[{"width":190,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbWide.jpg","height":126,"subtype":"wide","legacy":{"wide":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbWide.jpg","wideheight":"126","widewidth":"190"},"type":"image"},{"width":600,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-articleLarge.jpg","height":338,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-articleLarge.jpg","xlargeheight":"338"},"type":"image"},{"width":75,"url":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2015\/04\/20\/multimedia\/video-markets-close\/video-markets-close-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"IBM
+        revenue falls for 12th quarter","sub":"IBM revenue falls for 12th quarter"},"keywords":[],"pub_date":"2015-04-20T18:29:15Z","document_type":"multimedia","news_desk":"Multimedia\/Photos","section_name":"Multimedia\/Photos","subsection_name":null,"byline":{"person":[],"original":"Reuters","organization":"Reuters"},"type_of_material":"Video","_id":"55357de538f0d821accece02","word_count":"26"},{"web_url":"http:\/\/www.nytimes.com\/reuters\/2015\/04\/22\/business\/22reuters-peugeot-ibm.html","snippet":"PSA
+        Peugeot Citroen and IBM are working together to hook cars up to the Internet,
+        going beyond mapping and infotainment to link vehicles up to shops, service
+        networks and urban transport grids, the companies said on Wednesday.","lead_paragraph":"PSA
+        Peugeot Citroen and IBM are working together to hook cars up to the Internet,
+        going beyond mapping and infotainment to link vehicles up to shops, service
+        networks and urban transport grids, the companies said on Wednesday. ","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[],"headline":{"main":"Peugeot,
+        IBM Working to Connect Cars to Shops and Servicing","print_headline":"Peugeot,
+        IBM Working to Connect Cars to Shops and Servicing"},"keywords":[],"pub_date":"2015-04-22T08:14:44Z","document_type":"article","news_desk":"None","section_name":"Business
+        Day","subsection_name":null,"byline":{"person":[],"original":"By REUTERS","organization":"REUTERS"},"type_of_material":"News","_id":"5537916638f0d84082034dd3","word_count":"355"},{"web_url":"http:\/\/www.nytimes.com\/reuters\/2015\/04\/20\/business\/20reuters-ibm-results.html","snippet":"International
+        Business Machines Corp reported a 12 percent fall in first-quarter revenue
+        as the technology company continues to shed unprofitable businesses to focus
+        on cloud-computing initiatives.","lead_paragraph":"International Business
+        Machines Corp reported a 12 percent fall in first-quarter revenue as the technology
+        company continues to shed unprofitable businesses to focus on cloud-computing
+        initiatives.","abstract":null,"print_page":null,"blog":[],"source":"Reuters","multimedia":[],"headline":{"main":"IBM
+        Sales Fall for 12th Quarter, Currency Weighs","print_headline":"IBM Sales
+        Fall for 12th Quarter, Currency Weighs"},"keywords":[],"pub_date":"2015-04-20T16:12:18Z","document_type":"article","news_desk":"None","section_name":"Business
+        Day","subsection_name":null,"byline":{"person":[],"original":"By REUTERS","organization":"REUTERS"},"type_of_material":"News","_id":"55355e2338f0d821accecd94","word_count":"392"},{"web_url":"http:\/\/bits.blogs.nytimes.com\/2015\/04\/20\/daily-report-ibm-venture-with-china-stirs-concerns\/","snippet":"IBM\u2019s
+        partnership with Teamsun, a Beijing company, to provide key technologies is
+        similar to ones it has made elsewhere, but it has collided with political
+        and trade issues.","lead_paragraph":null,"abstract":"IBM\u2019s partnership
+        with Teamsun, a Beijing company, to provide key technologies is similar to
+        ones it has made elsewhere, but it has collided with political and trade issues.","print_page":null,"blog":[],"source":"The
+        New York Times","multimedia":[{"width":600,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","height":400,"subtype":"xlarge","legacy":{"xlargewidth":"600","xlarge":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-articleLarge.jpg","xlargeheight":"400"},"type":"image"},{"width":75,"url":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","height":75,"subtype":"thumbnail","legacy":{"thumbnailheight":"75","thumbnail":"images\/2011\/11\/30\/technology\/bits-daily-report\/bits-daily-report-thumbStandard.jpg","thumbnailwidth":"75"},"type":"image"}],"headline":{"main":"Daily
+        Report: IBM Venture With China Stirs Concerns","kicker":"Bits"},"keywords":[{"rank":"1","name":"glocations","value":"China"},{"rank":"1","name":"subject","value":"Cyberwarfare
+        and Defense"},{"rank":"2","name":"subject","value":"Privacy"}],"pub_date":"2015-04-20T08:20:54Z","document_type":"blogpost","news_desk":"Business","section_name":"Technology","subsection_name":null,"byline":{"person":[],"original":"By
+        THE NEW YORK TIMES","organization":"The New York Times"},"type_of_material":"Blog","_id":"5534ef8138f0d80d714d5baf","word_count":"174"}]},"status":"OK","copyright":"Copyright
+        (c) 2013 The New York Times Company.  All Rights Reserved."}'
+    http_version: 
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
+- request:
+    method: get
+    uri: http://content.guardianapis.com/search?api-key=u24598bmezctra9ztaugqb6r&from-date=2015-04-04&q=IBM&to-date=2015-04-05
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - max-age=20
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 26 Apr 2015 04:45:03 GMT
+      Server:
+      - spray-can/1.3.3
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1b-21.mashery.com
+      Content-Length:
+      - '1061'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXNwb25zZSI6eyJzdGF0dXMiOiJvayIsInVzZXJUaWVyIjoiZGV2ZWxv
+        cGVyIiwidG90YWwiOjIsInN0YXJ0SW5kZXgiOjEsInBhZ2VTaXplIjoxMCwi
+        Y3VycmVudFBhZ2UiOjEsInBhZ2VzIjoxLCJvcmRlckJ5IjoicmVsZXZhbmNl
+        IiwicmVzdWx0cyI6W3sic2VjdGlvbklkIjoidGVjaG5vbG9neSIsIndlYlRp
+        dGxlIjoiVGltIENvb2sncyBhY3RpdmlzbSBpcyBjaGFuZ2luZyBBcHBsZSDi
+        gJMgYnV0IGhpcyBmdXR1cmUgbWF5IGRlcGVuZCBvbiBhIHdhdGNoIiwid2Vi
+        UHVibGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxMjowMDowNFoiLCJpZCI6
+        InRlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2stYWN0aXZpc20tc3Rl
+        dmUtam9icy1hcHBsZS13YXRjaCIsIndlYlVybCI6Imh0dHA6Ly93d3cudGhl
+        Z3VhcmRpYW4uY29tL3RlY2hub2xvZ3kvMjAxNS9hcHIvMDQvdGltLWNvb2st
+        YWN0aXZpc20tc3RldmUtam9icy1hcHBsZS13YXRjaCIsImFwaVVybCI6Imh0
+        dHA6Ly9jb250ZW50Lmd1YXJkaWFuYXBpcy5jb20vdGVjaG5vbG9neS8yMDE1
+        L2Fwci8wNC90aW0tY29vay1hY3RpdmlzbS1zdGV2ZS1qb2JzLWFwcGxlLXdh
+        dGNoIiwic2VjdGlvbk5hbWUiOiJUZWNobm9sb2d5In0seyJzZWN0aW9uSWQi
+        OiJ3b3JsZCIsIndlYlRpdGxlIjoiQXJlIHRoZSB0ZXJyb3Jpc3RzIG9mIGFs
+        LVNoYWJhYWIgYWJvdXQgdG8gdGVhciBLZW55YSBpbiB0d28/Iiwid2ViUHVi
+        bGljYXRpb25EYXRlIjoiMjAxNS0wNC0wNFQxNjoxNjoxMloiLCJpZCI6Indv
+        cmxkLzIwMTUvYXByLzA0L2tlbnlhLXVuaXZlcnNpdHktbWFzc2FjcmUtc2hh
+        YmFhYi1kaXZpc2lvbnMiLCJ3ZWJVcmwiOiJodHRwOi8vd3d3LnRoZWd1YXJk
+        aWFuLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55YS11bml2ZXJzaXR5LW1h
+        c3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwiYXBpVXJsIjoiaHR0cDovL2Nv
+        bnRlbnQuZ3VhcmRpYW5hcGlzLmNvbS93b3JsZC8yMDE1L2Fwci8wNC9rZW55
+        YS11bml2ZXJzaXR5LW1hc3NhY3JlLXNoYWJhYWItZGl2aXNpb25zIiwic2Vj
+        dGlvbk5hbWUiOiJXb3JsZCBuZXdzIn1dfX0=
+    http_version: 
+  recorded_at: Sun, 05 Apr 2015 19:57:00 GMT
 recorded_with: VCR 2.9.3
