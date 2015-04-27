@@ -38,18 +38,25 @@
       <td>{{articles.added.period_4.articles | number}}</td>
     </tr>
     <tr>
+      <td>Reddits</td>
+      <td>{{reddits.added.period_1.reddits | number}}</td>
+      <td>{{reddits.added.period_2.reddits | number}}</td>
+      <td>{{reddits.added.period_3.reddits | number}}</td>
+      <td>{{reddits.added.period_4.reddits | number}}</td>
+    </tr>
+    <tr>
       <td>Totals</td>
       <td>
-        {{tweets.added.period_1.tweets + articles.added.period_1.articles | number}}
+        {{tweets.added.period_1.tweets + articles.added.period_1.articles + reddits.added.period_1.reddits | number}}
       </td>
       <td>
-        {{tweets.added.period_2.tweets + articles.added.period_2.articles | number}}
+        {{tweets.added.period_2.tweets + articles.added.period_2.articles + reddits.added.period_2.reddits | number}}
       </td>
       <td>
-        {{tweets.added.period_3.tweets + articles.added.period_3.articles | number}}
+        {{tweets.added.period_3.tweets + articles.added.period_3.articles + reddits.added.period_3.reddits | number}}
       </td>
       <td>
-        {{tweets.added.period_4.tweets + articles.added.period_4.articles | number}}
+        {{tweets.added.period_4.tweets + articles.added.period_4.articles + reddits.added.period_4.reddits | number}}
       </td>
     </tr>
     </tbody>
@@ -94,18 +101,25 @@
       <td>{{articles.total.period_4.articles | number}}</td>
     </tr>
     <tr>
+      <td>Reddits</td>
+      <td>{{reddits.total.period_1.reddits | number}}</td>
+      <td>{{reddits.total.period_2.reddits | number}}</td>
+      <td>{{reddits.total.period_3.reddits | number}}</td>
+      <td>{{reddits.total.period_4.reddits | number}}</td>
+    </tr>
+    <tr>
       <td>Totals</td>
       <td>
-        {{tweets.total.period_1.tweets + articles.total.period_1.articles | number}}
+        {{tweets.total.period_1.tweets + articles.total.period_1.articles + reddits.total.period_1.reddits | number}}
       </td>
       <td>
-        {{tweets.total.period_2.tweets + articles.total.period_2.articles | number}}
+        {{tweets.total.period_2.tweets + articles.total.period_2.articles + reddits.total.period_1.reddits | number}}
       </td>
       <td>
-        {{tweets.total.period_3.tweets + articles.total.period_3.articles | number}}
+        {{tweets.total.period_3.tweets + articles.total.period_3.articles + reddits.total.period_1.reddits | number}}
       </td>
       <td>
-        {{tweets.total.period_4.tweets + articles.total.period_4.articles | number}}
+        {{tweets.total.period_4.tweets + articles.total.period_4.articles + reddits.total.period_1.reddits | number}}
       </td>
     </tr>
     </tbody>

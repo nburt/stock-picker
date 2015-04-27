@@ -49,7 +49,7 @@ describe 'analytics api' do
 
     describe 'total' do
 
-      it 'returns the total number of articles at the end of each time period' do
+      it 'returns the total number of tweets at the end of each time period' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_tweet
@@ -92,7 +92,7 @@ describe 'analytics api' do
 
     describe 'total_scored' do
 
-      it 'returns the total number of scored articles for each time period' do
+      it 'returns the total number of scored tweets for each time period' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_tweet(keywords: ['keyword'], positivity_score: 50)
@@ -269,6 +269,98 @@ describe 'analytics api' do
 
           expect(response.status).to eq(200)
           expect(response.body).to eq(expected)
+        end
+      end
+
+    end
+
+  end
+
+  describe 'reddits' do
+
+    describe 'added' do
+
+      it 'returns the number of reddits added each period over the past month' do
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_reddit
+          create_reddit(created_at: 8.days.ago)
+          create_reddit(created_at: 15.days.ago)
+          create_reddit(created_at: 22.days.ago)
+          create_reddit(created_at: 29.days.ago)
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              reddits: 1
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              reddits: 1
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              reddits: 1
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              reddits: 1
+            }
+          }.to_json
+
+          get '/api/v1/analytics/reddits/added'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+          p Oj.load(expected)
+        end
+      end
+
+    end
+
+    describe 'total' do
+
+      it 'returns the total number of reddits at the end of each time period' do
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_reddit
+          create_reddit(created_at: 8.days.ago)
+          create_reddit(created_at: 15.days.ago)
+          create_reddit(created_at: 22.days.ago)
+          create_reddit(created_at: 29.days.ago)
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              reddits: 2
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              reddits: 3
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              reddits: 4
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              reddits: 5
+            }
+          }.to_json
+
+          get '/api/v1/analytics/reddits/total'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+          p Oj.load(expected)
         end
       end
 

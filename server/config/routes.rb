@@ -27,6 +27,13 @@ Rails.application.routes.draw do
             get :total_scored
           end
         end
+
+        resources :reddits, only: [] do
+          collection do
+            get :added
+            get :total
+          end
+        end
       end
     end
   end

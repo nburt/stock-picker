@@ -70,3 +70,20 @@ def new_tweet(attributes = {})
   }
   Tweet.new(default_attributes.merge(attributes))
 end
+
+def create_reddit(attributes = {})
+  reddit = new_reddit(attributes)
+  reddit.save
+  reddit
+end
+
+def new_reddit(attributes = {})
+  default_attributes = {
+    title: "Assistance evaluating IBM's Watson Analytics?",
+    link: 'http://www.reddit.com/r/datascience/comments/33ylaf/assistance_evaluating_ibms_watson_analytics/',
+    date: 'Sun, 26 Apr 2015 23:35:49 -0600',
+    subreddit_id: 't5_2sptq',
+    stock_id: 1
+  }
+  Reddit.new(default_attributes.merge(attributes))
+end
