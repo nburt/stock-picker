@@ -1,183 +1,206 @@
 <div ng-init="init()">
-  <h3>Added</h3>
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-        <th>
-          {{tweets.added.period_1.start_date | date:'M/d/yy'}} -
-          {{tweets.added.period_1.end_date | date:'M/d/yy'}}
-        </th>
-        <th>
-          {{tweets.added.period_2.start_date | date:'M/d/yy'}} -
-          {{tweets.added.period_2.end_date | date:'M/d/yy'}}
-        </th>
-        <th>
-          {{tweets.added.period_3.start_date | date:'M/d/yy'}} -
-          {{tweets.added.period_3.end_date | date:'M/d/yy'}}
-        </th>
-        <th>
-          {{tweets.added.period_4.start_date | date:'M/d/yy'}} -
-          {{tweets.added.period_4.end_date | date:'M/d/yy'}}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Tweets</td>
-      <td>{{tweets.added.period_1.tweets | number}}</td>
-      <td>{{tweets.added.period_2.tweets | number}}</td>
-      <td>{{tweets.added.period_3.tweets | number}}</td>
-      <td>{{tweets.added.period_4.tweets | number}}</td>
-    </tr>
-    <tr>
-      <td>Articles</td>
-      <td>{{articles.added.period_1.articles | number}}</td>
-      <td>{{articles.added.period_2.articles | number}}</td>
-      <td>{{articles.added.period_3.articles | number}}</td>
-      <td>{{articles.added.period_4.articles | number}}</td>
-    </tr>
-    <tr>
-      <td>Reddits</td>
-      <td>{{reddits.added.period_1.reddits | number}}</td>
-      <td>{{reddits.added.period_2.reddits | number}}</td>
-      <td>{{reddits.added.period_3.reddits | number}}</td>
-      <td>{{reddits.added.period_4.reddits | number}}</td>
-    </tr>
-    <tr>
-      <td>Totals</td>
-      <td>
-        {{tweets.added.period_1.tweets + articles.added.period_1.articles + reddits.added.period_1.reddits | number}}
-      </td>
-      <td>
-        {{tweets.added.period_2.tweets + articles.added.period_2.articles + reddits.added.period_2.reddits | number}}
-      </td>
-      <td>
-        {{tweets.added.period_3.tweets + articles.added.period_3.articles + reddits.added.period_3.reddits | number}}
-      </td>
-      <td>
-        {{tweets.added.period_4.tweets + articles.added.period_4.articles + reddits.added.period_4.reddits | number}}
-      </td>
-    </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Added</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th>
+            {{tweets.added.period_1.start_date | date:'M/d/yy'}} -
+            {{tweets.added.period_1.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.added.period_2.start_date | date:'M/d/yy'}} -
+            {{tweets.added.period_2.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.added.period_3.start_date | date:'M/d/yy'}} -
+            {{tweets.added.period_3.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.added.period_4.start_date | date:'M/d/yy'}} -
+            {{tweets.added.period_4.end_date | date:'M/d/yy'}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tweets</td>
+          <td>{{tweets.added.period_1.tweets | number}}</td>
+          <td>{{tweets.added.period_2.tweets | number}}</td>
+          <td>{{tweets.added.period_3.tweets | number}}</td>
+          <td>{{tweets.added.period_4.tweets | number}}</td>
+        </tr>
+        <tr>
+          <td>Articles</td>
+          <td>{{articles.added.period_1.articles | number}}</td>
+          <td>{{articles.added.period_2.articles | number}}</td>
+          <td>{{articles.added.period_3.articles | number}}</td>
+          <td>{{articles.added.period_4.articles | number}}</td>
+        </tr>
+        <tr>
+          <td>Reddits</td>
+          <td>{{reddits.added.period_1.reddits | number}}</td>
+          <td>{{reddits.added.period_2.reddits | number}}</td>
+          <td>{{reddits.added.period_3.reddits | number}}</td>
+          <td>{{reddits.added.period_4.reddits | number}}</td>
+        </tr>
+        <tr>
+          <td>Totals</td>
+          <td>
+            {{tweets.added.period_1.tweets + articles.added.period_1.articles +
+            reddits.added.period_1.reddits | number}}
+          </td>
+          <td>
+            {{tweets.added.period_2.tweets + articles.added.period_2.articles +
+            reddits.added.period_2.reddits | number}}
+          </td>
+          <td>
+            {{tweets.added.period_3.tweets + articles.added.period_3.articles +
+            reddits.added.period_3.reddits | number}}
+          </td>
+          <td>
+            {{tweets.added.period_4.tweets + articles.added.period_4.articles +
+            reddits.added.period_4.reddits | number}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h3>Total</h3>
-  <table class="table">
-    <thead>
-    <tr>
-      <th></th>
-      <th>
-        {{tweets.total.period_1.start_date | date:'M/d/yy'}} -
-        {{tweets.total.period_1.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.total.period_2.start_date | date:'M/d/yy'}} -
-        {{tweets.total.period_2.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.total.period_3.start_date | date:'M/d/yy'}} -
-        {{tweets.total.period_3.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.total.period_4.start_date | date:'M/d/yy'}} -
-        {{tweets.total.period_4.end_date | date:'M/d/yy'}}
-      </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Tweets</td>
-      <td>{{tweets.total.period_1.tweets | number}}</td>
-      <td>{{tweets.total.period_2.tweets | number}}</td>
-      <td>{{tweets.total.period_3.tweets | number}}</td>
-      <td>{{tweets.total.period_4.tweets | number}}</td>
-    </tr>
-    <tr>
-      <td>Articles</td>
-      <td>{{articles.total.period_1.articles | number}}</td>
-      <td>{{articles.total.period_2.articles | number}}</td>
-      <td>{{articles.total.period_3.articles | number}}</td>
-      <td>{{articles.total.period_4.articles | number}}</td>
-    </tr>
-    <tr>
-      <td>Reddits</td>
-      <td>{{reddits.total.period_1.reddits | number}}</td>
-      <td>{{reddits.total.period_2.reddits | number}}</td>
-      <td>{{reddits.total.period_3.reddits | number}}</td>
-      <td>{{reddits.total.period_4.reddits | number}}</td>
-    </tr>
-    <tr>
-      <td>Totals</td>
-      <td>
-        {{tweets.total.period_1.tweets + articles.total.period_1.articles + reddits.total.period_1.reddits | number}}
-      </td>
-      <td>
-        {{tweets.total.period_2.tweets + articles.total.period_2.articles + reddits.total.period_1.reddits | number}}
-      </td>
-      <td>
-        {{tweets.total.period_3.tweets + articles.total.period_3.articles + reddits.total.period_1.reddits | number}}
-      </td>
-      <td>
-        {{tweets.total.period_4.tweets + articles.total.period_4.articles + reddits.total.period_1.reddits | number}}
-      </td>
-    </tr>
-    </tbody>
-  </table>
+    <div class="col-md-6">
+      <h3>Total</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th>
+            {{tweets.total.period_1.start_date | date:'M/d/yy'}} -
+            {{tweets.total.period_1.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.total.period_2.start_date | date:'M/d/yy'}} -
+            {{tweets.total.period_2.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.total.period_3.start_date | date:'M/d/yy'}} -
+            {{tweets.total.period_3.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.total.period_4.start_date | date:'M/d/yy'}} -
+            {{tweets.total.period_4.end_date | date:'M/d/yy'}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tweets</td>
+          <td>{{tweets.total.period_1.tweets | number}}</td>
+          <td>{{tweets.total.period_2.tweets | number}}</td>
+          <td>{{tweets.total.period_3.tweets | number}}</td>
+          <td>{{tweets.total.period_4.tweets | number}}</td>
+        </tr>
+        <tr>
+          <td>Articles</td>
+          <td>{{articles.total.period_1.articles | number}}</td>
+          <td>{{articles.total.period_2.articles | number}}</td>
+          <td>{{articles.total.period_3.articles | number}}</td>
+          <td>{{articles.total.period_4.articles | number}}</td>
+        </tr>
+        <tr>
+          <td>Reddits</td>
+          <td>{{reddits.total.period_1.reddits | number}}</td>
+          <td>{{reddits.total.period_2.reddits | number}}</td>
+          <td>{{reddits.total.period_3.reddits | number}}</td>
+          <td>{{reddits.total.period_4.reddits | number}}</td>
+        </tr>
+        <tr>
+          <td>Totals</td>
+          <td>
+            {{tweets.total.period_1.tweets + articles.total.period_1.articles +
+            reddits.total.period_1.reddits | number}}
+          </td>
+          <td>
+            {{tweets.total.period_2.tweets + articles.total.period_2.articles +
+            reddits.total.period_1.reddits | number}}
+          </td>
+          <td>
+            {{tweets.total.period_3.tweets + articles.total.period_3.articles +
+            reddits.total.period_1.reddits | number}}
+          </td>
+          <td>
+            {{tweets.total.period_4.tweets + articles.total.period_4.articles +
+            reddits.total.period_1.reddits | number}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-  <h3>Total Scored</h3>
-  <table class="table">
-    <thead>
-    <tr>
-      <th></th>
-      <th>
-        {{tweets.totalScored.period_1.start_date | date:'M/d/yy'}} -
-        {{tweets.totalScored.period_1.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.totalScored.period_2.start_date | date:'M/d/yy'}} -
-        {{tweets.totalScored.period_2.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.totalScored.period_3.start_date | date:'M/d/yy'}} -
-        {{tweets.totalScored.period_3.end_date | date:'M/d/yy'}}
-      </th>
-      <th>
-        {{tweets.totalScored.period_4.start_date | date:'M/d/yy'}} -
-        {{tweets.totalScored.period_4.end_date | date:'M/d/yy'}}
-      </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Tweets</td>
-      <td>{{tweets.totalScored.period_1.tweets | number}}</td>
-      <td>{{tweets.totalScored.period_2.tweets | number}}</td>
-      <td>{{tweets.totalScored.period_3.tweets | number}}</td>
-      <td>{{tweets.totalScored.period_4.tweets | number}}</td>
-    </tr>
-    <tr>
-      <td>Articles</td>
-      <td>{{articles.totalScored.period_1.articles | number}}</td>
-      <td>{{articles.totalScored.period_2.articles | number}}</td>
-      <td>{{articles.totalScored.period_3.articles | number}}</td>
-      <td>{{articles.totalScored.period_4.articles | number}}</td>
-    </tr>
-    <tr>
-      <td>Totals</td>
-      <td>
-        {{tweets.totalScored.period_1.tweets + articles.totalScored.period_1.articles | number}}
-      </td>
-      <td>
-        {{tweets.totalScored.period_2.tweets + articles.totalScored.period_2.articles | number}}
-      </td>
-      <td>
-        {{tweets.totalScored.period_3.tweets + articles.totalScored.period_3.articles | number}}
-      </td>
-      <td>
-        {{tweets.totalScored.period_4.tweets + articles.totalScored.period_4.articles | number}}
-      </td>
-    </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div class="col-md-12">
+
+      <h3>Total Scored</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th>
+            {{tweets.totalScored.period_1.start_date | date:'M/d/yy'}} -
+            {{tweets.totalScored.period_1.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.totalScored.period_2.start_date | date:'M/d/yy'}} -
+            {{tweets.totalScored.period_2.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.totalScored.period_3.start_date | date:'M/d/yy'}} -
+            {{tweets.totalScored.period_3.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.totalScored.period_4.start_date | date:'M/d/yy'}} -
+            {{tweets.totalScored.period_4.end_date | date:'M/d/yy'}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tweets</td>
+          <td>{{tweets.totalScored.period_1.tweets | number}}</td>
+          <td>{{tweets.totalScored.period_2.tweets | number}}</td>
+          <td>{{tweets.totalScored.period_3.tweets | number}}</td>
+          <td>{{tweets.totalScored.period_4.tweets | number}}</td>
+        </tr>
+        <tr>
+          <td>Articles</td>
+          <td>{{articles.totalScored.period_1.articles | number}}</td>
+          <td>{{articles.totalScored.period_2.articles | number}}</td>
+          <td>{{articles.totalScored.period_3.articles | number}}</td>
+          <td>{{articles.totalScored.period_4.articles | number}}</td>
+        </tr>
+        <tr>
+          <td>Totals</td>
+          <td>
+            {{tweets.totalScored.period_1.tweets +
+            articles.totalScored.period_1.articles | number}}
+          </td>
+          <td>
+            {{tweets.totalScored.period_2.tweets +
+            articles.totalScored.period_2.articles | number}}
+          </td>
+          <td>
+            {{tweets.totalScored.period_3.tweets +
+            articles.totalScored.period_3.articles | number}}
+          </td>
+          <td>
+            {{tweets.totalScored.period_4.tweets +
+            articles.totalScored.period_4.articles | number}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
