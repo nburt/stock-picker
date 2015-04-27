@@ -17,4 +17,12 @@ describe RedditSearcher do
 
   end
 
+  it 'handles when no results are returned' do
+    VCR.use_cassette('/models/reddit_searcher/ameriprise') do
+      results = RedditSearcher.search('Ameriprise Financial, Inc.')
+
+      expect(results.size).to eq(0)
+    end
+  end
+
 end

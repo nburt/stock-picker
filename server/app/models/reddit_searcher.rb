@@ -11,7 +11,7 @@ class RedditSearcher
   private
 
   def self.create_url(ticker_symbol)
-    "http://www.reddit.com/r/stocks/search.json?q=#{ticker_symbol}&sort=new&t=day"
+    URI.encode("http://www.reddit.com/r/stocks/search.json?q=#{ticker_symbol}&sort=new&t=day")
   end
 
   def self.parse_body(body)
