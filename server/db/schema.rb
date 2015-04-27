@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426044634) do
+ActiveRecord::Schema.define(version: 20150427003442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,22 @@ ActiveRecord::Schema.define(version: 20150426044634) do
   end
 
   add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
+
+  create_table "reddits", force: :cascade do |t|
+    t.integer  "stock_id"
+    t.string   "title"
+    t.string   "link"
+    t.datetime "date"
+    t.json     "data"
+    t.string   "subreddit_id"
+    t.json     "keywords"
+    t.float    "positivity_score"
+    t.json     "sentiment"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "reddits", ["stock_id"], name: "index_reddits_on_stock_id", using: :btree
 
   create_table "stock_prices", force: :cascade do |t|
     t.integer  "stock_id"

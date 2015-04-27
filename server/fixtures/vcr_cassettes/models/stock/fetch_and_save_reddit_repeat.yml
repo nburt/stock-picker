@@ -1,0 +1,2029 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/r/stocks/search.json?q=IBM&sort=new&t=day
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Apr 2015 00:58:31 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da73e3761ea98ffafece7b63330cdf5411430096311; expires=Tue, 26-Apr-16
+        00:58:31 GMT; path=/; domain=.reddit.com; HttpOnly
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Reddit-Tracking, X-Moose
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=V6YMEz1hS7Lg7hlu8YYAaBpaIATQUS%2FLOvXmBHrXem%2F4Tsgrgj6hOkxCDZwjP%2B5f9FPfTsLyISM%3D
+      Vary:
+      - accept-encoding
+      Cache-Control:
+      - no-cache
+      X-Moose:
+      - majestic
+      Cf-Cache-Status:
+      - EXPIRED
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1dd6945ab3b4118f-DFW
+    body:
+      encoding: UTF-8
+      string: '{"kind": "Listing", "data": {"facets": {}, "modhash": "", "children":
+        [{"kind": "t3", "data": {"domain": "self.MechanicalKeyboards", "banned_by":
+        null, "media_embed": {}, "subreddit": "MechanicalKeyboards", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;m interested
+        in buying an IBM Model M, not too sure just yet on which one, but I was wondering
+        if any of you could point me in the right direction - so far it seems clickykeyboards
+        is the go to place, however their shipping does seem a little expensive&lt;/p&gt;\n\n&lt;p&gt;Model
+        recommendations would be appreciated as well!&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I''m interested in buying an IBM Model M, not
+        too sure just yet on which one, but I was wondering if any of you could point
+        me in the right direction - so far it seems clickykeyboards is the go to place,
+        however their shipping does seem a little expensive\n\n\nModel recommendations
+        would be appreciated as well!", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33z6tn", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "swimming-bird", "num_comments":
+        0, "score": 1, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "self", "subreddit_id": "t5_2ugo7", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": "mxbrown2", "downs": 0, "secure_media_embed":
+        {}, "saved": false, "stickied": false, "is_self": true, "permalink": "/r/MechanicalKeyboards/comments/33z6tn/help_best_place_to_buy_an_ibm_model_m_australia/",
+        "name": "t3_33z6tn", "created": 1430124037.0, "url": "http://www.reddit.com/r/MechanicalKeyboards/comments/33z6tn/help_best_place_to_buy_an_ibm_model_m_australia/",
+        "author_flair_text": "Ducky S4 (Browns), Ducky S3 White (Browns)", "title":
+        "[help] Best place to buy an IBM Model M (Australia)?", "created_utc": 1430095237.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 1}}, {"kind": "t3", "data": {"domain": "self.forhire",
+        "banned_by": null, "media_embed": {}, "subreddit": "forhire", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey Reddit,&lt;/p&gt;\n\n&lt;p&gt;To
+        give you a few details about myself, my name is Wil Parker, I&amp;#39;m 32
+        and live in Southern California. I&amp;#39;m an Internet Marketing Professional
+        and am experienced with all the most current marketing techniques including:
+        SEO, E-mail Marketing, Social Media, Analytics Analysis, Community Management,
+        Brand Growth, Press &amp;amp; Outreach, Campaign Strategy, Video Editing/Voice
+        Over, PPC and more. I also have a full dedicated home office and many years
+        of remote based work experience.&lt;/p&gt;\n\n&lt;p&gt;As an Inbound Marketing
+        Professional, I challenge myself with each and every opportunity to find the
+        absolute best methods to generate more reliable leads, analyze key traffic
+        metrics for opportunities or to simply \u201cWow\u201d new customers with
+        amazing and actual useful marketing efforts that correctly represents the
+        given product. Rest assured, I\u2019m most certainly not your typical \u201csleazy\u201d
+        type of Marketing guy. I\u2019m not a fan of deploying any such marketing
+        techniques or campaigns that I personally would not want to see myself. &lt;/p&gt;\n\n&lt;p&gt;Also,
+        you gain a valuable asset who\u2019s quite capable of hat switching into other
+        skill sets. Previously to my Marketing Career, I lead a successful career
+        as an IT Professional in System Administration and Systems Support for companies
+        such as IBM and Kaiser Permanente. I\u2019m still a Technology Enthusiast
+        at heart and am very much so capable of switching hats for the greater good
+        in assisting with any IT related functions.&lt;/p&gt;\n\n&lt;p&gt;Here is
+        a link to my Bio Website, it contains a link to my Linkedin Profile and current
+        Resume. Both contain a bunch of details about my past job history, skill-sets
+        and previous job descriptions: &lt;a href=\"http://www.wilparker.com\"&gt;www.wilparker.com&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;Please
+        DM me if you\u2019ve got any details or opportunities you\u2019d like to discuss
+        or share. Would greatly appreciate it!&lt;/p&gt;\n\n&lt;p&gt;(Note: I&amp;#39;d
+        prefer full-time, but I&amp;#39;ll entertain the idea of contract/consulting
+        type gigs if the conditions are right.)&lt;/p&gt;\n\n&lt;p&gt;Thanks!&lt;/p&gt;\n\n&lt;p&gt;Wil&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hey Reddit,\n\nTo give you a few details about
+        myself, my name is Wil Parker, I''m 32 and live in Southern California. I''m
+        an Internet Marketing Professional and am experienced with all the most current
+        marketing techniques including: SEO, E-mail Marketing, Social Media, Analytics
+        Analysis, Community Management, Brand Growth, Press &amp; Outreach, Campaign
+        Strategy, Video Editing/Voice Over, PPC and more. I also have a full dedicated
+        home office and many years of remote based work experience.\n\nAs an Inbound
+        Marketing Professional, I challenge myself with each and every opportunity
+        to find the absolute best methods to generate more reliable leads, analyze
+        key traffic metrics for opportunities or to simply \u201cWow\u201d new customers
+        with amazing and actual useful marketing efforts that correctly represents
+        the given product. Rest assured, I\u2019m most certainly not your typical
+        \u201csleazy\u201d type of Marketing guy. I\u2019m not a fan of deploying
+        any such marketing techniques or campaigns that I personally would not want
+        to see myself. \n\nAlso, you gain a valuable asset who\u2019s quite capable
+        of hat switching into other skill sets. Previously to my Marketing Career,
+        I lead a successful career as an IT Professional in System Administration
+        and Systems Support for companies such as IBM and Kaiser Permanente. I\u2019m
+        still a Technology Enthusiast at heart and am very much so capable of switching
+        hats for the greater good in assisting with any IT related functions.\n\nHere
+        is a link to my Bio Website, it contains a link to my Linkedin Profile and
+        current Resume. Both contain a bunch of details about my past job history,
+        skill-sets and previous job descriptions: www.wilparker.com\n\nPlease DM me
+        if you\u2019ve got any details or opportunities you\u2019d like to discuss
+        or share. Would greatly appreciate it!\n\n(Note: I''d prefer full-time, but
+        I''ll entertain the idea of contract/consulting type gigs if the conditions
+        are right.)\n\nThanks!\n\nWil", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": "For Hire", "id": "33z6f3", "gilded": 0, "archived":
+        false, "clicked": false, "report_reasons": null, "author": "JobHuntimusPrime",
+        "num_comments": 1, "score": 1, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qzbh", "edited": 1430095520.0,
+        "link_flair_css_class": "fh-forhire", "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/forhire/comments/33z6f3/for_hire_marketing_professional_tech_guy/",
+        "name": "t3_33z6f3", "created": 1430123826.0, "url": "http://www.reddit.com/r/forhire/comments/33z6f3/for_hire_marketing_professional_tech_guy/",
+        "author_flair_text": null, "title": "[For Hire] Marketing Professional &amp;
+        Tech Guy", "created_utc": 1430095026.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 1}}, {"kind":
+        "t3", "data": {"domain": "self.datascience", "banned_by": null, "media_embed":
+        {}, "subreddit": "datascience", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Greetings everyone!&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m
+        looking for some assistance evaluating the predictive analytics functionality
+        of IBM Watson Analytics for my blog. For background, I&amp;#39;m a Business
+        Intelligence developer working with IBM&amp;#39;s &amp;quot;analytics&amp;quot;
+        tools at the enterprise level. I run a blog on the side for fun that provides
+        information for IBM Cognos developers and also tracks developments in the
+        BI/analytics industry in general.&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m currently
+        reviewing Watson Analytics and am hoping people here would be interested in
+        providing some feedback from the perspective of a data scientist, which I
+        am most certainly not. Watson Analytics is free to use and - in my experience
+        - IBM does not pester you after you sign up. No promises though.&lt;/p&gt;\n\n&lt;p&gt;If
+        anyone is interested reply here or PM me. You won&amp;#39;t be on the hook
+        for much, just a blurb detailing your opinion of what the tool offers.&lt;/p&gt;\n\n&lt;p&gt;Here&amp;#39;s
+        the blog for reference: &lt;a href=\"http://ibmblueview.com\"&gt;IBM Blueview&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;Thanks!&lt;/p&gt;\n\n&lt;p&gt;EDIT:
+        I should add, I don&amp;#39;t have ads on the site, get link sponsorship or
+        attempt to make money in any way. This is strictly for fun.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Greetings everyone!\n\nI''m looking for some assistance
+        evaluating the predictive analytics functionality of IBM Watson Analytics
+        for my blog. For background, I''m a Business Intelligence developer working
+        with IBM''s \"analytics\" tools at the enterprise level. I run a blog on the
+        side for fun that provides information for IBM Cognos developers and also
+        tracks developments in the BI/analytics industry in general.\n\nI''m currently
+        reviewing Watson Analytics and am hoping people here would be interested in
+        providing some feedback from the perspective of a data scientist, which I
+        am most certainly not. Watson Analytics is free to use and - in my experience
+        - IBM does not pester you after you sign up. No promises though.\n\nIf anyone
+        is interested reply here or PM me. You won''t be on the hook for much, just
+        a blurb detailing your opinion of what the tool offers.\n\nHere''s the blog
+        for reference: [IBM Blueview](http://ibmblueview.com)\n\nThanks!\n\nEDIT:
+        I should add, I don''t have ads on the site, get link sponsorship or attempt
+        to make money in any way. This is strictly for fun.\n", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33ylaf", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "NYD3030", "num_comments": 1, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2sptq", "edited":
+        1430084399.0, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/datascience/comments/33ylaf/assistance_evaluating_ibms_watson_analytics/",
+        "name": "t3_33ylaf", "created": 1430112949.0, "url": "http://www.reddit.com/r/datascience/comments/33ylaf/assistance_evaluating_ibms_watson_analytics/",
+        "author_flair_text": null, "title": "Assistance evaluating IBM''s Watson Analytics?",
+        "created_utc": 1430084149.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 1}}, {"kind": "t3", "data":
+        {"domain": "ibmblueview.com", "banned_by": null, "media_embed": {}, "subreddit":
+        "WATSON", "selftext_html": null, "selftext": "", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33yjro", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "NYD3030", "num_comments": 0, "score": 2, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/RTJn5jxfkcaZqnWdp0W72DoHQVkIU_baQ_CAE8gaeUY.jpg",
+        "subreddit_id": "t5_2qxyi", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/WATSON/comments/33yjro/watson_analytics_review_natural_language_query/",
+        "name": "t3_33yjro", "created": 1430112178.0, "url": "http://ibmblueview.com/watson-analytics-review-natural-language-query/",
+        "author_flair_text": null, "title": "Watson Analytics Review: Natural Language
+        Query | IBM Blueview", "created_utc": 1430083378.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        2}}, {"kind": "t3", "data": {"domain": "nytimes.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "apple", "selftext_html": null, "selftext": "", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33xwwi", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "nobodyspecial", "num_comments": 15, "score": 0, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh1f", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": false, "permalink": "/r/apple/comments/33xwwi/apple_wont_always_rule_just_look_at_ibm/",
+        "name": "t3_33xwwi", "created": 1430101157.0, "url": "http://www.nytimes.com/2015/04/26/your-money/now-its-apples-world-once-it-was-ibms.html",
+        "author_flair_text": null, "title": "Apple won''t always rule. Just look at
+        IBM.", "created_utc": 1430072357.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 0}}, {"kind":
+        "t3", "data": {"domain": "self.NetworkingJobs", "banned_by": null, "media_embed":
+        {}, "subreddit": "NetworkingJobs", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Hey - I am currently looking to hire a netsec eng
+        who has worked in large enterprise and has excellent hands-on skills with
+        the following\nFirewalls: Check Point Fortinet Juniper Palo Alto\nLoad Balancers:
+        Cisco F5\nIPS: SourceFire IBM and the firewalls built in...\nAdditional desirable
+        technologies: Disk Encryption, DNS, WAF, NMS, DLP\nShould have very good understanding
+        of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM me for more info&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hey - I am currently looking to hire a netsec
+        eng who has worked in large enterprise and has excellent hands-on skills with
+        the following\nFirewalls: Check Point Fortinet Juniper Palo Alto\nLoad Balancers:
+        Cisco F5\nIPS: SourceFire IBM and the firewalls built in...\nAdditional desirable
+        technologies: Disk Encryption, DNS, WAF, NMS, DLP\nShould have very good understanding
+        of security and networking concepts\n\n\nPM me for more info", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33xw7w",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "netseccat", "num_comments": 0, "score": 4, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2tvyy",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/NetworkingJobs/comments/33xw7w/hiring_network_security_engineer_in_dubai/",
+        "name": "t3_33xw7w", "created": 1430100817.0, "url": "http://www.reddit.com/r/NetworkingJobs/comments/33xw7w/hiring_network_security_engineer_in_dubai/",
+        "author_flair_text": null, "title": "[HIRING] Network Security Engineer in
+        DUBAI", "created_utc": 1430072017.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 4}}, {"kind":
+        "t3", "data": {"domain": "i.imgur.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "pics", "selftext_html": null, "selftext": "", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33xqxk",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "Reddit__PI", "num_comments": 1, "score": 0, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/MTfa18RH7zcMTGKF-3kxGd8199fvKM8dsavdHQ0QQPs.jpg",
+        "subreddit_id": "t5_2qh0u", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/pics/comments/33xqxk/a_young_steve_jobs_giving_ibm_the_finger/",
+        "name": "t3_33xqxk", "created": 1430098137.0, "url": "http://i.imgur.com/Sf44p12.jpg",
+        "author_flair_text": null, "title": "A young Steve Jobs giving IBM the finger",
+        "created_utc": 1430069337.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 0}}, {"kind": "t3", "data":
+        {"domain": "youtube.com", "banned_by": null, "media_embed": {"content": "&lt;iframe
+        class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 338}, "subreddit": "osugame",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": {"type": "youtube.com", "oembed": {"provider_url": "http://www.youtube.com/",
+        "description": "Uploaded by Erik |DrikiHU| on 2015-04-26.", "title": "[osu!]Helbinde
+        - Love Is War [WATAAAASHI AR10] (60 FPS) (loud keyboard!)", "url": "http://www.youtube.com/watch?v=pBcVX51UQRA",
+        "author_name": "Erik |DrikiHU|", "height": 338, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+        "type": "video", "thumbnail_height": 360, "author_url": "http://www.youtube.com/channel/UCpQGzFuDKr1t8Xd8wP_MlEQ"}},
+        "link_flair_text": "Fluff", "id": "33xq6n", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "drikihu", "num_comments":
+        13, "score": 12, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "http://b.thumbs.redditmedia.com/s4d91qSq6nH60JVeJwUEuX7oAl2jblOSKVA-sxUB5ws.jpg",
+        "subreddit_id": "t5_2s3lm", "edited": false, "link_flair_css_class": "fluff",
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 338}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/osugame/comments/33xq6n/the_loudest_mechanical_keyboard_is_ibm_model_m_60/",
+        "name": "t3_33xq6n", "created": 1430097768.0, "url": "https://www.youtube.com/watch?v=pBcVX51UQRA",
+        "author_flair_text": null, "title": "The loudest mechanical keyboard is...
+        IBM Model M (60 FPS) (Headphone users warning! :D)", "created_utc": 1430068968.0,
+        "distinguished": null, "media": {"type": "youtube.com", "oembed": {"provider_url":
+        "http://www.youtube.com/", "description": "Uploaded by Erik |DrikiHU| on 2015-04-26.",
+        "title": "[osu!]Helbinde - Love Is War [WATAAAASHI AR10] (60 FPS) (loud keyboard!)",
+        "url": "http://www.youtube.com/watch?v=pBcVX51UQRA", "author_name": "Erik
+        |DrikiHU|", "height": 338, "width": 600, "html": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "http://i.ytimg.com/vi/pBcVX51UQRA/hqdefault.jpg", "type": "video", "thumbnail_height":
+        360, "author_url": "http://www.youtube.com/channel/UCpQGzFuDKr1t8Xd8wP_MlEQ"}},
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 12}}, {"kind":
+        "t3", "data": {"domain": "self.cscareerquestions", "banned_by": null, "media_embed":
+        {}, "subreddit": "cscareerquestions", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Hi reddit -- thanks for your time!&lt;/p&gt;\n\n&lt;p&gt;I
+        am struggling with this decision and can&amp;#39;t seem to make a final decision.
+        I just need some objective opinions to kick me out of this funk before the
+        weekend ends and I have to give them my decision.&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Offer&lt;/strong&gt;:
+        &lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;$53k/year (biweekly)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;decent
+        health/dental (~$200/month)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;~10 days
+        of vacation after my first year&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;401k
+        with 50% match up to 6% of yearly income&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;:
+        I graduated with my Masters of Science in Computer Science in May &amp;#39;14.
+        I also have a BSc in Mathematics and another in CS. After graduation, some
+        plans to move out-of-country fell apart, and I fell into a position working
+        as a programming consultant doing very basic stuff. For the past 4 months,
+        I&amp;#39;ve been looking for a permanent position as a Software Engineer/Developer.
+        &lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;: &lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;I
+        like the company and what they&amp;#39;re working on&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Decent
+        area to live in&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I really need a permanent
+        job... and this is an offer&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Friendly
+        workplace with the opportunity to learn a ton and work on interesting projects&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;It
+        would get me out of my current job working with HTML/VB/IBM i control language&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;Salary
+        is low and company is known for underpaying and overworking employees&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Flat
+        structure for developers -- no room for promotion, just more responsibility&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Already
+        told that I would be expected to work &amp;gt;50 hours/week with &amp;gt;60
+        towards the end of a project&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I&amp;#39;ve
+        only had one callback/interview after four months and I&amp;#39;m nervous
+        that I&amp;#39;m jumping on the first offer&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I
+        can&amp;#39;t afford to take my family&amp;#39;s dogs -- my disabled mom and
+        overworked dad would have to deal with it&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;Basically
+        I feel like I haven&amp;#39;t looked hard enough or applied to enough places
+        on the West coast (where I want to go). Should I expect a higher starting
+        salary with my current background? My thesis work would have taken too long
+        to finish (still working on it), so I don&amp;#39;t have any large papers
+        or projects that I can point to.  Any advice? &lt;/p&gt;\n\n&lt;p&gt;Thank
+        you again for your help!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hi reddit -- thanks for your time!\n\nI am struggling with this decision
+        and can''t seem to make a final decision. I just need some objective opinions
+        to kick me out of this funk before the weekend ends and I have to give them
+        my decision.\n\n**Offer**: \n\n* $53k/year (biweekly)\n\n* decent health/dental
+        (~$200/month)\n\n* ~10 days of vacation after my first year\n\n* 401k with
+        50% match up to 6% of yearly income\n\n\n\n**Background**: I graduated with
+        my Masters of Science in Computer Science in May ''14. I also have a BSc in
+        Mathematics and another in CS. After graduation, some plans to move out-of-country
+        fell apart, and I fell into a position working as a programming consultant
+        doing very basic stuff. For the past 4 months, I''ve been looking for a permanent
+        position as a Software Engineer/Developer. \n\n\n\n**Pros**: \n\n* I like
+        the company and what they''re working on\n\n* Decent area to live in\n\n*
+        I really need a permanent job... and this is an offer\n\n* Friendly workplace
+        with the opportunity to learn a ton and work on interesting projects\n\n*
+        It would get me out of my current job working with HTML/VB/IBM i control language\n\n\n\n**Cons**:\n\n*
+        Salary is low and company is known for underpaying and overworking employees\n\n*
+        Flat structure for developers -- no room for promotion, just more responsibility\n\n*
+        Already told that I would be expected to work &gt;50 hours/week with &gt;60
+        towards the end of a project\n\n* I''ve only had one callback/interview after
+        four months and I''m nervous that I''m jumping on the first offer\n\n* I can''t
+        afford to take my family''s dogs -- my disabled mom and overworked dad would
+        have to deal with it\n\n\n\nBasically I feel like I haven''t looked hard enough
+        or applied to enough places on the West coast (where I want to go). Should
+        I expect a higher starting salary with my current background? My thesis work
+        would have taken too long to finish (still working on it), so I don''t have
+        any large papers or projects that I can point to.  Any advice? \n\n\n\nThank
+        you again for your help!", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33xp5l", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "jobofferthrowaway508",
+        "num_comments": 7, "score": 3, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2sdpm", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 0, "secure_media_embed": {},
+        "saved": false, "stickied": false, "is_self": true, "permalink": "/r/cscareerquestions/comments/33xp5l/should_i_take_this_job_offer/",
+        "name": "t3_33xp5l", "created": 1430097264.0, "url": "http://www.reddit.com/r/cscareerquestions/comments/33xp5l/should_i_take_this_job_offer/",
+        "author_flair_text": null, "title": "Should I take this job offer?", "created_utc":
+        1430068464.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 3}}, {"kind": "t3", "data": {"domain":
+        "self.networking", "banned_by": null, "media_embed": {}, "subreddit": "networking",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey
+        - I am currently looking to hire a netsec eng who has worked in large enterprise
+        and has excellent hands-on skills with the following&lt;/p&gt;\n\n&lt;p&gt;Firewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto&lt;/p&gt;\n\n&lt;p&gt;Load Balancers:\nCisco\nF5&lt;/p&gt;\n\n&lt;p&gt;IPS:\nSourceFire\nIBM\nand
+        the firewalls built in...&lt;/p&gt;\n\n&lt;p&gt;Additional desirable technologies:
+        Disk Encryption, DNS, WAF, NMS, DLP&lt;/p&gt;\n\n&lt;p&gt;Should have very
+        good understanding of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM
+        me for more details&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hey - I am currently looking to hire a netsec eng who has worked in large
+        enterprise and has excellent hands-on skills with the following\n\nFirewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto\n\nLoad Balancers:\nCisco\nF5\n\nIPS:\nSourceFire\nIBM\nand
+        the firewalls built in...\n\nAdditional desirable technologies: Disk Encryption,
+        DNS, WAF, NMS, DLP\n\nShould have very good understanding of security and
+        networking concepts\n\nPM me for more details", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33xj2s", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "netseccat", "num_comments": 4, "score": 0, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qkaf", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": "", "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/networking/comments/33xj2s/netsec_opportunity_in_dubai/",
+        "name": "t3_33xj2s", "created": 1430094167.0, "url": "http://www.reddit.com/r/networking/comments/33xj2s/netsec_opportunity_in_dubai/",
+        "author_flair_text": "securetron.com", "title": "Netsec opportunity in Dubai",
+        "created_utc": 1430065367.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 0}}, {"kind": "t3", "data":
+        {"domain": "self.dubai", "banned_by": null, "media_embed": {}, "subreddit":
+        "dubai", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey
+        &lt;a href=\"/r/Dubai\"&gt;/r/Dubai&lt;/a&gt; - I am currently looking to
+        hire a netsec eng who has worked in large enterprise and has excellent hands-on
+        skills with the following&lt;/p&gt;\n\n&lt;p&gt;Firewalls:\nCheck Point\nFortinet\nJuniper\nPalo
+        Alto&lt;/p&gt;\n\n&lt;p&gt;Load Balancers:\nCisco\nF5&lt;/p&gt;\n\n&lt;p&gt;IPS:\nSourceFire\nIBM\nand
+        the firewalls built in...&lt;/p&gt;\n\n&lt;p&gt;Additional desirable technologies:
+        Disk Encryption, DNS, WAF, NMS, DLP&lt;/p&gt;\n\n&lt;p&gt;Should have very
+        good understanding of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM
+        me for more details&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hey /r/Dubai - I am currently looking to hire a netsec eng who has worked
+        in large enterprise and has excellent hands-on skills with the following\n\nFirewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto\n\nLoad Balancers:\nCisco\nF5\n\nIPS:\nSourceFire\nIBM\nand
+        the firewalls built in...\n\nAdditional desirable technologies: Disk Encryption,
+        DNS, WAF, NMS, DLP\n\nShould have very good understanding of security and
+        networking concepts\n\nPM me for more details", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33xgy2", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "netseccat", "num_comments": 2, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "self", "subreddit_id": "t5_2qpro", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/dubai/comments/33xgy2/netsec_eng_consultant_opening_in_dubai/",
+        "name": "t3_33xgy2", "created": 1430093054.0, "url": "http://www.reddit.com/r/dubai/comments/33xgy2/netsec_eng_consultant_opening_in_dubai/",
+        "author_flair_text": null, "title": "NetSec Eng / Consultant - Opening in
+        Dubai", "created_utc": 1430064254.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 1}}, {"kind":
+        "t3", "data": {"domain": "linkedin.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "thisisthewayitwillbe", "selftext_html": null, "selftext":
+        "", "likes": null, "user_reports": [], "secure_media": null, "link_flair_text":
+        null, "id": "33x9gr", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "starspawn0", "num_comments": 1, "score": 2, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/IeqbbFJZjc0TdYhkU1welv8DqLSHDPYZijK-Ib5OrWs.jpg",
+        "subreddit_id": "t5_31de7", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/thisisthewayitwillbe/comments/33x9gr/like_david_ferrucci_erik_mueller_has_now_left_ibm/",
+        "name": "t3_33x9gr", "created": 1430088830.0, "url": "https://www.linkedin.com/in/erikmueller1",
+        "author_flair_text": null, "title": "Like David Ferrucci, Erik Mueller has
+        now left IBM... where does he work now? Bridgewater, perhaps?", "created_utc":
+        1430060030.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 2}}, {"kind": "t3", "data": {"domain":
+        "self.Scholar", "banned_by": null, "media_embed": {}, "subreddit": "Scholar",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;m
+        looking for a paper discussing &lt;a href=\"https://en.wikipedia.org/wiki/SIMMON\"&gt;SIMMON&lt;/a&gt;.
+        I just can&amp;#39;t find the paper wikipedia refers to:&lt;/p&gt;\n\n&lt;p&gt;Lehman
+        MM (ed) Proc. SimSymp 1968, IBM Res. Div., Yorktown Heights, NY; Nov. 1968,
+        3 vols.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "I''m looking
+        for a paper discussing [SIMMON](https://en.wikipedia.org/wiki/SIMMON). I just
+        can''t find the paper wikipedia refers to:\n\n\nLehman MM (ed) Proc. SimSymp
+        1968, IBM Res. Div., Yorktown Heights, NY; Nov. 1968, 3 vols.", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33x92l",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "apocalypticR", "num_comments": 0, "score": 2, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2r0ev",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/Scholar/comments/33x92l/request_paper_about_simulation_monitor/",
+        "name": "t3_33x92l", "created": 1430088593.0, "url": "http://www.reddit.com/r/Scholar/comments/33x92l/request_paper_about_simulation_monitor/",
+        "author_flair_text": null, "title": "[REQUEST] Paper about SIMulation MONitor",
+        "created_utc": 1430059793.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 2}}, {"kind": "t3", "data":
+        {"domain": "snip.ly", "banned_by": null, "media_embed": {}, "subreddit": "healthtechnews",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": null, "link_flair_text": null, "id": "33wi8o", "gilded": 0,
+        "archived": false, "clicked": false, "report_reasons": null, "author": "17425170",
+        "num_comments": 0, "score": 1, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "http://a.thumbs.redditmedia.com/twZXIgKGbfii6xhILD2r1G4bcnXMilhZKp8kR62r-88.jpg",
+        "subreddit_id": "t5_30zcc", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/healthtechnews/comments/33wi8o/scrap_randomised_trials_in_favour_of_big_data/",
+        "name": "t3_33wi8o", "created": 1430065020.0, "url": "http://snip.ly/7wJq",
+        "author_flair_text": null, "title": "Scrap randomised trials in favour of
+        big data, says ex-IBM medical officer", "created_utc": 1430036220.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 1}}, {"kind": "t3", "data": {"domain": "self.sysadmin", "banned_by":
+        null, "media_embed": {}, "subreddit": "sysadmin", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;So, I&amp;#39;ve started lurking
+        this subreddit recently, and a common theme seems to be a kind of disdainful
+        attitude towards helpdesk. Maybe my case is different, or maybe I&amp;#39;m
+        just delusional, but I feel like I&amp;#39;ve got a pretty sweet gig for an
+        early-career job.&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m a &amp;quot;NOC Technician&amp;quot;
+        for a datacenter, which I&amp;#39;ll freely admit is a glorified helpdesk.
+        We deal with more technical calls than some, but it&amp;#39;s not like we&amp;#39;re
+        internal IT for IBM or something. However, this job has come with a LOT of
+        benefits, not the least of which is customers discarding equipment that ends
+        up in my home lab. The company also pays for SkillPort to encourage us to
+        continue our certification path of choice, and I get to see a lot of different
+        systems just during the day-to-day operations, which helps keep me from getting
+        a sort of sysadmin-aspirant tunnel vision. I&amp;#39;m 24, and because I spent
+        some time right after high school being really dumb, I got a later start to
+        my career than I would have liked. This is only my second job in the field,
+        and my previous one I honestly got through my guardian angel of a stepmom.
+        But really, I feel like this is a solid step in the right direction, especially
+        with all the resources it puts at my disposal.&lt;/p&gt;\n\n&lt;p&gt;Granted,
+        this isn&amp;#39;t where I plan to stay indefinitely, but I feel like I could
+        have done a lot worse for this stage of my life. I&amp;#39;d love to hear
+        stories of other people who really got something out of a helpdesk job, or
+        why you think I&amp;#39;m full of it - I&amp;#39;m interested in both perspectives!&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "So, I''ve started lurking this subreddit recently,
+        and a common theme seems to be a kind of disdainful attitude towards helpdesk.
+        Maybe my case is different, or maybe I''m just delusional, but I feel like
+        I''ve got a pretty sweet gig for an early-career job.\n\nI''m a \"NOC Technician\"
+        for a datacenter, which I''ll freely admit is a glorified helpdesk. We deal
+        with more technical calls than some, but it''s not like we''re internal IT
+        for IBM or something. However, this job has come with a LOT of benefits, not
+        the least of which is customers discarding equipment that ends up in my home
+        lab. The company also pays for SkillPort to encourage us to continue our certification
+        path of choice, and I get to see a lot of different systems just during the
+        day-to-day operations, which helps keep me from getting a sort of sysadmin-aspirant
+        tunnel vision. I''m 24, and because I spent some time right after high school
+        being really dumb, I got a later start to my career than I would have liked.
+        This is only my second job in the field, and my previous one I honestly got
+        through my guardian angel of a stepmom. But really, I feel like this is a
+        solid step in the right direction, especially with all the resources it puts
+        at my disposal.\n\nGranted, this isn''t where I plan to stay indefinitely,
+        but I feel like I could have done a lot worse for this stage of my life. I''d
+        love to hear stories of other people who really got something out of a helpdesk
+        job, or why you think I''m full of it - I''m interested in both perspectives!",
+        "likes": null, "user_reports": [], "secure_media": null, "link_flair_text":
+        null, "id": "33w65s", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "TSIntern", "num_comments": 15, "score": 11, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2qnp7", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/sysadmin/comments/33w65s/is_my_job_choice_really_that_bad/",
+        "name": "t3_33w65s", "created": 1430053948.0, "url": "http://www.reddit.com/r/sysadmin/comments/33w65s/is_my_job_choice_really_that_bad/",
+        "author_flair_text": null, "title": "Is my job choice really that bad?", "created_utc":
+        1430025148.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 11}}, {"kind": "t3", "data": {"domain":
+        "youtube.com", "banned_by": null, "media_embed": {"content": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "subreddit": "thisisthewayitwillbe",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": {"oembed": {"provider_url": "http://www.youtube.com/", "description":
+        "Uploaded by Narine Cholakyan on 2015-04-17.", "title": "IBM Watson powered
+        Robot", "url": "http://www.youtube.com/watch?v=Y58j2O_RNDs", "type": "video",
+        "author_name": "Narine Cholakyan", "height": 450, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+        "thumbnail_height": 360, "author_url": "http://www.youtube.com/user/NanaGraphics"},
+        "type": "youtube.com"}, "link_flair_text": null, "id": "33w3kl", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "starspawn0", "num_comments": 5, "score": 9, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/hO066qVBVcGcOjmU8OmPrx27JV58wf6m2rHjASlH1fo.jpg",
+        "subreddit_id": "t5_31de7", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/thisisthewayitwillbe/comments/33w3kl/ibm_watsonpowered_robot_looking_at_it_its_hard/",
+        "name": "t3_33w3kl", "created": 1430052089.0, "url": "https://www.youtube.com/watch?v=Y58j2O_RNDs",
+        "author_flair_text": null, "title": "IBM Watson-Powered Robot -- looking at
+        it, it''s hard not to think it has a personality (rather than being the result
+        of clever programming)", "created_utc": 1430023289.0, "distinguished": null,
+        "media": {"oembed": {"provider_url": "http://www.youtube.com/", "description":
+        "Uploaded by Narine Cholakyan on 2015-04-17.", "title": "IBM Watson powered
+        Robot", "url": "http://www.youtube.com/watch?v=Y58j2O_RNDs", "type": "video",
+        "author_name": "Narine Cholakyan", "height": 450, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "http://i.ytimg.com/vi/Y58j2O_RNDs/hqdefault.jpg", "thumbnail_height": 360,
+        "author_url": "http://www.youtube.com/user/NanaGraphics"}, "type": "youtube.com"},
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 9}}, {"kind":
+        "t3", "data": {"domain": "imgur.com", "banned_by": null, "media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3%2Fembed&amp;url=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3&amp;image=http%3A%2F%2Fi.imgur.com%2FcYtzQpu.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=imgur\"
+        width=\"550\" height=\"550\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 550, "scrolling": false, "height": 550}, "subreddit": "Wellworn",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": null, "link_flair_text": null, "id": "33vv3m", "gilded": 0,
+        "archived": false, "clicked": false, "report_reasons": null, "author": "JakesGunReviews",
+        "num_comments": 1, "score": 23, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "http://b.thumbs.redditmedia.com/aSka2R744DYjXURV719x-Y3XxInKURqFmVerk6cykGg.jpg",
+        "subreddit_id": "t5_35ozl", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/Wellworn/comments/33vv3m/ibm_m1_carbine/",
+        "name": "t3_33vv3m", "created": 1430046474.0, "url": "http://imgur.com/a/s0QH3",
+        "author_flair_text": null, "title": "IBM M1 Carbine", "created_utc": 1430017674.0,
+        "distinguished": null, "media": {"oembed": {"provider_url": "http://imgur.com",
+        "title": "IBM M1 Carbine Wear", "type": "rich", "html": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3%2Fembed&amp;url=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3&amp;image=http%3A%2F%2Fi.imgur.com%2FcYtzQpu.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=imgur\"
+        width=\"550\" height=\"550\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 4004, "height": 550, "width": 550, "version": "1.0", "provider_name":
+        "Imgur", "thumbnail_url": "http://i.imgur.com/cYtzQpu.jpg", "thumbnail_height":
+        782}, "type": "imgur.com"}, "mod_reports": [], "visited": false, "num_reports":
+        null, "ups": 23}}, {"kind": "t3", "data": {"domain": "self.server", "banned_by":
+        null, "media_embed": {}, "subreddit": "server", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;So, our IT lab that our company
+        and everyone that needs it. have a lot of older servers plugged in doing nothing,
+        So i ask you guys, what to install and learn about?&lt;/p&gt;\n\n&lt;p&gt;basic
+        networking + AD is already in place.  been doing a lot of vmware stuff, so
+        whats next?&lt;/p&gt;\n\n&lt;p&gt;Personally i like HA, both clustering, and
+        network layer HA distribution.  I know nothing about SQL, more then to install
+        it...&lt;/p&gt;\n\n&lt;p&gt;maybee set up a large scale webhosting lab?   multiple
+        clustred frontends, Failover SQL servers, SAN storage, backups, you name it!&lt;/p&gt;\n\n&lt;p&gt;specs:
+        dual/quad core, 4-8GB ram, 2x74/2x146GB drives.\nmostly HP bladeservers, IBM
+        bladeservers.  All with SCSI u320 or first gen SAS\n20 of them have HBA cards&lt;/p&gt;\n\n&lt;p&gt;Mostly
+        3com and Cisco network, some cisco routers, mostly pfsense boxes&lt;/p&gt;\n\n&lt;p&gt;I
+        have some FC SAN storage up and running (10TB, 50spindles)\nAnd some Iscsi
+        based on freenas.\nI have three locations with wan inbetween with 100mbit
+        links, fore some offsite backup testing, DC-DC replication task etc etc&lt;/p&gt;\n\n&lt;p&gt;MSDN
+        + full Microsoft volume licencing for software, other then that its trailware
+        for the rest!&lt;/p&gt;\n\n&lt;p&gt;so with &amp;quot;unlimited&amp;quot;
+        hardware, what would you do to learn more?  &lt;/p&gt;\n\n&lt;p&gt;sorry for
+        bad english, Swede here!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "So, our IT lab that our company and everyone that needs it. have a lot of
+        older servers plugged in doing nothing, So i ask you guys, what to install
+        and learn about?\n\nbasic networking + AD is already in place.  been doing
+        a lot of vmware stuff, so whats next?\n\nPersonally i like HA, both clustering,
+        and network layer HA distribution.  I know nothing about SQL, more then to
+        install it...\n\nmaybee set up a large scale webhosting lab?   multiple clustred
+        frontends, Failover SQL servers, SAN storage, backups, you name it!\n\nspecs:
+        dual/quad core, 4-8GB ram, 2x74/2x146GB drives.\nmostly HP bladeservers, IBM
+        bladeservers.  All with SCSI u320 or first gen SAS\n20 of them have HBA cards\n\nMostly
+        3com and Cisco network, some cisco routers, mostly pfsense boxes\n\nI have
+        some FC SAN storage up and running (10TB, 50spindles)\nAnd some Iscsi based
+        on freenas.\nI have three locations with wan inbetween with 100mbit links,
+        fore some offsite backup testing, DC-DC replication task etc etc\n\nMSDN +
+        full Microsoft volume licencing for software, other then that its trailware
+        for the rest!\n\nso with \"unlimited\" hardware, what would you do to learn
+        more?  \n  \n  \n\nsorry for bad english, Swede here!", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33vo07", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "timmynator2000", "num_comments": 2, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2rlji", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/server/comments/33vo07/i_got_50_physical_servers_without_something_to_do/",
+        "name": "t3_33vo07", "created": 1430041965.0, "url": "http://www.reddit.com/r/server/comments/33vo07/i_got_50_physical_servers_without_something_to_do/",
+        "author_flair_text": null, "title": "I got 50 physical servers without something
+        to do, what not? brainstorm!", "created_utc": 1430013165.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 1}}, {"kind": "t3", "data": {"domain": "self.EnjoyYumYum", "banned_by":
+        null, "media_embed": {}, "subreddit": "EnjoyYumYum", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Oakland is so rocking, it&amp;#39;s
+        crazy! If you love the scene in Greenpoint, Williamsburg, you would LOVE the
+        new Oakland, if that&amp;#39;s not your scene, well Oakland may not be for
+        you.&lt;/p&gt;\n\n&lt;p&gt;While NYC is figuring out (does anyone seriously
+        believe the 1 GB initiative for NYC will ever get out of the City Council?
+        Watch some of the City council videos on technology, they&amp;#39;re just
+        so bizarre). Good people, they&amp;#39;re trying, but for sure technology
+        is not their thing. I&amp;#39;m sure TimeWarner is all for free internet,
+        for sure.  (LOL). Oakland already is bring in 10X that speed. It&amp;#39;s
+        already there. And where bandwidth is, that&amp;#39;s where ideas bloom, kind
+        of like magic.&lt;/p&gt;\n\n&lt;p&gt;Months to even approve a single web page
+        for NYC. And still in committee. Politics, wow, who knew?&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"http://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp\"&gt;http://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;And
+        Mitch Kapor, he changed the world. When he says something, best to listen,
+        a lot!  :-)&lt;/p&gt;\n\n&lt;blockquote&gt;\n&lt;p&gt;\u201cOakland\u2019s
+        time is here,\u201d Kapor said. \u201cTech is coming to Oakland already and
+        it\u2019s terribly exciting.\u201d&lt;/p&gt;\n&lt;/blockquote&gt;\n\n&lt;p&gt;Kapor
+        founded the Lotus Corp., which was acquired by IBM Corp. (NYSE: IBM) in 1995
+        for $3.5 billion, served as the first chair of the Mozilla Foundation, and
+        founded the Kapor Center for Social Impact with his wife, Freada Kapor Klein.
+        Kapor said many factors might influence the number of tech companies calling
+        Oakland home, in particular the high-cost of living in San Francisco.&lt;/p&gt;\n\n&lt;p&gt;\u201cRent
+        pressure alone is driving things to the East Bay,\u201d he said.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Oakland is so rocking, it''s crazy! If you love
+        the scene in Greenpoint, Williamsburg, you would LOVE the new Oakland, if
+        that''s not your scene, well Oakland may not be for you.\n\nWhile NYC is figuring
+        out (does anyone seriously believe the 1 GB initiative for NYC will ever get
+        out of the City Council? Watch some of the City council videos on technology,
+        they''re just so bizarre). Good people, they''re trying, but for sure technology
+        is not their thing. I''m sure TimeWarner is all for free internet, for sure.  (LOL).
+        Oakland already is bring in 10X that speed. It''s already there. And where
+        bandwidth is, that''s where ideas bloom, kind of like magic.\n\nMonths to
+        even approve a single web page for NYC. And still in committee. Politics,
+        wow, who knew?\n\nhttp://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp\n\nAnd
+        Mitch Kapor, he changed the world. When he says something, best to listen,
+        a lot!  :-)\n\n&gt; \u201cOakland\u2019s time is here,\u201d Kapor said. \u201cTech
+        is coming to Oakland already and it\u2019s terribly exciting.\u201d\n\nKapor
+        founded the Lotus Corp., which was acquired by IBM Corp. (NYSE: IBM) in 1995
+        for $3.5 billion, served as the first chair of the Mozilla Foundation, and
+        founded the Kapor Center for Social Impact with his wife, Freada Kapor Klein.
+        Kapor said many factors might influence the number of tech companies calling
+        Oakland home, in particular the high-cost of living in San Francisco.\n\n\u201cRent
+        pressure alone is driving things to the East Bay,\u201d he said.", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33v3yg", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "ejpusa", "num_comments": 1, "score": 1, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id": "t5_372ot",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/EnjoyYumYum/comments/33v3yg/10_gb_installs_in_oakand_now_rocking_brooklyn_on/",
+        "name": "t3_33v3yg", "created": 1430004903.0, "url": "http://www.reddit.com/r/EnjoyYumYum/comments/33v3yg/10_gb_installs_in_oakand_now_rocking_brooklyn_on/",
+        "author_flair_text": null, "title": "10 GB installs in Oakand now. Rocking!
+        Brooklyn on the bay.", "created_utc": 1430001303.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        1}}, {"kind": "t3", "data": {"domain": "self.pcmasterrace", "banned_by": null,
+        "media_embed": {}, "subreddit": "pcmasterrace", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Preface - I&amp;#39;ve been
+        a PC gamer since I was 11 or 12, I&amp;#39;m 38 now. My brother installed
+        Spear of Destiny on my Dad&amp;#39;s work IBM, and that was it. Hooked, My
+        mother called it &amp;quot;torturing sheep&amp;quot; because of the sounds
+        the AI dying. I never got into modding or hosting. PC gaming lost it&amp;#39;s
+        luster for me for a while, as there were no titles that I felt were really
+        MADE for PC that I was into. WOW was enticing but I have Geek Shame, and generally
+        don&amp;#39;t like Fantasy.&lt;/p&gt;\n\n&lt;p&gt;By my early 30&amp;#39;s
+        I had essentially stopped PC gaming. I had a gaming PC, a HTPC, and still
+        bought titles that would shine on the PC on the PC instead of PS3 or Xbox
+        (yes I walk among the peasants. I&amp;#39;m not an elitist, I buy consoles
+        just to check out exclusive titles to be more informed and to check out anything
+        I find interesting. I also have 2 kids, so it&amp;#39;s easy to write that
+        expense off on them for Xmas/Birthdays :-) ). When my son turned 10 or 11,
+        I actually gave him my gaming PC so he could ascend. &lt;/p&gt;\n\n&lt;p&gt;Gaming
+        for me, had reached a point, where I&amp;#39;d rather plop down on the couch,
+        pop in a console title, and just play for 20-30min, when I got a chance (very
+        busy single working parent of 2, with a job that requires work from home and
+        on call 24/7).&lt;/p&gt;\n\n&lt;p&gt;Then it happened. What I consider to
+        be the most important creations in gaming history. DayZ Mod.&lt;/p&gt;\n\n&lt;p&gt;As
+        a long time gamer, and someone who had installed SOME mods a Long LOONG time
+        ago, the idea of a Total Conversion Mod, was a bit out of scope for me...
+        I barely even understood what I was hearing about, or looking at when I watched
+        videos on youtube... The first time I saw it, I knew I had to get it. It sparked
+        a fire inside me I don&amp;#39;t think I can possibly explain.&lt;/p&gt;\n\n&lt;p&gt;I
+        slapped together a gaming PC out of the HTPC I already had, and so began my
+        decent down the rabbit hole. &lt;/p&gt;\n\n&lt;p&gt;Long story short, I loved
+        the game, started making a derivative mod, found out about author&amp;#39;s
+        rights, and server hosting, and.... THE SEEDY UNDERBELLY OF GAMING:&lt;/p&gt;\n\n&lt;p&gt;Lets
+        define the main players involved in the most basic terms:&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;&lt;p&gt;Game
+        Company - They create the base game, if there is MP, they decide whether or
+        not individuals are allowed to mod for their game, and whether people can
+        host servers for their game&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Distribution
+        Networks/Publishers - Game Companies need to get the Game off their PC&amp;#39;s
+        and onto yours, so they deal with Media Publishing companies to print/package
+        DVD&amp;#39;s, or distribution programs that can be proprietary (Uplay) or
+        cross platform (Steam)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Modders -
+        They create the altered content in mods, be-it new models, new functionality,
+        or just new textures or sounds.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Server
+        Hosts - Individuals or Companies (GSP&amp;#39;s or &amp;quot;Game Server Providers&amp;quot;)
+        that have a server that is accessible to the public to play MP games on.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Players
+        - That&amp;#39;s really all/most of us, but for this conversation, it&amp;#39;s
+        consumer class gamers, people who have no involvement in the hosting, or creating
+        of addons.&lt;/p&gt;&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;I have experience
+        in every category besides 1 &amp;amp; 2. However, I know that Publishing Co&amp;#39;s
+        can take as much as 10,20,30, even 40 percent of the margin on Retail games...
+        and I BELIEVE steam is in the area of 33percent. &lt;/p&gt;\n\n&lt;p&gt;So,
+        lets start at the top and work down&lt;/p&gt;\n\n&lt;p&gt;\u2022 The Game
+        company, they invest hundreds of thousands of dollars if not millions, in
+        thousands of man hours, licensing of systems, for what equates to ENORMOUS
+        RISK for a decent POTENTIAL for profit. &lt;/p&gt;\n\n&lt;p&gt;\u2022 Media
+        Production companies have more known costs, and essentially have no risk.
+        Distribution Networks like Steam and Uplay have backend costs that are more
+        subject to fluctuation, and unknowns, however again, have minimal risk in
+        the addition of one more game to their network. They have a HUGE potential
+        for profit.&lt;/p&gt;\n\n&lt;p&gt;\u2022 Modders MAY have some exposure in
+        terms of their IP rights. For example, if a modder for Arma, happens to sell
+        his models (created in commercially licensed 3d software) externally to 3rd
+        parties for use other than the game, his release license for the game files
+        cover him, but there is a risk of piracy of his models. But for a true hobby
+        modder, there is NO risk, however, no matter how good or complete, or valuable
+        your mods are, most modding terms of service (or the tools needed tos) expressly
+        forbid working for profit.&lt;/p&gt;\n\n&lt;p&gt;\u2022 Server Hosts CHA CHING
+        BITCHES!!!! All the above people either have exposed themselves to risk, or
+        invested large amounts of time and money. Running a game server community
+        is NOT free, it is NOT cheap, and it DOES NOT happen on it&amp;#39;s own,
+        but they are VERY WELL KNOWN costs and time requirements, and the potential
+        for profit is GODDAM ENORMOUS. It&amp;#39;s not easy, by any stretch of the
+        imagination, and it takes a lot of work, but the returns are potentially huge
+        for what equates to exploiting a TON of other people&amp;#39;s work.&lt;/p&gt;\n\n&lt;p&gt;\u2022
+        Players pay for the game, and reap all the benefits of all the above. BUT,
+        w/o you, literally NONE OF THE ABOVE would be doing anything but sitting in
+        their mom&amp;#39;s basement coding their dreams for themselves... Exposure,
+        and people enjoying the fruits of our labor is what 90 percent of the above
+        people want. YES there are dirtbag predatory people, companies, and franchises
+        in this industry, BUT, it&amp;#39;s largely populated with REALLY REALLY HAPPY
+        people who can&amp;#39;t believe they get to do what they love.&lt;/p&gt;\n\n&lt;p&gt;The
+        current problem.&lt;/p&gt;\n\n&lt;p&gt;Server hosts/ISPs/Gaming Communites
+        get SHIT TONS of donations from you players... They in turn help sell a LOT
+        of games for the Game Developers, The Distribution Networks get more volume
+        of sales, and traffic... The modders, sit in their basements coding their
+        dreams for themselves.&lt;/p&gt;\n\n&lt;p&gt;While it may not be the case
+        in ALL modding scenes, in Arma, you ARE NOT allowed to profit from your work
+        in the series. PERIOD. While some break these rules, and do not face punishment
+        or retribution, it forces anyone looking to eek out a break even scenario
+        to break the terms of service.&lt;/p&gt;\n\n&lt;p&gt;The &amp;quot;Donations&amp;quot;
+        that server hosts collect DO NOT trickle down to the modders who made most
+        of the content they use, it goes to whoever agreed to help the server host
+        exploit that content.&lt;/p&gt;\n\n&lt;p&gt;During the height of DayZ Mod
+        popularity, the original Author of DayZ was likely making ZERO dollars, as
+        dozens upon dozens of ISP&amp;#39;s and Server hosts, and Derivative mod makers
+        were making THOUSANDS of dollars a week or month.&lt;/p&gt;\n\n&lt;p&gt;THAT
+        my friends is what&amp;#39;s wrong with the system. THAT is why Steam has
+        begun steps to allow BOTH parties to profit. Server hosts DO DESERVE Donations,
+        and if you&amp;#39;re willing to pay for reserved slots, or Donation Perks,
+        then that&amp;#39;s fine, but not when it&amp;#39;s on a Terrain that someone
+        else made in their spare time and has never seen a dime for. Or if you&amp;#39;re
+        carrying a gun that someone spent dozens of hours modelling or configuring.&lt;/p&gt;\n\n&lt;p&gt;I
+        personally don&amp;#39;t plan to EVER charge for any mods I work on, but that
+        doesn&amp;#39;t mean that other&amp;#39;s shouldn&amp;#39;t be able to. If
+        you don&amp;#39;t like those mods, then don&amp;#39;t purchase them.&lt;/p&gt;\n\n&lt;p&gt;IMO,
+        the system needs slight tweaking. &lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;&lt;p&gt;The
+        Mod Author should be able to be able to host the files elsewhere FOR FREE
+        ONLY. In Arma, for example, manual download, or even using one of the launchers
+        is STILL very complicated, a Steam subscribed mod is ENDLESSLY easier to deal
+        with for the end user and offers a genuine value.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;There
+        should be no minimum price. If a mod author wants to charge .01 for his mod,
+        it should be allowed, gaming is often a numbers game. Writing 3-10 scripts
+        or making a ton of textures can add up to real money if they&amp;#39;re used
+        by a lot of players across a lot of other missions/mods.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Server
+        hosts hosting paid addons should have their donations be transparent, OR there
+        should be a breakdown of WHERE to donate for the players... IE if a Server
+        hosts hosts 3 addons, the donation button should allow to choose to split,
+        or donate all your money to any or all of those 4 parties.&lt;/p&gt;&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;That&amp;#39;s
+        all the system needs for it to work, and for YOU the players to get a MUCH
+        MUCH more real means of offering feedback to server hosts, addon authors,
+        game companies AND steam.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Preface - I''ve been a PC gamer since I was 11 or 12, I''m 38 now. My brother
+        installed Spear of Destiny on my Dad''s work IBM, and that was it. Hooked,
+        My mother called it \"torturing sheep\" because of the sounds the AI dying.
+        I never got into modding or hosting. PC gaming lost it''s luster for me for
+        a while, as there were no titles that I felt were really MADE for PC that
+        I was into. WOW was enticing but I have Geek Shame, and generally don''t like
+        Fantasy.\n\nBy my early 30''s I had essentially stopped PC gaming. I had a
+        gaming PC, a HTPC, and still bought titles that would shine on the PC on the
+        PC instead of PS3 or Xbox (yes I walk among the peasants. I''m not an elitist,
+        I buy consoles just to check out exclusive titles to be more informed and
+        to check out anything I find interesting. I also have 2 kids, so it''s easy
+        to write that expense off on them for Xmas/Birthdays :-) ). When my son turned
+        10 or 11, I actually gave him my gaming PC so he could ascend. \n\nGaming
+        for me, had reached a point, where I''d rather plop down on the couch, pop
+        in a console title, and just play for 20-30min, when I got a chance (very
+        busy single working parent of 2, with a job that requires work from home and
+        on call 24/7).\n\nThen it happened. What I consider to be the most important
+        creations in gaming history. DayZ Mod.\n\nAs a long time gamer, and someone
+        who had installed SOME mods a Long LOONG time ago, the idea of a Total Conversion
+        Mod, was a bit out of scope for me... I barely even understood what I was
+        hearing about, or looking at when I watched videos on youtube... The first
+        time I saw it, I knew I had to get it. It sparked a fire inside me I don''t
+        think I can possibly explain.\n\nI slapped together a gaming PC out of the
+        HTPC I already had, and so began my decent down the rabbit hole. \n\nLong
+        story short, I loved the game, started making a derivative mod, found out
+        about author''s rights, and server hosting, and.... THE SEEDY UNDERBELLY OF
+        GAMING:\n\nLets define the main players involved in the most basic terms:\n\n1.
+        Game Company - They create the base game, if there is MP, they decide whether
+        or not individuals are allowed to mod for their game, and whether people can
+        host servers for their game\n\n2. Distribution Networks/Publishers - Game
+        Companies need to get the Game off their PC''s and onto yours, so they deal
+        with Media Publishing companies to print/package DVD''s, or distribution programs
+        that can be proprietary (Uplay) or cross platform (Steam)\n\n3. Modders -
+        They create the altered content in mods, be-it new models, new functionality,
+        or just new textures or sounds.\n\n4. Server Hosts - Individuals or Companies
+        (GSP''s or \"Game Server Providers\") that have a server that is accessible
+        to the public to play MP games on.\n\n5. Players - That''s really all/most
+        of us, but for this conversation, it''s consumer class gamers, people who
+        have no involvement in the hosting, or creating of addons.\n\nI have experience
+        in every category besides 1 &amp; 2. However, I know that Publishing Co''s
+        can take as much as 10,20,30, even 40 percent of the margin on Retail games...
+        and I BELIEVE steam is in the area of 33percent. \n\nSo, lets start at the
+        top and work down\n\n\u2022 The Game company, they invest hundreds of thousands
+        of dollars if not millions, in thousands of man hours, licensing of systems,
+        for what equates to ENORMOUS RISK for a decent POTENTIAL for profit. \n\n\u2022
+        Media Production companies have more known costs, and essentially have no
+        risk. Distribution Networks like Steam and Uplay have backend costs that are
+        more subject to fluctuation, and unknowns, however again, have minimal risk
+        in the addition of one more game to their network. They have a HUGE potential
+        for profit.\n\n\u2022 Modders MAY have some exposure in terms of their IP
+        rights. For example, if a modder for Arma, happens to sell his models (created
+        in commercially licensed 3d software) externally to 3rd parties for use other
+        than the game, his release license for the game files cover him, but there
+        is a risk of piracy of his models. But for a true hobby modder, there is NO
+        risk, however, no matter how good or complete, or valuable your mods are,
+        most modding terms of service (or the tools needed tos) expressly forbid working
+        for profit.\n\n\u2022 Server Hosts CHA CHING BITCHES!!!! All the above people
+        either have exposed themselves to risk, or invested large amounts of time
+        and money. Running a game server community is NOT free, it is NOT cheap, and
+        it DOES NOT happen on it''s own, but they are VERY WELL KNOWN costs and time
+        requirements, and the potential for profit is GODDAM ENORMOUS. It''s not easy,
+        by any stretch of the imagination, and it takes a lot of work, but the returns
+        are potentially huge for what equates to exploiting a TON of other people''s
+        work.\n\n\u2022 Players pay for the game, and reap all the benefits of all
+        the above. BUT, w/o you, literally NONE OF THE ABOVE would be doing anything
+        but sitting in their mom''s basement coding their dreams for themselves...
+        Exposure, and people enjoying the fruits of our labor is what 90 percent of
+        the above people want. YES there are dirtbag predatory people, companies,
+        and franchises in this industry, BUT, it''s largely populated with REALLY
+        REALLY HAPPY people who can''t believe they get to do what they love.\n\nThe
+        current problem.\n\nServer hosts/ISPs/Gaming Communites get SHIT TONS of donations
+        from you players... They in turn help sell a LOT of games for the Game Developers,
+        The Distribution Networks get more volume of sales, and traffic... The modders,
+        sit in their basements coding their dreams for themselves.\n\nWhile it may
+        not be the case in ALL modding scenes, in Arma, you ARE NOT allowed to profit
+        from your work in the series. PERIOD. While some break these rules, and do
+        not face punishment or retribution, it forces anyone looking to eek out a
+        break even scenario to break the terms of service.\n\nThe \"Donations\" that
+        server hosts collect DO NOT trickle down to the modders who made most of the
+        content they use, it goes to whoever agreed to help the server host exploit
+        that content.\n\nDuring the height of DayZ Mod popularity, the original Author
+        of DayZ was likely making ZERO dollars, as dozens upon dozens of ISP''s and
+        Server hosts, and Derivative mod makers were making THOUSANDS of dollars a
+        week or month.\n\nTHAT my friends is what''s wrong with the system. THAT is
+        why Steam has begun steps to allow BOTH parties to profit. Server hosts DO
+        DESERVE Donations, and if you''re willing to pay for reserved slots, or Donation
+        Perks, then that''s fine, but not when it''s on a Terrain that someone else
+        made in their spare time and has never seen a dime for. Or if you''re carrying
+        a gun that someone spent dozens of hours modelling or configuring.\n\nI personally
+        don''t plan to EVER charge for any mods I work on, but that doesn''t mean
+        that other''s shouldn''t be able to. If you don''t like those mods, then don''t
+        purchase them.\n\nIMO, the system needs slight tweaking. \n\n1. The Mod Author
+        should be able to be able to host the files elsewhere FOR FREE ONLY. In Arma,
+        for example, manual download, or even using one of the launchers is STILL
+        very complicated, a Steam subscribed mod is ENDLESSLY easier to deal with
+        for the end user and offers a genuine value.\n\n2. There should be no minimum
+        price. If a mod author wants to charge .01 for his mod, it should be allowed,
+        gaming is often a numbers game. Writing 3-10 scripts or making a ton of textures
+        can add up to real money if they''re used by a lot of players across a lot
+        of other missions/mods.\n\n3. Server hosts hosting paid addons should have
+        their donations be transparent, OR there should be a breakdown of WHERE to
+        donate for the players... IE if a Server hosts hosts 3 addons, the donation
+        button should allow to choose to split, or donate all your money to any or
+        all of those 4 parties.\n\nThat''s all the system needs for it to work, and
+        for YOU the players to get a MUCH MUCH more real means of offering feedback
+        to server hosts, addon authors, game companies AND steam.", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": "Discussion",
+        "id": "33uzwi", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "CiforDayZServer", "num_comments": 0, "score": 0, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2sgp1", "edited": false, "link_flair_css_class": "blue", "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/pcmasterrace/comments/33uzwi/the_seedy_under_belly_of_mp_gaming_server_hosting/",
+        "name": "t3_33uzwi", "created": 1430002696.0, "url": "http://www.reddit.com/r/pcmasterrace/comments/33uzwi/the_seedy_under_belly_of_mp_gaming_server_hosting/",
+        "author_flair_text": null, "title": "The seedy under belly of MP gaming...
+        server hosting and modding for profit", "created_utc": 1429999096.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 0}}, {"kind": "t3", "data": {"domain": "self.retrobattlestations",
+        "banned_by": null, "media_embed": {}, "subreddit": "retrobattlestations",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I
+        found an Amdek video 310A MDA monitor in the trash (amber tube) thinking I&amp;#39;d
+        scrap it for parts. Well, it turned out that it worked, even after it got
+        rained on. I managed to connect it to my laptop through an HDMI to VGA converter,
+        with a custom modeline, even despite the fact that VGA is analog RGB and the
+        display is TTL. I just plugged the video input on the monitor into the green
+        output, and it works well enough. &lt;/p&gt;\n\n&lt;p&gt;Here are the pics:
+        &lt;a href=\"https://imgur.com/a/gDSQK\"&gt;https://imgur.com/a/gDSQK&lt;/a&gt;
+        &lt;a href=\"http://imgur.com/eHu4zCX\"&gt;http://imgur.com/eHu4zCX&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I found an Amdek video 310A MDA monitor in the
+        trash (amber tube) thinking I''d scrap it for parts. Well, it turned out that
+        it worked, even after it got rained on. I managed to connect it to my laptop
+        through an HDMI to VGA converter, with a custom modeline, even despite the
+        fact that VGA is analog RGB and the display is TTL. I just plugged the video
+        input on the monitor into the green output, and it works well enough. \n\nHere
+        are the pics: https://imgur.com/a/gDSQK http://imgur.com/eHu4zCX", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33umwe", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "jzatarski", "num_comments": 4, "score": 12, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2xd38", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/retrobattlestations/comments/33umwe/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "name": "t3_33umwe", "created": 1430021006.0, "url": "http://www.reddit.com/r/retrobattlestations/comments/33umwe/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "author_flair_text": null, "title": "IBM MDA monitor working on a modern laptop
+        (with pics) (cross-posted from vintagecomputing)", "created_utc": 1429992206.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 12}}, {"kind": "t3", "data": {"domain": "self.vintagecomputing",
+        "banned_by": null, "media_embed": {}, "subreddit": "vintagecomputing", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I found an Amdek video
+        310A MDA monitor in the trash (amber tube) thinking I&amp;#39;d scrap it for
+        parts. Well, it turned out that it worked, even after it got rained on. I
+        managed to connect it to my laptop through an HDMI to VGA converter, with
+        a custom modeline, even despite the fact that VGA is analog RGB and the display
+        is TTL. I just plugged the video input on the monitor into the green output,
+        and it works well enough. &lt;/p&gt;\n\n&lt;p&gt;Here are the pics: &lt;a
+        href=\"https://imgur.com/a/gDSQK\"&gt;https://imgur.com/a/gDSQK&lt;/a&gt;
+        &lt;a href=\"http://imgur.com/eHu4zCX\"&gt;http://imgur.com/eHu4zCX&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I found an Amdek video 310A MDA monitor in the
+        trash (amber tube) thinking I''d scrap it for parts. Well, it turned out that
+        it worked, even after it got rained on. I managed to connect it to my laptop
+        through an HDMI to VGA converter, with a custom modeline, even despite the
+        fact that VGA is analog RGB and the display is TTL. I just plugged the video
+        input on the monitor into the green output, and it works well enough. \n\nHere
+        are the pics: https://imgur.com/a/gDSQK http://imgur.com/eHu4zCX", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33umve", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "jzatarski", "num_comments": 10, "score": 12, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2qn45", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/vintagecomputing/comments/33umve/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "name": "t3_33umve", "created": 1430020989.0, "url": "http://www.reddit.com/r/vintagecomputing/comments/33umve/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "author_flair_text": null, "title": "IBM MDA monitor working on a modern laptop
+        (with pics) (cross-posted to retrobattlestations)", "created_utc": 1429992189.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 12}}, {"kind": "t3", "data": {"domain": "self.homelab",
+        "banned_by": null, "media_embed": {}, "subreddit": "homelab", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hello &lt;a href=\"/r/homelab\"&gt;/r/homelab&lt;/a&gt;,\nI&amp;#39;ve
+        recently managed to score an IBM x3650 M1 with in intel xeon and 8gb of ram
+        for free. It is connected to my router but my main desktop is upstairs, I
+        would like to control the x3650 somehow with my main desktop through the router.
+        I was thinking about installing ubuntu server on it and connecting to it through
+        puTTy but im not sure if that would work. Any ideas?&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hello /r/homelab,\nI''ve recently managed to score
+        an IBM x3650 M1 with in intel xeon and 8gb of ram for free. It is connected
+        to my router but my main desktop is upstairs, I would like to control the
+        x3650 somehow with my main desktop through the router. I was thinking about
+        installing ubuntu server on it and connecting to it through puTTy but im not
+        sure if that would work. Any ideas?", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33ug3s", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "Jackiejoe4", "num_comments":
+        8, "score": 1, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "self", "subreddit_id": "t5_2ubz7", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 0, "secure_media_embed": {},
+        "saved": false, "stickied": false, "is_self": true, "permalink": "/r/homelab/comments/33ug3s/help_connecting_to_an_ibm_x3650_m1/",
+        "name": "t3_33ug3s", "created": 1430017484.0, "url": "http://www.reddit.com/r/homelab/comments/33ug3s/help_connecting_to_an_ibm_x3650_m1/",
+        "author_flair_text": null, "title": "[Help] Connecting to an IBM x3650 M1",
+        "created_utc": 1429988684.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 1}}, {"kind": "t3", "data":
+        {"domain": "i.imgur.com", "banned_by": null, "media_embed": {}, "subreddit":
+        "DotA2", "selftext_html": null, "selftext": "", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": "Fluff | eSports | Spoiler",
+        "id": "33uamy", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "Outhouse_Defiler", "num_comments": 38, "score": 104, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2s580", "edited": false, "link_flair_css_class": "fluff esports", "author_flair_css_class":
+        "harbinger", "downs": 0, "secure_media_embed": {}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/DotA2/comments/33uamy/is_chuan_using_an_ibm_model_m/",
+        "name": "t3_33uamy", "created": 1430014662.0, "url": "http://i.imgur.com/cqnqSIT.png",
+        "author_flair_text": "99 problems but mana ain''t one", "title": "Is Chuan
+        Using an IBM Model M?", "created_utc": 1429985862.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        104}}], "after": null, "before": null}}'
+    http_version: 
+  recorded_at: Mon, 27 Apr 2015 00:58:33 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/r/stocks/search.json?q=IBM&sort=new&t=day
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Apr 2015 00:58:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbb999715e29db3eba53bb58e0f4bb9b01430096312; expires=Tue, 26-Apr-16
+        00:58:32 GMT; path=/; domain=.reddit.com; HttpOnly
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Reddit-Tracking, X-Moose
+      X-Reddit-Tracking:
+      - https://pixel.redditmedia.com/pixel/of_destiny.png?v=V6YMEz1hS7Lg7hlu8YYAaBpaIATQUS%2FLOvXmBHrXem%2F4Tsgrgj6hOkxCDZwjP%2B5f9FPfTsLyISM%3D
+      Vary:
+      - accept-encoding
+      Cache-Control:
+      - no-cache
+      X-Moose:
+      - majestic
+      Cf-Cache-Status:
+      - HIT
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1dd6945f23f6118f-DFW
+    body:
+      encoding: UTF-8
+      string: '{"kind": "Listing", "data": {"facets": {}, "modhash": "", "children":
+        [{"kind": "t3", "data": {"domain": "self.MechanicalKeyboards", "banned_by":
+        null, "media_embed": {}, "subreddit": "MechanicalKeyboards", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;m interested
+        in buying an IBM Model M, not too sure just yet on which one, but I was wondering
+        if any of you could point me in the right direction - so far it seems clickykeyboards
+        is the go to place, however their shipping does seem a little expensive&lt;/p&gt;\n\n&lt;p&gt;Model
+        recommendations would be appreciated as well!&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I''m interested in buying an IBM Model M, not
+        too sure just yet on which one, but I was wondering if any of you could point
+        me in the right direction - so far it seems clickykeyboards is the go to place,
+        however their shipping does seem a little expensive\n\n\nModel recommendations
+        would be appreciated as well!", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33z6tn", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "swimming-bird", "num_comments":
+        0, "score": 1, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "self", "subreddit_id": "t5_2ugo7", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": "mxbrown2", "downs": 0, "secure_media_embed":
+        {}, "saved": false, "stickied": false, "is_self": true, "permalink": "/r/MechanicalKeyboards/comments/33z6tn/help_best_place_to_buy_an_ibm_model_m_australia/",
+        "name": "t3_33z6tn", "created": 1430124037.0, "url": "http://www.reddit.com/r/MechanicalKeyboards/comments/33z6tn/help_best_place_to_buy_an_ibm_model_m_australia/",
+        "author_flair_text": "Ducky S4 (Browns), Ducky S3 White (Browns)", "title":
+        "[help] Best place to buy an IBM Model M (Australia)?", "created_utc": 1430095237.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 1}}, {"kind": "t3", "data": {"domain": "self.forhire",
+        "banned_by": null, "media_embed": {}, "subreddit": "forhire", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey Reddit,&lt;/p&gt;\n\n&lt;p&gt;To
+        give you a few details about myself, my name is Wil Parker, I&amp;#39;m 32
+        and live in Southern California. I&amp;#39;m an Internet Marketing Professional
+        and am experienced with all the most current marketing techniques including:
+        SEO, E-mail Marketing, Social Media, Analytics Analysis, Community Management,
+        Brand Growth, Press &amp;amp; Outreach, Campaign Strategy, Video Editing/Voice
+        Over, PPC and more. I also have a full dedicated home office and many years
+        of remote based work experience.&lt;/p&gt;\n\n&lt;p&gt;As an Inbound Marketing
+        Professional, I challenge myself with each and every opportunity to find the
+        absolute best methods to generate more reliable leads, analyze key traffic
+        metrics for opportunities or to simply \u201cWow\u201d new customers with
+        amazing and actual useful marketing efforts that correctly represents the
+        given product. Rest assured, I\u2019m most certainly not your typical \u201csleazy\u201d
+        type of Marketing guy. I\u2019m not a fan of deploying any such marketing
+        techniques or campaigns that I personally would not want to see myself. &lt;/p&gt;\n\n&lt;p&gt;Also,
+        you gain a valuable asset who\u2019s quite capable of hat switching into other
+        skill sets. Previously to my Marketing Career, I lead a successful career
+        as an IT Professional in System Administration and Systems Support for companies
+        such as IBM and Kaiser Permanente. I\u2019m still a Technology Enthusiast
+        at heart and am very much so capable of switching hats for the greater good
+        in assisting with any IT related functions.&lt;/p&gt;\n\n&lt;p&gt;Here is
+        a link to my Bio Website, it contains a link to my Linkedin Profile and current
+        Resume. Both contain a bunch of details about my past job history, skill-sets
+        and previous job descriptions: &lt;a href=\"http://www.wilparker.com\"&gt;www.wilparker.com&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;Please
+        DM me if you\u2019ve got any details or opportunities you\u2019d like to discuss
+        or share. Would greatly appreciate it!&lt;/p&gt;\n\n&lt;p&gt;(Note: I&amp;#39;d
+        prefer full-time, but I&amp;#39;ll entertain the idea of contract/consulting
+        type gigs if the conditions are right.)&lt;/p&gt;\n\n&lt;p&gt;Thanks!&lt;/p&gt;\n\n&lt;p&gt;Wil&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hey Reddit,\n\nTo give you a few details about
+        myself, my name is Wil Parker, I''m 32 and live in Southern California. I''m
+        an Internet Marketing Professional and am experienced with all the most current
+        marketing techniques including: SEO, E-mail Marketing, Social Media, Analytics
+        Analysis, Community Management, Brand Growth, Press &amp; Outreach, Campaign
+        Strategy, Video Editing/Voice Over, PPC and more. I also have a full dedicated
+        home office and many years of remote based work experience.\n\nAs an Inbound
+        Marketing Professional, I challenge myself with each and every opportunity
+        to find the absolute best methods to generate more reliable leads, analyze
+        key traffic metrics for opportunities or to simply \u201cWow\u201d new customers
+        with amazing and actual useful marketing efforts that correctly represents
+        the given product. Rest assured, I\u2019m most certainly not your typical
+        \u201csleazy\u201d type of Marketing guy. I\u2019m not a fan of deploying
+        any such marketing techniques or campaigns that I personally would not want
+        to see myself. \n\nAlso, you gain a valuable asset who\u2019s quite capable
+        of hat switching into other skill sets. Previously to my Marketing Career,
+        I lead a successful career as an IT Professional in System Administration
+        and Systems Support for companies such as IBM and Kaiser Permanente. I\u2019m
+        still a Technology Enthusiast at heart and am very much so capable of switching
+        hats for the greater good in assisting with any IT related functions.\n\nHere
+        is a link to my Bio Website, it contains a link to my Linkedin Profile and
+        current Resume. Both contain a bunch of details about my past job history,
+        skill-sets and previous job descriptions: www.wilparker.com\n\nPlease DM me
+        if you\u2019ve got any details or opportunities you\u2019d like to discuss
+        or share. Would greatly appreciate it!\n\n(Note: I''d prefer full-time, but
+        I''ll entertain the idea of contract/consulting type gigs if the conditions
+        are right.)\n\nThanks!\n\nWil", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": "For Hire", "id": "33z6f3", "gilded": 0, "archived":
+        false, "clicked": false, "report_reasons": null, "author": "JobHuntimusPrime",
+        "num_comments": 1, "score": 1, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2qzbh", "edited": 1430095520.0,
+        "link_flair_css_class": "fh-forhire", "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/forhire/comments/33z6f3/for_hire_marketing_professional_tech_guy/",
+        "name": "t3_33z6f3", "created": 1430123826.0, "url": "http://www.reddit.com/r/forhire/comments/33z6f3/for_hire_marketing_professional_tech_guy/",
+        "author_flair_text": null, "title": "[For Hire] Marketing Professional &amp;
+        Tech Guy", "created_utc": 1430095026.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 1}}, {"kind":
+        "t3", "data": {"domain": "self.datascience", "banned_by": null, "media_embed":
+        {}, "subreddit": "datascience", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Greetings everyone!&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m
+        looking for some assistance evaluating the predictive analytics functionality
+        of IBM Watson Analytics for my blog. For background, I&amp;#39;m a Business
+        Intelligence developer working with IBM&amp;#39;s &amp;quot;analytics&amp;quot;
+        tools at the enterprise level. I run a blog on the side for fun that provides
+        information for IBM Cognos developers and also tracks developments in the
+        BI/analytics industry in general.&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m currently
+        reviewing Watson Analytics and am hoping people here would be interested in
+        providing some feedback from the perspective of a data scientist, which I
+        am most certainly not. Watson Analytics is free to use and - in my experience
+        - IBM does not pester you after you sign up. No promises though.&lt;/p&gt;\n\n&lt;p&gt;If
+        anyone is interested reply here or PM me. You won&amp;#39;t be on the hook
+        for much, just a blurb detailing your opinion of what the tool offers.&lt;/p&gt;\n\n&lt;p&gt;Here&amp;#39;s
+        the blog for reference: &lt;a href=\"http://ibmblueview.com\"&gt;IBM Blueview&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;Thanks!&lt;/p&gt;\n\n&lt;p&gt;EDIT:
+        I should add, I don&amp;#39;t have ads on the site, get link sponsorship or
+        attempt to make money in any way. This is strictly for fun.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Greetings everyone!\n\nI''m looking for some assistance
+        evaluating the predictive analytics functionality of IBM Watson Analytics
+        for my blog. For background, I''m a Business Intelligence developer working
+        with IBM''s \"analytics\" tools at the enterprise level. I run a blog on the
+        side for fun that provides information for IBM Cognos developers and also
+        tracks developments in the BI/analytics industry in general.\n\nI''m currently
+        reviewing Watson Analytics and am hoping people here would be interested in
+        providing some feedback from the perspective of a data scientist, which I
+        am most certainly not. Watson Analytics is free to use and - in my experience
+        - IBM does not pester you after you sign up. No promises though.\n\nIf anyone
+        is interested reply here or PM me. You won''t be on the hook for much, just
+        a blurb detailing your opinion of what the tool offers.\n\nHere''s the blog
+        for reference: [IBM Blueview](http://ibmblueview.com)\n\nThanks!\n\nEDIT:
+        I should add, I don''t have ads on the site, get link sponsorship or attempt
+        to make money in any way. This is strictly for fun.\n", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33ylaf", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "NYD3030", "num_comments": 1, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2sptq", "edited":
+        1430084399.0, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/datascience/comments/33ylaf/assistance_evaluating_ibms_watson_analytics/",
+        "name": "t3_33ylaf", "created": 1430112949.0, "url": "http://www.reddit.com/r/datascience/comments/33ylaf/assistance_evaluating_ibms_watson_analytics/",
+        "author_flair_text": null, "title": "Assistance evaluating IBM''s Watson Analytics?",
+        "created_utc": 1430084149.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 1}}, {"kind": "t3", "data":
+        {"domain": "ibmblueview.com", "banned_by": null, "media_embed": {}, "subreddit":
+        "WATSON", "selftext_html": null, "selftext": "", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33yjro", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "NYD3030", "num_comments": 0, "score": 2, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/RTJn5jxfkcaZqnWdp0W72DoHQVkIU_baQ_CAE8gaeUY.jpg",
+        "subreddit_id": "t5_2qxyi", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/WATSON/comments/33yjro/watson_analytics_review_natural_language_query/",
+        "name": "t3_33yjro", "created": 1430112178.0, "url": "http://ibmblueview.com/watson-analytics-review-natural-language-query/",
+        "author_flair_text": null, "title": "Watson Analytics Review: Natural Language
+        Query | IBM Blueview", "created_utc": 1430083378.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        2}}, {"kind": "t3", "data": {"domain": "nytimes.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "apple", "selftext_html": null, "selftext": "", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33xwwi", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "nobodyspecial", "num_comments": 15, "score": 0, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2qh1f", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": false, "permalink": "/r/apple/comments/33xwwi/apple_wont_always_rule_just_look_at_ibm/",
+        "name": "t3_33xwwi", "created": 1430101157.0, "url": "http://www.nytimes.com/2015/04/26/your-money/now-its-apples-world-once-it-was-ibms.html",
+        "author_flair_text": null, "title": "Apple won''t always rule. Just look at
+        IBM.", "created_utc": 1430072357.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 0}}, {"kind":
+        "t3", "data": {"domain": "self.NetworkingJobs", "banned_by": null, "media_embed":
+        {}, "subreddit": "NetworkingJobs", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Hey - I am currently looking to hire a netsec eng
+        who has worked in large enterprise and has excellent hands-on skills with
+        the following\nFirewalls: Check Point Fortinet Juniper Palo Alto\nLoad Balancers:
+        Cisco F5\nIPS: SourceFire IBM and the firewalls built in...\nAdditional desirable
+        technologies: Disk Encryption, DNS, WAF, NMS, DLP\nShould have very good understanding
+        of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM me for more info&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hey - I am currently looking to hire a netsec
+        eng who has worked in large enterprise and has excellent hands-on skills with
+        the following\nFirewalls: Check Point Fortinet Juniper Palo Alto\nLoad Balancers:
+        Cisco F5\nIPS: SourceFire IBM and the firewalls built in...\nAdditional desirable
+        technologies: Disk Encryption, DNS, WAF, NMS, DLP\nShould have very good understanding
+        of security and networking concepts\n\n\nPM me for more info", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33xw7w",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "netseccat", "num_comments": 0, "score": 4, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2tvyy",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/NetworkingJobs/comments/33xw7w/hiring_network_security_engineer_in_dubai/",
+        "name": "t3_33xw7w", "created": 1430100817.0, "url": "http://www.reddit.com/r/NetworkingJobs/comments/33xw7w/hiring_network_security_engineer_in_dubai/",
+        "author_flair_text": null, "title": "[HIRING] Network Security Engineer in
+        DUBAI", "created_utc": 1430072017.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 4}}, {"kind":
+        "t3", "data": {"domain": "i.imgur.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "pics", "selftext_html": null, "selftext": "", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33xqxk",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "Reddit__PI", "num_comments": 1, "score": 0, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/MTfa18RH7zcMTGKF-3kxGd8199fvKM8dsavdHQ0QQPs.jpg",
+        "subreddit_id": "t5_2qh0u", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/pics/comments/33xqxk/a_young_steve_jobs_giving_ibm_the_finger/",
+        "name": "t3_33xqxk", "created": 1430098137.0, "url": "http://i.imgur.com/Sf44p12.jpg",
+        "author_flair_text": null, "title": "A young Steve Jobs giving IBM the finger",
+        "created_utc": 1430069337.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 0}}, {"kind": "t3", "data":
+        {"domain": "youtube.com", "banned_by": null, "media_embed": {"content": "&lt;iframe
+        class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 338}, "subreddit": "osugame",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": {"type": "youtube.com", "oembed": {"provider_url": "http://www.youtube.com/",
+        "description": "Uploaded by Erik |DrikiHU| on 2015-04-26.", "title": "[osu!]Helbinde
+        - Love Is War [WATAAAASHI AR10] (60 FPS) (loud keyboard!)", "url": "http://www.youtube.com/watch?v=pBcVX51UQRA",
+        "author_name": "Erik |DrikiHU|", "height": 338, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+        "type": "video", "thumbnail_height": 360, "author_url": "http://www.youtube.com/channel/UCpQGzFuDKr1t8Xd8wP_MlEQ"}},
+        "link_flair_text": "Fluff", "id": "33xq6n", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "drikihu", "num_comments":
+        13, "score": 12, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "http://b.thumbs.redditmedia.com/s4d91qSq6nH60JVeJwUEuX7oAl2jblOSKVA-sxUB5ws.jpg",
+        "subreddit_id": "t5_2s3lm", "edited": false, "link_flair_css_class": "fluff",
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 338}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/osugame/comments/33xq6n/the_loudest_mechanical_keyboard_is_ibm_model_m_60/",
+        "name": "t3_33xq6n", "created": 1430097768.0, "url": "https://www.youtube.com/watch?v=pBcVX51UQRA",
+        "author_flair_text": null, "title": "The loudest mechanical keyboard is...
+        IBM Model M (60 FPS) (Headphone users warning! :D)", "created_utc": 1430068968.0,
+        "distinguished": null, "media": {"type": "youtube.com", "oembed": {"provider_url":
+        "http://www.youtube.com/", "description": "Uploaded by Erik |DrikiHU| on 2015-04-26.",
+        "title": "[osu!]Helbinde - Love Is War [WATAAAASHI AR10] (60 FPS) (loud keyboard!)",
+        "url": "http://www.youtube.com/watch?v=pBcVX51UQRA", "author_name": "Erik
+        |DrikiHU|", "height": 338, "width": 600, "html": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FpBcVX51UQRA%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpBcVX51UQRA&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FpBcVX51UQRA%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"338\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "http://i.ytimg.com/vi/pBcVX51UQRA/hqdefault.jpg", "type": "video", "thumbnail_height":
+        360, "author_url": "http://www.youtube.com/channel/UCpQGzFuDKr1t8Xd8wP_MlEQ"}},
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 12}}, {"kind":
+        "t3", "data": {"domain": "self.cscareerquestions", "banned_by": null, "media_embed":
+        {}, "subreddit": "cscareerquestions", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div
+        class=\"md\"&gt;&lt;p&gt;Hi reddit -- thanks for your time!&lt;/p&gt;\n\n&lt;p&gt;I
+        am struggling with this decision and can&amp;#39;t seem to make a final decision.
+        I just need some objective opinions to kick me out of this funk before the
+        weekend ends and I have to give them my decision.&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Offer&lt;/strong&gt;:
+        &lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;$53k/year (biweekly)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;decent
+        health/dental (~$200/month)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;~10 days
+        of vacation after my first year&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;401k
+        with 50% match up to 6% of yearly income&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;:
+        I graduated with my Masters of Science in Computer Science in May &amp;#39;14.
+        I also have a BSc in Mathematics and another in CS. After graduation, some
+        plans to move out-of-country fell apart, and I fell into a position working
+        as a programming consultant doing very basic stuff. For the past 4 months,
+        I&amp;#39;ve been looking for a permanent position as a Software Engineer/Developer.
+        &lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;: &lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;I
+        like the company and what they&amp;#39;re working on&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Decent
+        area to live in&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I really need a permanent
+        job... and this is an offer&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Friendly
+        workplace with the opportunity to learn a ton and work on interesting projects&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;It
+        would get me out of my current job working with HTML/VB/IBM i control language&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;&lt;p&gt;Salary
+        is low and company is known for underpaying and overworking employees&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Flat
+        structure for developers -- no room for promotion, just more responsibility&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Already
+        told that I would be expected to work &amp;gt;50 hours/week with &amp;gt;60
+        towards the end of a project&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I&amp;#39;ve
+        only had one callback/interview after four months and I&amp;#39;m nervous
+        that I&amp;#39;m jumping on the first offer&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;I
+        can&amp;#39;t afford to take my family&amp;#39;s dogs -- my disabled mom and
+        overworked dad would have to deal with it&lt;/p&gt;&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;Basically
+        I feel like I haven&amp;#39;t looked hard enough or applied to enough places
+        on the West coast (where I want to go). Should I expect a higher starting
+        salary with my current background? My thesis work would have taken too long
+        to finish (still working on it), so I don&amp;#39;t have any large papers
+        or projects that I can point to.  Any advice? &lt;/p&gt;\n\n&lt;p&gt;Thank
+        you again for your help!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hi reddit -- thanks for your time!\n\nI am struggling with this decision
+        and can''t seem to make a final decision. I just need some objective opinions
+        to kick me out of this funk before the weekend ends and I have to give them
+        my decision.\n\n**Offer**: \n\n* $53k/year (biweekly)\n\n* decent health/dental
+        (~$200/month)\n\n* ~10 days of vacation after my first year\n\n* 401k with
+        50% match up to 6% of yearly income\n\n\n\n**Background**: I graduated with
+        my Masters of Science in Computer Science in May ''14. I also have a BSc in
+        Mathematics and another in CS. After graduation, some plans to move out-of-country
+        fell apart, and I fell into a position working as a programming consultant
+        doing very basic stuff. For the past 4 months, I''ve been looking for a permanent
+        position as a Software Engineer/Developer. \n\n\n\n**Pros**: \n\n* I like
+        the company and what they''re working on\n\n* Decent area to live in\n\n*
+        I really need a permanent job... and this is an offer\n\n* Friendly workplace
+        with the opportunity to learn a ton and work on interesting projects\n\n*
+        It would get me out of my current job working with HTML/VB/IBM i control language\n\n\n\n**Cons**:\n\n*
+        Salary is low and company is known for underpaying and overworking employees\n\n*
+        Flat structure for developers -- no room for promotion, just more responsibility\n\n*
+        Already told that I would be expected to work &gt;50 hours/week with &gt;60
+        towards the end of a project\n\n* I''ve only had one callback/interview after
+        four months and I''m nervous that I''m jumping on the first offer\n\n* I can''t
+        afford to take my family''s dogs -- my disabled mom and overworked dad would
+        have to deal with it\n\n\n\nBasically I feel like I haven''t looked hard enough
+        or applied to enough places on the West coast (where I want to go). Should
+        I expect a higher starting salary with my current background? My thesis work
+        would have taken too long to finish (still working on it), so I don''t have
+        any large papers or projects that I can point to.  Any advice? \n\n\n\nThank
+        you again for your help!", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33xp5l", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "jobofferthrowaway508",
+        "num_comments": 7, "score": 3, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "", "subreddit_id": "t5_2sdpm", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 0, "secure_media_embed": {},
+        "saved": false, "stickied": false, "is_self": true, "permalink": "/r/cscareerquestions/comments/33xp5l/should_i_take_this_job_offer/",
+        "name": "t3_33xp5l", "created": 1430097264.0, "url": "http://www.reddit.com/r/cscareerquestions/comments/33xp5l/should_i_take_this_job_offer/",
+        "author_flair_text": null, "title": "Should I take this job offer?", "created_utc":
+        1430068464.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 3}}, {"kind": "t3", "data": {"domain":
+        "self.networking", "banned_by": null, "media_embed": {}, "subreddit": "networking",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey
+        - I am currently looking to hire a netsec eng who has worked in large enterprise
+        and has excellent hands-on skills with the following&lt;/p&gt;\n\n&lt;p&gt;Firewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto&lt;/p&gt;\n\n&lt;p&gt;Load Balancers:\nCisco\nF5&lt;/p&gt;\n\n&lt;p&gt;IPS:\nSourceFire\nIBM\nand
+        the firewalls built in...&lt;/p&gt;\n\n&lt;p&gt;Additional desirable technologies:
+        Disk Encryption, DNS, WAF, NMS, DLP&lt;/p&gt;\n\n&lt;p&gt;Should have very
+        good understanding of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM
+        me for more details&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hey - I am currently looking to hire a netsec eng who has worked in large
+        enterprise and has excellent hands-on skills with the following\n\nFirewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto\n\nLoad Balancers:\nCisco\nF5\n\nIPS:\nSourceFire\nIBM\nand
+        the firewalls built in...\n\nAdditional desirable technologies: Disk Encryption,
+        DNS, WAF, NMS, DLP\n\nShould have very good understanding of security and
+        networking concepts\n\nPM me for more details", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33xj2s", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "netseccat", "num_comments": 4, "score": 0, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2qkaf", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": "", "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/networking/comments/33xj2s/netsec_opportunity_in_dubai/",
+        "name": "t3_33xj2s", "created": 1430094167.0, "url": "http://www.reddit.com/r/networking/comments/33xj2s/netsec_opportunity_in_dubai/",
+        "author_flair_text": "securetron.com", "title": "Netsec opportunity in Dubai",
+        "created_utc": 1430065367.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 0}}, {"kind": "t3", "data":
+        {"domain": "self.dubai", "banned_by": null, "media_embed": {}, "subreddit":
+        "dubai", "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hey
+        &lt;a href=\"/r/Dubai\"&gt;/r/Dubai&lt;/a&gt; - I am currently looking to
+        hire a netsec eng who has worked in large enterprise and has excellent hands-on
+        skills with the following&lt;/p&gt;\n\n&lt;p&gt;Firewalls:\nCheck Point\nFortinet\nJuniper\nPalo
+        Alto&lt;/p&gt;\n\n&lt;p&gt;Load Balancers:\nCisco\nF5&lt;/p&gt;\n\n&lt;p&gt;IPS:\nSourceFire\nIBM\nand
+        the firewalls built in...&lt;/p&gt;\n\n&lt;p&gt;Additional desirable technologies:
+        Disk Encryption, DNS, WAF, NMS, DLP&lt;/p&gt;\n\n&lt;p&gt;Should have very
+        good understanding of security and networking concepts&lt;/p&gt;\n\n&lt;p&gt;PM
+        me for more details&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Hey /r/Dubai - I am currently looking to hire a netsec eng who has worked
+        in large enterprise and has excellent hands-on skills with the following\n\nFirewalls:\nCheck
+        Point\nFortinet\nJuniper\nPalo Alto\n\nLoad Balancers:\nCisco\nF5\n\nIPS:\nSourceFire\nIBM\nand
+        the firewalls built in...\n\nAdditional desirable technologies: Disk Encryption,
+        DNS, WAF, NMS, DLP\n\nShould have very good understanding of security and
+        networking concepts\n\nPM me for more details", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33xgy2", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "netseccat", "num_comments": 2, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "self", "subreddit_id": "t5_2qpro", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/dubai/comments/33xgy2/netsec_eng_consultant_opening_in_dubai/",
+        "name": "t3_33xgy2", "created": 1430093054.0, "url": "http://www.reddit.com/r/dubai/comments/33xgy2/netsec_eng_consultant_opening_in_dubai/",
+        "author_flair_text": null, "title": "NetSec Eng / Consultant - Opening in
+        Dubai", "created_utc": 1430064254.0, "distinguished": null, "media": null,
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 1}}, {"kind":
+        "t3", "data": {"domain": "linkedin.com", "banned_by": null, "media_embed":
+        {}, "subreddit": "thisisthewayitwillbe", "selftext_html": null, "selftext":
+        "", "likes": null, "user_reports": [], "secure_media": null, "link_flair_text":
+        null, "id": "33x9gr", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "starspawn0", "num_comments": 1, "score": 2, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/IeqbbFJZjc0TdYhkU1welv8DqLSHDPYZijK-Ib5OrWs.jpg",
+        "subreddit_id": "t5_31de7", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/thisisthewayitwillbe/comments/33x9gr/like_david_ferrucci_erik_mueller_has_now_left_ibm/",
+        "name": "t3_33x9gr", "created": 1430088830.0, "url": "https://www.linkedin.com/in/erikmueller1",
+        "author_flair_text": null, "title": "Like David Ferrucci, Erik Mueller has
+        now left IBM... where does he work now? Bridgewater, perhaps?", "created_utc":
+        1430060030.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 2}}, {"kind": "t3", "data": {"domain":
+        "self.Scholar", "banned_by": null, "media_embed": {}, "subreddit": "Scholar",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I&amp;#39;m
+        looking for a paper discussing &lt;a href=\"https://en.wikipedia.org/wiki/SIMMON\"&gt;SIMMON&lt;/a&gt;.
+        I just can&amp;#39;t find the paper wikipedia refers to:&lt;/p&gt;\n\n&lt;p&gt;Lehman
+        MM (ed) Proc. SimSymp 1968, IBM Res. Div., Yorktown Heights, NY; Nov. 1968,
+        3 vols.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext": "I''m looking
+        for a paper discussing [SIMMON](https://en.wikipedia.org/wiki/SIMMON). I just
+        can''t find the paper wikipedia refers to:\n\n\nLehman MM (ed) Proc. SimSymp
+        1968, IBM Res. Div., Yorktown Heights, NY; Nov. 1968, 3 vols.", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": null, "id": "33x92l",
+        "gilded": 0, "archived": false, "clicked": false, "report_reasons": null,
+        "author": "apocalypticR", "num_comments": 0, "score": 2, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2r0ev",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/Scholar/comments/33x92l/request_paper_about_simulation_monitor/",
+        "name": "t3_33x92l", "created": 1430088593.0, "url": "http://www.reddit.com/r/Scholar/comments/33x92l/request_paper_about_simulation_monitor/",
+        "author_flair_text": null, "title": "[REQUEST] Paper about SIMulation MONitor",
+        "created_utc": 1430059793.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 2}}, {"kind": "t3", "data":
+        {"domain": "snip.ly", "banned_by": null, "media_embed": {}, "subreddit": "healthtechnews",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": null, "link_flair_text": null, "id": "33wi8o", "gilded": 0,
+        "archived": false, "clicked": false, "report_reasons": null, "author": "17425170",
+        "num_comments": 0, "score": 1, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "http://a.thumbs.redditmedia.com/twZXIgKGbfii6xhILD2r1G4bcnXMilhZKp8kR62r-88.jpg",
+        "subreddit_id": "t5_30zcc", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/healthtechnews/comments/33wi8o/scrap_randomised_trials_in_favour_of_big_data/",
+        "name": "t3_33wi8o", "created": 1430065020.0, "url": "http://snip.ly/7wJq",
+        "author_flair_text": null, "title": "Scrap randomised trials in favour of
+        big data, says ex-IBM medical officer", "created_utc": 1430036220.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 1}}, {"kind": "t3", "data": {"domain": "self.sysadmin", "banned_by":
+        null, "media_embed": {}, "subreddit": "sysadmin", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;So, I&amp;#39;ve started lurking
+        this subreddit recently, and a common theme seems to be a kind of disdainful
+        attitude towards helpdesk. Maybe my case is different, or maybe I&amp;#39;m
+        just delusional, but I feel like I&amp;#39;ve got a pretty sweet gig for an
+        early-career job.&lt;/p&gt;\n\n&lt;p&gt;I&amp;#39;m a &amp;quot;NOC Technician&amp;quot;
+        for a datacenter, which I&amp;#39;ll freely admit is a glorified helpdesk.
+        We deal with more technical calls than some, but it&amp;#39;s not like we&amp;#39;re
+        internal IT for IBM or something. However, this job has come with a LOT of
+        benefits, not the least of which is customers discarding equipment that ends
+        up in my home lab. The company also pays for SkillPort to encourage us to
+        continue our certification path of choice, and I get to see a lot of different
+        systems just during the day-to-day operations, which helps keep me from getting
+        a sort of sysadmin-aspirant tunnel vision. I&amp;#39;m 24, and because I spent
+        some time right after high school being really dumb, I got a later start to
+        my career than I would have liked. This is only my second job in the field,
+        and my previous one I honestly got through my guardian angel of a stepmom.
+        But really, I feel like this is a solid step in the right direction, especially
+        with all the resources it puts at my disposal.&lt;/p&gt;\n\n&lt;p&gt;Granted,
+        this isn&amp;#39;t where I plan to stay indefinitely, but I feel like I could
+        have done a lot worse for this stage of my life. I&amp;#39;d love to hear
+        stories of other people who really got something out of a helpdesk job, or
+        why you think I&amp;#39;m full of it - I&amp;#39;m interested in both perspectives!&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "So, I''ve started lurking this subreddit recently,
+        and a common theme seems to be a kind of disdainful attitude towards helpdesk.
+        Maybe my case is different, or maybe I''m just delusional, but I feel like
+        I''ve got a pretty sweet gig for an early-career job.\n\nI''m a \"NOC Technician\"
+        for a datacenter, which I''ll freely admit is a glorified helpdesk. We deal
+        with more technical calls than some, but it''s not like we''re internal IT
+        for IBM or something. However, this job has come with a LOT of benefits, not
+        the least of which is customers discarding equipment that ends up in my home
+        lab. The company also pays for SkillPort to encourage us to continue our certification
+        path of choice, and I get to see a lot of different systems just during the
+        day-to-day operations, which helps keep me from getting a sort of sysadmin-aspirant
+        tunnel vision. I''m 24, and because I spent some time right after high school
+        being really dumb, I got a later start to my career than I would have liked.
+        This is only my second job in the field, and my previous one I honestly got
+        through my guardian angel of a stepmom. But really, I feel like this is a
+        solid step in the right direction, especially with all the resources it puts
+        at my disposal.\n\nGranted, this isn''t where I plan to stay indefinitely,
+        but I feel like I could have done a lot worse for this stage of my life. I''d
+        love to hear stories of other people who really got something out of a helpdesk
+        job, or why you think I''m full of it - I''m interested in both perspectives!",
+        "likes": null, "user_reports": [], "secure_media": null, "link_flair_text":
+        null, "id": "33w65s", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "TSIntern", "num_comments": 15, "score": 11, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2qnp7", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/sysadmin/comments/33w65s/is_my_job_choice_really_that_bad/",
+        "name": "t3_33w65s", "created": 1430053948.0, "url": "http://www.reddit.com/r/sysadmin/comments/33w65s/is_my_job_choice_really_that_bad/",
+        "author_flair_text": null, "title": "Is my job choice really that bad?", "created_utc":
+        1430025148.0, "distinguished": null, "media": null, "mod_reports": [], "visited":
+        false, "num_reports": null, "ups": 11}}, {"kind": "t3", "data": {"domain":
+        "youtube.com", "banned_by": null, "media_embed": {"content": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "subreddit": "thisisthewayitwillbe",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": {"oembed": {"provider_url": "http://www.youtube.com/", "description":
+        "Uploaded by Narine Cholakyan on 2015-04-17.", "title": "IBM Watson powered
+        Robot", "url": "http://www.youtube.com/watch?v=Y58j2O_RNDs", "type": "video",
+        "author_name": "Narine Cholakyan", "height": 450, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=b1e305db91cf4aa5a86b732cc9fffceb",
+        "thumbnail_height": 360, "author_url": "http://www.youtube.com/user/NanaGraphics"},
+        "type": "youtube.com"}, "link_flair_text": null, "id": "33w3kl", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "starspawn0", "num_comments": 5, "score": 9, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "http://b.thumbs.redditmedia.com/hO066qVBVcGcOjmU8OmPrx27JV58wf6m2rHjASlH1fo.jpg",
+        "subreddit_id": "t5_31de7", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 600, "scrolling": false, "height": 450}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/thisisthewayitwillbe/comments/33w3kl/ibm_watsonpowered_robot_looking_at_it_its_hard/",
+        "name": "t3_33w3kl", "created": 1430052089.0, "url": "https://www.youtube.com/watch?v=Y58j2O_RNDs",
+        "author_flair_text": null, "title": "IBM Watson-Powered Robot -- looking at
+        it, it''s hard not to think it has a personality (rather than being the result
+        of clever programming)", "created_utc": 1430023289.0, "distinguished": null,
+        "media": {"oembed": {"provider_url": "http://www.youtube.com/", "description":
+        "Uploaded by Narine Cholakyan on 2015-04-17.", "title": "IBM Watson powered
+        Robot", "url": "http://www.youtube.com/watch?v=Y58j2O_RNDs", "type": "video",
+        "author_name": "Narine Cholakyan", "height": 450, "width": 600, "html": "&lt;iframe
+        class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FY58j2O_RNDs%3Ffeature%3Doembed&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY58j2O_RNDs&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FY58j2O_RNDs%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube\"
+        width=\"600\" height=\"450\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 480, "version": "1.0", "provider_name": "YouTube", "thumbnail_url":
+        "http://i.ytimg.com/vi/Y58j2O_RNDs/hqdefault.jpg", "thumbnail_height": 360,
+        "author_url": "http://www.youtube.com/user/NanaGraphics"}, "type": "youtube.com"},
+        "mod_reports": [], "visited": false, "num_reports": null, "ups": 9}}, {"kind":
+        "t3", "data": {"domain": "imgur.com", "banned_by": null, "media_embed": {"content":
+        "&lt;iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3%2Fembed&amp;url=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3&amp;image=http%3A%2F%2Fi.imgur.com%2FcYtzQpu.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=imgur\"
+        width=\"550\" height=\"550\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "width": 550, "scrolling": false, "height": 550}, "subreddit": "Wellworn",
+        "selftext_html": null, "selftext": "", "likes": null, "user_reports": [],
+        "secure_media": null, "link_flair_text": null, "id": "33vv3m", "gilded": 0,
+        "archived": false, "clicked": false, "report_reasons": null, "author": "JakesGunReviews",
+        "num_comments": 1, "score": 23, "approved_by": null, "over_18": false, "hidden":
+        false, "thumbnail": "http://b.thumbs.redditmedia.com/aSka2R744DYjXURV719x-Y3XxInKURqFmVerk6cykGg.jpg",
+        "subreddit_id": "t5_35ozl", "edited": false, "link_flair_css_class": null,
+        "author_flair_css_class": null, "downs": 0, "secure_media_embed": {}, "saved":
+        false, "stickied": false, "is_self": false, "permalink": "/r/Wellworn/comments/33vv3m/ibm_m1_carbine/",
+        "name": "t3_33vv3m", "created": 1430046474.0, "url": "http://imgur.com/a/s0QH3",
+        "author_flair_text": null, "title": "IBM M1 Carbine", "created_utc": 1430017674.0,
+        "distinguished": null, "media": {"oembed": {"provider_url": "http://imgur.com",
+        "title": "IBM M1 Carbine Wear", "type": "rich", "html": "&lt;iframe class=\"embedly-embed\"
+        src=\"//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3%2Fembed&amp;url=http%3A%2F%2Fimgur.com%2Fa%2Fs0QH3&amp;image=http%3A%2F%2Fi.imgur.com%2FcYtzQpu.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=imgur\"
+        width=\"550\" height=\"550\" scrolling=\"no\" frameborder=\"0\" allowfullscreen&gt;&lt;/iframe&gt;",
+        "thumbnail_width": 4004, "height": 550, "width": 550, "version": "1.0", "provider_name":
+        "Imgur", "thumbnail_url": "http://i.imgur.com/cYtzQpu.jpg", "thumbnail_height":
+        782}, "type": "imgur.com"}, "mod_reports": [], "visited": false, "num_reports":
+        null, "ups": 23}}, {"kind": "t3", "data": {"domain": "self.server", "banned_by":
+        null, "media_embed": {}, "subreddit": "server", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;So, our IT lab that our company
+        and everyone that needs it. have a lot of older servers plugged in doing nothing,
+        So i ask you guys, what to install and learn about?&lt;/p&gt;\n\n&lt;p&gt;basic
+        networking + AD is already in place.  been doing a lot of vmware stuff, so
+        whats next?&lt;/p&gt;\n\n&lt;p&gt;Personally i like HA, both clustering, and
+        network layer HA distribution.  I know nothing about SQL, more then to install
+        it...&lt;/p&gt;\n\n&lt;p&gt;maybee set up a large scale webhosting lab?   multiple
+        clustred frontends, Failover SQL servers, SAN storage, backups, you name it!&lt;/p&gt;\n\n&lt;p&gt;specs:
+        dual/quad core, 4-8GB ram, 2x74/2x146GB drives.\nmostly HP bladeservers, IBM
+        bladeservers.  All with SCSI u320 or first gen SAS\n20 of them have HBA cards&lt;/p&gt;\n\n&lt;p&gt;Mostly
+        3com and Cisco network, some cisco routers, mostly pfsense boxes&lt;/p&gt;\n\n&lt;p&gt;I
+        have some FC SAN storage up and running (10TB, 50spindles)\nAnd some Iscsi
+        based on freenas.\nI have three locations with wan inbetween with 100mbit
+        links, fore some offsite backup testing, DC-DC replication task etc etc&lt;/p&gt;\n\n&lt;p&gt;MSDN
+        + full Microsoft volume licencing for software, other then that its trailware
+        for the rest!&lt;/p&gt;\n\n&lt;p&gt;so with &amp;quot;unlimited&amp;quot;
+        hardware, what would you do to learn more?  &lt;/p&gt;\n\n&lt;p&gt;sorry for
+        bad english, Swede here!&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "So, our IT lab that our company and everyone that needs it. have a lot of
+        older servers plugged in doing nothing, So i ask you guys, what to install
+        and learn about?\n\nbasic networking + AD is already in place.  been doing
+        a lot of vmware stuff, so whats next?\n\nPersonally i like HA, both clustering,
+        and network layer HA distribution.  I know nothing about SQL, more then to
+        install it...\n\nmaybee set up a large scale webhosting lab?   multiple clustred
+        frontends, Failover SQL servers, SAN storage, backups, you name it!\n\nspecs:
+        dual/quad core, 4-8GB ram, 2x74/2x146GB drives.\nmostly HP bladeservers, IBM
+        bladeservers.  All with SCSI u320 or first gen SAS\n20 of them have HBA cards\n\nMostly
+        3com and Cisco network, some cisco routers, mostly pfsense boxes\n\nI have
+        some FC SAN storage up and running (10TB, 50spindles)\nAnd some Iscsi based
+        on freenas.\nI have three locations with wan inbetween with 100mbit links,
+        fore some offsite backup testing, DC-DC replication task etc etc\n\nMSDN +
+        full Microsoft volume licencing for software, other then that its trailware
+        for the rest!\n\nso with \"unlimited\" hardware, what would you do to learn
+        more?  \n  \n  \n\nsorry for bad english, Swede here!", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": null, "id": "33vo07", "gilded":
+        0, "archived": false, "clicked": false, "report_reasons": null, "author":
+        "timmynator2000", "num_comments": 2, "score": 1, "approved_by": null, "over_18":
+        false, "hidden": false, "thumbnail": "", "subreddit_id": "t5_2rlji", "edited":
+        false, "link_flair_css_class": null, "author_flair_css_class": null, "downs":
+        0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/server/comments/33vo07/i_got_50_physical_servers_without_something_to_do/",
+        "name": "t3_33vo07", "created": 1430041965.0, "url": "http://www.reddit.com/r/server/comments/33vo07/i_got_50_physical_servers_without_something_to_do/",
+        "author_flair_text": null, "title": "I got 50 physical servers without something
+        to do, what not? brainstorm!", "created_utc": 1430013165.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 1}}, {"kind": "t3", "data": {"domain": "self.EnjoyYumYum", "banned_by":
+        null, "media_embed": {}, "subreddit": "EnjoyYumYum", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Oakland is so rocking, it&amp;#39;s
+        crazy! If you love the scene in Greenpoint, Williamsburg, you would LOVE the
+        new Oakland, if that&amp;#39;s not your scene, well Oakland may not be for
+        you.&lt;/p&gt;\n\n&lt;p&gt;While NYC is figuring out (does anyone seriously
+        believe the 1 GB initiative for NYC will ever get out of the City Council?
+        Watch some of the City council videos on technology, they&amp;#39;re just
+        so bizarre). Good people, they&amp;#39;re trying, but for sure technology
+        is not their thing. I&amp;#39;m sure TimeWarner is all for free internet,
+        for sure.  (LOL). Oakland already is bring in 10X that speed. It&amp;#39;s
+        already there. And where bandwidth is, that&amp;#39;s where ideas bloom, kind
+        of like magic.&lt;/p&gt;\n\n&lt;p&gt;Months to even approve a single web page
+        for NYC. And still in committee. Politics, wow, who knew?&lt;/p&gt;\n\n&lt;p&gt;&lt;a
+        href=\"http://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp\"&gt;http://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp&lt;/a&gt;&lt;/p&gt;\n\n&lt;p&gt;And
+        Mitch Kapor, he changed the world. When he says something, best to listen,
+        a lot!  :-)&lt;/p&gt;\n\n&lt;blockquote&gt;\n&lt;p&gt;\u201cOakland\u2019s
+        time is here,\u201d Kapor said. \u201cTech is coming to Oakland already and
+        it\u2019s terribly exciting.\u201d&lt;/p&gt;\n&lt;/blockquote&gt;\n\n&lt;p&gt;Kapor
+        founded the Lotus Corp., which was acquired by IBM Corp. (NYSE: IBM) in 1995
+        for $3.5 billion, served as the first chair of the Mozilla Foundation, and
+        founded the Kapor Center for Social Impact with his wife, Freada Kapor Klein.
+        Kapor said many factors might influence the number of tech companies calling
+        Oakland home, in particular the high-cost of living in San Francisco.&lt;/p&gt;\n\n&lt;p&gt;\u201cRent
+        pressure alone is driving things to the East Bay,\u201d he said.&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Oakland is so rocking, it''s crazy! If you love
+        the scene in Greenpoint, Williamsburg, you would LOVE the new Oakland, if
+        that''s not your scene, well Oakland may not be for you.\n\nWhile NYC is figuring
+        out (does anyone seriously believe the 1 GB initiative for NYC will ever get
+        out of the City Council? Watch some of the City council videos on technology,
+        they''re just so bizarre). Good people, they''re trying, but for sure technology
+        is not their thing. I''m sure TimeWarner is all for free internet, for sure.  (LOL).
+        Oakland already is bring in 10X that speed. It''s already there. And where
+        bandwidth is, that''s where ideas bloom, kind of like magic.\n\nMonths to
+        even approve a single web page for NYC. And still in committee. Politics,
+        wow, who knew?\n\nhttp://www.sanleandro.org/depts/cd/bizdev/broadband/lit_san_leandro.asp\n\nAnd
+        Mitch Kapor, he changed the world. When he says something, best to listen,
+        a lot!  :-)\n\n&gt; \u201cOakland\u2019s time is here,\u201d Kapor said. \u201cTech
+        is coming to Oakland already and it\u2019s terribly exciting.\u201d\n\nKapor
+        founded the Lotus Corp., which was acquired by IBM Corp. (NYSE: IBM) in 1995
+        for $3.5 billion, served as the first chair of the Mozilla Foundation, and
+        founded the Kapor Center for Social Impact with his wife, Freada Kapor Klein.
+        Kapor said many factors might influence the number of tech companies calling
+        Oakland home, in particular the high-cost of living in San Francisco.\n\n\u201cRent
+        pressure alone is driving things to the East Bay,\u201d he said.", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33v3yg", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "ejpusa", "num_comments": 1, "score": 1, "approved_by": null,
+        "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id": "t5_372ot",
+        "edited": false, "link_flair_css_class": null, "author_flair_css_class": null,
+        "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false, "is_self":
+        true, "permalink": "/r/EnjoyYumYum/comments/33v3yg/10_gb_installs_in_oakand_now_rocking_brooklyn_on/",
+        "name": "t3_33v3yg", "created": 1430004903.0, "url": "http://www.reddit.com/r/EnjoyYumYum/comments/33v3yg/10_gb_installs_in_oakand_now_rocking_brooklyn_on/",
+        "author_flair_text": null, "title": "10 GB installs in Oakand now. Rocking!
+        Brooklyn on the bay.", "created_utc": 1430001303.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        1}}, {"kind": "t3", "data": {"domain": "self.pcmasterrace", "banned_by": null,
+        "media_embed": {}, "subreddit": "pcmasterrace", "selftext_html": "&lt;!--
+        SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Preface - I&amp;#39;ve been
+        a PC gamer since I was 11 or 12, I&amp;#39;m 38 now. My brother installed
+        Spear of Destiny on my Dad&amp;#39;s work IBM, and that was it. Hooked, My
+        mother called it &amp;quot;torturing sheep&amp;quot; because of the sounds
+        the AI dying. I never got into modding or hosting. PC gaming lost it&amp;#39;s
+        luster for me for a while, as there were no titles that I felt were really
+        MADE for PC that I was into. WOW was enticing but I have Geek Shame, and generally
+        don&amp;#39;t like Fantasy.&lt;/p&gt;\n\n&lt;p&gt;By my early 30&amp;#39;s
+        I had essentially stopped PC gaming. I had a gaming PC, a HTPC, and still
+        bought titles that would shine on the PC on the PC instead of PS3 or Xbox
+        (yes I walk among the peasants. I&amp;#39;m not an elitist, I buy consoles
+        just to check out exclusive titles to be more informed and to check out anything
+        I find interesting. I also have 2 kids, so it&amp;#39;s easy to write that
+        expense off on them for Xmas/Birthdays :-) ). When my son turned 10 or 11,
+        I actually gave him my gaming PC so he could ascend. &lt;/p&gt;\n\n&lt;p&gt;Gaming
+        for me, had reached a point, where I&amp;#39;d rather plop down on the couch,
+        pop in a console title, and just play for 20-30min, when I got a chance (very
+        busy single working parent of 2, with a job that requires work from home and
+        on call 24/7).&lt;/p&gt;\n\n&lt;p&gt;Then it happened. What I consider to
+        be the most important creations in gaming history. DayZ Mod.&lt;/p&gt;\n\n&lt;p&gt;As
+        a long time gamer, and someone who had installed SOME mods a Long LOONG time
+        ago, the idea of a Total Conversion Mod, was a bit out of scope for me...
+        I barely even understood what I was hearing about, or looking at when I watched
+        videos on youtube... The first time I saw it, I knew I had to get it. It sparked
+        a fire inside me I don&amp;#39;t think I can possibly explain.&lt;/p&gt;\n\n&lt;p&gt;I
+        slapped together a gaming PC out of the HTPC I already had, and so began my
+        decent down the rabbit hole. &lt;/p&gt;\n\n&lt;p&gt;Long story short, I loved
+        the game, started making a derivative mod, found out about author&amp;#39;s
+        rights, and server hosting, and.... THE SEEDY UNDERBELLY OF GAMING:&lt;/p&gt;\n\n&lt;p&gt;Lets
+        define the main players involved in the most basic terms:&lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;&lt;p&gt;Game
+        Company - They create the base game, if there is MP, they decide whether or
+        not individuals are allowed to mod for their game, and whether people can
+        host servers for their game&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Distribution
+        Networks/Publishers - Game Companies need to get the Game off their PC&amp;#39;s
+        and onto yours, so they deal with Media Publishing companies to print/package
+        DVD&amp;#39;s, or distribution programs that can be proprietary (Uplay) or
+        cross platform (Steam)&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Modders -
+        They create the altered content in mods, be-it new models, new functionality,
+        or just new textures or sounds.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Server
+        Hosts - Individuals or Companies (GSP&amp;#39;s or &amp;quot;Game Server Providers&amp;quot;)
+        that have a server that is accessible to the public to play MP games on.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Players
+        - That&amp;#39;s really all/most of us, but for this conversation, it&amp;#39;s
+        consumer class gamers, people who have no involvement in the hosting, or creating
+        of addons.&lt;/p&gt;&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;I have experience
+        in every category besides 1 &amp;amp; 2. However, I know that Publishing Co&amp;#39;s
+        can take as much as 10,20,30, even 40 percent of the margin on Retail games...
+        and I BELIEVE steam is in the area of 33percent. &lt;/p&gt;\n\n&lt;p&gt;So,
+        lets start at the top and work down&lt;/p&gt;\n\n&lt;p&gt;\u2022 The Game
+        company, they invest hundreds of thousands of dollars if not millions, in
+        thousands of man hours, licensing of systems, for what equates to ENORMOUS
+        RISK for a decent POTENTIAL for profit. &lt;/p&gt;\n\n&lt;p&gt;\u2022 Media
+        Production companies have more known costs, and essentially have no risk.
+        Distribution Networks like Steam and Uplay have backend costs that are more
+        subject to fluctuation, and unknowns, however again, have minimal risk in
+        the addition of one more game to their network. They have a HUGE potential
+        for profit.&lt;/p&gt;\n\n&lt;p&gt;\u2022 Modders MAY have some exposure in
+        terms of their IP rights. For example, if a modder for Arma, happens to sell
+        his models (created in commercially licensed 3d software) externally to 3rd
+        parties for use other than the game, his release license for the game files
+        cover him, but there is a risk of piracy of his models. But for a true hobby
+        modder, there is NO risk, however, no matter how good or complete, or valuable
+        your mods are, most modding terms of service (or the tools needed tos) expressly
+        forbid working for profit.&lt;/p&gt;\n\n&lt;p&gt;\u2022 Server Hosts CHA CHING
+        BITCHES!!!! All the above people either have exposed themselves to risk, or
+        invested large amounts of time and money. Running a game server community
+        is NOT free, it is NOT cheap, and it DOES NOT happen on it&amp;#39;s own,
+        but they are VERY WELL KNOWN costs and time requirements, and the potential
+        for profit is GODDAM ENORMOUS. It&amp;#39;s not easy, by any stretch of the
+        imagination, and it takes a lot of work, but the returns are potentially huge
+        for what equates to exploiting a TON of other people&amp;#39;s work.&lt;/p&gt;\n\n&lt;p&gt;\u2022
+        Players pay for the game, and reap all the benefits of all the above. BUT,
+        w/o you, literally NONE OF THE ABOVE would be doing anything but sitting in
+        their mom&amp;#39;s basement coding their dreams for themselves... Exposure,
+        and people enjoying the fruits of our labor is what 90 percent of the above
+        people want. YES there are dirtbag predatory people, companies, and franchises
+        in this industry, BUT, it&amp;#39;s largely populated with REALLY REALLY HAPPY
+        people who can&amp;#39;t believe they get to do what they love.&lt;/p&gt;\n\n&lt;p&gt;The
+        current problem.&lt;/p&gt;\n\n&lt;p&gt;Server hosts/ISPs/Gaming Communites
+        get SHIT TONS of donations from you players... They in turn help sell a LOT
+        of games for the Game Developers, The Distribution Networks get more volume
+        of sales, and traffic... The modders, sit in their basements coding their
+        dreams for themselves.&lt;/p&gt;\n\n&lt;p&gt;While it may not be the case
+        in ALL modding scenes, in Arma, you ARE NOT allowed to profit from your work
+        in the series. PERIOD. While some break these rules, and do not face punishment
+        or retribution, it forces anyone looking to eek out a break even scenario
+        to break the terms of service.&lt;/p&gt;\n\n&lt;p&gt;The &amp;quot;Donations&amp;quot;
+        that server hosts collect DO NOT trickle down to the modders who made most
+        of the content they use, it goes to whoever agreed to help the server host
+        exploit that content.&lt;/p&gt;\n\n&lt;p&gt;During the height of DayZ Mod
+        popularity, the original Author of DayZ was likely making ZERO dollars, as
+        dozens upon dozens of ISP&amp;#39;s and Server hosts, and Derivative mod makers
+        were making THOUSANDS of dollars a week or month.&lt;/p&gt;\n\n&lt;p&gt;THAT
+        my friends is what&amp;#39;s wrong with the system. THAT is why Steam has
+        begun steps to allow BOTH parties to profit. Server hosts DO DESERVE Donations,
+        and if you&amp;#39;re willing to pay for reserved slots, or Donation Perks,
+        then that&amp;#39;s fine, but not when it&amp;#39;s on a Terrain that someone
+        else made in their spare time and has never seen a dime for. Or if you&amp;#39;re
+        carrying a gun that someone spent dozens of hours modelling or configuring.&lt;/p&gt;\n\n&lt;p&gt;I
+        personally don&amp;#39;t plan to EVER charge for any mods I work on, but that
+        doesn&amp;#39;t mean that other&amp;#39;s shouldn&amp;#39;t be able to. If
+        you don&amp;#39;t like those mods, then don&amp;#39;t purchase them.&lt;/p&gt;\n\n&lt;p&gt;IMO,
+        the system needs slight tweaking. &lt;/p&gt;\n\n&lt;ol&gt;\n&lt;li&gt;&lt;p&gt;The
+        Mod Author should be able to be able to host the files elsewhere FOR FREE
+        ONLY. In Arma, for example, manual download, or even using one of the launchers
+        is STILL very complicated, a Steam subscribed mod is ENDLESSLY easier to deal
+        with for the end user and offers a genuine value.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;There
+        should be no minimum price. If a mod author wants to charge .01 for his mod,
+        it should be allowed, gaming is often a numbers game. Writing 3-10 scripts
+        or making a ton of textures can add up to real money if they&amp;#39;re used
+        by a lot of players across a lot of other missions/mods.&lt;/p&gt;&lt;/li&gt;\n&lt;li&gt;&lt;p&gt;Server
+        hosts hosting paid addons should have their donations be transparent, OR there
+        should be a breakdown of WHERE to donate for the players... IE if a Server
+        hosts hosts 3 addons, the donation button should allow to choose to split,
+        or donate all your money to any or all of those 4 parties.&lt;/p&gt;&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;That&amp;#39;s
+        all the system needs for it to work, and for YOU the players to get a MUCH
+        MUCH more real means of offering feedback to server hosts, addon authors,
+        game companies AND steam.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;", "selftext":
+        "Preface - I''ve been a PC gamer since I was 11 or 12, I''m 38 now. My brother
+        installed Spear of Destiny on my Dad''s work IBM, and that was it. Hooked,
+        My mother called it \"torturing sheep\" because of the sounds the AI dying.
+        I never got into modding or hosting. PC gaming lost it''s luster for me for
+        a while, as there were no titles that I felt were really MADE for PC that
+        I was into. WOW was enticing but I have Geek Shame, and generally don''t like
+        Fantasy.\n\nBy my early 30''s I had essentially stopped PC gaming. I had a
+        gaming PC, a HTPC, and still bought titles that would shine on the PC on the
+        PC instead of PS3 or Xbox (yes I walk among the peasants. I''m not an elitist,
+        I buy consoles just to check out exclusive titles to be more informed and
+        to check out anything I find interesting. I also have 2 kids, so it''s easy
+        to write that expense off on them for Xmas/Birthdays :-) ). When my son turned
+        10 or 11, I actually gave him my gaming PC so he could ascend. \n\nGaming
+        for me, had reached a point, where I''d rather plop down on the couch, pop
+        in a console title, and just play for 20-30min, when I got a chance (very
+        busy single working parent of 2, with a job that requires work from home and
+        on call 24/7).\n\nThen it happened. What I consider to be the most important
+        creations in gaming history. DayZ Mod.\n\nAs a long time gamer, and someone
+        who had installed SOME mods a Long LOONG time ago, the idea of a Total Conversion
+        Mod, was a bit out of scope for me... I barely even understood what I was
+        hearing about, or looking at when I watched videos on youtube... The first
+        time I saw it, I knew I had to get it. It sparked a fire inside me I don''t
+        think I can possibly explain.\n\nI slapped together a gaming PC out of the
+        HTPC I already had, and so began my decent down the rabbit hole. \n\nLong
+        story short, I loved the game, started making a derivative mod, found out
+        about author''s rights, and server hosting, and.... THE SEEDY UNDERBELLY OF
+        GAMING:\n\nLets define the main players involved in the most basic terms:\n\n1.
+        Game Company - They create the base game, if there is MP, they decide whether
+        or not individuals are allowed to mod for their game, and whether people can
+        host servers for their game\n\n2. Distribution Networks/Publishers - Game
+        Companies need to get the Game off their PC''s and onto yours, so they deal
+        with Media Publishing companies to print/package DVD''s, or distribution programs
+        that can be proprietary (Uplay) or cross platform (Steam)\n\n3. Modders -
+        They create the altered content in mods, be-it new models, new functionality,
+        or just new textures or sounds.\n\n4. Server Hosts - Individuals or Companies
+        (GSP''s or \"Game Server Providers\") that have a server that is accessible
+        to the public to play MP games on.\n\n5. Players - That''s really all/most
+        of us, but for this conversation, it''s consumer class gamers, people who
+        have no involvement in the hosting, or creating of addons.\n\nI have experience
+        in every category besides 1 &amp; 2. However, I know that Publishing Co''s
+        can take as much as 10,20,30, even 40 percent of the margin on Retail games...
+        and I BELIEVE steam is in the area of 33percent. \n\nSo, lets start at the
+        top and work down\n\n\u2022 The Game company, they invest hundreds of thousands
+        of dollars if not millions, in thousands of man hours, licensing of systems,
+        for what equates to ENORMOUS RISK for a decent POTENTIAL for profit. \n\n\u2022
+        Media Production companies have more known costs, and essentially have no
+        risk. Distribution Networks like Steam and Uplay have backend costs that are
+        more subject to fluctuation, and unknowns, however again, have minimal risk
+        in the addition of one more game to their network. They have a HUGE potential
+        for profit.\n\n\u2022 Modders MAY have some exposure in terms of their IP
+        rights. For example, if a modder for Arma, happens to sell his models (created
+        in commercially licensed 3d software) externally to 3rd parties for use other
+        than the game, his release license for the game files cover him, but there
+        is a risk of piracy of his models. But for a true hobby modder, there is NO
+        risk, however, no matter how good or complete, or valuable your mods are,
+        most modding terms of service (or the tools needed tos) expressly forbid working
+        for profit.\n\n\u2022 Server Hosts CHA CHING BITCHES!!!! All the above people
+        either have exposed themselves to risk, or invested large amounts of time
+        and money. Running a game server community is NOT free, it is NOT cheap, and
+        it DOES NOT happen on it''s own, but they are VERY WELL KNOWN costs and time
+        requirements, and the potential for profit is GODDAM ENORMOUS. It''s not easy,
+        by any stretch of the imagination, and it takes a lot of work, but the returns
+        are potentially huge for what equates to exploiting a TON of other people''s
+        work.\n\n\u2022 Players pay for the game, and reap all the benefits of all
+        the above. BUT, w/o you, literally NONE OF THE ABOVE would be doing anything
+        but sitting in their mom''s basement coding their dreams for themselves...
+        Exposure, and people enjoying the fruits of our labor is what 90 percent of
+        the above people want. YES there are dirtbag predatory people, companies,
+        and franchises in this industry, BUT, it''s largely populated with REALLY
+        REALLY HAPPY people who can''t believe they get to do what they love.\n\nThe
+        current problem.\n\nServer hosts/ISPs/Gaming Communites get SHIT TONS of donations
+        from you players... They in turn help sell a LOT of games for the Game Developers,
+        The Distribution Networks get more volume of sales, and traffic... The modders,
+        sit in their basements coding their dreams for themselves.\n\nWhile it may
+        not be the case in ALL modding scenes, in Arma, you ARE NOT allowed to profit
+        from your work in the series. PERIOD. While some break these rules, and do
+        not face punishment or retribution, it forces anyone looking to eek out a
+        break even scenario to break the terms of service.\n\nThe \"Donations\" that
+        server hosts collect DO NOT trickle down to the modders who made most of the
+        content they use, it goes to whoever agreed to help the server host exploit
+        that content.\n\nDuring the height of DayZ Mod popularity, the original Author
+        of DayZ was likely making ZERO dollars, as dozens upon dozens of ISP''s and
+        Server hosts, and Derivative mod makers were making THOUSANDS of dollars a
+        week or month.\n\nTHAT my friends is what''s wrong with the system. THAT is
+        why Steam has begun steps to allow BOTH parties to profit. Server hosts DO
+        DESERVE Donations, and if you''re willing to pay for reserved slots, or Donation
+        Perks, then that''s fine, but not when it''s on a Terrain that someone else
+        made in their spare time and has never seen a dime for. Or if you''re carrying
+        a gun that someone spent dozens of hours modelling or configuring.\n\nI personally
+        don''t plan to EVER charge for any mods I work on, but that doesn''t mean
+        that other''s shouldn''t be able to. If you don''t like those mods, then don''t
+        purchase them.\n\nIMO, the system needs slight tweaking. \n\n1. The Mod Author
+        should be able to be able to host the files elsewhere FOR FREE ONLY. In Arma,
+        for example, manual download, or even using one of the launchers is STILL
+        very complicated, a Steam subscribed mod is ENDLESSLY easier to deal with
+        for the end user and offers a genuine value.\n\n2. There should be no minimum
+        price. If a mod author wants to charge .01 for his mod, it should be allowed,
+        gaming is often a numbers game. Writing 3-10 scripts or making a ton of textures
+        can add up to real money if they''re used by a lot of players across a lot
+        of other missions/mods.\n\n3. Server hosts hosting paid addons should have
+        their donations be transparent, OR there should be a breakdown of WHERE to
+        donate for the players... IE if a Server hosts hosts 3 addons, the donation
+        button should allow to choose to split, or donate all your money to any or
+        all of those 4 parties.\n\nThat''s all the system needs for it to work, and
+        for YOU the players to get a MUCH MUCH more real means of offering feedback
+        to server hosts, addon authors, game companies AND steam.", "likes": null,
+        "user_reports": [], "secure_media": null, "link_flair_text": "Discussion",
+        "id": "33uzwi", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "CiforDayZServer", "num_comments": 0, "score": 0, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2sgp1", "edited": false, "link_flair_css_class": "blue", "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/pcmasterrace/comments/33uzwi/the_seedy_under_belly_of_mp_gaming_server_hosting/",
+        "name": "t3_33uzwi", "created": 1430002696.0, "url": "http://www.reddit.com/r/pcmasterrace/comments/33uzwi/the_seedy_under_belly_of_mp_gaming_server_hosting/",
+        "author_flair_text": null, "title": "The seedy under belly of MP gaming...
+        server hosting and modding for profit", "created_utc": 1429999096.0, "distinguished":
+        null, "media": null, "mod_reports": [], "visited": false, "num_reports": null,
+        "ups": 0}}, {"kind": "t3", "data": {"domain": "self.retrobattlestations",
+        "banned_by": null, "media_embed": {}, "subreddit": "retrobattlestations",
+        "selftext_html": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I
+        found an Amdek video 310A MDA monitor in the trash (amber tube) thinking I&amp;#39;d
+        scrap it for parts. Well, it turned out that it worked, even after it got
+        rained on. I managed to connect it to my laptop through an HDMI to VGA converter,
+        with a custom modeline, even despite the fact that VGA is analog RGB and the
+        display is TTL. I just plugged the video input on the monitor into the green
+        output, and it works well enough. &lt;/p&gt;\n\n&lt;p&gt;Here are the pics:
+        &lt;a href=\"https://imgur.com/a/gDSQK\"&gt;https://imgur.com/a/gDSQK&lt;/a&gt;
+        &lt;a href=\"http://imgur.com/eHu4zCX\"&gt;http://imgur.com/eHu4zCX&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I found an Amdek video 310A MDA monitor in the
+        trash (amber tube) thinking I''d scrap it for parts. Well, it turned out that
+        it worked, even after it got rained on. I managed to connect it to my laptop
+        through an HDMI to VGA converter, with a custom modeline, even despite the
+        fact that VGA is analog RGB and the display is TTL. I just plugged the video
+        input on the monitor into the green output, and it works well enough. \n\nHere
+        are the pics: https://imgur.com/a/gDSQK http://imgur.com/eHu4zCX", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33umwe", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "jzatarski", "num_comments": 4, "score": 12, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2xd38", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/retrobattlestations/comments/33umwe/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "name": "t3_33umwe", "created": 1430021006.0, "url": "http://www.reddit.com/r/retrobattlestations/comments/33umwe/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "author_flair_text": null, "title": "IBM MDA monitor working on a modern laptop
+        (with pics) (cross-posted from vintagecomputing)", "created_utc": 1429992206.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 12}}, {"kind": "t3", "data": {"domain": "self.vintagecomputing",
+        "banned_by": null, "media_embed": {}, "subreddit": "vintagecomputing", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I found an Amdek video
+        310A MDA monitor in the trash (amber tube) thinking I&amp;#39;d scrap it for
+        parts. Well, it turned out that it worked, even after it got rained on. I
+        managed to connect it to my laptop through an HDMI to VGA converter, with
+        a custom modeline, even despite the fact that VGA is analog RGB and the display
+        is TTL. I just plugged the video input on the monitor into the green output,
+        and it works well enough. &lt;/p&gt;\n\n&lt;p&gt;Here are the pics: &lt;a
+        href=\"https://imgur.com/a/gDSQK\"&gt;https://imgur.com/a/gDSQK&lt;/a&gt;
+        &lt;a href=\"http://imgur.com/eHu4zCX\"&gt;http://imgur.com/eHu4zCX&lt;/a&gt;&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "I found an Amdek video 310A MDA monitor in the
+        trash (amber tube) thinking I''d scrap it for parts. Well, it turned out that
+        it worked, even after it got rained on. I managed to connect it to my laptop
+        through an HDMI to VGA converter, with a custom modeline, even despite the
+        fact that VGA is analog RGB and the display is TTL. I just plugged the video
+        input on the monitor into the green output, and it works well enough. \n\nHere
+        are the pics: https://imgur.com/a/gDSQK http://imgur.com/eHu4zCX", "likes":
+        null, "user_reports": [], "secure_media": null, "link_flair_text": null, "id":
+        "33umve", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "jzatarski", "num_comments": 10, "score": 12, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "self", "subreddit_id":
+        "t5_2qn45", "edited": false, "link_flair_css_class": null, "author_flair_css_class":
+        null, "downs": 0, "secure_media_embed": {}, "saved": false, "stickied": false,
+        "is_self": true, "permalink": "/r/vintagecomputing/comments/33umve/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "name": "t3_33umve", "created": 1430020989.0, "url": "http://www.reddit.com/r/vintagecomputing/comments/33umve/ibm_mda_monitor_working_on_a_modern_laptop_with/",
+        "author_flair_text": null, "title": "IBM MDA monitor working on a modern laptop
+        (with pics) (cross-posted to retrobattlestations)", "created_utc": 1429992189.0,
+        "distinguished": null, "media": null, "mod_reports": [], "visited": false,
+        "num_reports": null, "ups": 12}}, {"kind": "t3", "data": {"domain": "self.homelab",
+        "banned_by": null, "media_embed": {}, "subreddit": "homelab", "selftext_html":
+        "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;Hello &lt;a href=\"/r/homelab\"&gt;/r/homelab&lt;/a&gt;,\nI&amp;#39;ve
+        recently managed to score an IBM x3650 M1 with in intel xeon and 8gb of ram
+        for free. It is connected to my router but my main desktop is upstairs, I
+        would like to control the x3650 somehow with my main desktop through the router.
+        I was thinking about installing ubuntu server on it and connecting to it through
+        puTTy but im not sure if that would work. Any ideas?&lt;/p&gt;\n&lt;/div&gt;&lt;!--
+        SC_ON --&gt;", "selftext": "Hello /r/homelab,\nI''ve recently managed to score
+        an IBM x3650 M1 with in intel xeon and 8gb of ram for free. It is connected
+        to my router but my main desktop is upstairs, I would like to control the
+        x3650 somehow with my main desktop through the router. I was thinking about
+        installing ubuntu server on it and connecting to it through puTTy but im not
+        sure if that would work. Any ideas?", "likes": null, "user_reports": [], "secure_media":
+        null, "link_flair_text": null, "id": "33ug3s", "gilded": 0, "archived": false,
+        "clicked": false, "report_reasons": null, "author": "Jackiejoe4", "num_comments":
+        8, "score": 1, "approved_by": null, "over_18": false, "hidden": false, "thumbnail":
+        "self", "subreddit_id": "t5_2ubz7", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 0, "secure_media_embed": {},
+        "saved": false, "stickied": false, "is_self": true, "permalink": "/r/homelab/comments/33ug3s/help_connecting_to_an_ibm_x3650_m1/",
+        "name": "t3_33ug3s", "created": 1430017484.0, "url": "http://www.reddit.com/r/homelab/comments/33ug3s/help_connecting_to_an_ibm_x3650_m1/",
+        "author_flair_text": null, "title": "[Help] Connecting to an IBM x3650 M1",
+        "created_utc": 1429988684.0, "distinguished": null, "media": null, "mod_reports":
+        [], "visited": false, "num_reports": null, "ups": 1}}, {"kind": "t3", "data":
+        {"domain": "i.imgur.com", "banned_by": null, "media_embed": {}, "subreddit":
+        "DotA2", "selftext_html": null, "selftext": "", "likes": null, "user_reports":
+        [], "secure_media": null, "link_flair_text": "Fluff | eSports | Spoiler",
+        "id": "33uamy", "gilded": 0, "archived": false, "clicked": false, "report_reasons":
+        null, "author": "Outhouse_Defiler", "num_comments": 38, "score": 104, "approved_by":
+        null, "over_18": false, "hidden": false, "thumbnail": "", "subreddit_id":
+        "t5_2s580", "edited": false, "link_flair_css_class": "fluff esports", "author_flair_css_class":
+        "harbinger", "downs": 0, "secure_media_embed": {}, "saved": false, "stickied":
+        false, "is_self": false, "permalink": "/r/DotA2/comments/33uamy/is_chuan_using_an_ibm_model_m/",
+        "name": "t3_33uamy", "created": 1430014662.0, "url": "http://i.imgur.com/cqnqSIT.png",
+        "author_flair_text": "99 problems but mana ain''t one", "title": "Is Chuan
+        Using an IBM Model M?", "created_utc": 1429985862.0, "distinguished": null,
+        "media": null, "mod_reports": [], "visited": false, "num_reports": null, "ups":
+        104}}], "after": null, "before": null}}'
+    http_version: 
+  recorded_at: Mon, 27 Apr 2015 00:58:34 GMT
+recorded_with: VCR 2.9.3

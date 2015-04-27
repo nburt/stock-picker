@@ -139,6 +139,38 @@ describe Stock do
 
   end
 
+  describe 'fetch_and_save_reddits' do
+
+    it 'fetches and saves reddits for a search term' do
+      VCR.use_cassette('models/stock/fetch_and_save_reddit') do
+        stock = create_stock
+        stock.fetch_and_save_reddits(stock.name)
+
+        expect(stock.reddits.count).to eq(24)
+
+        reddit = Reddit.first
+        expect(reddit.title).to eq('[help] Best place to buy an IBM Model M (Australia)?')
+        expect(reddit.link).to eq('http://www.reddit.com/r/MechanicalKeyboards/comments/33z6tn/help_best_place_to_buy_an_ibm_model_m_australia/')
+        expect(reddit.date).to eq('Mon, 27 Apr 2015 08:40:37 UTC +00:00')
+        expect(reddit.data).to_not be_nil
+        expect(reddit.subreddit_id).to eq('t5_2ugo7')
+      end
+    end
+
+    it 'does not save the same reddits twice' do
+      VCR.use_cassette('models/stock/fetch_and_save_reddit_repeat') do
+        stock = create_stock
+        stock.fetch_and_save_reddits(stock.name)
+
+        expect(stock.reddits.count).to eq(24)
+
+        stock.fetch_and_save_reddits(stock.name)
+
+        expect(stock.reddits.count).to eq(24)
+      end
+    end
+  end
+
   describe 'all_time_positivity_score' do
 
     it 'returns the all time positivity score' do

@@ -39,4 +39,14 @@ namespace :fetch do
       stock.fetch_and_save_new_tweets(stock.twitter_handle)
     end
   end
+
+  desc "Fetch Reddits"
+  task reddits: :environment do
+    stocks = Stock.all
+    count = stocks.size
+    stocks.each_with_index do |stock, index|
+      p "#{index + 1} out of #{count}"
+      stock.fetch_and_save_reddits(stock.name)
+    end
+  end
 end

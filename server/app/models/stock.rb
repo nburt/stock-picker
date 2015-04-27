@@ -2,6 +2,7 @@ class Stock < ActiveRecord::Base
   has_many :stock_prices
   has_many :articles
   has_many :tweets
+  has_many :reddits
 
   validates_presence_of :name, :ticker_symbol
   validates_uniqueness_of :name, :ticker_symbol
@@ -48,6 +49,23 @@ class Stock < ActiveRecord::Base
       next if existing_tweet.any?
 
       Tweet.create!(data: tweet, stock_id: id)
+    end
+  end
+
+  def fetch_and_save_reddits(term = nil)
+    reddits = RedditSearcher.search(term)
+
+    reddits.each do |reddit|
+      find_by_attributes = {
+        stock_id: id, title: reddit.title, link: reddit.link,
+        date: reddit.date, subreddit_id: reddit.subreddit_id
+      }
+
+      existing_reddit = Reddit.find_by(find_by_attributes)
+      next if existing_reddit
+
+      attributes = find_by_attributes.merge(data: reddit.data)
+      Reddit.create!(attributes)
     end
   end
 

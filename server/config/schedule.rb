@@ -15,6 +15,10 @@ every '30 * * * *', roles: [:app] do
   rake 'fetch:tweets_2'
 end
 
+every '20,40 * * * *', roles: [:app] do
+  rake 'fetch:reddits'
+end
+
 every 1.day, at: Time.zone.parse('6:45 pm').utc, roles: [:app] do
   rake 'fetch:stock_prices'
 end
