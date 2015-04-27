@@ -45,7 +45,7 @@ class Stock < ActiveRecord::Base
     tweets = searcher.search
 
     tweets.each do |tweet|
-      existing_tweet = Tweet.where("data->>'id_str' = ?", tweet[:id_str])
+      existing_tweet = Tweet.where("data->>'id_str' = ? OR data->>'text' = ?", tweet[:id_str], tweet[:text])
       next if existing_tweet.any?
 
       Tweet.create!(data: tweet, stock_id: id)

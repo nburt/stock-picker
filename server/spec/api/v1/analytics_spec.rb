@@ -316,7 +316,6 @@ describe 'analytics api' do
 
           expect(response.status).to eq(200)
           expect(response.body).to eq(expected)
-          p Oj.load(expected)
         end
       end
 
@@ -360,7 +359,6 @@ describe 'analytics api' do
 
           expect(response.status).to eq(200)
           expect(response.body).to eq(expected)
-          p Oj.load(expected)
         end
       end
 

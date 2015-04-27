@@ -105,7 +105,7 @@ describe Stock do
         stock = create_stock
         stock.fetch_and_save_new_tweets
 
-        expect(stock.tweets.count).to eq(100)
+        expect(stock.tweets.count).to eq(88)
         tweet = Tweet.last
         expect(tweet.data['metadata']['result_type']).to eq('recent')
         expect(tweet.data['id_str']).to eq('582989806432485376')
@@ -117,10 +117,10 @@ describe Stock do
         stock = create_stock
         stock.fetch_and_save_new_tweets('@IBM')
 
-        expect(stock.tweets.count).to eq(100)
+        expect(stock.tweets.count).to eq(84)
         tweet = Tweet.last
         expect(tweet.data['metadata']['result_type']).to eq('recent')
-        expect(tweet.data['id_str']).to eq('587968888991776768')
+        expect(tweet.data['id_str']).to eq('587968937062703104')
       end
     end
 
@@ -129,11 +129,20 @@ describe Stock do
         stock = create_stock
         stock.fetch_and_save_new_tweets
 
-        expect(stock.tweets.count).to eq(100)
+        expect(stock.tweets.count).to eq(85)
 
         stock.fetch_and_save_new_tweets
 
-        expect(stock.tweets.count).to eq(100)
+        expect(stock.tweets.count).to eq(85)
+      end
+    end
+
+    it 'does not save tweets that have the same text' do
+      VCR.use_cassette('models/stock/fetch_and_save_tweet_same_text') do
+        stock = create_stock
+        stock.fetch_and_save_new_tweets
+
+        expect(stock.tweets.count).to eq(96)
       end
     end
 
