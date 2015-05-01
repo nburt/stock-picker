@@ -23,7 +23,7 @@ namespace :score do
 
   desc "score new reddits"
   task reddits: :environment do
-    reddits = Reddits.where(stock_id: STOCK_IDS).unscored.first(400)
+    reddits = Reddit.where(stock_id: STOCK_IDS).unscored.first(400)
     count = reddits.size
     reddits.each_with_index do |reddit, index|
       p "#{index + 1} out of #{count}"
