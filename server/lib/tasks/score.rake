@@ -1,5 +1,5 @@
 namespace :score do
-  IDS = [1, 4, 2, 7, 3, 6, 5, 8]
+  STOCK_IDS = [1, 4, 2, 7, 3, 6, 5, 8]
 
   desc "Score New Articles"
   task articles: :environment do
