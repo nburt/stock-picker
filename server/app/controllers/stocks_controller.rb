@@ -8,7 +8,7 @@ class StocksController < ApplicationController
     @stock = Stock.new(strong_params)
 
     if @stock.save
-      redirect_to(root_path)
+      redirect_to("/")
     else
       render :new
     end
@@ -22,7 +22,7 @@ class StocksController < ApplicationController
     @stock = Stock.find(params[:id])
 
     if @stock.update_attributes(strong_params)
-      redirect_to(stock_path(@stock))
+      redirect_to("/stocks/#{@stock.id}")
     else
       render :edit
     end
