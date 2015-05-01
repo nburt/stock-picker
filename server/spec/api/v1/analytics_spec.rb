@@ -364,6 +364,54 @@ describe 'analytics api' do
 
     end
 
+    describe 'total_scored' do
+
+      it 'returns the total number of scored articles for each time period' do
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_reddit(keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              reddits: 2
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              reddits: 3
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              reddits: 4
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              reddits: 5
+            }
+          }.to_json
+
+          get '/api/v1/analytics/reddits/total_scored'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+        end
+      end
+
+    end
+
   end
 
 end

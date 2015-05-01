@@ -32,6 +32,7 @@ Rails.application.routes.draw do
           collection do
             get :added
             get :total
+            get :total_scored
           end
         end
       end

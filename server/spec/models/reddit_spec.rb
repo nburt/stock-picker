@@ -60,4 +60,38 @@ describe Reddit do
 
   end
 
+  describe 'scored' do
+
+    it 'returns reddits with a positivity score' do
+      reddit = create_reddit(stock_id: 1, keywords: ['keyword'], positivity_score: 50)
+      create_reddit(stock_id: 2, keywords: ['keyword'])
+
+      expect(Reddit.scored).to eq([reddit])
+    end
+
+  end
+
+  describe 'unscored' do
+
+    it 'returns reddits with a positivity score' do
+      reddit = create_reddit(stock_id: 1, keywords: nil)
+      create_reddit(stock_id: 2, positivity_score: 50, keywords: ['keyword'])
+
+      expect(Reddit.unscored).to eq([reddit])
+    end
+
+    it 'does not return reddits whose keywords are an empty array' do
+      create_reddit(keywords: [])
+
+      expect(Reddit.unscored).to eq([])
+    end
+
+    it 'returns tweets whose keywords are nil' do
+      reddit = create_reddit(keywords: nil)
+
+      expect(Reddit.unscored).to eq([reddit])
+    end
+
+  end
+
 end

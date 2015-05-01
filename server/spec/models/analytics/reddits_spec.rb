@@ -29,4 +29,17 @@ describe Analytics::Reddits do
 
   end
 
+  describe 'total_scored' do
+    it 'returns the total number of scored reddits added before a date' do
+      date = DateTime.now
+      create_reddit(created_at: 1.days.ago, data: {text: 'some text'},
+                   keywords: ['keyword'], positivity_score: 50)
+      create_reddit(created_at: 8.days.ago, data: {text: 'some other text'},
+                   keywords: ['keyword'], positivity_score: 50)
+      create_reddit(created_at: 8.days.ago, data: {text: 'some more text'})
+
+      expect(Analytics::Reddits.total_scored(date)).to eq(2)
+    end
+  end
+
 end

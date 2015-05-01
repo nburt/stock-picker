@@ -181,22 +181,33 @@
           <td>{{articles.totalScored.period_4.articles | number}}</td>
         </tr>
         <tr>
+          <td>Reddits</td>
+          <td>{{reddits.totalScored.period_1.reddits | number}}</td>
+          <td>{{reddits.totalScored.period_2.reddits | number}}</td>
+          <td>{{reddits.totalScored.period_3.reddits | number}}</td>
+          <td>{{reddits.totalScored.period_4.reddits | number}}</td>
+        </tr>
+        <tr>
           <td>Totals</td>
           <td>
             {{tweets.totalScored.period_1.tweets +
-            articles.totalScored.period_1.articles | number}}
+            articles.totalScored.period_1.articles +
+            reddits.totalScored.period_1.reddits | number}}
           </td>
           <td>
             {{tweets.totalScored.period_2.tweets +
-            articles.totalScored.period_2.articles | number}}
+            articles.totalScored.period_2.articles +
+            reddits.totalScored.period_1.reddits | number}}
           </td>
           <td>
             {{tweets.totalScored.period_3.tweets +
-            articles.totalScored.period_3.articles | number}}
+            articles.totalScored.period_3.articles +
+            reddits.totalScored.period_1.reddits | number}}
           </td>
           <td>
             {{tweets.totalScored.period_4.tweets +
-            articles.totalScored.period_4.articles | number}}
+            articles.totalScored.period_4.articles +
+            reddits.totalScored.period_1.reddits | number}}
           </td>
         </tr>
         </tbody>

@@ -8,4 +8,8 @@ class Analytics::Reddits
     Reddit.where("created_at <= ?", date).count
   end
 
+  def self.total_scored(date)
+    Reddit.scored.where("created_at <= ?", date).count
+  end
+
 end

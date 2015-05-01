@@ -15,6 +15,7 @@ angular.module("app").controller("AnalyticsController", [
       $scope.articlesTotalScored()
       $scope.redditsAdded()
       $scope.redditsTotal()
+      $scope.redditsTotalScored()
 
     $scope.tweetsAdded = ->
       $http.get(
@@ -70,6 +71,13 @@ angular.module("app").controller("AnalyticsController", [
         "/api/v1/analytics/reddits/total"
       ).success((response) ->
         $scope.reddits.total = response
+      )
+
+    $scope.redditsTotalScored = ->
+      $http.get(
+        "/api/v1/analytics/reddits/total_scored"
+      ).success((response) ->
+        $scope.reddits.totalScored = response
       )
 
 ])

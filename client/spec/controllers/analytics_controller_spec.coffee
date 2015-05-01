@@ -28,6 +28,7 @@ describe "AnalyticsController", ->
       spyOn($scope, "articlesTotalScored")
       spyOn($scope, "redditsAdded")
       spyOn($scope, "redditsTotal")
+      spyOn($scope, "redditsTotalScored")
 
       $scope.init()
 
@@ -39,6 +40,7 @@ describe "AnalyticsController", ->
       expect($scope.articlesTotalScored).toHaveBeenCalled()
       expect($scope.redditsAdded).toHaveBeenCalled()
       expect($scope.redditsTotal).toHaveBeenCalled()
+      expect($scope.redditsTotalScored).toHaveBeenCalled()
 
   describe "tweetsAdded", ->
     it "fetches analytics information about the number of tweets added", ->
@@ -135,3 +137,15 @@ describe "AnalyticsController", ->
       $httpBackend.flush()
 
       expect($scope.reddits.total).toEqual(analytics.redditsTotal.success)
+
+  describe "redditsTotalScored", ->
+    it "fetches analytics information about the total number of reddits scored", ->
+      $httpBackend.expectGET("/api/v1/analytics/reddits/total_scored").respond(
+        200, analytics.redditsTotal.success
+      )
+
+      $scope.redditsTotalScored()
+
+      $httpBackend.flush()
+
+      expect($scope.reddits.totalScored).toEqual(analytics.redditsTotal.success)
