@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150427003442) do
+ActiveRecord::Schema.define(version: 20150505014435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150427003442) do
     t.json     "section"
   end
 
+  add_index "articles", ["positivity_score"], name: "index_articles_on_positivity_score", using: :btree
   add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
 
   create_table "reddits", force: :cascade do |t|
@@ -48,6 +49,7 @@ ActiveRecord::Schema.define(version: 20150427003442) do
     t.datetime "updated_at",       null: false
   end
 
+  add_index "reddits", ["positivity_score"], name: "index_reddits_on_positivity_score", using: :btree
   add_index "reddits", ["stock_id"], name: "index_reddits_on_stock_id", using: :btree
 
   create_table "stock_prices", force: :cascade do |t|
@@ -85,6 +87,7 @@ ActiveRecord::Schema.define(version: 20150427003442) do
     t.json     "sentiment"
   end
 
+  add_index "tweets", ["positivity_score"], name: "index_tweets_on_positivity_score", using: :btree
   add_index "tweets", ["stock_id"], name: "index_tweets_on_stock_id", using: :btree
 
 end
