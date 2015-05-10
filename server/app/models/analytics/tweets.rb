@@ -9,11 +9,11 @@ class Analytics::Tweets
   end
 
   def self.total_scored(date)
-    Tweet.scored.where("created_at <= ?", date).count
+    Tweet.scored.where("updated_at <= ?", date).count
   end
 
   def self.scored_by_interval(start_date, end_date)
-    Tweet.scored.where("created_at >= ? AND created_at <= ?", start_date, end_date).count
+    Tweet.scored.where("updated_at >= ? AND updated_at <= ?", start_date, end_date).count
   end
 
 end

@@ -96,15 +96,15 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_tweet(keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 8.days.ago, data: {text: 'text 1'},
+          create_tweet(updated_at: 8.days.ago, data: {text: 'text 1'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 15.days.ago, data: {text: 'text 2'},
+          create_tweet(updated_at: 15.days.ago, data: {text: 'text 2'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 22.days.ago, data: {text: 'text 3'},
+          create_tweet(updated_at: 22.days.ago, data: {text: 'text 3'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 29.days.ago, data: {text: 'text 4'},
+          create_tweet(updated_at: 29.days.ago, data: {text: 'text 4'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 29.days.ago, data: {text: 'text 5'})
+          create_tweet(updated_at: 29.days.ago, data: {text: 'text 5'})
 
           expected = {
             period_1: {
@@ -145,13 +145,13 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_tweet(keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 8.days.ago, data: {text: 'some text'},
+          create_tweet(updated_at: 8.days.ago, data: {text: 'some text'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 15.days.ago, data: {text: 'some other text'},
+          create_tweet(updated_at: 15.days.ago, data: {text: 'some other text'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 22.days.ago, data: {text: 'some other text'},
+          create_tweet(updated_at: 22.days.ago, data: {text: 'some other text'},
                        keywords: ['keyword'], positivity_score: 50)
-          create_tweet(created_at: 29.days.ago, data: {text: 'some other text'},
+          create_tweet(updated_at: 29.days.ago, data: {text: 'some other text'},
                        keywords: ['keyword'], positivity_score: 50)
 
           expected = {
@@ -281,15 +281,15 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_article(keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+          create_article(updated_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+          create_article(updated_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+          create_article(updated_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+          create_article(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
+          create_article(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
 
           expected = {
             period_1: {
@@ -330,14 +330,14 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_article(keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+          create_article(updated_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+          create_article(updated_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 22.days.ago, link: 'link.com/4', title: 'title 4')
-          create_article(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+          create_article(updated_at: 22.days.ago, link: 'link.com/4', title: 'title 4')
+          create_article(updated_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
                          keywords: ['keyword'], positivity_score: 50)
-          create_article(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+          create_article(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
                          keywords: ['keyword'], positivity_score: 50)
 
           expected = {
@@ -469,15 +469,15 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_reddit(keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+          create_reddit(updated_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+          create_reddit(updated_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+          create_reddit(updated_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+          create_reddit(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
+          create_reddit(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
 
           expected = {
             period_1: {
@@ -518,14 +518,14 @@ describe 'analytics api' do
         end_date = DateTime.now
         Timecop.freeze(end_date) do
           create_reddit(keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+          create_reddit(updated_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+          create_reddit(updated_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+          create_reddit(updated_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
                         keywords: ['keyword'], positivity_score: 50)
-          create_reddit(created_at: 23.days.ago, link: 'link.com/4', title: 'title 4')
-          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+          create_reddit(updated_at: 23.days.ago, link: 'link.com/4', title: 'title 4')
+          create_reddit(updated_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
                         keywords: ['keyword'], positivity_score: 50)
 
           expected = {
