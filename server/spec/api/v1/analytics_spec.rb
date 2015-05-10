@@ -97,13 +97,13 @@ describe 'analytics api' do
         Timecop.freeze(end_date) do
           create_tweet(keywords: ['keyword'], positivity_score: 50)
           create_tweet(created_at: 8.days.ago, data: {text: 'text 1'},
-                         keywords: ['keyword'], positivity_score: 50)
+                       keywords: ['keyword'], positivity_score: 50)
           create_tweet(created_at: 15.days.ago, data: {text: 'text 2'},
-                         keywords: ['keyword'], positivity_score: 50)
+                       keywords: ['keyword'], positivity_score: 50)
           create_tweet(created_at: 22.days.ago, data: {text: 'text 3'},
-                         keywords: ['keyword'], positivity_score: 50)
+                       keywords: ['keyword'], positivity_score: 50)
           create_tweet(created_at: 29.days.ago, data: {text: 'text 4'},
-                         keywords: ['keyword'], positivity_score: 50)
+                       keywords: ['keyword'], positivity_score: 50)
           create_tweet(created_at: 29.days.ago, data: {text: 'text 5'})
 
           expected = {
@@ -134,6 +134,55 @@ describe 'analytics api' do
           expect(response.status).to eq(200)
           expect(response.body).to eq(expected)
         end
+      end
+
+    end
+
+    describe 'scored_by_interval' do
+
+      it 'returns the number of tweets scored within each time period' do
+
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_tweet(keywords: ['keyword'], positivity_score: 50)
+          create_tweet(created_at: 8.days.ago, data: {text: 'some text'},
+                       keywords: ['keyword'], positivity_score: 50)
+          create_tweet(created_at: 15.days.ago, data: {text: 'some other text'},
+                       keywords: ['keyword'], positivity_score: 50)
+          create_tweet(created_at: 22.days.ago, data: {text: 'some other text'},
+                       keywords: ['keyword'], positivity_score: 50)
+          create_tweet(created_at: 29.days.ago, data: {text: 'some other text'},
+                       keywords: ['keyword'], positivity_score: 50)
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              tweets: 1
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              tweets: 1
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              tweets: 1
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              tweets: 1
+            }
+          }.to_json
+
+          get '/api/v1/analytics/tweets/scored_by_interval'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+        end
+
       end
 
     end
@@ -274,6 +323,56 @@ describe 'analytics api' do
 
     end
 
+    describe 'scored_by_interval' do
+
+      it 'returns the number of articles scored within each time period' do
+
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_article(keywords: ['keyword'], positivity_score: 50)
+          create_article(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_article(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_article(created_at: 22.days.ago, link: 'link.com/4', title: 'title 4')
+          create_article(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+                         keywords: ['keyword'], positivity_score: 50)
+          create_article(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+                         keywords: ['keyword'], positivity_score: 50)
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              articles: 1
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              articles: 1
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              articles: 1
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              articles: 1
+            }
+          }.to_json
+
+          get '/api/v1/analytics/articles/scored_by_interval'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+        end
+
+      end
+
+    end
+
   end
 
   describe 'reddits' do
@@ -371,13 +470,13 @@ describe 'analytics api' do
         Timecop.freeze(end_date) do
           create_reddit(keywords: ['keyword'], positivity_score: 50)
           create_reddit(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
-                         keywords: ['keyword'], positivity_score: 50)
+                        keywords: ['keyword'], positivity_score: 50)
           create_reddit(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
-                         keywords: ['keyword'], positivity_score: 50)
+                        keywords: ['keyword'], positivity_score: 50)
           create_reddit(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
-                         keywords: ['keyword'], positivity_score: 50)
+                        keywords: ['keyword'], positivity_score: 50)
           create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
-                         keywords: ['keyword'], positivity_score: 50)
+                        keywords: ['keyword'], positivity_score: 50)
           create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4')
 
           expected = {
@@ -408,6 +507,56 @@ describe 'analytics api' do
           expect(response.status).to eq(200)
           expect(response.body).to eq(expected)
         end
+      end
+
+    end
+
+    describe 'scored_by_interval' do
+
+      it 'returns the number of reddits scored within each time period' do
+
+        end_date = DateTime.now
+        Timecop.freeze(end_date) do
+          create_reddit(keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 8.days.ago, link: 'link.com/1', title: 'title 1',
+                        keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 15.days.ago, link: 'link.com/2', title: 'title 2',
+                        keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 22.days.ago, link: 'link.com/3', title: 'title 3',
+                        keywords: ['keyword'], positivity_score: 50)
+          create_reddit(created_at: 23.days.ago, link: 'link.com/4', title: 'title 4')
+          create_reddit(created_at: 29.days.ago, link: 'link.com/4', title: 'title 4',
+                        keywords: ['keyword'], positivity_score: 50)
+
+          expected = {
+            period_1: {
+              start_date: 28.days.ago,
+              end_date: 21.days.ago,
+              reddits: 1
+            },
+            period_2: {
+              start_date: 21.days.ago,
+              end_date: 14.days.ago,
+              reddits: 1
+            },
+            period_3: {
+              start_date: 14.days.ago,
+              end_date: 7.days.ago,
+              reddits: 1
+            },
+            period_4: {
+              start_date: 7.days.ago,
+              end_date: end_date,
+              reddits: 1
+            }
+          }.to_json
+
+          get '/api/v1/analytics/reddits/scored_by_interval'
+
+          expect(response.status).to eq(200)
+          expect(response.body).to eq(expected)
+        end
+
       end
 
     end

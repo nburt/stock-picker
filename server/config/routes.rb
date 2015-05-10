@@ -17,6 +17,7 @@ Rails.application.routes.draw do
             get :added
             get :total
             get :total_scored
+            get :scored_by_interval
           end
         end
 
@@ -25,6 +26,7 @@ Rails.application.routes.draw do
             get :added
             get :total
             get :total_scored
+            get :scored_by_interval
           end
         end
 
@@ -33,6 +35,7 @@ Rails.application.routes.draw do
             get :added
             get :total
             get :total_scored
+            get :scored_by_interval
           end
         end
       end

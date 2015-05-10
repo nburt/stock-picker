@@ -16,7 +16,7 @@ describe Analytics::Tweets do
     end
 
   end
-  
+
   describe 'total' do
 
     it 'returns the total number of tweets added before a date' do
@@ -30,16 +30,34 @@ describe Analytics::Tweets do
   end
 
   describe 'total_scored' do
+
     it 'returns the total number of scored tweets added before a date' do
       date = DateTime.now
       create_tweet(created_at: 1.days.ago, data: {text: 'some text'},
-                     keywords: ['keyword'], positivity_score: 50)
+                   keywords: ['keyword'], positivity_score: 50)
       create_tweet(created_at: 8.days.ago, data: {text: 'some other text'},
-                     keywords: ['keyword'], positivity_score: 50)
+                   keywords: ['keyword'], positivity_score: 50)
       create_tweet(created_at: 8.days.ago, data: {text: 'some more text'})
 
       expect(Analytics::Tweets.total_scored(date)).to eq(2)
     end
+
+  end
+
+  describe 'scored_by_interval' do
+
+    it 'returns the number of tweets scored within a time period' do
+      start_date = 7.days.ago
+      end_date = DateTime.now
+      create_tweet(created_at: 1.days.ago, data: {text: 'some text'},
+                   keywords: ['keyword'], positivity_score: 50)
+      create_tweet(created_at: 3.days.ago, data: {text: 'some more text'})
+      create_tweet(created_at: 8.days.ago, data: {text: 'some other text'},
+                   keywords: ['keyword'], positivity_score: 50)
+
+      expect(Analytics::Tweets.scored_by_interval(start_date, end_date)).to eq(1)
+    end
+
   end
 
 end

@@ -23,24 +23,30 @@ describe "AnalyticsController", ->
       spyOn($scope, "tweetsAdded")
       spyOn($scope, "tweetsTotal")
       spyOn($scope, "tweetsTotalScored")
+      spyOn($scope, "tweetsScoredByInterval")
       spyOn($scope, "articlesAdded")
       spyOn($scope, "articlesTotal")
       spyOn($scope, "articlesTotalScored")
+      spyOn($scope, "articlesScoredByInterval")
       spyOn($scope, "redditsAdded")
       spyOn($scope, "redditsTotal")
       spyOn($scope, "redditsTotalScored")
+      spyOn($scope, "redditsScoredByInterval")
 
       $scope.init()
 
       expect($scope.tweetsAdded).toHaveBeenCalled()
       expect($scope.tweetsTotal).toHaveBeenCalled()
       expect($scope.tweetsTotalScored).toHaveBeenCalled()
+      expect($scope.tweetsScoredByInterval).toHaveBeenCalled()
       expect($scope.articlesAdded).toHaveBeenCalled()
       expect($scope.articlesTotal).toHaveBeenCalled()
       expect($scope.articlesTotalScored).toHaveBeenCalled()
+      expect($scope.articlesScoredByInterval).toHaveBeenCalled()
       expect($scope.redditsAdded).toHaveBeenCalled()
       expect($scope.redditsTotal).toHaveBeenCalled()
       expect($scope.redditsTotalScored).toHaveBeenCalled()
+      expect($scope.redditsScoredByInterval).toHaveBeenCalled()
 
   describe "tweetsAdded", ->
     it "fetches analytics information about the number of tweets added", ->
@@ -78,6 +84,18 @@ describe "AnalyticsController", ->
 
       expect($scope.tweets.totalScored).toEqual(analytics.tweetsTotal.success)
 
+  describe "tweetsScoredByInterval", ->
+    it "fetches analytics information for the number of tweets scored during the interval", ->
+      $httpBackend.expectGET("/api/v1/analytics/tweets/scored_by_interval").respond(
+        200, analytics.tweetsScoredByInterval.success
+      )
+
+      $scope.tweetsScoredByInterval()
+
+      $httpBackend.flush()
+
+      expect($scope.tweets.scoredByInterval).toEqual(analytics.tweetsScoredByInterval.success)
+
   describe "articlesAdded", ->
     it "fetches analytics information about the number of articles added", ->
       $httpBackend.expectGET("/api/v1/analytics/articles/added").respond(
@@ -114,6 +132,18 @@ describe "AnalyticsController", ->
 
       expect($scope.articles.totalScored).toEqual(analytics.articlesTotal.success)
 
+  describe "articlesScoredByInterval", ->
+    it "fetches analytics information for the number of articles scored during the interval", ->
+      $httpBackend.expectGET("/api/v1/analytics/articles/scored_by_interval").respond(
+        200, analytics.articlesScoredByInterval.success
+      )
+
+      $scope.articlesScoredByInterval()
+
+      $httpBackend.flush()
+
+      expect($scope.articles.scoredByInterval).toEqual(analytics.articlesScoredByInterval.success)
+
   describe "redditsAdded", ->
     it "fetches analytics information about the number of reddits added", ->
       $httpBackend.expectGET("/api/v1/analytics/reddits/added").respond(
@@ -149,3 +179,15 @@ describe "AnalyticsController", ->
       $httpBackend.flush()
 
       expect($scope.reddits.totalScored).toEqual(analytics.redditsTotal.success)
+
+  describe "redditsScoredByInterval", ->
+    it "fetches analytics information for the number of reddits scored during the interval", ->
+      $httpBackend.expectGET("/api/v1/analytics/reddits/scored_by_interval").respond(
+        200, analytics.redditsScoredByInterval.success
+      )
+
+      $scope.redditsScoredByInterval()
+
+      $httpBackend.flush()
+
+      expect($scope.reddits.scoredByInterval).toEqual(analytics.redditsScoredByInterval.success)

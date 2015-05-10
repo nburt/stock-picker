@@ -41,4 +41,20 @@ describe Analytics::Articles do
     end
   end
 
+  describe 'scored_by_interval' do
+
+    it 'returns the number of articles scored within a time period' do
+      start_date = 7.days.ago
+      end_date = DateTime.now
+      create_article(created_at: 1.days.ago, link: 'link.com/1', title: 'title 1',
+                     keywords: ['keyword'], positivity_score: 50)
+      create_article(created_at: 3.days.ago, link: 'link.com/3', title: 'title 3')
+      create_article(created_at: 8.days.ago, link: 'link.com/2', title: 'title 2',
+                     keywords: ['keyword'], positivity_score: 50)
+
+      expect(Analytics::Articles.scored_by_interval(start_date, end_date)).to eq(1)
+    end
+
+  end
+
 end

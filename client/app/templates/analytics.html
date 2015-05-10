@@ -140,7 +140,76 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
+      <h3>Scored by Week</h3>
+      <table class="table">
+        <thead>
+        <tr>
+          <th></th>
+          <th>
+            {{tweets.scoredByInterval.period_1.start_date | date:'M/d/yy'}} -
+            {{tweets.scoredByInterval.period_1.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.scoredByInterval.period_2.start_date | date:'M/d/yy'}} -
+            {{tweets.scoredByInterval.period_2.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.scoredByInterval.period_3.start_date | date:'M/d/yy'}} -
+            {{tweets.scoredByInterval.period_3.end_date | date:'M/d/yy'}}
+          </th>
+          <th>
+            {{tweets.scoredByInterval.period_4.start_date | date:'M/d/yy'}} -
+            {{tweets.scoredByInterval.period_4.end_date | date:'M/d/yy'}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tweets</td>
+          <td>{{tweets.scoredByInterval.period_1.tweets | number}}</td>
+          <td>{{tweets.scoredByInterval.period_2.tweets | number}}</td>
+          <td>{{tweets.scoredByInterval.period_3.tweets | number}}</td>
+          <td>{{tweets.scoredByInterval.period_4.tweets | number}}</td>
+        </tr>
+        <tr>
+          <td>Articles</td>
+          <td>{{articles.scoredByInterval.period_1.articles | number}}</td>
+          <td>{{articles.scoredByInterval.period_2.articles | number}}</td>
+          <td>{{articles.scoredByInterval.period_3.articles | number}}</td>
+          <td>{{articles.scoredByInterval.period_4.articles | number}}</td>
+        </tr>
+        <tr>
+          <td>Reddits</td>
+          <td>{{reddits.scoredByInterval.period_1.reddits | number}}</td>
+          <td>{{reddits.scoredByInterval.period_2.reddits | number}}</td>
+          <td>{{reddits.scoredByInterval.period_3.reddits | number}}</td>
+          <td>{{reddits.scoredByInterval.period_4.reddits | number}}</td>
+        </tr>
+        <tr>
+          <td>Totals</td>
+          <td>
+            {{tweets.scoredByInterval.period_1.tweets + articles.scoredByInterval.period_1.articles +
+            reddits.scoredByInterval.period_1.reddits | number}}
+          </td>
+          <td>
+            {{tweets.scoredByInterval.period_2.tweets + articles.scoredByInterval.period_2.articles +
+            reddits.scoredByInterval.period_2.reddits | number}}
+          </td>
+          <td>
+            {{tweets.scoredByInterval.period_3.tweets + articles.scoredByInterval.period_3.articles +
+            reddits.scoredByInterval.period_3.reddits | number}}
+          </td>
+          <td>
+            {{tweets.scoredByInterval.period_4.tweets + articles.scoredByInterval.period_4.articles +
+            reddits.scoredByInterval.period_4.reddits | number}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
 
       <h3>Total Scored</h3>
       <table class="table">
