@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150510033402) do
+ActiveRecord::Schema.define(version: 20150510051206) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(version: 20150510033402) do
     t.json     "sentiment"
   end
 
+  add_index "tweets", ["data"], name: "index_tweets_on_data", using: :gin
   add_index "tweets", ["positivity_score"], name: "index_tweets_on_positivity_score", using: :btree
   add_index "tweets", ["stock_id"], name: "index_tweets_on_stock_id", using: :btree
 
