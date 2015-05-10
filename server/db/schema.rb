@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150505014435) do
+ActiveRecord::Schema.define(version: 20150510031442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,8 +32,11 @@ ActiveRecord::Schema.define(version: 20150505014435) do
     t.json     "section"
   end
 
+  add_index "articles", ["link"], name: "index_articles_on_link", using: :btree
   add_index "articles", ["positivity_score"], name: "index_articles_on_positivity_score", using: :btree
+  add_index "articles", ["source"], name: "index_articles_on_source", using: :btree
   add_index "articles", ["stock_id"], name: "index_articles_on_stock_id", using: :btree
+  add_index "articles", ["title"], name: "index_articles_on_title", using: :btree
 
   create_table "reddits", force: :cascade do |t|
     t.integer  "stock_id"
@@ -49,8 +52,12 @@ ActiveRecord::Schema.define(version: 20150505014435) do
     t.datetime "updated_at",       null: false
   end
 
+  add_index "reddits", ["date"], name: "index_reddits_on_date", using: :btree
+  add_index "reddits", ["link"], name: "index_reddits_on_link", using: :btree
   add_index "reddits", ["positivity_score"], name: "index_reddits_on_positivity_score", using: :btree
   add_index "reddits", ["stock_id"], name: "index_reddits_on_stock_id", using: :btree
+  add_index "reddits", ["subreddit_id"], name: "index_reddits_on_subreddit_id", using: :btree
+  add_index "reddits", ["title"], name: "index_reddits_on_title", using: :btree
 
   create_table "stock_prices", force: :cascade do |t|
     t.integer  "stock_id"
