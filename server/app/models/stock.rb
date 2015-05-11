@@ -41,6 +41,25 @@ class Stock < ActiveRecord::Base
     end
   end
 
+  def search_and_save_articles
+    articles = BingSearcher.search_all(name)
+
+    articles.each do |article|
+
+      find_by_attributes = {
+        stock_id: id, title: article.title, link: article.link,
+        source: article.source
+      }
+
+      existing_article = Article.find_by(find_by_attributes)
+      next if existing_article
+
+      attributes = find_by_attributes.merge({date: DateTime.parse(article.date),
+                                             description: article.description})
+      Article.create!(attributes)
+    end
+  end
+
   def fetch_and_save_new_tweets(term = nil)
     term = term ? term : "$#{ticker_symbol}"
     searcher = TweetSearcher.new(term)

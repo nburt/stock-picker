@@ -30,3 +30,7 @@ end
 every 1.day, at: Time.zone.parse('5:35 pm').utc, roles: [:app] do
   rake 'score:tweets'
 end
+
+every 10.days, at: Time.zone.parse('6:15pm').utc, roles: [:app] do
+  rake 'search:articles'
+end

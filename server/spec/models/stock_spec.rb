@@ -178,6 +178,40 @@ describe Stock do
         expect(stock.reddits.count).to eq(24)
       end
     end
+    
+  end
+
+  describe 'search_and_save_articles' do
+
+    it 'searchs bing and saves articles for a search term' do
+      VCR.use_cassette('models/stock/search_and_save_articles') do
+        stock = create_stock
+        stock.search_and_save_articles
+
+        expect(stock.articles.count).to eq(34)
+
+        article = Article.first
+        expect(article.title).to eq('IBM Closes Acquisition of Phytel')
+        expect(article.date).to eq('2015-05-04T17:30:22Z')
+        expect(article.description).to eq('ARMONK, N.Y. and DALLAS, May 4, 2015 /PRNewswire/ -- IBM (NYSE: IBM) today announced it has completed the acquisition of Phytel, a leading provider of integrated population health management software based in Dallas, Texas. Financial terms of the deal were ...')
+        expect(article.source).to eq('Market Watch')
+        expect(article.link).to eq('http://www.marketwatch.com/story/ibm-closes-acquisition-of-phytel-2015-05-04')
+      end
+    end
+
+    it 'does not save the same bing search article twice' do
+      VCR.use_cassette('models/stock/search_and_save_articles_repeat') do
+        stock = create_stock
+        stock.search_and_save_articles
+
+        expect(stock.articles.count).to eq(34)
+
+        stock.search_and_save_articles
+
+        expect(stock.articles.count).to eq(34)
+      end
+    end
+
   end
 
   describe 'all_time_positivity_score' do
