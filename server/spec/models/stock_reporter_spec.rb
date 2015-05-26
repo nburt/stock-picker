@@ -37,29 +37,29 @@ describe StockReporter do
                     stock_id: stock.id, date: DateTime.now)
 
       attachment = <<-CSV
-Date,Open,High,Low,Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
-#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.last_trade_price},50.0,2,50.0,2,50.0,2
-#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.last_trade_price},50.0,1,50.0,1,50.0,1
-04/02/2015,,,,,,,,,,
-04/01/2015,,,,,,,,,,
-03/31/2015,,,,,,,,,,
-03/30/2015,,,,,,,,,,
-03/29/2015,,,,,,,,,,
-03/28/2015,,,,,,,,,,
-03/27/2015,,,,,,,,,,
-03/26/2015,,,,,,,,,,
-03/25/2015,,,,,,,,,,
-03/24/2015,,,,,,,,,,
-03/23/2015,,,,,,,,,,
-03/22/2015,,,,,,,,,,
-03/21/2015,,,,,,,,,,
-03/20/2015,,,,,,,,,,
-03/19/2015,,,,,,,,,,
-03/18/2015,,,,,,,,,,
-03/17/2015,,,,,,,,,,
-03/16/2015,,,,,,,,,,
-03/15/2015,,,,,,,,,,
-#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.last_trade_price},,,,,,
+Date,Open,High,Low,Close,Volume,Adj Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
+#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.close},#{stock_price_4.volume},#{stock_price_4.adj_close},50.0,2,50.0,2,50.0,2
+#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.close},#{stock_price_3.volume},#{stock_price_3.adj_close},50.0,1,50.0,1,50.0,1
+04/02/2015,,,,,,,,,,,,
+04/01/2015,,,,,,,,,,,,
+03/31/2015,,,,,,,,,,,,
+03/30/2015,,,,,,,,,,,,
+03/29/2015,,,,,,,,,,,,
+03/28/2015,,,,,,,,,,,,
+03/27/2015,,,,,,,,,,,,
+03/26/2015,,,,,,,,,,,,
+03/25/2015,,,,,,,,,,,,
+03/24/2015,,,,,,,,,,,,
+03/23/2015,,,,,,,,,,,,
+03/22/2015,,,,,,,,,,,,
+03/21/2015,,,,,,,,,,,,
+03/20/2015,,,,,,,,,,,,
+03/19/2015,,,,,,,,,,,,
+03/18/2015,,,,,,,,,,,,
+03/17/2015,,,,,,,,,,,,
+03/16/2015,,,,,,,,,,,,
+03/15/2015,,,,,,,,,,,,
+#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.close},#{stock_price_2.volume},#{stock_price_2.adj_close},,,,,,
       CSV
       expect(StockReportMailer).to receive(:scores_report).with(email, stock.id, attachment).and_call_original
 
@@ -88,30 +88,30 @@ Date,Open,High,Low,Close,Average Tweet Score,Tweets Count,Average Article Score,
                     stock_id: stock.id, date: DateTime.now)
 
       attachment = <<-CSV
-Date,Open,High,Low,Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
-#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.last_trade_price},,,,,50.0,1
-#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.last_trade_price},50.0,1,,,50.0,1
-#{article.date.strftime('%m/%d/%Y')},,,,,,,50.0,1,,
-04/01/2015,,,,,,,,,,
-03/31/2015,,,,,,,,,,
-03/30/2015,,,,,,,,,,
-03/29/2015,,,,,,,,,,
-03/28/2015,,,,,,,,,,
-03/27/2015,,,,,,,,,,
-03/26/2015,,,,,,,,,,
-03/25/2015,,,,,,,,,,
-03/24/2015,,,,,,,,,,
-03/23/2015,,,,,,,,,,
-03/22/2015,,,,,,,,,,
-03/21/2015,,,,,,,,,,
-03/20/2015,,,,,,,,,,
-03/19/2015,,,,,,,,,,
-03/18/2015,,,,,,,,,,
-03/17/2015,,,,,,,,,,
-03/16/2015,,,,,,,,,,
-03/15/2015,,,,,,,,,,
-03/14/2015,,,,,,,,,,
-#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.last_trade_price},,,,,,
+Date,Open,High,Low,Close,Volume,Adj Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
+#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.close},#{stock_price_4.volume},#{stock_price_4.adj_close},,,,,50.0,1
+#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.close},#{stock_price_3.volume},#{stock_price_3.adj_close},50.0,1,,,50.0,1
+#{article.date.strftime('%m/%d/%Y')},,,,,,,,,50.0,1,,
+04/01/2015,,,,,,,,,,,,
+03/31/2015,,,,,,,,,,,,
+03/30/2015,,,,,,,,,,,,
+03/29/2015,,,,,,,,,,,,
+03/28/2015,,,,,,,,,,,,
+03/27/2015,,,,,,,,,,,,
+03/26/2015,,,,,,,,,,,,
+03/25/2015,,,,,,,,,,,,
+03/24/2015,,,,,,,,,,,,
+03/23/2015,,,,,,,,,,,,
+03/22/2015,,,,,,,,,,,,
+03/21/2015,,,,,,,,,,,,
+03/20/2015,,,,,,,,,,,,
+03/19/2015,,,,,,,,,,,,
+03/18/2015,,,,,,,,,,,,
+03/17/2015,,,,,,,,,,,,
+03/16/2015,,,,,,,,,,,,
+03/15/2015,,,,,,,,,,,,
+03/14/2015,,,,,,,,,,,,
+#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.close},#{stock_price_2.volume},#{stock_price_2.adj_close},,,,,,
       CSV
       expect(StockReportMailer).to receive(:scores_report).with(email, stock.id, attachment).and_call_original
 
@@ -149,29 +149,29 @@ Date,Open,High,Low,Close,Average Tweet Score,Tweets Count,Average Article Score,
                     stock_id: stock.id, date: DateTime.now)
 
       attachment = <<-CSV
-Date,Open,High,Low,Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
-#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.last_trade_price},50.0,1,50.0,1,50.0,1
-#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.last_trade_price},50.0,1,50.0,1,50.0,1
-04/02/2015,,,,,,,,,,
-04/01/2015,,,,,,,,,,
-03/31/2015,,,,,,,,,,
-03/30/2015,,,,,,,,,,
-03/29/2015,,,,,,,,,,
-03/28/2015,,,,,,,,,,
-03/27/2015,,,,,,,,,,
-03/26/2015,,,,,,,,,,
-03/25/2015,,,,,,,,,,
-03/24/2015,,,,,,,,,,
-03/23/2015,,,,,,,,,,
-03/22/2015,,,,,,,,,,
-03/21/2015,,,,,,,,,,
-03/20/2015,,,,,,,,,,
-03/19/2015,,,,,,,,,,
-03/18/2015,,,,,,,,,,
-03/17/2015,,,,,,,,,,
-03/16/2015,,,,,,,,,,
-03/15/2015,,,,,,,,,,
-#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.last_trade_price},,,,,,
+Date,Open,High,Low,Close,Volume,Adj Close,Average Tweet Score,Tweets Count,Average Article Score,Articles Count,Average Reddits Score,Reddits Count
+#{stock_price_4.date.strftime('%m/%d/%Y')},#{stock_price_4.open},#{stock_price_4.days_high},#{stock_price_4.days_low},#{stock_price_4.close},#{stock_price_4.volume},#{stock_price_4.adj_close},50.0,1,50.0,1,50.0,1
+#{stock_price_3.date.strftime('%m/%d/%Y')},#{stock_price_3.open},#{stock_price_3.days_high},#{stock_price_3.days_low},#{stock_price_3.close},#{stock_price_3.volume},#{stock_price_3.adj_close},50.0,1,50.0,1,50.0,1
+04/02/2015,,,,,,,,,,,,
+04/01/2015,,,,,,,,,,,,
+03/31/2015,,,,,,,,,,,,
+03/30/2015,,,,,,,,,,,,
+03/29/2015,,,,,,,,,,,,
+03/28/2015,,,,,,,,,,,,
+03/27/2015,,,,,,,,,,,,
+03/26/2015,,,,,,,,,,,,
+03/25/2015,,,,,,,,,,,,
+03/24/2015,,,,,,,,,,,,
+03/23/2015,,,,,,,,,,,,
+03/22/2015,,,,,,,,,,,,
+03/21/2015,,,,,,,,,,,,
+03/20/2015,,,,,,,,,,,,
+03/19/2015,,,,,,,,,,,,
+03/18/2015,,,,,,,,,,,,
+03/17/2015,,,,,,,,,,,,
+03/16/2015,,,,,,,,,,,,
+03/15/2015,,,,,,,,,,,,
+#{stock_price_2.date.strftime('%m/%d/%Y')},#{stock_price_2.open},#{stock_price_2.days_high},#{stock_price_2.days_low},#{stock_price_2.close},#{stock_price_2.volume},#{stock_price_2.adj_close},,,,,,
       CSV
       expect(StockReportMailer).to receive(:scores_report).with(email, stock.id, attachment).and_call_original
 

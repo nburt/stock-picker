@@ -16,7 +16,9 @@ def create_stock_price(attributes = {})
     open: '125.71',
     days_high: '126.5',
     days_low: '124.41',
-    last_trade_price: '124.62'
+    close: '124.62',
+    volume: 1232445,
+    adj_close: '124.62'
   }
   stock = new_stock_price(default_attributes.merge(attributes))
   stock.save
@@ -26,8 +28,12 @@ end
 def new_stock_price(attributes = {})
   default_attributes = {
     stock_id: 1,
-    previous_close: '160.40',
-    market_cap: '158.54B'
+    open: '125.71',
+    days_high: '126.5',
+    days_low: '124.41',
+    close: '124.62',
+    volume: 1232445,
+    adj_close: '124.62'
   }
   StockPrice.new(default_attributes.merge(attributes))
 end

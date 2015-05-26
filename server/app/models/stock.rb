@@ -7,20 +7,23 @@ class Stock < ActiveRecord::Base
   validates_presence_of :name, :ticker_symbol
   validates_uniqueness_of :name, :ticker_symbol
 
-  def fetch_and_save_current_price
-    already_fetched = stock_prices.last &&
-      stock_prices.last.created_at.strftime('%D') == DateTime.now.new_offset(0).strftime('%D')
-    return false if already_fetched
+  def fetch_and_save_prices
+    latest_date = stock_prices.order(:date).first.date
+    quotes = StockPriceFetcher.fetch!(ticker_symbol, latest_date)
 
-    quote = StockPriceFetcher.fetch(ticker_symbol)
+    quotes.each do |quote|
+      attributes = {
+        stock_id: id, open: quote.open, close: quote.close,
+        days_high: quote.days_high, days_low: quote.days_low,
+        volume: quote.volume, adj_close: quote.adj_close, date: DateTime.parse(quote.date)
+      }
 
-    attributes = {
-      stock_id: id, open: quote.open, previous_close: quote.previous_close,
-      year_high: quote.year_high, year_low: quote.year_low, days_high: quote.days_high,
-      days_low: quote.days_low, bid_realtime: quote.bid_realtime, market_cap: quote.market_cap,
-      last_trade_price: quote.last_trade_price
-    }
-    StockPrice.create!(attributes)
+      existing_price = StockPrice.find_by(stock_id: id, date: DateTime.parse(quote.date))
+
+      next if existing_price
+
+      StockPrice.create!(attributes)
+    end
   end
 
   def fetch_and_save_new_articles

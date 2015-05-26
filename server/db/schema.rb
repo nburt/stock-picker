@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519043207) do
+ActiveRecord::Schema.define(version: 20150526035143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,17 +62,14 @@ ActiveRecord::Schema.define(version: 20150519043207) do
   create_table "stock_prices", force: :cascade do |t|
     t.integer  "stock_id"
     t.string   "open"
-    t.string   "previous_close"
-    t.string   "year_high"
-    t.string   "year_low"
     t.string   "days_high"
     t.string   "days_low"
-    t.string   "bid_realtime"
-    t.string   "market_cap"
-    t.string   "last_trade_price"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.datetime "date"
+    t.string   "close"
+    t.string   "adj_close"
+    t.integer  "volume"
   end
 
   add_index "stock_prices", ["date"], name: "index_stock_prices_on_date", using: :btree

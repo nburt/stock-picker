@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://finance.yahoo.com/d/quotes.csv?f=o0p0k0j0h0g0b3j1l1&s=IBM
+    uri: http://real-chart.finance.yahoo.com/table.csv?a=2&b=15&c=2015&d=3&e=4&f=2015&g=d&ignore=.csv&s=IBM
     body:
       encoding: US-ASCII
       string: ''
@@ -15,29 +15,39 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 29 Mar 2015 17:46:55 GMT
+      - Tue, 26 May 2015 04:12:18 GMT
       P3p:
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
         TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
         ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
-      Cache-Control:
-      - private, no-cache, no-store
-      Content-Length:
-      - '43'
-      Content-Type:
-      - application/octet-stream
-      Age:
-      - '0'
+      Vary:
+      - Accept-Encoding
       Connection:
-      - keep-alive
-      Via:
-      - http/1.1 r42.ycpi.dxs.yahoo.net (ApacheTrafficServer [cMsSf ])
-      Server:
-      - ATS
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/csv
+      Cache-Control:
+      - private
     body:
       encoding: UTF-8
       string: |
-        N/A,N/A,N/A,N/A,N/A,N/A,N/A,158.54B,160.40
+        Date,Open,High,Low,Close,Volume,Adj Close
+        2015-04-02,159.52,162.53999,158.89,160.45,4671600,159.24486
+        2015-04-01,160.23,160.62,158.39,159.17999,3700800,157.98441
+        2015-03-31,161.08,162.33,160.39999,160.50,4255400,159.29449
+        2015-03-30,161.31,163.60001,161.25,162.67,4138000,161.4482
+        2015-03-27,160.78999,160.89999,159.23,160.39999,3477900,159.19524
+        2015-03-26,159.27,161.25,158.91,160.59,4396000,159.3838
+        2015-03-25,163.08,163.08,159.20,159.20,5428900,158.00426
+        2015-03-24,164.78999,164.89,162.89999,163.00,4346100,161.77571
+        2015-03-23,162.77,165.35001,162.73,164.63,5930100,163.39348
+        2015-03-20,160.95,163.00,160.35001,162.88,9006400,161.65662
+        2015-03-19,159.70,160.92,158.81,159.81,3878600,158.60966
+        2015-03-18,156.85001,160.70,155.80,159.81,5738800,158.60966
+        2015-03-17,156.20,157.28999,155.37,156.96001,3311700,155.78108
+        2015-03-16,155.05,157.09,154.80,157.08,3749600,155.90018
     http_version: 
-  recorded_at: Sun, 29 Mar 2015 17:46:59 GMT
+  recorded_at: Sat, 04 Apr 2015 19:57:00 GMT
 recorded_with: VCR 2.9.3

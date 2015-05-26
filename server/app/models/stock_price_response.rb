@@ -1,44 +1,36 @@
 require 'csv'
 class StockPriceResponse
 
-  def initialize(csv)
-    @parsed_csv = CSV.parse(csv).flatten
+  def initialize(row)
+    @row = row
+  end
+
+  def date
+    @row["Date"]
   end
 
   def open
-    @parsed_csv[0]
-  end
-
-  def previous_close
-    @parsed_csv[1]
-  end
-
-  def year_high
-    @parsed_csv[2]
-  end
-
-  def year_low
-    @parsed_csv[3]
+    @row["Open"]
   end
 
   def days_high
-    @parsed_csv[4]
+    @row["High"]
   end
 
   def days_low
-    @parsed_csv[5]
+    @row["Low"]
   end
 
-  def bid_realtime
-    @parsed_csv[6]
+  def close
+    @row["Close"]
   end
 
-  def market_cap
-    @parsed_csv[7]
+  def volume
+    @row["Volume"]
   end
 
-  def last_trade_price
-    @parsed_csv[8]
+  def adj_close
+    @row["Adj Close"]
   end
 
 end

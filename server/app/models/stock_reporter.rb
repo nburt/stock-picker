@@ -21,7 +21,9 @@ class StockReporter
         open: stock_price.open,
         high: stock_price.days_high,
         low: stock_price.days_low,
-        close: stock_price.last_trade_price
+        close: stock_price.close,
+        volume: stock_price.volume,
+        adj_close: stock_price.adj_close
       }
     end
 
@@ -77,9 +79,9 @@ class StockReporter
 
     report = CSV.generate do |csv|
       csv << [
-        "Date", "Open", "High", "Low", "Close", "Average Tweet Score",
-        "Tweets Count", "Average Article Score", "Articles Count",
-        "Average Reddits Score", "Reddits Count"
+        "Date", "Open", "High", "Low", "Close", "Volume", "Adj Close",
+        "Average Tweet Score", "Tweets Count", "Average Article Score",
+        "Articles Count", "Average Reddits Score", "Reddits Count"
       ]
       dates_hash.each do |date, _|
         array = []
@@ -89,8 +91,11 @@ class StockReporter
           array << stock_prices_hash[date][:high]
           array << stock_prices_hash[date][:low]
           array << stock_prices_hash[date][:close]
+          array << stock_prices_hash[date][:volume]
+          array << stock_prices_hash[date][:adj_close]
         else
-
+          array << nil
+          array << nil
           array << nil
           array << nil
           array << nil
