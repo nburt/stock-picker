@@ -1,7 +1,7 @@
 class RedditSearcher
 
-  def self.search(ticker_symbol)
-    url = create_url(ticker_symbol)
+  def self.search(name)
+    url = create_url(name)
 
     response = Typhoeus.get(url)
 
@@ -10,8 +10,8 @@ class RedditSearcher
 
   private
 
-  def self.create_url(ticker_symbol)
-    URI.encode("http://www.reddit.com/r/stocks/search.json?q=#{ticker_symbol}&sort=new&t=day")
+  def self.create_url(name)
+    URI.encode("http://www.reddit.com/r/stocks/search.json?q=#{name}&sort=new&t=day")
   end
 
   def self.parse_body(body)

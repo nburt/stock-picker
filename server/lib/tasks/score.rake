@@ -3,7 +3,7 @@ namespace :score do
 
   desc "Score New Articles"
   task articles: :environment do
-    articles = Article.where(stock_id: STOCK_IDS).unscored.first(200)
+    articles = Article.where( stock_id: STOCK_IDS).unscored.first(200)
     count = articles.size
     articles.each_with_index do |article, index|
       p "#{index + 1} out of #{count}"

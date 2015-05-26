@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :stocks, only: [:new, :create, :edit, :update]
+  resources :stocks, only: [:new, :create, :edit, :update] do
+    member do
+      post :download
+    end
+  end
 
   namespace :api do
     namespace :v1 do
