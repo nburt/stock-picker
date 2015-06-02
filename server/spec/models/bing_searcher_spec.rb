@@ -6,8 +6,8 @@ describe BingSearcher do
     VCR.use_cassette('/models/bing_search_success') do
       results = BingSearcher.search_all('IBM')
 
-      expect(results.size).to eq(38)
-      expect(results.first.title).to eq('IBM Closes Acquisition of Phytel')
+      expect(results.size).to eq(120)
+      expect(results.first.title).to eq('Apple has sold 7 million watches, concludes tech analyst')
     end
   end
 

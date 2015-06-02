@@ -43,13 +43,13 @@ describe Stock do
 
         expect(stock.stock_prices.count).to eq(14)
         stock_price = stock.stock_prices.last
-        expect(stock_price.date).to eq(DateTime.parse('2015-05-06'))
-        expect(stock_price.open).to eq('172.89999')
-        expect(stock_price.days_high).to eq('174.05')
-        expect(stock_price.days_low).to eq('168.86')
-        expect(stock_price.close).to eq('170.05')
-        expect(stock_price.volume).to eq(3612600)
-        expect(stock_price.adj_close).to eq('170.05')
+        expect(stock_price.date).to eq('2015-05-13 00:00:00.000000000 +0000')
+        expect(stock_price.open).to eq('171.24001')
+        expect(stock_price.days_high).to eq('172.74001')
+        expect(stock_price.days_low).to eq('170.75')
+        expect(stock_price.close).to eq('172.28')
+        expect(stock_price.volume).to eq(2411500)
+        expect(stock_price.adj_close).to eq('172.28')
       end
     end
 
@@ -82,7 +82,7 @@ describe Stock do
 
           expect(Article.count).to eq(92)
           article = Article.last
-          expect(article.title).to eq('Stocks Turn Mixed After Moving Higher At The Open - U.S. Commentary')
+          expect(article.title).to eq('Rackspace Hosting Profit Rises 12%')
           expect(article.section).to eq(nil)
         end
       end
@@ -196,14 +196,14 @@ describe Stock do
         stock = create_stock
         stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(34)
+        expect(stock.articles.count).to eq(44)
 
         article = Article.first
-        expect(article.title).to eq('IBM Closes Acquisition of Phytel')
-        expect(article.date).to eq('2015-05-04T17:30:22Z')
-        expect(article.description).to eq('ARMONK, N.Y. and DALLAS, May 4, 2015 /PRNewswire/ -- IBM (NYSE: IBM) today announced it has completed the acquisition of Phytel, a leading provider of integrated population health management software based in Dallas, Texas. Financial terms of the deal were ...')
+        expect(article.title).to eq('Apple has sold 7 million watches, concludes tech analyst')
+        expect(article.date).to eq('2015-06-01 03:49:45.000000000 +0000')
+        expect(article.description).to eq('Apple Watch applications from SAP, IBM, Oracle, Salesforce.com and Zoho will drive Apple Watch into the enterprise. • Apple is on track to deliver 40 million to 42 million Apple Watches at an average selling price of $575 by the end of the calendar year ...')
         expect(article.source).to eq('Market Watch')
-        expect(article.link).to eq('http://www.marketwatch.com/story/ibm-closes-acquisition-of-phytel-2015-05-04')
+        expect(article.link).to eq('http://www.marketwatch.com/story/apple-has-sold-7-million-watches-concludes-tech-analyst-2015-06-01')
       end
     end
 
@@ -212,11 +212,11 @@ describe Stock do
         stock = create_stock
         stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(34)
+        expect(stock.articles.count).to eq(44)
 
         stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(34)
+        expect(stock.articles.count).to eq(44)
       end
     end
 
