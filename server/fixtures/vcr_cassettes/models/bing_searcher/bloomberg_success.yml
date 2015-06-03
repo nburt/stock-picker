@@ -1,0 +1,267 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://:0A0itw6DXySFmxB4uPsb7lP6C3qSyVIZQhq4JazDrCs%3D@api.datamarket.azure.com/Bing/Search/v1/News?$format=json&$skip=0&$top=50&Query=%27site:www.bloomberg.com/news/%20%22IBM%22%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Activityid:
+      - f4758375-ee72-4dab-9347-5c4004210619
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Expose-Headers:
+      - DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Wed, 03 Jun 2015 04:14:07 GMT
+      Content-Length:
+      - '763'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkIjp7InJlc3VsdHMiOlt7Il9fbWV0YWRhdGEiOnsidXJpIjoiaHR0cHM6
+        Ly9hcGkuZGF0YW1hcmtldC5henVyZS5jb20vRGF0YS5hc2h4L0JpbmcvU2Vh
+        cmNoL3YxL05ld3M/UXVlcnk9XHUwMDI3c2l0ZTp3d3cuYmxvb21iZXJnLmNv
+        bS9uZXdzLyBcIklCTVwiXHUwMDI3JiRza2lwPTAmJHRvcD0xIiwidHlwZSI6
+        Ik5ld3NSZXN1bHQifSwiSUQiOiIxYTcyMzkyMS1jYTkzLTRlMGQtOTRkYS0y
+        MDA2YTE0MDExNzkiLCJUaXRsZSI6IkZvdW5kYXRpb24gTWVkaWNpbmXigJlz
+        IFR1bW9yIE5ldHdvcmsgSGVscHMgRG9jdG9ycyBGaW5kIGEgTWF0Y2giLCJV
+        cmwiOiJodHRwOi8vd3d3LmJsb29tYmVyZy5jb20vbmV3cy9hcnRpY2xlcy8y
+        MDE1LTA1LTI4L2ZvdW5kYXRpb24tbWVkaWNpbmUtcy10dW1vci1uZXR3b3Jr
+        LWhlbHBzLWRvY3RvcnMtZmluZC1hLW1hdGNoIiwiU291cmNlIjoiQmxvb21i
+        ZXJnIiwiRGVzY3JpcHRpb24iOiJFdmVuIHRyYWRpdGlvbmFsIHRlY2ggY29t
+        cGFuaWVzIGxpa2UgSUJNIENvcnAuIGFyZSBjcmVhdGluZyBjbG91ZC1jb21w
+        dXRpbmcgcGxhdGZvcm1zIHRvIGFsbG93IGRydWcgY29tcGFuaWVzIHRvIHN0
+        b3JlIGFuZCBhbmFseXplIHBhdGllbnQgZGF0YS4gSW4gRm91bmRhdGlvbiBN
+        ZWRpY2luZeKAmXMgZGF0YWJhc2UsIDM5IHBlcmNlbnQgaGFkIGEgbWF0Y2hp
+        bmcgcHJvZmlsZSB3aXRoaW4gdGhlIHNhbWUgaW5zdGl0dXRpb24sIGFjY29y
+        ZGluZyAuLi4iLCJEYXRlIjoiMjAxNS0wNS0yN1QyMzo1ODoxNloifV19fQ==
+    http_version: 
+  recorded_at: Wed, 03 Jun 2015 04:14:09 GMT
+- request:
+    method: get
+    uri: https://:0A0itw6DXySFmxB4uPsb7lP6C3qSyVIZQhq4JazDrCs%3D@api.datamarket.azure.com/Bing/Search/v1/News?$format=json&$skip=50&$top=50&Query=%27site:www.bloomberg.com/news/%20%22IBM%22%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Activityid:
+      - 85e4069d-0cac-4000-9bca-4cb4f286fb97
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Expose-Headers:
+      - DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Wed, 03 Jun 2015 04:14:07 GMT
+      Content-Length:
+      - '764'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkIjp7InJlc3VsdHMiOlt7Il9fbWV0YWRhdGEiOnsidXJpIjoiaHR0cHM6
+        Ly9hcGkuZGF0YW1hcmtldC5henVyZS5jb20vRGF0YS5hc2h4L0JpbmcvU2Vh
+        cmNoL3YxL05ld3M/UXVlcnk9XHUwMDI3c2l0ZTp3d3cuYmxvb21iZXJnLmNv
+        bS9uZXdzLyBcIklCTVwiXHUwMDI3JiRza2lwPTUwJiR0b3A9MSIsInR5cGUi
+        OiJOZXdzUmVzdWx0In0sIklEIjoiYWI5MTBhZDgtMjRiNC00ZWQ0LTg1OTMt
+        ZTE5ODhjZWMyMzE1IiwiVGl0bGUiOiJGb3VuZGF0aW9uIE1lZGljaW5l4oCZ
+        cyBUdW1vciBOZXR3b3JrIEhlbHBzIERvY3RvcnMgRmluZCBhIE1hdGNoIiwi
+        VXJsIjoiaHR0cDovL3d3dy5ibG9vbWJlcmcuY29tL25ld3MvYXJ0aWNsZXMv
+        MjAxNS0wNS0yOC9mb3VuZGF0aW9uLW1lZGljaW5lLXMtdHVtb3ItbmV0d29y
+        ay1oZWxwcy1kb2N0b3JzLWZpbmQtYS1tYXRjaCIsIlNvdXJjZSI6IkJsb29t
+        YmVyZyIsIkRlc2NyaXB0aW9uIjoiRXZlbiB0cmFkaXRpb25hbCB0ZWNoIGNv
+        bXBhbmllcyBsaWtlIElCTSBDb3JwLiBhcmUgY3JlYXRpbmcgY2xvdWQtY29t
+        cHV0aW5nIHBsYXRmb3JtcyB0byBhbGxvdyBkcnVnIGNvbXBhbmllcyB0byBz
+        dG9yZSBhbmQgYW5hbHl6ZSBwYXRpZW50IGRhdGEuIEluIEZvdW5kYXRpb24g
+        TWVkaWNpbmXigJlzIGRhdGFiYXNlLCAzOSBwZXJjZW50IGhhZCBhIG1hdGNo
+        aW5nIHByb2ZpbGUgd2l0aGluIHRoZSBzYW1lIGluc3RpdHV0aW9uLCBhY2Nv
+        cmRpbmcgLi4uIiwiRGF0ZSI6IjIwMTUtMDUtMjdUMjM6NTg6MTZaIn1dfX0=
+    http_version: 
+  recorded_at: Wed, 03 Jun 2015 04:14:09 GMT
+- request:
+    method: get
+    uri: https://:0A0itw6DXySFmxB4uPsb7lP6C3qSyVIZQhq4JazDrCs%3D@api.datamarket.azure.com/Bing/Search/v1/News?$format=json&$skip=100&$top=50&Query=%27site:www.bloomberg.com/news/%20%22IBM%22%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Activityid:
+      - 055ff8e8-11dd-42a7-a9c2-55538720d15e
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Expose-Headers:
+      - DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Wed, 03 Jun 2015 04:14:07 GMT
+      Content-Length:
+      - '765'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkIjp7InJlc3VsdHMiOlt7Il9fbWV0YWRhdGEiOnsidXJpIjoiaHR0cHM6
+        Ly9hcGkuZGF0YW1hcmtldC5henVyZS5jb20vRGF0YS5hc2h4L0JpbmcvU2Vh
+        cmNoL3YxL05ld3M/UXVlcnk9XHUwMDI3c2l0ZTp3d3cuYmxvb21iZXJnLmNv
+        bS9uZXdzLyBcIklCTVwiXHUwMDI3JiRza2lwPTEwMCYkdG9wPTEiLCJ0eXBl
+        IjoiTmV3c1Jlc3VsdCJ9LCJJRCI6ImUxZGNkMzE0LWIwOTktNGY0NS05N2Q5
+        LWMwYzIyYjc0NTg4YiIsIlRpdGxlIjoiRm91bmRhdGlvbiBNZWRpY2luZeKA
+        mXMgVHVtb3IgTmV0d29yayBIZWxwcyBEb2N0b3JzIEZpbmQgYSBNYXRjaCIs
+        IlVybCI6Imh0dHA6Ly93d3cuYmxvb21iZXJnLmNvbS9uZXdzL2FydGljbGVz
+        LzIwMTUtMDUtMjgvZm91bmRhdGlvbi1tZWRpY2luZS1zLXR1bW9yLW5ldHdv
+        cmstaGVscHMtZG9jdG9ycy1maW5kLWEtbWF0Y2giLCJTb3VyY2UiOiJCbG9v
+        bWJlcmciLCJEZXNjcmlwdGlvbiI6IkV2ZW4gdHJhZGl0aW9uYWwgdGVjaCBj
+        b21wYW5pZXMgbGlrZSBJQk0gQ29ycC4gYXJlIGNyZWF0aW5nIGNsb3VkLWNv
+        bXB1dGluZyBwbGF0Zm9ybXMgdG8gYWxsb3cgZHJ1ZyBjb21wYW5pZXMgdG8g
+        c3RvcmUgYW5kIGFuYWx5emUgcGF0aWVudCBkYXRhLiBJbiBGb3VuZGF0aW9u
+        IE1lZGljaW5l4oCZcyBkYXRhYmFzZSwgMzkgcGVyY2VudCBoYWQgYSBtYXRj
+        aGluZyBwcm9maWxlIHdpdGhpbiB0aGUgc2FtZSBpbnN0aXR1dGlvbiwgYWNj
+        b3JkaW5nIC4uLiIsIkRhdGUiOiIyMDE1LTA1LTI3VDIzOjU4OjE2WiJ9XX19
+    http_version: 
+  recorded_at: Wed, 03 Jun 2015 04:14:10 GMT
+- request:
+    method: get
+    uri: https://:0A0itw6DXySFmxB4uPsb7lP6C3qSyVIZQhq4JazDrCs%3D@api.datamarket.azure.com/Bing/Search/v1/News?$format=json&$skip=150&$top=50&Query=%27site:www.bloomberg.com/news/%20%22IBM%22%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Activityid:
+      - fe114566-166a-4b60-9ee9-c216c816bd2d
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Expose-Headers:
+      - DataServiceVersion, MaxDataServiceVersion
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Wed, 03 Jun 2015 04:14:08 GMT
+      Content-Length:
+      - '765'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkIjp7InJlc3VsdHMiOlt7Il9fbWV0YWRhdGEiOnsidXJpIjoiaHR0cHM6
+        Ly9hcGkuZGF0YW1hcmtldC5henVyZS5jb20vRGF0YS5hc2h4L0JpbmcvU2Vh
+        cmNoL3YxL05ld3M/UXVlcnk9XHUwMDI3c2l0ZTp3d3cuYmxvb21iZXJnLmNv
+        bS9uZXdzLyBcIklCTVwiXHUwMDI3JiRza2lwPTE1MCYkdG9wPTEiLCJ0eXBl
+        IjoiTmV3c1Jlc3VsdCJ9LCJJRCI6ImU5MmZjMGRhLTQ1YjUtNDFlYy1iMDBm
+        LThkMzY5OWQ1ZjEzMCIsIlRpdGxlIjoiRm91bmRhdGlvbiBNZWRpY2luZeKA
+        mXMgVHVtb3IgTmV0d29yayBIZWxwcyBEb2N0b3JzIEZpbmQgYSBNYXRjaCIs
+        IlVybCI6Imh0dHA6Ly93d3cuYmxvb21iZXJnLmNvbS9uZXdzL2FydGljbGVz
+        LzIwMTUtMDUtMjgvZm91bmRhdGlvbi1tZWRpY2luZS1zLXR1bW9yLW5ldHdv
+        cmstaGVscHMtZG9jdG9ycy1maW5kLWEtbWF0Y2giLCJTb3VyY2UiOiJCbG9v
+        bWJlcmciLCJEZXNjcmlwdGlvbiI6IkV2ZW4gdHJhZGl0aW9uYWwgdGVjaCBj
+        b21wYW5pZXMgbGlrZSBJQk0gQ29ycC4gYXJlIGNyZWF0aW5nIGNsb3VkLWNv
+        bXB1dGluZyBwbGF0Zm9ybXMgdG8gYWxsb3cgZHJ1ZyBjb21wYW5pZXMgdG8g
+        c3RvcmUgYW5kIGFuYWx5emUgcGF0aWVudCBkYXRhLiBJbiBGb3VuZGF0aW9u
+        IE1lZGljaW5l4oCZcyBkYXRhYmFzZSwgMzkgcGVyY2VudCBoYWQgYSBtYXRj
+        aGluZyBwcm9maWxlIHdpdGhpbiB0aGUgc2FtZSBpbnN0aXR1dGlvbiwgYWNj
+        b3JkaW5nIC4uLiIsIkRhdGUiOiIyMDE1LTA1LTI3VDIzOjU4OjE2WiJ9XX19
+    http_version: 
+  recorded_at: Wed, 03 Jun 2015 04:14:10 GMT
+recorded_with: VCR 2.9.3

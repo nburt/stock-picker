@@ -1,4 +1,4 @@
-class BingSearcher::Forbes < BingSearcher
+class BingSearcher::Bloomberg < BingSearcher
 
   def self.search(term)
     articles = []
@@ -20,7 +20,7 @@ class BingSearcher::Forbes < BingSearcher
   private
 
   def self.create_query(term)
-    CGI::escape("site:www.forbes.com \"#{term}\"")
+    CGI::escape("site:www.bloomberg.com/news/ \"#{term}\"")
   end
 
 end

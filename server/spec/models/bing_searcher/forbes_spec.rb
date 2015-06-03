@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe BingSearcher::MarketWatch do
+describe BingSearcher::Forbes do
 
   it 'searches for the top 200 market watch articles on bing' do
     VCR.use_cassette('/models/bing_searcher/forbes_success') do

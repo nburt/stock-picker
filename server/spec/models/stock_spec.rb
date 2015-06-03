@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe Stock do
 
+  include ActiveSupport::Testing::TimeHelpers
+
   before(:each) do
     @stock = new_stock
   end
@@ -36,42 +38,47 @@ describe Stock do
 
     it 'fetches the stocks price information since the latest saved data' do
       VCR.use_cassette('models/stock/stock_price_fetch_and_save') do
-        stock = create_stock
-        create_stock_price(stock_id: stock.id, date: 20.days.ago)
+        date = DateTime.parse('Mon, 01 Jun 2015 19:57:00 UTC +00:00 ')
+        travel_to(date) do
+          stock = create_stock
+          create_stock_price(stock_id: stock.id, date: 20.days.ago)
 
-        stock.fetch_and_save_prices
+          stock.fetch_and_save_prices
 
-        expect(stock.stock_prices.count).to eq(14)
-        stock_price = stock.stock_prices.last
-        expect(stock_price.date).to eq('2015-05-13 00:00:00.000000000 +0000')
-        expect(stock_price.open).to eq('171.24001')
-        expect(stock_price.days_high).to eq('172.74001')
-        expect(stock_price.days_low).to eq('170.75')
-        expect(stock_price.close).to eq('172.28')
-        expect(stock_price.volume).to eq(2411500)
-        expect(stock_price.adj_close).to eq('172.28')
+          expect(stock.stock_prices.count).to eq(16)
+          stock_price = stock.stock_prices.last
+          expect(stock_price.date).to eq('Tue, 12 May 2015 00:00:00 UTC +00:00')
+          expect(stock_price.open).to eq('170.55')
+          expect(stock_price.days_high).to eq('171.49001')
+          expect(stock_price.days_low).to eq('168.84')
+          expect(stock_price.close).to eq('170.55')
+          expect(stock_price.volume).to eq(2928600)
+          expect(stock_price.adj_close).to eq('170.55')
+        end
       end
     end
 
     it 'does not resave a quote from the same day' do
       VCR.use_cassette('models/stock/stock_price_fetch_and_save_repeat') do
-        stock = create_stock
-        create_stock_price(stock_id: stock.id, date: 20.days.ago)
+        date = DateTime.parse('Mon, 01 Jun 2015 19:57:00 UTC +00:00 ')
+        travel_to(date) do
+          stock = create_stock
+          create_stock_price(stock_id: stock.id, date: 20.days.ago)
 
-        stock.fetch_and_save_prices
+          stock.fetch_and_save_prices
 
-        expect(stock.stock_prices.count).to eq(14)
+          expect(stock.stock_prices.count).to eq(16)
 
-        stock.fetch_and_save_prices
+          stock.fetch_and_save_prices
 
-        expect(stock.stock_prices.count).to eq(14)
+          expect(stock.stock_prices.count).to eq(16)
+        end
       end
     end
 
   end
 
   describe 'fetch_and_save_new_articles' do
-    include ActiveSupport::Testing::TimeHelpers
 
     it 'fetches the articles and saves them' do
       VCR.use_cassette('models/stock/article_fetch_and_save') do
@@ -186,37 +193,42 @@ describe Stock do
         expect(stock.reddits.count).to eq(24)
       end
     end
-    
+
   end
 
   describe 'search_and_save_articles' do
 
     it 'searchs bing and saves articles for a search term' do
       VCR.use_cassette('models/stock/search_and_save_articles') do
-        stock = create_stock
-        stock.search_and_save_articles
+        date = DateTime.parse('Mon, 01 Jun 2015 19:57:00 UTC +00:00 ')
+        travel_to(date) do
+          stock = create_stock
+          stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(44)
-
-        article = Article.first
-        expect(article.title).to eq('Apple has sold 7 million watches, concludes tech analyst')
-        expect(article.date).to eq('2015-06-01 03:49:45.000000000 +0000')
-        expect(article.description).to eq('Apple Watch applications from SAP, IBM, Oracle, Salesforce.com and Zoho will drive Apple Watch into the enterprise. • Apple is on track to deliver 40 million to 42 million Apple Watches at an average selling price of $575 by the end of the calendar year ...')
-        expect(article.source).to eq('Market Watch')
-        expect(article.link).to eq('http://www.marketwatch.com/story/apple-has-sold-7-million-watches-concludes-tech-analyst-2015-06-01')
+          expect(stock.articles.count).to eq(46)
+          article = Article.first
+          expect(article.title).to eq('IBM-Affiliated Brooklyn School Graduates Its First Students Ahead of Schedule With Both High School & College STEM Degrees')
+          expect(article.date).to eq('Tue, 02 Jun 2015 01:03:56 UTC +00:00')
+          expect(article.description).to eq('BROOKLYN, N.Y., June 2, 2015 /PRNewswire/ -- Six students from Brooklyn are graduating from P-TECH (Pathways in Technology Early College High School) two years early with both their high school diplomas and college degrees in computer systems technology ...')
+          expect(article.source).to eq('Market Watch')
+          expect(article.link).to eq('http://www.marketwatch.com/story/ibm-affiliated-brooklyn-school-graduates-its-first-students-ahead-of-schedule-with-both-high-school-college-stem-degrees-2015-06-02')
+        end
       end
     end
 
     it 'does not save the same bing search article twice' do
       VCR.use_cassette('models/stock/search_and_save_articles_repeat') do
-        stock = create_stock
-        stock.search_and_save_articles
+        date = DateTime.parse('Mon, 01 Jun 2015 19:57:00 UTC +00:00 ')
+        travel_to(date) do
+          stock = create_stock
+          stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(44)
+          expect(stock.articles.count).to eq(46)
 
-        stock.search_and_save_articles
+          stock.search_and_save_articles
 
-        expect(stock.articles.count).to eq(44)
+          expect(stock.articles.count).to eq(46)
+        end
       end
     end
 
